@@ -4,7 +4,7 @@
  "genre": "argument",
  "papers": 3,
  "pages": 6,
- "world_file": "backend/paperfactory/worlds/law-pilot.json",
+ "world_file": "src/paperfactory/worlds/law-pilot.json",
  "models": {"default": "claude-haiku-5-5"},
  "out": "runs/paperfactory/law-pilot",
  "leak_trials": 150

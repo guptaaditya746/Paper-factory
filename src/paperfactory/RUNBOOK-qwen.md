@@ -29,7 +29,7 @@ reached even after a relaunch, or the key is missing).
 git pull --autostash origin main                     # keeps your local log/config edits
 git submodule update --init llm-setup                # the Qwen stack (thesis-llm-setup), read-only
 uv sync --extra deepeval                             # deepeval: the last step's metrics (optional extra)
-uv run pytest backend/paperfactory/tests -q          # log the result; failures do NOT stop the night
+uv run pytest src/paperfactory/tests -q          # log the result; failures do NOT stop the night
 squeue -u "$USER"                                    # is a Qwen stack job already running?
 ```
 
@@ -75,10 +75,10 @@ srun --jobid <JOB> --overlap ops/injob.sh bash -c \
    `"max_parallel": 6` and `"parallel": 6` in the four files configs/qwen/{law,llm,medicine,materials}.json (both
    role entries) and log that you did (the only edit allowed; do not commit it).
 2. The new prompts on the cases that failed in the smoke runs (Qwen, fast; log results, never stop):
-   - `... paperfactory run --config backend/paperfactory/configs/qwen/smoke-llm.json --steps check`: it prints
+   - `... paperfactory run --config src/paperfactory/configs/qwen/smoke-llm.json --steps check`: it prints
      "check settings changed" and checks the three smoke papers again. Log the statuses in
      runs/paperfactory/qwen-smoke-llm/work/*/paper.repairs.json and any `drop_sentences` steps.
-   - `... run --config backend/paperfactory/configs/qwen/smoke-medicine.json --steps world`, then check-world on it;
+   - `... run --config src/paperfactory/configs/qwen/smoke-medicine.json --steps world`, then check-world on it;
      the same for smoke-materials. Log pass/fail and the errors.
 
 ## 3. The four pilot datasets: 20 papers each, one field at a time
@@ -86,7 +86,7 @@ srun --jobid <JOB> --overlap ops/injob.sh bash -c \
 Order: law, llm, medicine, materials (llm, medicine and materials packs are DRAFTS). For each FIELD:
 
 ```bash
-CFG=backend/paperfactory/configs/qwen/FIELD.json
+CFG=src/paperfactory/configs/qwen/FIELD.json
 LOG=runs/paperfactory/qwen-FIELD.log
 mkdir -p runs/paperfactory
 setsid nohup bash -c "srun --jobid <JOB> --overlap ops/injob.sh uv run paperfactory run --config $CFG; \

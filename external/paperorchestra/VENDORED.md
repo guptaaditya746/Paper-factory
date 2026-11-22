@@ -12,7 +12,7 @@
 - Own environment: `pyproject.toml` + `uv.lock` here (no third-party dependencies: the adapted path needs only the
   standard library and the `claude` CLI). The upstream `requirements.txt` is kept for reference, not installed.
 - Run: `uv run --project external/paperorchestra python external/paperorchestra/paper_writing_cli.py --help`;
-  normally through `backend/evqa/paperwriter.py` (`write_paper(paper_dir)`) or `backend/paperfactory/write.py`
+  normally through `backend/evqa/paperwriter.py` (`write_paper(paper_dir)`) or `src/paperfactory/write.py`
   (`uv run paperfactory run ...`).
 
 To see every change against upstream: clone the upstream at the pinned commit and
@@ -128,7 +128,7 @@ the paper does not fail. v1 makes no such call (its prompts and cache keys are u
   `"numeric_facts": false` (argument papers have holdings, not numbers; they are checked after writing).
 - `methods/agents/literature_stub_agent.py`: the intro step fills the template's first two numbered sections,
   whatever the genre calls them (was hard-coded "Introduction" + "Related Work").
-- Genre templates live in `backend/paperfactory/packs/genres/`, not here.
+- Genre templates live in `src/paperfactory/packs/genres/`, not here.
 
 C11 (22 Nov 2026): paper.md is written to a temp file and renamed (a stopped run never leaves half a paper); a
 transport error from paperfactory's model layer (LLMError, a RuntimeError) is retried and logged as a `call_error`

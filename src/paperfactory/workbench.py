@@ -1,14 +1,16 @@
 """Copy a paperfactory run's checked papers into the Workbench's folders (22 Nov 2026).
 
-The Workbench reads a domain from data/seed/<domain>/ (truth) and data/dataset/<domain>/<paper>/paper.md (the paper).
-A paperfactory domain carries `paperfactory.json` next to its seed.ttl; evqa/seed/pview.py and view.py read that file
+The Workbench (parent repo thesis-research-agent) reads a domain from <data>/seed/<domain>/ (truth) and
+<data>/dataset/<domain>/<paper>/paper.md (the paper). A paperfactory domain carries `paperfactory.json` next to its
+seed.ttl; the Workbench's evqa/seed/pfview.py reads that file
 instead of the evqa schema (paperfactory facts are relations between entities, not numbers, so the numbers check does
 not apply). Only papers that passed the check (the ones in tagged.json) are copied.
 
 Each fact's spans are the sentences the tagger + verifier accepted for it, moved from the normalized text the tagger
 read to offsets in the original paper.md (text.Paper.back).
 
-  uv run paperfactory export-workbench --config backend/paperfactory/configs/qwen/pilot40-law.json --domain pf_law
+  uv run paperfactory export-workbench --config src/paperfactory/configs/qwen/pilot40-law.json --domain pf_law \
+      --data-dir ../../data
 """
 from __future__ import annotations
 

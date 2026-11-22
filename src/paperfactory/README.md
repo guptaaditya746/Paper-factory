@@ -20,8 +20,8 @@ field pack + genre pack + settings
 ## Run
 
 ```bash
-uv run paperfactory run --config backend/paperfactory/configs/law-pilot.json    # 3 papers, hand-written world
-uv run paperfactory run --config backend/paperfactory/configs/law.json          # 20 papers, world agent
+uv run paperfactory run --config src/paperfactory/configs/law-pilot.json    # 3 papers, hand-written world
+uv run paperfactory run --config src/paperfactory/configs/law.json          # 20 papers, world agent
 uv run paperfactory run --config ... --steps seed,materials                     # some steps only
 uv run paperfactory check-world --config ... --world my-world.json
 uv run paperfactory run --config ... --no-cache                                 # never read cached model answers

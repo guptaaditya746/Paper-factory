@@ -1,4 +1,4 @@
-"""export-workbench (paperfactory/workbench.py) + the Workbench's reading of it (evqa/seed/pfview.py)."""
+"""export-workbench (paperfactory/workbench.py)."""
 from __future__ import annotations
 
 import json
@@ -34,23 +34,19 @@ def _run(tmp: Path) -> Path:
     return run
 
 
-def test_export_and_view(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+def test_export(tmp_path: Path) -> None:
+    """The files the Workbench reads (its view of them is tested in the parent repo, backend/tests/test_pfview.py)."""
     data = tmp_path / "data"
     assert workbench.export(_run(tmp_path), "pf_law", data) == {"domain": "pf_law", "papers": 1, "planned": 2}
-    import evqa.paths as paths
-    monkeypatch.setattr(paths, "SEED", data / "seed")
-    monkeypatch.setattr(paths, "DATASET", data / "dataset")
-    from evqa.seed import pview, view
-    [item] = pview.papers("pf_law")
-    assert item["title"] == "A Study of Things" and item["has_brief"] and item["l0"]["found"] == 1
-    p = pview.paper("pf_law", "P-01")
-    claim, decoy = p["l0"]["facts"]
-    span = claim["spans"][0]
-    assert p["paper"][span["start"]:span["end"]] == "Kor v. Bel** relied on *section 1*."   # raw Markdown offsets
-    assert decoy["status"] == "missing" and decoy["spans"] == []
-    assert len(view.overview("pf_law")["rows"]) == 2
-    with pytest.raises(KeyError):
-        pview.paper("pf_law", "P-02")
+    m = json.loads((data / "seed" / "pf_law" / "paperfactory.json").read_text())
+    [p] = m["papers"]
+    assert p["title"] == "A Study of Things" and [f["kind"] for f in p["facts"]] == ["claim", "decoy"]
+    md = (data / "dataset" / "pf_law" / "P-01" / "paper.md").read_text()
+    a, b = p["facts"][0]["spans"][0]
+    assert md[a:b] == "Kor v. Bel** relied on *section 1*."          # raw Markdown offsets
+    assert p["facts"][1]["spans"] == []
+    assert not (data / "dataset" / "pf_law" / "P-02").exists()       # failed the check: never copied
+    assert all((data / "seed" / "pf_law" / "papers" / "P-01" / b_).is_file() for b_ in workbench.BRIEFS)
 
 
 def test_never_overwrites_an_evqa_domain(tmp_path: Path) -> None:

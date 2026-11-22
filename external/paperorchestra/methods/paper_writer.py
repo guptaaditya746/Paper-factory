@@ -97,7 +97,7 @@ def write_single_paper(
     guidelines_md = load_md_file(guidelines_path)
     facts = fact_check.parse_facts(log_md)
     # paperfactory: a genre whose template folder has genre.json with "numeric_facts": false (e.g. argument papers)
-    # has no number facts; its claims are checked after writing (tagging step in backend/paperfactory)
+    # has no number facts; its claims are checked after writing (tagging step in src/paperfactory)
     genre_file = os.path.join(template_dir, "genre.json")
     numeric = not os.path.isfile(genre_file) or json.load(open(genre_file)).get("numeric_facts", True)
     if not facts and numeric:

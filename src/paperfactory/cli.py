@@ -1,6 +1,6 @@
 """paperfactory: invented world -> seed + gold -> PaperOrchestra papers -> tagging, checks, QA, style-leak test.
 
-  uv run paperfactory run --config backend/paperfactory/configs/law.json [--steps world,seed,materials,write,eval]
+  uv run paperfactory run --config src/paperfactory/configs/law.json [--steps world,seed,materials,write,eval]
   uv run paperfactory check-world --config ... --world FILE
   uv run paperfactory export-workbench --config ... --domain pf_law
   uv run paperfactory export-labels --config ... --out labels.csv [--per-field 200]
@@ -241,6 +241,10 @@ def main(argv: list[str] | None = None) -> None:
     wb = sub.add_parser("export-workbench", help="copy the run's checked papers into the Workbench (workbench.py)")
     wb.add_argument("--config", required=True)
     wb.add_argument("--domain", required=True, help="Workbench domain name, e.g. pf_law")
+    wb.add_argument("--data-dir", help="the Workbench's data folder (default: data/exports in this repo; the "
+                    "parent repo's data/ when used as its submodule: --data-dir ../../data)")
+    ft = sub.add_parser("fetch-topics", help="fetch topic lists (OpenAlex) and number ranges once (topics.py)")
+    ft.add_argument("--field", action="append", required=True)
     c = sub.add_parser("check-world")
     c.add_argument("--config", required=True)
     c.add_argument("--world", required=True)
@@ -262,6 +266,11 @@ def main(argv: list[str] | None = None) -> None:
     if a.cmd == "relation-table":
         print("\n".join(packs.relation_table(packs.field(x)) for x in a.field))
         return
+    if a.cmd == "fetch-topics":
+        for name in a.field:
+            print(topics.fetch(packs.field(name)))
+        print(topics.fetch_ranges())
+        return
     if a.cmd == "label-metrics":
         def make_eval() -> Eval:
             if not a.config:
@@ -276,7 +285,8 @@ def main(argv: list[str] | None = None) -> None:
         return
     s = config.load(a.config)
     if a.cmd == "export-workbench":
-        print(json.dumps(workbench.export(s.out_dir, a.domain)))
+        data = Path(a.data_dir).resolve() if a.data_dir else REPO / "data" / "exports"
+        print(json.dumps(workbench.export(s.out_dir, a.domain, data)))
         return
     if a.cmd == "export-labels":
         print(json.dumps(labels.export_run(s.out_dir, packs.field(s.field), Path(a.out), a.per_field, a.seed)))

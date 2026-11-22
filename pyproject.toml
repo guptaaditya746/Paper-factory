@@ -1,0 +1,55 @@
+[project]
+name = "paper-factory"
+version = "0.1.0"
+description = "Synthetic research papers with planted facts: invented worlds, PaperOrchestra writing, checks and evaluation"
+requires-python = ">=3.13"
+dependencies = [
+    "dspy==3.4.1",
+    "fastapi[standard]==0.143.0",
+    "filelock==3.32.7",
+    "httpx==0.28.1",
+    "jsonschema==4.25.1",
+    "pydantic-ai-slim[mcp,openai]==2.55.0",
+    "pydantic-settings==2.15.0",
+    "pysbd>=0.3.4",
+    "pyshacl==0.30.1",
+    "pyyaml==6.0.3",
+    "rapidfuzz>=3.14.6",
+    "rdflib==7.6.0",
+]
+
+[project.scripts]
+paperfactory = "paperfactory.cli:main"
+paperfactory-api = "paperfactory.api:main"
+
+[project.optional-dependencies]
+deepeval = ["deepeval>=3"]
+
+[dependency-groups]
+dev = [
+    "pytest==8.4.2",
+    "pytest-timeout>=2.4.0",
+    "pytest-xdist>=3.8.0",
+    "ruff==0.14.5",
+]
+
+[build-system]
+requires = ["uv_build>=0.9,<0.14"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = ["paperfactory", "modelcall", "jsonio", "repo_paths"]
+module-root = "src"
+
+[tool.pytest.ini_options]
+addopts = "-n auto --timeout 600"
+testpaths = ["src"]
+filterwarnings = ["ignore::DeprecationWarning:pyshacl.*", "ignore::DeprecationWarning:rdflib.*"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py313"
+extend-exclude = ["external"]
+
+[tool.ruff.lint]
+select = ["F", "E9"]
