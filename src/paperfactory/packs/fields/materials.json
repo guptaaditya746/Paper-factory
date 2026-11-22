@@ -271,6 +271,13 @@
    3.8
   ],
   "pool_label": "pooled change (inverse-variance)",
-  "delta_unit": "%"
+  "delta_unit": "%",
+  "se_from": {
+   "attr": "samples",
+   "k": [
+    2.5,
+    9.0
+   ]
+  }
  }
 }

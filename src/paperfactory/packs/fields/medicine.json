@@ -295,6 +295,14 @@
    0.16
   ],
   "pool_label": "pooled hazard ratio",
-  "better_side": "lower"
+  "better_side": "lower",
+  "se_from": {
+   "attr": "patients",
+   "k": 2.0,
+   "rate": [
+    0.12,
+    0.45
+   ]
+  }
  }
 }
