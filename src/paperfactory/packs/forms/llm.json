@@ -1,0 +1,7113 @@
+{
+ "cards": [
+  {
+   "id": "arXiv-1906.01472",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.053
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.146
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.03
+    },
+    {
+     "level": 2,
+     "text": "Models",
+     "share": 0.234,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.323,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Datasets"
+    },
+    {
+     "level": 3,
+     "text": "Settings"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.181,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.033
+    }
+   ],
+   "words": 2877,
+   "tables": 4,
+   "sentence_words": 23.2,
+   "we_share": 0.444
+  },
+  {
+   "id": "arXiv-2004.06774",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.027
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.128
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.108
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.314,
+     "tables": 4
+    },
+    {
+     "level": 3,
+     "text": "Data Statistics"
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.162,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Experimental Settings"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.236,
+     "tables": 5
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.016
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.007
+    }
+   ],
+   "words": 5934,
+   "tables": 10,
+   "sentence_words": 20.9,
+   "we_share": 0.405
+  },
+  {
+   "id": "arXiv-2007.14920",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.04
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.143
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.108
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.203
+    },
+    {
+     "level": 2,
+     "text": "Experimental Evaluation",
+     "share": 0.283,
+     "tables": 3
+    },
+    {
+     "level": 3,
+     "text": "Setup"
+    },
+    {
+     "level": 3,
+     "text": "Datasets"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.165,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.057
+    }
+   ],
+   "words": 4205,
+   "tables": 4,
+   "sentence_words": 23.9,
+   "we_share": 0.119
+  },
+  {
+   "id": "arXiv-2009.07399",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.059
+    },
+    {
+     "level": 2,
+     "text": "I Introduction",
+     "share": 0.196
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.26
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.16
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.15
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.114,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.054
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.007
+    }
+   ],
+   "words": 2977,
+   "tables": 1,
+   "sentence_words": 19.4,
+   "we_share": 0.19
+  },
+  {
+   "id": "arXiv-2012.02613",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.018
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.075
+    },
+    {
+     "level": 2,
+     "text": "Previous work",
+     "share": 0.223
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.192
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.048
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.106,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.141,
+     "tables": 5
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.055,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.116,
+     "tables": 10
+    },
+    {
+     "level": 3,
+     "text": "Evaluation Measures"
+    },
+    {
+     "level": 3,
+     "text": "Error Analysis"
+    },
+    {
+     "level": 2,
+     "text": "Discussion and Conclusion",
+     "share": 0.026
+    }
+   ],
+   "words": 6263,
+   "tables": 20,
+   "sentence_words": 22.8,
+   "we_share": 0.285
+  },
+  {
+   "id": "arXiv-2102.00176",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.049
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.118
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.144,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Dataset",
+     "share": 0.125,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Data Collection"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.136
+    },
+    {
+     "level": 2,
+     "text": "Experiment",
+     "share": 0.298,
+     "tables": 4
+    },
+    {
+     "level": 3,
+     "text": "Settings"
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.037
+    },
+    {
+     "level": 2,
+     "text": "Discussion and Future Directions",
+     "share": 0.093
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    }
+   ],
+   "words": 7737,
+   "tables": 7,
+   "sentence_words": 26.0,
+   "we_share": 0.537
+  },
+  {
+   "id": "arXiv-2102.11480",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.038
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.092
+    },
+    {
+     "level": 2,
+     "text": "Background",
+     "share": 0.153
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.262
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.194,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.171
+    },
+    {
+     "level": 2,
+     "text": "Conclusions and future work",
+     "share": 0.091
+    }
+   ],
+   "words": 3699,
+   "tables": 1,
+   "sentence_words": 25.9,
+   "we_share": 0.028
+  },
+  {
+   "id": "arXiv-2103.00242",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.022
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.087,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.058
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.221
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.34,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.263
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.01
+    }
+   ],
+   "words": 5930,
+   "tables": 2,
+   "sentence_words": 27.4,
+   "we_share": 0.118
+  },
+  {
+   "id": "arXiv-2104.05837",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.032
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.118
+    },
+    {
+     "level": 2,
+     "text": "Preliminaries",
+     "share": 0.044
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.258,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Summary and outlook"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.252,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Summary and outlook"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.256,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Summary and outlook"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.039
+    }
+   ],
+   "words": 5297,
+   "tables": 3,
+   "sentence_words": 30.8,
+   "we_share": 0.233
+  },
+  {
+   "id": "arXiv-2105.01044",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.035
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.181
+    },
+    {
+     "level": 2,
+     "text": "Background",
+     "share": 0.108
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.096
+    },
+    {
+     "level": 2,
+     "text": "Experiment Setup",
+     "share": 0.21
+    },
+    {
+     "level": 2,
+     "text": "Results and Analysis",
+     "share": 0.321,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.049
+    }
+   ],
+   "words": 4592,
+   "tables": 3,
+   "sentence_words": 23.0,
+   "we_share": 0.265
+  },
+  {
+   "id": "arXiv-2106.00291",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.045
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.199
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.046
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.411
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.224,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.057
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.018
+    }
+   ],
+   "words": 2749,
+   "tables": 3,
+   "sentence_words": 26.2,
+   "we_share": 0.533
+  },
+  {
+   "id": "arXiv-2106.07732",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.03
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.201
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.125
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.063
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.149
+    },
+    {
+     "level": 2,
+     "text": "Approach",
+     "share": 0.183
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.225,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.023
+    }
+   ],
+   "words": 5125,
+   "tables": 3,
+   "sentence_words": 22.9,
+   "we_share": 0.565
+  },
+  {
+   "id": "arXiv-2107.12362",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.032
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.159,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Data"
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.199,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.151,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.114
+    },
+    {
+     "level": 3,
+     "text": "Limitations"
+    },
+    {
+     "level": 3,
+     "text": "Implications"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.011
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.044,
+     "tables": 4
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.122
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.012
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.039
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.118
+    }
+   ],
+   "words": 8430,
+   "tables": 7,
+   "sentence_words": 27.1,
+   "we_share": 0.379
+  },
+  {
+   "id": "arXiv-2109.04894",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.06
+    },
+    {
+     "level": 2,
+     "text": "I Introduction",
+     "share": 0.132
+    },
+    {
+     "level": 2,
+     "text": "II Related work",
+     "share": 0.206
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.065
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.072,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "V Experimental Setup",
+     "share": 0.188,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "V-A Dataset"
+    },
+    {
+     "level": 2,
+     "text": "VI Results",
+     "share": 0.207,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "VII Conclusion",
+     "share": 0.07
+    }
+   ],
+   "words": 3967,
+   "tables": 3,
+   "sentence_words": 21.9,
+   "we_share": 0.304
+  },
+  {
+   "id": "arXiv-2110.04392",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.018
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.126
+    },
+    {
+     "level": 2,
+     "text": "Data",
+     "share": 0.367,
+     "tables": 6
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.088
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.054
+    },
+    {
+     "level": 2,
+     "text": "Participants",
+     "share": 0.105
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.214,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.028
+    }
+   ],
+   "words": 5314,
+   "tables": 7,
+   "sentence_words": 27.5,
+   "we_share": 0.314
+  },
+  {
+   "id": "arXiv-2111.05100",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.023
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.11
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.076,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.298,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.181,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Baselines",
+     "share": 0.193,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Models"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.072
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.031
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.016
+    }
+   ],
+   "words": 5123,
+   "tables": 4,
+   "sentence_words": 24.4,
+   "we_share": 0.376
+  },
+  {
+   "id": "arXiv-2112.13497",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.035
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.154
+    },
+    {
+     "level": 2,
+     "text": "Related work",
+     "share": 0.116
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.039,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Method",
+     "share": 0.252,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Model"
+    },
+    {
+     "level": 3,
+     "text": "Evaluation metrics"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.144,
+     "tables": 4
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.143
+    },
+    {
+     "level": 2,
+     "text": "Threats to validity",
+     "share": 0.068
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.048
+    }
+   ],
+   "words": 7028,
+   "tables": 7,
+   "sentence_words": 26.2,
+   "we_share": 0.232
+  },
+  {
+   "id": "arXiv-2204.10365",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.027
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.132,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.201,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.125
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.152
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.167,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.072,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.106
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.019
+    }
+   ],
+   "words": 8186,
+   "tables": 4,
+   "sentence_words": 31.0,
+   "we_share": 0.083
+  },
+  {
+   "id": "arXiv-2205.06436",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.037
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.165
+    },
+    {
+     "level": 2,
+     "text": "Overview",
+     "share": 0.466
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.256,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.032
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.021
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.013
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.009
+    }
+   ],
+   "words": 2570,
+   "tables": 2,
+   "sentence_words": 21.4,
+   "we_share": 0.392
+  },
+  {
+   "id": "arXiv-2207.01732",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.059
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.234
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.052
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.133
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.264,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Setup"
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.216,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "Conclusions & Future Work",
+     "share": 0.042
+    }
+   ],
+   "words": 2853,
+   "tables": 5,
+   "sentence_words": 19.5,
+   "we_share": 0.274
+  },
+  {
+   "id": "arXiv-2207.06710",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.044
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.135
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.045
+    },
+    {
+     "level": 2,
+     "text": "Literature Review",
+     "share": 0.156
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.069
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.054,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Evaluation Metrics",
+     "share": 0.014
+    },
+    {
+     "level": 2,
+     "text": "Baselines",
+     "share": 0.238,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.068,
+     "tables": 5
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.099,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.079
+    }
+   ],
+   "words": 6019,
+   "tables": 9,
+   "sentence_words": 25.0,
+   "we_share": 0.175
+  },
+  {
+   "id": "arXiv-2207.11774",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.025
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.094,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.148,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Experimental Setup",
+     "share": 0.138
+    },
+    {
+     "level": 3,
+     "text": "Datasets"
+    },
+    {
+     "level": 3,
+     "text": "Evaluation Metrics"
+    },
+    {
+     "level": 3,
+     "text": "Training Setup"
+    },
+    {
+     "level": 3,
+     "text": "Models Setup"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.436,
+     "tables": 8
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.13
+    },
+    {
+     "level": 2,
+     "text": "Conclusion and Future Work",
+     "share": 0.03
+    }
+   ],
+   "words": 5502,
+   "tables": 10,
+   "sentence_words": 25.5,
+   "we_share": 0.468
+  },
+  {
+   "id": "arXiv-2208.08690",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.026
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.093
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.098
+    },
+    {
+     "level": 2,
+     "text": "Datasets",
+     "share": 0.068,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Evaluation",
+     "share": 0.058,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.322
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.273
+    },
+    {
+     "level": 3,
+     "text": "Future Directions"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.015
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.048
+    }
+   ],
+   "words": 5330,
+   "tables": 3,
+   "sentence_words": 23.2,
+   "we_share": 0.126
+  },
+  {
+   "id": "arXiv-2210.03405",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.026
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.153
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.615
+    },
+    {
+     "level": 3,
+     "text": "Data"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.153
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.034
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.02
+    }
+   ],
+   "words": 2699,
+   "tables": 0,
+   "sentence_words": 20.8,
+   "we_share": 0.262
+  },
+  {
+   "id": "arXiv-2210.05529",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.026
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.061
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.138
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.101
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.185,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.399,
+     "tables": 4
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.035
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.055
+    }
+   ],
+   "words": 5071,
+   "tables": 6,
+   "sentence_words": 26.5,
+   "we_share": 0.511
+  },
+  {
+   "id": "arXiv-2210.06336",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.033
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.122
+    },
+    {
+     "level": 2,
+     "text": "Research Design",
+     "share": 0.236,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Research Questions"
+    },
+    {
+     "level": 3,
+     "text": "Research Objectives"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.412
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.072
+    },
+    {
+     "level": 2,
+     "text": "Recommendations and future research directions",
+     "share": 0.098
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.026
+    }
+   ],
+   "words": 2884,
+   "tables": 2,
+   "sentence_words": 20.5,
+   "we_share": 0.078
+  },
+  {
+   "id": "arXiv-2210.13248",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.049
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.266
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.017
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.057
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.13
+    },
+    {
+     "level": 3,
+     "text": "Datasets"
+    },
+    {
+     "level": 3,
+     "text": "Evaluation metrics"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.44,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.041
+    }
+   ],
+   "words": 3066,
+   "tables": 3,
+   "sentence_words": 26.4,
+   "we_share": 0.448
+  },
+  {
+   "id": "arXiv-2211.01675",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.05
+    },
+    {
+     "level": 2,
+     "text": "I INTRODUCTION",
+     "share": 0.059
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.163
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.414
+    },
+    {
+     "level": 2,
+     "text": "IV EXPERIMENT RESULTS & EVALUATION",
+     "share": 0.243,
+     "tables": 9
+    },
+    {
+     "level": 3,
+     "text": "IV-A Datasets"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.047
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.025
+    }
+   ],
+   "words": 4185,
+   "tables": 9,
+   "sentence_words": 20.9,
+   "we_share": 0.345
+  },
+  {
+   "id": "arXiv-2211.06398",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.055,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.113
+    },
+    {
+     "level": 2,
+     "text": "Background",
+     "share": 0.151
+    },
+    {
+     "level": 3,
+     "text": "Related Work"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.167,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.13
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.279,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Summary"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.074,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.031
+    }
+   ],
+   "words": 4654,
+   "tables": 4,
+   "sentence_words": 25.6,
+   "we_share": 0.61
+  },
+  {
+   "id": "arXiv-2211.10057",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.048
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.072
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.178
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.262,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Dataset"
+    },
+    {
+     "level": 2,
+     "text": "Evaluation Framework",
+     "share": 0.054
+    },
+    {
+     "level": 3,
+     "text": "Evaluation Measures"
+    },
+    {
+     "level": 2,
+     "text": "Participants and Results",
+     "share": 0.349,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Conclusion and Future Work",
+     "share": 0.035
+    }
+   ],
+   "words": 4046,
+   "tables": 3,
+   "sentence_words": 22.5,
+   "we_share": 0.189
+  },
+  {
+   "id": "arXiv-2304.02768",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.039
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.21
+    },
+    {
+     "level": 2,
+     "text": "Background",
+     "share": 0.179
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.162
+    },
+    {
+     "level": 3,
+     "text": "Research Questions"
+    },
+    {
+     "level": 3,
+     "text": "Search Strategy"
+    },
+    {
+     "level": 3,
+     "text": "Selection Criteria"
+    },
+    {
+     "level": 3,
+     "text": "Data extraction"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.233,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.147
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.03
+    }
+   ],
+   "words": 3740,
+   "tables": 1,
+   "sentence_words": 19.7,
+   "we_share": 0.305
+  },
+  {
+   "id": "arXiv-2304.14177",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.023
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.135
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.19
+    },
+    {
+     "level": 2,
+     "text": "Experimental Setup",
+     "share": 0.168,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Datasets"
+    },
+    {
+     "level": 3,
+     "text": "Baselines"
+    },
+    {
+     "level": 3,
+     "text": "Evaluation Metrics"
+    },
+    {
+     "level": 3,
+     "text": "Setting"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.09,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "Case Studies",
+     "share": 0.367,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Conclusions and Future Work",
+     "share": 0.027
+    }
+   ],
+   "words": 6354,
+   "tables": 6,
+   "sentence_words": 29.4,
+   "we_share": 0.213
+  },
+  {
+   "id": "arXiv-2305.13194",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.033
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.162
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.208,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.206,
+     "tables": 4
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.282,
+     "tables": 3
+    },
+    {
+     "level": 3,
+     "text": "Metrics"
+    },
+    {
+     "level": 2,
+     "text": "Related work",
+     "share": 0.054
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.023
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.033
+    }
+   ],
+   "words": 4717,
+   "tables": 8,
+   "sentence_words": 29.3,
+   "we_share": 0.407
+  },
+  {
+   "id": "arXiv-2306.01183",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.057
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.148
+    },
+    {
+     "level": 2,
+     "text": "Background",
+     "share": 0.165,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Dataset",
+     "share": 0.091
+    },
+    {
+     "level": 2,
+     "text": "Experimental Design",
+     "share": 0.112
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.11
+    },
+    {
+     "level": 2,
+     "text": "Analysis",
+     "share": 0.208,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.043
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.065
+    }
+   ],
+   "words": 2497,
+   "tables": 2,
+   "sentence_words": 23.8,
+   "we_share": 0.438
+  },
+  {
+   "id": "arXiv-2306.09737",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.045
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.186
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.342
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.332,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.056
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.039
+    }
+   ],
+   "words": 4749,
+   "tables": 2,
+   "sentence_words": 23.6,
+   "we_share": 0.378
+  },
+  {
+   "id": "arXiv-2307.05694",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.035
+    },
+    {
+     "level": 2,
+     "text": "I Introduction",
+     "share": 0.119
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.263,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "III Related Work",
+     "share": 0.404,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "IV Datasets",
+     "share": 0.072,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "V Future Directions",
+     "share": 0.071
+    },
+    {
+     "level": 2,
+     "text": "VI Conclusion",
+     "share": 0.035
+    }
+   ],
+   "words": 3351,
+   "tables": 5,
+   "sentence_words": 18.0,
+   "we_share": 0.011
+  },
+  {
+   "id": "arXiv-2307.10897",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.014
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.072
+    },
+    {
+     "level": 2,
+     "text": "Review",
+     "share": 0.71,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.204
+    }
+   ],
+   "words": 8679,
+   "tables": 1,
+   "sentence_words": 28.5,
+   "we_share": 0.072
+  },
+  {
+   "id": "arXiv-2307.14912",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.067
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.119
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.055
+    },
+    {
+     "level": 2,
+     "text": "Dataset",
+     "share": 0.076,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.326
+    },
+    {
+     "level": 3,
+     "text": "Model Training"
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.265,
+     "tables": 3
+    },
+    {
+     "level": 3,
+     "text": "Baselines"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.091
+    }
+   ],
+   "words": 2610,
+   "tables": 5,
+   "sentence_words": 23.3,
+   "we_share": 0.5
+  },
+  {
+   "id": "arXiv-2308.00113",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.033
+    },
+    {
+     "level": 2,
+     "text": "I Introduction",
+     "share": 0.137
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.215
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.182,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.201,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.199,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "VI Conclusion",
+     "share": 0.032
+    }
+   ],
+   "words": 3727,
+   "tables": 3,
+   "sentence_words": 19.4,
+   "we_share": 0.276
+  },
+  {
+   "id": "arXiv-2309.06132",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.026
+    },
+    {
+     "level": 2,
+     "text": "I Introduction",
+     "share": 0.12
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.45
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.145,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.198,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "V Conclusion",
+     "share": 0.061
+    }
+   ],
+   "words": 4268,
+   "tables": 4,
+   "sentence_words": 29.8,
+   "we_share": 0.301
+  },
+  {
+   "id": "arXiv-2309.08285",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.046
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.272
+    },
+    {
+     "level": 2,
+     "text": "Method",
+     "share": 0.341,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Experiments and Results",
+     "share": 0.291,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Datasets and Metrics"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.051
+    }
+   ],
+   "words": 2556,
+   "tables": 2,
+   "sentence_words": 20.0,
+   "we_share": 0.164
+  },
+  {
+   "id": "arXiv-2309.16396",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.01
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.069
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.026
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.012
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.011
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.182,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.577
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.071,
+     "tables": 4
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.026
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.016
+    }
+   ],
+   "words": 12122,
+   "tables": 6,
+   "sentence_words": 25.4,
+   "we_share": 0.071
+  },
+  {
+   "id": "arXiv-2310.02040",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.036
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.319
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.056
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.378
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.033
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.103,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.075
+    }
+   ],
+   "words": 3044,
+   "tables": 1,
+   "sentence_words": 23.2,
+   "we_share": 0.214
+  },
+  {
+   "id": "arXiv-2310.06260",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.034
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.253
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.208
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.463,
+     "tables": 4
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.042
+    }
+   ],
+   "words": 3367,
+   "tables": 4,
+   "sentence_words": 27.4,
+   "we_share": 0.153
+  },
+  {
+   "id": "arXiv-2310.13974",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.018
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.136
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.169,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Datasets",
+     "share": 0.023
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.453
+    },
+    {
+     "level": 2,
+     "text": "Evaluation Metrics",
+     "share": 0.067
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.091
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.025
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.019
+    }
+   ],
+   "words": 4911,
+   "tables": 1,
+   "sentence_words": 25.4,
+   "we_share": 0.073
+  },
+  {
+   "id": "arXiv-2310.15693",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.024
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.069
+    },
+    {
+     "level": 2,
+     "text": "Literature Review",
+     "share": 0.201,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.173,
+     "tables": 4
+    },
+    {
+     "level": 3,
+     "text": "Data Collection"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.044
+    },
+    {
+     "level": 2,
+     "text": "Experimental Design",
+     "share": 0.202
+    },
+    {
+     "level": 3,
+     "text": "Selection of Baseline Models"
+    },
+    {
+     "level": 3,
+     "text": "Experiments"
+    },
+    {
+     "level": 3,
+     "text": "Evaluation Metrics"
+    },
+    {
+     "level": 2,
+     "text": "Experimental Results",
+     "share": 0.242,
+     "tables": 11
+    },
+    {
+     "level": 3,
+     "text": "Discussion on Experiments"
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.016
+    },
+    {
+     "level": 2,
+     "text": "Conclusion and Future work",
+     "share": 0.029
+    }
+   ],
+   "words": 8748,
+   "tables": 16,
+   "sentence_words": 26.5,
+   "we_share": 0.13
+  },
+  {
+   "id": "arXiv-2310.16356",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.025
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.141,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.054
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.144
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.54,
+     "tables": 7
+    },
+    {
+     "level": 3,
+     "text": "Experimental Setup"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.029
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.066
+    }
+   ],
+   "words": 5083,
+   "tables": 8,
+   "sentence_words": 25.9,
+   "we_share": 0.474
+  },
+  {
+   "id": "arXiv-2310.16677",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.031
+    },
+    {
+     "level": 2,
+     "text": "I Introduction",
+     "share": 0.125
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.066
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.04
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.374,
+     "tables": 5
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.329,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "VI Conclusion",
+     "share": 0.035
+    }
+   ],
+   "words": 8894,
+   "tables": 7,
+   "sentence_words": 28.9,
+   "we_share": 0.094
+  },
+  {
+   "id": "arXiv-2311.08723",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.066
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.081
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.116
+    },
+    {
+     "level": 2,
+     "text": "Dataset",
+     "share": 0.129
+    },
+    {
+     "level": 3,
+     "text": "Data Collection"
+    },
+    {
+     "level": 3,
+     "text": "Dataset Analysis"
+    },
+    {
+     "level": 2,
+     "text": "Method",
+     "share": 0.14
+    },
+    {
+     "level": 2,
+     "text": "Evaluation",
+     "share": 0.143,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.243
+    },
+    {
+     "level": 3,
+     "text": "Dataset Ablation Study"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.043
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.039
+    }
+   ],
+   "words": 2211,
+   "tables": 2,
+   "sentence_words": 24.6,
+   "we_share": 0.433
+  },
+  {
+   "id": "arXiv-2401.12492",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.029
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.186
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.054
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.082
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.197
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.184,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Results and Discussion",
+     "share": 0.196,
+     "tables": 3
+    },
+    {
+     "level": 3,
+     "text": "Comparisons Study"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.038
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.033
+    }
+   ],
+   "words": 5226,
+   "tables": 5,
+   "sentence_words": 25.0,
+   "we_share": 0.455
+  },
+  {
+   "id": "arXiv-2401.17974",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.031
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.097
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.086
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.17,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Experimental setup",
+     "share": 0.11
+    },
+    {
+     "level": 2,
+     "text": "Evaluation",
+     "share": 0.365,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.027
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.115
+    }
+   ],
+   "words": 5248,
+   "tables": 4,
+   "sentence_words": 28.8,
+   "we_share": 0.434
+  },
+  {
+   "id": "arXiv-2402.07255",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.03
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.061
+    },
+    {
+     "level": 2,
+     "text": "Literature Review",
+     "share": 0.184
+    },
+    {
+     "level": 3,
+     "text": "Datasets"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.103,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Methodology"
+    },
+    {
+     "level": 3,
+     "text": "Evaluation Metrics"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.05
+    },
+    {
+     "level": 2,
+     "text": "Baseline Implementation",
+     "share": 0.211,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Training"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.24,
+     "tables": 3
+    },
+    {
+     "level": 3,
+     "text": "Rationale"
+    },
+    {
+     "level": 3,
+     "text": "Ablations"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.024,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.065
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.031
+    }
+   ],
+   "words": 3225,
+   "tables": 7,
+   "sentence_words": 28.5,
+   "we_share": 0.232
+  },
+  {
+   "id": "arXiv-2403.04013",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.026
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.095
+    },
+    {
+     "level": 2,
+     "text": "Motivation and Related work",
+     "share": 0.109
+    },
+    {
+     "level": 3,
+     "text": "Motivation"
+    },
+    {
+     "level": 3,
+     "text": "Related Work"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.36,
+     "tables": 3
+    },
+    {
+     "level": 3,
+     "text": "Data collection"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.234,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.102
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.045
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.03
+    }
+   ],
+   "words": 7325,
+   "tables": 6,
+   "sentence_words": 23.6,
+   "we_share": 0.506
+  },
+  {
+   "id": "arXiv-2403.08824",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.017
+    },
+    {
+     "level": 2,
+     "text": "I Introduction",
+     "share": 0.156,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "II Datasets",
+     "share": 0.105,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.144
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.34,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.136
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.086
+    },
+    {
+     "level": 2,
+     "text": "VII Conclusions",
+     "share": 0.015
+    }
+   ],
+   "words": 8818,
+   "tables": 5,
+   "sentence_words": 25.4,
+   "we_share": 0.029
+  },
+  {
+   "id": "arXiv-2403.17146",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.029
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.093,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.104
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.302
+    },
+    {
+     "level": 3,
+     "text": "Evaluation"
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.148
+    },
+    {
+     "level": 2,
+     "text": "Results and Analysis",
+     "share": 0.236,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.041
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.047
+    }
+   ],
+   "words": 4494,
+   "tables": 4,
+   "sentence_words": 19.9,
+   "we_share": 0.226
+  },
+  {
+   "id": "arXiv-2404.01030",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.053
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.131,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.176
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.311
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.112
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.177
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.039
+    }
+   ],
+   "words": 5057,
+   "tables": 1,
+   "sentence_words": 25.3,
+   "we_share": 0.19
+  },
+  {
+   "id": "arXiv-2404.11109",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.07
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.121
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.088
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.034
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.42,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Setup",
+     "share": 0.055
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.121
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.045
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.044
+    }
+   ],
+   "words": 2445,
+   "tables": 1,
+   "sentence_words": 21.3,
+   "we_share": 0.557
+  },
+  {
+   "id": "arXiv-2404.12933",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.035
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.097
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.118
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.294,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.247,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.071
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.033
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.105
+    }
+   ],
+   "words": 5126,
+   "tables": 4,
+   "sentence_words": 23.6,
+   "we_share": 0.53
+  },
+  {
+   "id": "arXiv-2405.01535",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.048
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.145
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.081
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.236,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Training Methods & Baselines"
+    },
+    {
+     "level": 2,
+     "text": "Experimental Setup",
+     "share": 0.126,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Experimental Results",
+     "share": 0.082,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.135
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.027
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.12,
+     "tables": 4
+    }
+   ],
+   "words": 4518,
+   "tables": 10,
+   "sentence_words": 27.4,
+   "we_share": 0.382
+  },
+  {
+   "id": "arXiv-2405.02105",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.028
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.163
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.112
+    },
+    {
+     "level": 2,
+     "text": "Materials and Methods",
+     "share": 0.419,
+     "tables": 4
+    },
+    {
+     "level": 3,
+     "text": "Material: Our Evaluation Dataset"
+    },
+    {
+     "level": 2,
+     "text": "Results and Discussion",
+     "share": 0.216
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.061
+    }
+   ],
+   "words": 6076,
+   "tables": 4,
+   "sentence_words": 26.8,
+   "we_share": 0.311
+  },
+  {
+   "id": "arXiv-2405.20947",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.049
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.11
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.117
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.275,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Experimental results",
+     "share": 0.305,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Experiment setup"
+    },
+    {
+     "level": 3,
+     "text": "Evaluation results"
+    },
+    {
+     "level": 2,
+     "text": "Ablation study",
+     "share": 0.079,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Conclusion and future work",
+     "share": 0.028
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.015
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.021
+    }
+   ],
+   "words": 5274,
+   "tables": 4,
+   "sentence_words": 26.2,
+   "we_share": 0.423
+  },
+  {
+   "id": "arXiv-2406.00007",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.06
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.221
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.041
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.342
+    },
+    {
+     "level": 3,
+     "text": "Metrics"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.156
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.099
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.081
+    }
+   ],
+   "words": 2990,
+   "tables": 0,
+   "sentence_words": 22.1,
+   "we_share": 0.163
+  },
+  {
+   "id": "arXiv-2406.03428",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.046
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.193
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.086
+    },
+    {
+     "level": 2,
+     "text": "Background",
+     "share": 0.055
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.097
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.187
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.199
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.07
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.038
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.029
+    }
+   ],
+   "words": 4824,
+   "tables": 0,
+   "sentence_words": 25.0,
+   "we_share": 0.487
+  },
+  {
+   "id": "arXiv-2406.04460",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.031
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.163
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.104
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.145,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.199
+    },
+    {
+     "level": 3,
+     "text": "Metrics"
+    },
+    {
+     "level": 2,
+     "text": "Experiments Setup",
+     "share": 0.182
+    },
+    {
+     "level": 3,
+     "text": "Experiment Settings"
+    },
+    {
+     "level": 2,
+     "text": "Experiment results",
+     "share": 0.126,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Main Results"
+    },
+    {
+     "level": 2,
+     "text": "Conclusions and Future Work",
+     "share": 0.02
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.03
+    }
+   ],
+   "words": 4842,
+   "tables": 2,
+   "sentence_words": 25.1,
+   "we_share": 0.534
+  },
+  {
+   "id": "arXiv-2406.14449",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.036
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.151
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.156
+    },
+    {
+     "level": 2,
+     "text": "Method",
+     "share": 0.261
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.37,
+     "tables": 4
+    },
+    {
+     "level": 3,
+     "text": "Implementation Details"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.027
+    }
+   ],
+   "words": 4352,
+   "tables": 4,
+   "sentence_words": 25.2,
+   "we_share": 0.324
+  },
+  {
+   "id": "arXiv-2407.00063",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.031
+    },
+    {
+     "level": 2,
+     "text": "I Introduction",
+     "share": 0.138
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.128
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.245
+    },
+    {
+     "level": 2,
+     "text": "IV Experiments",
+     "share": 0.38,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "V Conclusion",
+     "share": 0.078
+    }
+   ],
+   "words": 6833,
+   "tables": 3,
+   "sentence_words": 22.0,
+   "we_share": 0.444
+  },
+  {
+   "id": "arXiv-2407.14822",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.023
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.192
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.141,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.097
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.137
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.186
+    },
+    {
+     "level": 2,
+     "text": "Evaluation Measures",
+     "share": 0.134
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.074
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.016
+    }
+   ],
+   "words": 3847,
+   "tables": 1,
+   "sentence_words": 22.5,
+   "we_share": 0.064
+  },
+  {
+   "id": "arXiv-2407.21072",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.032
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.121
+    },
+    {
+     "level": 2,
+     "text": "Background",
+     "share": 0.319
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.214,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.126,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.188
+    }
+   ],
+   "words": 4548,
+   "tables": 2,
+   "sentence_words": 25.8,
+   "we_share": 0.185
+  },
+  {
+   "id": "arXiv-2408.16465",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.015
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.104
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.164
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.021,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.091
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.03,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.218,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.172
+    },
+    {
+     "level": 2,
+     "text": "Summary of Findings",
+     "share": 0.031
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.143
+    },
+    {
+     "level": 3,
+     "text": "Design Implications"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.013
+    }
+   ],
+   "words": 11875,
+   "tables": 3,
+   "sentence_words": 23.3,
+   "we_share": 0.188
+  },
+  {
+   "id": "arXiv-2409.00935",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.033
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.112
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.134
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.08
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.02
+    },
+    {
+     "level": 2,
+     "text": "Method",
+     "share": 0.153
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.033
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.39,
+     "tables": 5
+    },
+    {
+     "level": 3,
+     "text": "Datasets"
+    },
+    {
+     "level": 3,
+     "text": "Setup"
+    },
+    {
+     "level": 3,
+     "text": "Baselines"
+    },
+    {
+     "level": 3,
+     "text": "Main Results"
+    },
+    {
+     "level": 3,
+     "text": "Ablation Study"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.046,
+     "tables": 2
+    }
+   ],
+   "words": 8864,
+   "tables": 7,
+   "sentence_words": 20.5,
+   "we_share": 0.503
+  },
+  {
+   "id": "arXiv-2409.01990",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.006
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.019
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.378,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.209,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.365
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.023
+    }
+   ],
+   "words": 9670,
+   "tables": 5,
+   "sentence_words": 22.2,
+   "we_share": 0.009
+  },
+  {
+   "id": "arXiv-2409.17322",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.015
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.1
+    },
+    {
+     "level": 2,
+     "text": "Background",
+     "share": 0.134
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.098
+    },
+    {
+     "level": 3,
+     "text": "Data Sources"
+    },
+    {
+     "level": 3,
+     "text": "Data Extraction and Synthesis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.35,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.29
+    },
+    {
+     "level": 3,
+     "text": "Implications"
+    },
+    {
+     "level": 3,
+     "text": "Limitations and Future Work"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.013
+    }
+   ],
+   "words": 9902,
+   "tables": 2,
+   "sentence_words": 22.4,
+   "we_share": 0.163
+  },
+  {
+   "id": "arXiv-2409.17467",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.025
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.514
+    },
+    {
+     "level": 3,
+     "text": "Summary"
+    },
+    {
+     "level": 2,
+     "text": "Analysis",
+     "share": 0.054
+    },
+    {
+     "level": 3,
+     "text": "Data"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.09,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.233
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.042
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.043
+    }
+   ],
+   "words": 3329,
+   "tables": 1,
+   "sentence_words": 23.3,
+   "we_share": 0.098
+  },
+  {
+   "id": "arXiv-2410.03751",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.016
+    },
+    {
+     "level": 2,
+     "text": "I Introduction",
+     "share": 0.094,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.022
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.271,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.266,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.128,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.137,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.056
+    },
+    {
+     "level": 2,
+     "text": "VIII Conclusions",
+     "share": 0.011
+    }
+   ],
+   "words": 11057,
+   "tables": 6,
+   "sentence_words": 20.9,
+   "we_share": 0.08
+  },
+  {
+   "id": "arXiv-2410.04202",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.035
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.092
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.162
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.102
+    },
+    {
+     "level": 2,
+     "text": "Experiment Analysis",
+     "share": 0.552,
+     "tables": 11
+    },
+    {
+     "level": 3,
+     "text": "Experimental Setup"
+    },
+    {
+     "level": 3,
+     "text": "Implementation Details"
+    },
+    {
+     "level": 3,
+     "text": "Evaluation Metrics"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.058
+    }
+   ],
+   "words": 8063,
+   "tables": 11,
+   "sentence_words": 21.3,
+   "we_share": 0.433
+  },
+  {
+   "id": "arXiv-2410.07283",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.04
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.153
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.083
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.164
+    },
+    {
+     "level": 2,
+     "text": "Experiment Setup",
+     "share": 0.14
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.263,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.094,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Limitations and Future Work",
+     "share": 0.03
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.032
+    }
+   ],
+   "words": 4257,
+   "tables": 2,
+   "sentence_words": 23.7,
+   "we_share": 0.257
+  },
+  {
+   "id": "arXiv-2410.08224",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.016
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.061
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.044
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.189,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.376,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.082,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Datasets and Metrics",
+     "share": 0.176
+    },
+    {
+     "level": 3,
+     "text": "Datasets"
+    },
+    {
+     "level": 3,
+     "text": "Metrics"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.057
+    }
+   ],
+   "words": 9912,
+   "tables": 5,
+   "sentence_words": 24.5,
+   "we_share": 0.048
+  },
+  {
+   "id": "arXiv-2410.15019",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.029
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.111,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Preliminaries",
+     "share": 0.111
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.549,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.064
+    },
+    {
+     "level": 2,
+     "text": "Conclusion and Future Directions",
+     "share": 0.101
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.035
+    }
+   ],
+   "words": 4369,
+   "tables": 3,
+   "sentence_words": 22.6,
+   "we_share": 0.093
+  },
+  {
+   "id": "arXiv-2410.18390",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.034
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.13
+    },
+    {
+     "level": 2,
+     "text": "Background",
+     "share": 0.163
+    },
+    {
+     "level": 2,
+     "text": "Inclusion Criteria",
+     "share": 0.029
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.038,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.327
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.129,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Future Directions",
+     "share": 0.108
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.019
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.022
+    }
+   ],
+   "words": 3976,
+   "tables": 2,
+   "sentence_words": 24,
+   "we_share": 0.188
+  },
+  {
+   "id": "arXiv-2410.21897",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.199
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.395
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.116
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.255,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.035
+    }
+   ],
+   "words": 3052,
+   "tables": 3,
+   "sentence_words": 24.2,
+   "we_share": 0.302
+  },
+  {
+   "id": "arXiv-2412.04726",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.05
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.151
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.322
+    },
+    {
+     "level": 3,
+     "text": "Data Collection"
+    },
+    {
+     "level": 3,
+     "text": "Quality Assessment"
+    },
+    {
+     "level": 3,
+     "text": "Dataset Statistics"
+    },
+    {
+     "level": 2,
+     "text": "Experiment Details",
+     "share": 0.081
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.208,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Error Analysis",
+     "share": 0.04
+    },
+    {
+     "level": 2,
+     "text": "Related work",
+     "share": 0.054
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.051
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.045
+    }
+   ],
+   "words": 4490,
+   "tables": 1,
+   "sentence_words": 23.9,
+   "we_share": 0.426
+  },
+  {
+   "id": "arXiv-2412.14087",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.036
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.12
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.147
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.174
+    },
+    {
+     "level": 2,
+     "text": "Experimental Setting",
+     "share": 0.12,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Datasets"
+    },
+    {
+     "level": 3,
+     "text": "Experiments"
+    },
+    {
+     "level": 2,
+     "text": "Results and Analysis",
+     "share": 0.279,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.06
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.064
+    }
+   ],
+   "words": 5536,
+   "tables": 4,
+   "sentence_words": 27.5,
+   "we_share": 0.363
+  },
+  {
+   "id": "arXiv-2412.16093",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.023
+    },
+    {
+     "level": 2,
+     "text": "I Introduction",
+     "share": 0.109
+    },
+    {
+     "level": 2,
+     "text": "II Background",
+     "share": 0.116
+    },
+    {
+     "level": 2,
+     "text": "III Methodology",
+     "share": 0.135
+    },
+    {
+     "level": 2,
+     "text": "IV Findings",
+     "share": 0.453,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.074
+    },
+    {
+     "level": 2,
+     "text": "VI Recommendations & Conclusion",
+     "share": 0.09
+    }
+   ],
+   "words": 6459,
+   "tables": 2,
+   "sentence_words": 23.6,
+   "we_share": 0.223
+  },
+  {
+   "id": "arXiv-2412.20427",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.06
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.136
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.088
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.47
+    },
+    {
+     "level": 3,
+     "text": "Methodology"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.095,
+     "tables": 4
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.089
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.024
+    },
+    {
+     "level": 2,
+     "text": "Future work",
+     "share": 0.024
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.014
+    }
+   ],
+   "words": 3987,
+   "tables": 4,
+   "sentence_words": 23.9,
+   "we_share": 0.497
+  },
+  {
+   "id": "arXiv-2501.13419",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.018
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.039,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.069
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.04,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.021
+    },
+    {
+     "level": 2,
+     "text": "Overview on Literature Review",
+     "share": 0.069
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.056,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.256
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.404
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.015
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.012
+    }
+   ],
+   "words": 5785,
+   "tables": 4,
+   "sentence_words": 26.1,
+   "we_share": 0.194
+  },
+  {
+   "id": "arXiv-2501.15442",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.026,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.235,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.491,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Datasets"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.058
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.181,
+     "tables": 8
+    },
+    {
+     "level": 3,
+     "text": "Datasets"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.009
+    }
+   ],
+   "words": 12161,
+   "tables": 12,
+   "sentence_words": 22.3,
+   "we_share": 0.275
+  },
+  {
+   "id": "arXiv-2502.05240",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.017
+    },
+    {
+     "level": 2,
+     "text": "I Introduction",
+     "share": 0.09
+    },
+    {
+     "level": 2,
+     "text": "II Background",
+     "share": 0.091
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.294,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.277,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.132
+    },
+    {
+     "level": 3,
+     "text": "V-A Evaluation Datasets"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.04,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "VII Future Work",
+     "share": 0.048
+    },
+    {
+     "level": 2,
+     "text": "VIII CONCLUSION",
+     "share": 0.011
+    }
+   ],
+   "words": 11814,
+   "tables": 4,
+   "sentence_words": 23.5,
+   "we_share": 0.064
+  },
+  {
+   "id": "arXiv-2504.02873",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.031
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.196,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.173
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.298,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.277,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Experimental Setup"
+    },
+    {
+     "level": 3,
+     "text": "Main Results"
+    },
+    {
+     "level": 2,
+     "text": "Conclusions and Future Work",
+     "share": 0.016
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.009
+    }
+   ],
+   "words": 4002,
+   "tables": 4,
+   "sentence_words": 19.9,
+   "we_share": 0.403
+  },
+  {
+   "id": "arXiv-2504.04332",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.035
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.166
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.09
+    },
+    {
+     "level": 2,
+     "text": "Experiment Setup",
+     "share": 0.16
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.208,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.266
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.04
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.034
+    }
+   ],
+   "words": 4118,
+   "tables": 1,
+   "sentence_words": 25.1,
+   "we_share": 0.409
+  },
+  {
+   "id": "arXiv-2505.03418",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.017
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.188
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.113
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.291
+    },
+    {
+     "level": 3,
+     "text": "Evaluation"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.227
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.128
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.025
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.011
+    }
+   ],
+   "words": 9543,
+   "tables": 0,
+   "sentence_words": 25.1,
+   "we_share": 0.099
+  },
+  {
+   "id": "arXiv-2505.11010",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.047
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.148
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.084
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.349,
+     "tables": 3
+    },
+    {
+     "level": 3,
+     "text": "Experimental Setup"
+    },
+    {
+     "level": 3,
+     "text": "Experimental Results"
+    },
+    {
+     "level": 2,
+     "text": "Dataset Analysis",
+     "share": 0.117
+    },
+    {
+     "level": 2,
+     "text": "Case study",
+     "share": 0.057
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.106
+    },
+    {
+     "level": 2,
+     "text": "Conclusion and Future Work",
+     "share": 0.039
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.051
+    }
+   ],
+   "words": 3709,
+   "tables": 3,
+   "sentence_words": 20.6,
+   "we_share": 0.194
+  },
+  {
+   "id": "arXiv-2505.11718",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.052
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.169
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.172
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.146
+    },
+    {
+     "level": 2,
+     "text": "Experimental results",
+     "share": 0.323
+    },
+    {
+     "level": 3,
+     "text": "Experimental Setup"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.083
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.028
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.027
+    }
+   ],
+   "words": 4351,
+   "tables": 0,
+   "sentence_words": 18.4,
+   "we_share": 0.338
+  },
+  {
+   "id": "arXiv-2505.13259",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.026
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.15,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.077
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.306
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.186
+    },
+    {
+     "level": 3,
+     "text": "General Research"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.091
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.126
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.039
+    }
+   ],
+   "words": 4745,
+   "tables": 1,
+   "sentence_words": 24.8,
+   "we_share": 0.094
+  },
+  {
+   "id": "arXiv-2505.16490",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.07
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.079
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.075
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.092,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Method",
+     "share": 0.406,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Experimental setup"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.115
+    },
+    {
+     "level": 2,
+     "text": "Discussion and limitations",
+     "share": 0.139
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.024
+    }
+   ],
+   "words": 3703,
+   "tables": 3,
+   "sentence_words": 23.3,
+   "we_share": 0.214
+  },
+  {
+   "id": "arXiv-2505.21116",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.021
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.058
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.131
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.136
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.098
+    },
+    {
+     "level": 2,
+     "text": "Evaluation",
+     "share": 0.256
+    },
+    {
+     "level": 3,
+     "text": "Discussion on Evaluation Methods"
+    },
+    {
+     "level": 2,
+     "text": "Datasets",
+     "share": 0.038
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.215
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.019
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.029
+    }
+   ],
+   "words": 7060,
+   "tables": 0,
+   "sentence_words": 24.6,
+   "we_share": 0.101
+  },
+  {
+   "id": "arXiv-2506.01205",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.035
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.192
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.086
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.268,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.257
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.03
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.131
+    }
+   ],
+   "words": 2913,
+   "tables": 3,
+   "sentence_words": 26.2,
+   "we_share": 0.486
+  },
+  {
+   "id": "arXiv-2507.12901",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.049
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.143
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.143,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.199
+    },
+    {
+     "level": 3,
+     "text": "Overview"
+    },
+    {
+     "level": 2,
+     "text": "Experiment",
+     "share": 0.343,
+     "tables": 5
+    },
+    {
+     "level": 3,
+     "text": "Ablation Study"
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.101
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.023
+    }
+   ],
+   "words": 3933,
+   "tables": 6,
+   "sentence_words": 21.2,
+   "we_share": 0.259
+  },
+  {
+   "id": "arXiv-2507.16859",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.041
+    },
+    {
+     "level": 2,
+     "text": "I Introduction",
+     "share": 0.145
+    },
+    {
+     "level": 2,
+     "text": "II Related Work",
+     "share": 0.271,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.241
+    },
+    {
+     "level": 2,
+     "text": "IV Experiments",
+     "share": 0.254,
+     "tables": 6
+    },
+    {
+     "level": 3,
+     "text": "IV-A Experimental Setup"
+    },
+    {
+     "level": 2,
+     "text": "V Conclusion",
+     "share": 0.048,
+     "tables": 4
+    }
+   ],
+   "words": 6682,
+   "tables": 11,
+   "sentence_words": 23.8,
+   "we_share": 0.192
+  },
+  {
+   "id": "arXiv-2509.04460",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.051
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.145
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.15,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.19
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.357,
+     "tables": 3
+    },
+    {
+     "level": 3,
+     "text": "Experimental Setup"
+    },
+    {
+     "level": 3,
+     "text": "Ablation Study"
+    },
+    {
+     "level": 2,
+     "text": "Related work",
+     "share": 0.076
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.031
+    }
+   ],
+   "words": 4428,
+   "tables": 5,
+   "sentence_words": 22.1,
+   "we_share": 0.42
+  },
+  {
+   "id": "arXiv-2509.12371",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.033
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.1
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.09
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.32,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Data Collection"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.375,
+     "tables": 6
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Discussion"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion & Future Work",
+     "share": 0.027
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.055
+    }
+   ],
+   "words": 5445,
+   "tables": 8,
+   "sentence_words": 23.6,
+   "we_share": 0.316
+  },
+  {
+   "id": "arXiv-2509.15666",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.059
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.139
+    },
+    {
+     "level": 2,
+     "text": "Method",
+     "share": 0.284
+    },
+    {
+     "level": 2,
+     "text": "EXPERIMENTS",
+     "share": 0.494,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.024
+    }
+   ],
+   "words": 2417,
+   "tables": 3,
+   "sentence_words": 24.9,
+   "we_share": 0.165
+  },
+  {
+   "id": "arXiv-2510.07733",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.053
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.104
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.36,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.365,
+     "tables": 4
+    },
+    {
+     "level": 3,
+     "text": "Experimental Setup"
+    },
+    {
+     "level": 3,
+     "text": "Ablation Studies"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.074
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.024
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.02
+    }
+   ],
+   "words": 4346,
+   "tables": 5,
+   "sentence_words": 24.8,
+   "we_share": 0.28
+  },
+  {
+   "id": "arXiv-2510.11233",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.035
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.17
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.118
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.192,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.117
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.307,
+     "tables": 4
+    },
+    {
+     "level": 3,
+     "text": "Baseline Models"
+    },
+    {
+     "level": 3,
+     "text": "Experimental Setup"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.022
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.039
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.0
+    }
+   ],
+   "words": 3981,
+   "tables": 6,
+   "sentence_words": 16.5,
+   "we_share": 0.306
+  },
+  {
+   "id": "arXiv-2510.13681",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.038
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.073
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.125
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.112
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.109
+    },
+    {
+     "level": 2,
+     "text": "Datasets",
+     "share": 0.123,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.312,
+     "tables": 8
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.044
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.036
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.028
+    }
+   ],
+   "words": 4214,
+   "tables": 10,
+   "sentence_words": 29.0,
+   "we_share": 0.297
+  },
+  {
+   "id": "arXiv-2510.18454",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.04
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.1
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.255
+    },
+    {
+     "level": 2,
+     "text": "Evaluation Setup",
+     "share": 0.187,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.323,
+     "tables": 3
+    },
+    {
+     "level": 3,
+     "text": "General analysis"
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.036
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.027
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.032
+    }
+   ],
+   "words": 4321,
+   "tables": 4,
+   "sentence_words": 27.9,
+   "we_share": 0.471
+  },
+  {
+   "id": "arXiv-2512.13998",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.042
+    },
+    {
+     "level": 2,
+     "text": "I Introduction",
+     "share": 0.068
+    },
+    {
+     "level": 2,
+     "text": "II Related Work",
+     "share": 0.064,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.208
+    },
+    {
+     "level": 3,
+     "text": "III-A Data Collection"
+    },
+    {
+     "level": 2,
+     "text": "IV METHOD IMPLEMENTATION",
+     "share": 0.17
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.415,
+     "tables": 6
+    },
+    {
+     "level": 3,
+     "text": "V-A Experimental Implementation"
+    },
+    {
+     "level": 2,
+     "text": "VI Conclusion",
+     "share": 0.029
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.004,
+     "tables": 3
+    }
+   ],
+   "words": 5930,
+   "tables": 10,
+   "sentence_words": 20.7,
+   "we_share": 0.0
+  },
+  {
+   "id": "arXiv-2512.24235",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.021
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.106,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.139
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.077
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.23,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Sampling"
+    },
+    {
+     "level": 3,
+     "text": "Data Collection"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.077,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.031
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.236,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Experimental Setup"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.027
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.056
+    }
+   ],
+   "words": 4672,
+   "tables": 5,
+   "sentence_words": 24.1,
+   "we_share": 0.222
+  },
+  {
+   "id": "arXiv-2602.13543",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.037
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.146
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.13,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.259
+    },
+    {
+     "level": 2,
+     "text": "Experiment Setup",
+     "share": 0.158,
+     "tables": 5
+    },
+    {
+     "level": 2,
+     "text": "Results and Analysis",
+     "share": 0.224
+    },
+    {
+     "level": 2,
+     "text": "Conclusion And Future Work",
+     "share": 0.021
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.025
+    }
+   ],
+   "words": 4850,
+   "tables": 6,
+   "sentence_words": 20.7,
+   "we_share": 0.401
+  },
+  {
+   "id": "arXiv-2602.22045",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.036
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.113
+    },
+    {
+     "level": 2,
+     "text": "Background",
+     "share": 0.024
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.066
+    },
+    {
+     "level": 2,
+     "text": "Datasets",
+     "share": 0.264,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.108,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.064,
+     "tables": 3
+    },
+    {
+     "level": 3,
+     "text": "Motivation"
+    },
+    {
+     "level": 2,
+     "text": "Analysis",
+     "share": 0.189,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.072
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.027
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.037
+    }
+   ],
+   "words": 5179,
+   "tables": 8,
+   "sentence_words": 27.5,
+   "we_share": 0.34
+  },
+  {
+   "id": "arXiv-2603.03322",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.038
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.219
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.134
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.207,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Evaluation Protocol"
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.281,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Experimental Setup"
+    },
+    {
+     "level": 2,
+     "text": "Discussion and Conclusion",
+     "share": 0.12
+    },
+    {
+     "level": 3,
+     "text": "Discussion"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    }
+   ],
+   "words": 5054,
+   "tables": 2,
+   "sentence_words": 24.2,
+   "we_share": 0.33
+  },
+  {
+   "id": "arXiv-2603.16204",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.032
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.093
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.105
+    },
+    {
+     "level": 3,
+     "text": "Research Aims"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.441,
+     "tables": 4
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.295
+    },
+    {
+     "level": 3,
+     "text": "Policy Implications"
+    },
+    {
+     "level": 3,
+     "text": "Limitations"
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.033
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.0
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.0
+    }
+   ],
+   "words": 7684,
+   "tables": 4,
+   "sentence_words": 24.3,
+   "we_share": 0.085
+  },
+  {
+   "id": "arXiv-2605.01317",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.036
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.187
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.137
+    },
+    {
+     "level": 2,
+     "text": "Dataset",
+     "share": 0.034,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.142,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Evaluation Metrics"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.035
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.023
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.139
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.057
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.211,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Discussion"
+    }
+   ],
+   "words": 3629,
+   "tables": 3,
+   "sentence_words": 21.1,
+   "we_share": 0.0
+  },
+  {
+   "id": "arXiv-2605.03439",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.079
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.092
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.085
+    },
+    {
+     "level": 2,
+     "text": "Dataset",
+     "share": 0.142
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.162
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.075
+    },
+    {
+     "level": 3,
+     "text": "Evaluation Metrics"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.252,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.075
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.038
+    }
+   ],
+   "words": 3551,
+   "tables": 1,
+   "sentence_words": 22.1,
+   "we_share": 0.149
+  },
+  {
+   "id": "arXiv-2605.10171",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.045
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.154
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.048
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.069
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.259
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.064
+    },
+    {
+     "level": 3,
+     "text": "Implementation Details"
+    },
+    {
+     "level": 3,
+     "text": "Evaluation Metrics"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.282,
+     "tables": 3
+    },
+    {
+     "level": 3,
+     "text": "Main Result"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion and Future Work",
+     "share": 0.033
+    },
+    {
+     "level": 2,
+     "text": "Limitation",
+     "share": 0.047
+    }
+   ],
+   "words": 4375,
+   "tables": 3,
+   "sentence_words": 23.8,
+   "we_share": 0.315
+  },
+  {
+   "id": "arXiv-2605.17179",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.041
+    },
+    {
+     "level": 2,
+     "text": "I Introduction",
+     "share": 0.171,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "II Related Work",
+     "share": 0.181,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.19,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.209,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.034,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.019,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.048,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.019,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.057,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "X Conclusion",
+     "share": 0.032
+    }
+   ],
+   "words": 6841,
+   "tables": 13,
+   "sentence_words": 22.0,
+   "we_share": 0.193
+  },
+  {
+   "id": "arXiv-2606.24035",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.059
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.115
+    },
+    {
+     "level": 2,
+     "text": "Setup",
+     "share": 0.063
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.084
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.111
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.042
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.365,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "Discussion and limitations",
+     "share": 0.072
+    },
+    {
+     "level": 2,
+     "text": "Related work",
+     "share": 0.055
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.034
+    }
+   ],
+   "words": 3708,
+   "tables": 3,
+   "sentence_words": 20.4,
+   "we_share": 0.115
+  },
+  {
+   "id": "arXiv-2606.29495",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.043
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.17,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.08
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.066,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.06
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.083
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.467,
+     "tables": 4
+    },
+    {
+     "level": 3,
+     "text": "Experimental Setup"
+    },
+    {
+     "level": 2,
+     "text": "Limitations and Future Work",
+     "share": 0.019
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.013
+    }
+   ],
+   "words": 4458,
+   "tables": 7,
+   "sentence_words": 22.0,
+   "we_share": 0.168
+  },
+  {
+   "id": "arXiv-2607.24745",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.072
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.152
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.11
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.246
+    },
+    {
+     "level": 2,
+     "text": "Experiments",
+     "share": 0.265,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Ablation Study",
+     "share": 0.102,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.053
+    }
+   ],
+   "words": 3656,
+   "tables": 4,
+   "sentence_words": 23.4,
+   "we_share": 0.25
+  },
+  {
+   "id": "arXiv-2607.29602",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.023
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.119
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.156
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.168
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.1,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.217
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.125
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.092
+    }
+   ],
+   "words": 6180,
+   "tables": 2,
+   "sentence_words": 23.7,
+   "we_share": 0.222
+  },
+  {
+   "id": "arXiv-2608.26144",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.055
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.154
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.101
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.078,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.212,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.135
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.114
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.052
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.053
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.037
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.009
+    }
+   ],
+   "words": 4186,
+   "tables": 2,
+   "sentence_words": 25.1,
+   "we_share": 0.06
+  },
+  {
+   "id": "arXiv-2609.12484",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.055
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.149
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.12
+    },
+    {
+     "level": 3,
+     "text": "Evaluation metrics"
+    },
+    {
+     "level": 2,
+     "text": "Datasets",
+     "share": 0.128,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Evaluation dataset"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.12
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.38,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Discussion"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.048
+    }
+   ],
+   "words": 3608,
+   "tables": 2,
+   "sentence_words": 21.3,
+   "we_share": 0.041
+  },
+  {
+   "id": "arXiv-2609.14761",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.061
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.248
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.075,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.263
+    },
+    {
+     "level": 2,
+     "text": "Experiments and Results",
+     "share": 0.301
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.052
+    }
+   ],
+   "words": 3657,
+   "tables": 1,
+   "sentence_words": 21.8,
+   "we_share": 0.196
+  },
+  {
+   "id": "arXiv-2609.22212",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.029
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.126
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.094,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.088,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Dataset Source"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.037,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Evaluation Protocol"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.262
+    },
+    {
+     "level": 3,
+     "text": "Motivation"
+    },
+    {
+     "level": 2,
+     "text": "Experimental Methodology",
+     "share": 0.022
+    },
+    {
+     "level": 3,
+     "text": "Evaluation Protocol and Metrics"
+    },
+    {
+     "level": 2,
+     "text": "Results and Ablation Studies",
+     "share": 0.212,
+     "tables": 6
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.048
+    },
+    {
+     "level": 2,
+     "text": "Discussion and Limitations",
+     "share": 0.057,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Limitations"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.024
+    }
+   ],
+   "words": 7620,
+   "tables": 10,
+   "sentence_words": 30.7,
+   "we_share": 0.085
+  },
+  {
+   "id": "arXiv-2609.35902",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.07
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.163
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.118,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.185,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Design Overview"
+    },
+    {
+     "level": 2,
+     "text": "Evaluation Protocol",
+     "share": 0.118,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.21
+    },
+    {
+     "level": 2,
+     "text": "Discussion and Limitations",
+     "share": 0.053
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.083
+    }
+   ],
+   "words": 3343,
+   "tables": 4,
+   "sentence_words": 16.5,
+   "we_share": 0.0
+  },
+  {
+   "id": "arXiv-2610.16273",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.045
+    },
+    {
+     "level": 2,
+     "text": "I Introduction",
+     "share": 0.199
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.323,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.361,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "IV Conclusion",
+     "share": 0.071
+    }
+   ],
+   "words": 4164,
+   "tables": 2,
+   "sentence_words": 26.7,
+   "we_share": 0.468
+  }
+ ],
+ "dropped": {},
+ "paper_types": {
+  "empirical_benchmark": 51,
+  "method": 37,
+  "survey": 37
+ },
+ "paper_types_by_id": {
+  "arXiv-1906.01472": "empirical_benchmark",
+  "arXiv-2004.06774": "empirical_benchmark",
+  "arXiv-2007.14920": "method",
+  "arXiv-2009.07399": "empirical_benchmark",
+  "arXiv-2012.02613": "empirical_benchmark",
+  "arXiv-2102.00176": "method",
+  "arXiv-2102.11480": "method",
+  "arXiv-2103.00242": "survey",
+  "arXiv-2104.05837": "survey",
+  "arXiv-2105.01044": "survey",
+  "arXiv-2106.00291": "survey",
+  "arXiv-2106.07732": "method",
+  "arXiv-2107.12362": "method",
+  "arXiv-2109.04894": "method",
+  "arXiv-2110.04392": "empirical_benchmark",
+  "arXiv-2111.05100": "empirical_benchmark",
+  "arXiv-2112.13497": "empirical_benchmark",
+  "arXiv-2204.10365": "survey",
+  "arXiv-2205.06436": "method",
+  "arXiv-2207.01732": "method",
+  "arXiv-2207.06710": "empirical_benchmark",
+  "arXiv-2207.11774": "method",
+  "arXiv-2208.08690": "survey",
+  "arXiv-2210.03405": "method",
+  "arXiv-2210.05529": "method",
+  "arXiv-2210.06336": "survey",
+  "arXiv-2210.13248": "method",
+  "arXiv-2211.01675": "survey",
+  "arXiv-2211.06398": "survey",
+  "arXiv-2211.10057": "empirical_benchmark",
+  "arXiv-2304.02768": "survey",
+  "arXiv-2304.14177": "empirical_benchmark",
+  "arXiv-2305.13194": "empirical_benchmark",
+  "arXiv-2306.01183": "empirical_benchmark",
+  "arXiv-2306.09737": "method",
+  "arXiv-2307.05694": "survey",
+  "arXiv-2307.10897": "survey",
+  "arXiv-2307.14912": "method",
+  "arXiv-2308.00113": "method",
+  "arXiv-2309.06132": "empirical_benchmark",
+  "arXiv-2309.08285": "method",
+  "arXiv-2309.16396": "survey",
+  "arXiv-2310.02040": "empirical_benchmark",
+  "arXiv-2310.06260": "empirical_benchmark",
+  "arXiv-2310.13974": "survey",
+  "arXiv-2310.15693": "empirical_benchmark",
+  "arXiv-2310.16356": "empirical_benchmark",
+  "arXiv-2310.16677": "survey",
+  "arXiv-2311.08723": "method",
+  "arXiv-2401.12492": "empirical_benchmark",
+  "arXiv-2401.17974": "empirical_benchmark",
+  "arXiv-2402.07255": "method",
+  "arXiv-2403.04013": "empirical_benchmark",
+  "arXiv-2403.08824": "survey",
+  "arXiv-2403.17146": "method",
+  "arXiv-2404.01030": "survey",
+  "arXiv-2404.11109": "method",
+  "arXiv-2404.12933": "method",
+  "arXiv-2405.01535": "empirical_benchmark",
+  "arXiv-2405.02105": "empirical_benchmark",
+  "arXiv-2405.20947": "empirical_benchmark",
+  "arXiv-2406.00007": "method",
+  "arXiv-2406.03428": "empirical_benchmark",
+  "arXiv-2406.04460": "empirical_benchmark",
+  "arXiv-2406.14449": "method",
+  "arXiv-2407.00063": "method",
+  "arXiv-2407.14822": "survey",
+  "arXiv-2407.21072": "empirical_benchmark",
+  "arXiv-2408.16465": "method",
+  "arXiv-2409.00935": "empirical_benchmark",
+  "arXiv-2409.01990": "survey",
+  "arXiv-2409.17322": "survey",
+  "arXiv-2409.17467": "survey",
+  "arXiv-2410.03751": "survey",
+  "arXiv-2410.04202": "survey",
+  "arXiv-2410.07283": "method",
+  "arXiv-2410.08224": "survey",
+  "arXiv-2410.15019": "survey",
+  "arXiv-2410.18390": "survey",
+  "arXiv-2410.21897": "method",
+  "arXiv-2412.04726": "empirical_benchmark",
+  "arXiv-2412.14087": "method",
+  "arXiv-2412.16093": "empirical_benchmark",
+  "arXiv-2412.20427": "empirical_benchmark",
+  "arXiv-2501.13419": "empirical_benchmark",
+  "arXiv-2501.15442": "empirical_benchmark",
+  "arXiv-2502.05240": "survey",
+  "arXiv-2504.02873": "method",
+  "arXiv-2504.04332": "empirical_benchmark",
+  "arXiv-2505.03418": "survey",
+  "arXiv-2505.11010": "survey",
+  "arXiv-2505.11718": "survey",
+  "arXiv-2505.13259": "survey",
+  "arXiv-2505.16490": "empirical_benchmark",
+  "arXiv-2505.21116": "survey",
+  "arXiv-2506.01205": "empirical_benchmark",
+  "arXiv-2507.12901": "empirical_benchmark",
+  "arXiv-2507.16859": "method",
+  "arXiv-2509.04460": "survey",
+  "arXiv-2509.12371": "empirical_benchmark",
+  "arXiv-2509.15666": "method",
+  "arXiv-2510.07733": "survey",
+  "arXiv-2510.11233": "empirical_benchmark",
+  "arXiv-2510.13681": "empirical_benchmark",
+  "arXiv-2510.18454": "method",
+  "arXiv-2512.13998": "empirical_benchmark",
+  "arXiv-2512.24235": "empirical_benchmark",
+  "arXiv-2602.13543": "empirical_benchmark",
+  "arXiv-2602.22045": "empirical_benchmark",
+  "arXiv-2603.03322": "empirical_benchmark",
+  "arXiv-2603.16204": "survey",
+  "arXiv-2605.01317": "method",
+  "arXiv-2605.03439": "empirical_benchmark",
+  "arXiv-2605.10171": "method",
+  "arXiv-2605.17179": "empirical_benchmark",
+  "arXiv-2606.24035": "method",
+  "arXiv-2606.29495": "empirical_benchmark",
+  "arXiv-2607.24745": "empirical_benchmark",
+  "arXiv-2607.29602": "empirical_benchmark",
+  "arXiv-2608.26144": "survey",
+  "arXiv-2609.12484": "empirical_benchmark",
+  "arXiv-2609.14761": "survey",
+  "arXiv-2609.22212": "method",
+  "arXiv-2609.35902": "empirical_benchmark",
+  "arXiv-2610.16273": "method"
+ },
+ "layouts": 123
+}

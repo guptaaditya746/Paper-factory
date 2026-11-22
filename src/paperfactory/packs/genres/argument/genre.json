@@ -102,5 +102,11 @@
   "a testament to",
   "in the realm of"
  ],
- "content_plan": true
+ "content_plan": true,
+ "donor_types": {
+  "law": [
+   "doctrinal",
+   "empirical_legal_study"
+  ]
+ }
 }

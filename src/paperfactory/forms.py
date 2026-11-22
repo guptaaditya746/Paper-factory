@@ -20,6 +20,7 @@ genre's hand-written templates are used, as before. Donor texts are never shown 
 from __future__ import annotations
 
 import json
+import html
 import random
 import re
 import statistics
@@ -39,11 +40,48 @@ DROP = re.compile(r"^(references?|bibliography|acknowledge?ments?|funding|author
                   r"author information|additional information|publisher'?s note|orcid.*|disclosures?)$", re.I)
 NUMBERING = re.compile(r"^\s*(?:\d+(?:\.\d+)*\.?|[IVXLC]+\.|[A-Z]\.|§+\s*\d+\.?)\s+")
 SENT = re.compile(r"(?<=[.!?])\s+(?=[A-Z])")
+HTML_HEADING = re.compile(r"^\s*<h([1-6])\b[^>]*>(.*?)</h\1>\s*$", re.I)
+SETEXT = re.compile(r"^\s*(=+|-{3,})\s*$")
 
 
 def _clean(h: str) -> str:
+    h = html.unescape(re.sub(r"<[^>]+>", "", h))
     h = re.sub(r"[*_`#]", "", h).strip()
     return NUMBERING.sub("", h).strip().rstrip(".:").strip()
+
+
+def _headings(lines: list[str]) -> list[tuple[int, int, str]]:
+    """Recognize Markdown, indented Markdown, setext and converted HTML headings."""
+    found = []
+    for i, line in enumerate(lines):
+        m = re.match(r"^\s{0,3}(#{1,6})\s+(.*\S)\s*$", line)
+        if m:
+            found.append((i, len(m.group(1)), _clean(m.group(2))))
+            continue
+        m = HTML_HEADING.match(line)
+        if m:
+            found.append((i, int(m.group(1)), _clean(m.group(2))))
+            continue
+        if i and SETEXT.match(line) and lines[i - 1].strip():
+            found.append((i, 1 if line.lstrip().startswith("=") else 2, _clean(lines[i - 1])))
+    return found
+
+
+def _table_count(lines: list[str], start: int, end: int) -> int:
+    """Count GFM tables, including rows without outer pipes."""
+    count = 0
+    i = start
+    while i + 1 < end:
+        cells = lines[i].strip().strip("|").split("|")
+        sep = lines[i + 1].strip().strip("|").split("|")
+        if len(cells) > 1 and len(cells) == len(sep) and all(
+            re.fullmatch(r"\s*:?-{3,}:?\s*", cell) for cell in sep
+        ):
+            count += 1
+            i += 2
+        else:
+            i += 1
+    return count
 
 
 def is_generic(heading: str) -> bool:
@@ -55,8 +93,7 @@ def card(md: str, meta: dict[str, Any] | None = None) -> dict[str, Any] | None:
     """The form card of one donor paper (Markdown with # headings and | tables), or None with nothing usable."""
     meta = meta or {}
     lines = md.splitlines()
-    heads = [(i, len(m.group(1)), _clean(m.group(2))) for i, line in enumerate(lines)
-             if (m := re.match(r"^(#{1,4})\s+(.*\S)\s*$", line))]
+    heads = [(i, level, text) for i, level, text in _headings(lines) if level <= 4]
     if not heads:
         return None
     top = min(lv for _, lv, _ in heads)
@@ -65,6 +102,7 @@ def card(md: str, meta: dict[str, Any] | None = None) -> dict[str, Any] | None:
     outline: list[dict[str, Any]] = []
     spans: list[tuple[int, int, int]] = []         # (outline index of the level-2 entry, first line, last line)
     cut = False                                    # inside a dropped section (references ...): skip its children
+    title_words = set(re.findall(r"[a-z0-9]+", str(meta.get("title", "")).lower()))
     for k, (i, lv, text) in enumerate(heads):
         if lv < top or lv > top + 1:
             continue
@@ -73,9 +111,12 @@ def card(md: str, meta: dict[str, Any] | None = None) -> dict[str, Any] | None:
             cut = bool(DROP.match(text)) or not text
             if cut:
                 continue
-            outline.append({"level": 2, "text": text if is_generic(text) else None})
+            heading_words = set(re.findall(r"[a-z0-9]+", text.lower()))
+            generic = is_generic(text) and not (heading_words & title_words)
+            outline.append({"level": 2, "text": text if generic else None})
             spans.append((len(outline) - 1, i + 1, end))
-        elif not cut and outline and is_generic(text) and not DROP.match(text):
+        elif not cut and outline and is_generic(text) and not DROP.match(text) \
+                and not (set(re.findall(r"[a-z0-9]+", text.lower())) & title_words):
             outline.append({"level": 3, "text": text})      # topical subsections are left to the writer
     if not spans:
         return None
@@ -84,28 +125,25 @@ def card(md: str, meta: dict[str, Any] | None = None) -> dict[str, Any] | None:
     total = sum(counts) or 1
     for (idx, a, b), n in zip(spans, counts):
         outline[idx]["share"] = round(n / total, 3)
-        tables = sum(1 for j in range(a, b) if lines[j].lstrip().startswith("|")
-                     and not (j > a and lines[j - 1].lstrip().startswith("|")))
+        tables = _table_count(lines, a, b)
         if tables:
             outline[idx]["tables"] = tables
     sents = [s for t in body for s in SENT.split(t) if 3 <= len(s.split()) <= 120]
     if len(sents) < 20:
         return None
     we = sum(1 for s in sents if re.search(r"\b(we|our)\b", s, re.I)) / len(sents)
-    return {"id": meta.get("id"), "paper_type": meta.get("paper_type"), "licence": meta.get("licence"),
+    return {"id": meta.get("id"),
             "outline": outline, "words": total, "tables": sum(x.get("tables", 0) for x in outline),
             "sentence_words": round(statistics.mean(len(s.split()) for s in sents), 1), "we_share": round(we, 3)}
 
 
 def usable(c: dict[str, Any]) -> str | None:
-    """Why a card cannot be a template (None = it can). A layout needs an opening, a body and an end."""
+    """Why a card cannot be a template (None = it can). Two body sections still give a usable layout."""
     l2 = [x for x in c["outline"] if x["level"] == 2 and (x["text"] or "").lower() != "abstract"]
-    if len(l2) < 3:
+    if len(l2) < 2:
         return f"{len(l2)} sections besides the abstract"
     if len(l2) > 12:
         return f"{len(l2)} top-level sections (heading levels lost in conversion?)"
-    if sum(1 for x in l2 if x["text"] is None) > len(l2) * 0.75 and len(l2) > 4:
-        return "almost every heading is topical"
     return None
 
 
@@ -125,10 +163,12 @@ def profile(folder: Path, manifest: Path | None = None) -> dict[str, Any]:
             dropped[path.stem] = why
         else:
             cards.append(c | {"id": path.stem})
+    card_types = {c["id"]: meta.get(c["id"], {}).get("paper_type") for c in cards}
     types: dict[str, int] = {}
-    for c in cards:
-        types[str(c.get("paper_type"))] = types.get(str(c.get("paper_type")), 0) + 1
+    for paper_type in card_types.values():
+        types[str(paper_type)] = types.get(str(paper_type), 0) + 1
     return {"cards": cards, "dropped": dropped, "paper_types": dict(sorted(types.items(), key=lambda kv: -kv[1])),
+            "paper_types_by_id": card_types,
             "layouts": len({json.dumps([(x["level"], x["text"]) for x in c["outline"]]) for c in cards})}
 
 
@@ -145,9 +185,13 @@ def load(f: Field, g: Genre) -> list[dict[str, Any]]:
     path = FORMS / f"{f.name}.json"
     if not path.is_file() or g.raw.get("donor_layouts") is False:
         return []
-    cards = json.loads(path.read_text(encoding="utf-8"))["cards"]
+    profile = json.loads(path.read_text(encoding="utf-8"))
+    cards = profile["cards"]
+    card_types = profile.get("paper_types_by_id", {})
     want = [x.lower() for x in g.raw.get("donor_types", {}).get(f.name, [])]
-    return [c for c in cards if not want or any(x in str(c.get("paper_type", "")).lower() for x in want)]
+    return [c for c in cards if not want or any(
+        x in str(card_types.get(c.get("id"), "")).lower() for x in want
+    )]
 
 
 TOPICAL = ["{O}", "Evidence on {O}", "{SP_CAP} on {O}", "The case of {O}", "{O}: what the {SP} show",

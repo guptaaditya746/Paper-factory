@@ -130,34 +130,15 @@
  "content_plan": true,
  "donor_types": {
   "medicine": [
-   "review",
-   "meta-analysis",
-   "meta analysis",
-   "survey",
-   "synthesis",
-   "comparison",
-   "benchmark",
-   "evaluation"
+   "systematic_review_meta_analysis",
+   "narrative_review"
   ],
   "llm": [
-   "review",
-   "meta-analysis",
-   "meta analysis",
-   "survey",
-   "synthesis",
-   "comparison",
-   "benchmark",
-   "evaluation"
+   "empirical_benchmark",
+   "survey"
   ],
   "materials": [
-   "review",
-   "meta-analysis",
-   "meta analysis",
-   "survey",
-   "synthesis",
-   "comparison",
-   "benchmark",
-   "evaluation"
+   "review"
   ]
  }
 }

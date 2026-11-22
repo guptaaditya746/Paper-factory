@@ -1,0 +1,5625 @@
+{
+ "cards": [
+  {
+   "id": "PMC10008147",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.021
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.04
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.466
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.439
+    },
+    {
+     "level": 2,
+     "text": "Concluding Remarks",
+     "share": 0.034
+    }
+   ],
+   "words": 13099,
+   "tables": 0,
+   "sentence_words": 36.3,
+   "we_share": 0.041
+  },
+  {
+   "id": "PMC10016165",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.033
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.066
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.367
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.397
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.136
+    }
+   ],
+   "words": 2801,
+   "tables": 0,
+   "sentence_words": 35.0,
+   "we_share": 0.013
+  },
+  {
+   "id": "PMC10018615",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.024
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.075
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.304
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.296
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.241
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.061
+    }
+   ],
+   "words": 7466,
+   "tables": 0,
+   "sentence_words": 22.6,
+   "we_share": 0.018
+  },
+  {
+   "id": "PMC10032245",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.018
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.103
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.187
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.149
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.262
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.078
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.165
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.038
+    }
+   ],
+   "words": 10378,
+   "tables": 0,
+   "sentence_words": 34.8,
+   "we_share": 0.008
+  },
+  {
+   "id": "PMC10126761",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.06
+    },
+    {
+     "level": 3,
+     "text": "Purpose"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.732,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.134
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.027
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.046
+    }
+   ],
+   "words": 4946,
+   "tables": 2,
+   "sentence_words": 33.1,
+   "we_share": 0.077
+  },
+  {
+   "id": "PMC10170042",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.011
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.056
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.055
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.277
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.551
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.051
+    }
+   ],
+   "words": 10785,
+   "tables": 0,
+   "sentence_words": 37.6,
+   "we_share": 0.11
+  },
+  {
+   "id": "PMC10264218",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.019
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.093
+    },
+    {
+     "level": 2,
+     "text": "Theoretical background",
+     "share": 0.3
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.127
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.061
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.077,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.192,
+     "tables": 11
+    },
+    {
+     "level": 3,
+     "text": "Implementation"
+    },
+    {
+     "level": 2,
+     "text": "Concluding remarks",
+     "share": 0.131
+    },
+    {
+     "level": 3,
+     "text": "Discussion"
+    }
+   ],
+   "words": 11604,
+   "tables": 12,
+   "sentence_words": 25.6,
+   "we_share": 0.107
+  },
+  {
+   "id": "PMC10295377",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.048
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.214
+    },
+    {
+     "level": 2,
+     "text": "Method",
+     "share": 0.214
+    },
+    {
+     "level": 3,
+     "text": "Study Participants"
+    },
+    {
+     "level": 3,
+     "text": "Design"
+    },
+    {
+     "level": 3,
+     "text": "Data Collection"
+    },
+    {
+     "level": 3,
+     "text": "Procedures"
+    },
+    {
+     "level": 3,
+     "text": "Data Analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.294
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.167
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.044
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.019
+    }
+   ],
+   "words": 6207,
+   "tables": 0,
+   "sentence_words": 28.4,
+   "we_share": 0.089
+  },
+  {
+   "id": "PMC10477054",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.178
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.213
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.609
+    }
+   ],
+   "words": 9585,
+   "tables": 0,
+   "sentence_words": 25.8,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC10684896",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.096
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.165
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.047
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.23
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.147
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.117
+    }
+   ],
+   "words": 6900,
+   "tables": 0,
+   "sentence_words": 28.6,
+   "we_share": 0.004
+  },
+  {
+   "id": "PMC10765871",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.061
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.112
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.092,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Design and eligibility criteria"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.399,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Synthesis of results"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.336
+    }
+   ],
+   "words": 4473,
+   "tables": 3,
+   "sentence_words": 22.3,
+   "we_share": 0.02
+  },
+  {
+   "id": "PMC10937180",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.017
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.222
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.315
+    },
+    {
+     "level": 3,
+     "text": "Scope"
+    },
+    {
+     "level": 3,
+     "text": "Limitations"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.261
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.125
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.061
+    }
+   ],
+   "words": 3569,
+   "tables": 0,
+   "sentence_words": 36.6,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC11095730",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.028
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.221
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.156,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.115,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.3
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.179
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.0
+    }
+   ],
+   "words": 6847,
+   "tables": 4,
+   "sentence_words": 38.8,
+   "we_share": 0.039
+  },
+  {
+   "id": "PMC11109589",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.048
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.231
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.239
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.33
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.048
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.058
+    },
+    {
+     "level": 2,
+     "text": "Summary",
+     "share": 0.047
+    }
+   ],
+   "words": 3422,
+   "tables": 0,
+   "sentence_words": 29.8,
+   "we_share": 0.148
+  },
+  {
+   "id": "PMC11150977",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.016
+    },
+    {
+     "level": 2,
+     "text": "INTRODUCTION",
+     "share": 0.068
+    },
+    {
+     "level": 2,
+     "text": "LEGAL BACKGROUND",
+     "share": 0.064
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.125
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.379
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.083
+    },
+    {
+     "level": 2,
+     "text": "DISCUSSION",
+     "share": 0.141
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.096
+    },
+    {
+     "level": 2,
+     "text": "SUMMARY",
+     "share": 0.028
+    }
+   ],
+   "words": 12604,
+   "tables": 0,
+   "sentence_words": 30.8,
+   "we_share": 0.063
+  },
+  {
+   "id": "PMC11176405",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.131
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.277
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.073
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.269
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.046
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.004
+    }
+   ],
+   "words": 4713,
+   "tables": 0,
+   "sentence_words": 39.3,
+   "we_share": 0.009
+  },
+  {
+   "id": "PMC11250763",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.021
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.135
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.177
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.239
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.18
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.208
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.039
+    }
+   ],
+   "words": 12509,
+   "tables": 0,
+   "sentence_words": 33.0,
+   "we_share": 0.165
+  },
+  {
+   "id": "PMC11297081",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.039
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.084
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.269
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.36
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.248
+    },
+    {
+     "level": 3,
+     "text": "Interpretation of results"
+    }
+   ],
+   "words": 10673,
+   "tables": 0,
+   "sentence_words": 26.0,
+   "we_share": 0.012
+  },
+  {
+   "id": "PMC11308606",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.081
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.196
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.251
+    },
+    {
+     "level": 3,
+     "text": "Study population"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.146,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.28
+    },
+    {
+     "level": 2,
+     "text": "Policy implications",
+     "share": 0.026
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.02
+    }
+   ],
+   "words": 5523,
+   "tables": 3,
+   "sentence_words": 24.4,
+   "we_share": 0.123
+  },
+  {
+   "id": "PMC11335679",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.038
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.07
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.149
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.134
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.098
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.348,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Method"
+    },
+    {
+     "level": 3,
+     "text": "Sampling"
+    },
+    {
+     "level": 3,
+     "text": "Analyses"
+    },
+    {
+     "level": 2,
+     "text": "Findings and discussion",
+     "share": 0.106
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.056
+    }
+   ],
+   "words": 8711,
+   "tables": 1,
+   "sentence_words": 26.7,
+   "we_share": 0.025
+  },
+  {
+   "id": "PMC11347943",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.014
+    },
+    {
+     "level": 2,
+     "text": "INTRODUCTION",
+     "share": 0.123
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.212
+    },
+    {
+     "level": 2,
+     "text": "METHODS",
+     "share": 0.073,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.447
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.096
+    },
+    {
+     "level": 2,
+     "text": "CONCLUSION",
+     "share": 0.035
+    }
+   ],
+   "words": 10508,
+   "tables": 1,
+   "sentence_words": 33.4,
+   "we_share": 0.147
+  },
+  {
+   "id": "PMC11549566",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.053
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.21
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.177,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Screening and Data Extraction"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.298,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.231
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.031
+    }
+   ],
+   "words": 5535,
+   "tables": 3,
+   "sentence_words": 30.5,
+   "we_share": 0.452
+  },
+  {
+   "id": "PMC11681859",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.02
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.057
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.204,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.353,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.219,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.079
+    },
+    {
+     "level": 2,
+     "text": "Summary and conclusion",
+     "share": 0.069
+    }
+   ],
+   "words": 11919,
+   "tables": 6,
+   "sentence_words": 27.0,
+   "we_share": 0.018
+  },
+  {
+   "id": "PMC11954361",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.02
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.081
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.169
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.079,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.444
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.124
+    },
+    {
+     "level": 2,
+     "text": "Recommendations and Conclusion",
+     "share": 0.084
+    }
+   ],
+   "words": 6691,
+   "tables": 1,
+   "sentence_words": 30.7,
+   "we_share": 0.086
+  },
+  {
+   "id": "PMC11954362",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.017
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.124
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.084
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.54,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.22
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.014
+    }
+   ],
+   "words": 9552,
+   "tables": 2,
+   "sentence_words": 24.6,
+   "we_share": 0.128
+  },
+  {
+   "id": "PMC12174786",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.012
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.075
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.069
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.034
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.68,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.13
+    }
+   ],
+   "words": 5741,
+   "tables": 1,
+   "sentence_words": 34.3,
+   "we_share": 0.008
+  },
+  {
+   "id": "PMC12174807",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.106
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.142
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.231
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.509
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.012
+    }
+   ],
+   "words": 2654,
+   "tables": 0,
+   "sentence_words": 38.9,
+   "we_share": 0.021
+  },
+  {
+   "id": "PMC12395227",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.013
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.087
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.189
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.674
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.037
+    }
+   ],
+   "words": 10353,
+   "tables": 0,
+   "sentence_words": 34.3,
+   "we_share": 0.01
+  },
+  {
+   "id": "PMC12469156",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.033
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.232
+    },
+    {
+     "level": 2,
+     "text": "Data",
+     "share": 0.216,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.137
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.242,
+     "tables": 4
+    },
+    {
+     "level": 2,
+     "text": "Conclusion and discussion",
+     "share": 0.14
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.0
+    }
+   ],
+   "words": 7064,
+   "tables": 6,
+   "sentence_words": 33.7,
+   "we_share": 0.48
+  },
+  {
+   "id": "PMC12477964",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.041
+    },
+    {
+     "level": 2,
+     "text": "INTRODUCTION",
+     "share": 0.073
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.088
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.152
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.033,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.116
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.059
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.045
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.088
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.148
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.098,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.03
+    },
+    {
+     "level": 2,
+     "text": "CONCLUSION",
+     "share": 0.03
+    }
+   ],
+   "words": 3517,
+   "tables": 2,
+   "sentence_words": 25.3,
+   "we_share": 0.007
+  },
+  {
+   "id": "PMC12549741",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.034
+    },
+    {
+     "level": 3,
+     "text": "Introduction"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 3,
+     "text": "Policy Implications"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.28
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.181
+    },
+    {
+     "level": 3,
+     "text": "Data Source"
+    },
+    {
+     "level": 3,
+     "text": "Variables"
+    },
+    {
+     "level": 3,
+     "text": "Analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.259,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.246
+    }
+   ],
+   "words": 6891,
+   "tables": 1,
+   "sentence_words": 31.3,
+   "we_share": 0.109
+  },
+  {
+   "id": "PMC12551035",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.05
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.113
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.772,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.065
+    }
+   ],
+   "words": 3674,
+   "tables": 1,
+   "sentence_words": 28.9,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC12658474",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.021
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.146
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.583
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.15
+    }
+   ],
+   "words": 4982,
+   "tables": 0,
+   "sentence_words": 24.5,
+   "we_share": 0.03
+  },
+  {
+   "id": "PMC12659925",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.016
+    },
+    {
+     "level": 2,
+     "text": "INTRODUCTION",
+     "share": 0.066
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.05
+    },
+    {
+     "level": 2,
+     "text": "METHODS",
+     "share": 0.054
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.783
+    },
+    {
+     "level": 2,
+     "text": "CONCLUSION",
+     "share": 0.03
+    }
+   ],
+   "words": 12309,
+   "tables": 0,
+   "sentence_words": 34.1,
+   "we_share": 0.273
+  },
+  {
+   "id": "PMC12680240",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.029
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.103,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Literature review",
+     "share": 0.113
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.103
+    },
+    {
+     "level": 3,
+     "text": "Research method"
+    },
+    {
+     "level": 2,
+     "text": "Data source",
+     "share": 0.125,
+     "tables": 3
+    },
+    {
+     "level": 3,
+     "text": "Case collection"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.055,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.216
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.17
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.048
+    },
+    {
+     "level": 3,
+     "text": "Limitation"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.04
+    }
+   ],
+   "words": 11217,
+   "tables": 6,
+   "sentence_words": 26.7,
+   "we_share": 0.005
+  },
+  {
+   "id": "PMC12799019",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.044
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.175
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.149
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.21
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.133
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.191
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.097
+    }
+   ],
+   "words": 4062,
+   "tables": 0,
+   "sentence_words": 36.9,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC12880725",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.017
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.077
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.513
+    },
+    {
+     "level": 2,
+     "text": "Data and method",
+     "share": 0.1,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Data"
+    },
+    {
+     "level": 3,
+     "text": "Analytical methods"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.123,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Conclusion and discussion",
+     "share": 0.169
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.0
+    }
+   ],
+   "words": 10450,
+   "tables": 3,
+   "sentence_words": 24.8,
+   "we_share": 0.01
+  },
+  {
+   "id": "PMC12912832",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.019
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.129
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.187
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.299
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.209
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.128
+    },
+    {
+     "level": 2,
+     "text": "Part V: Conclusion",
+     "share": 0.03
+    }
+   ],
+   "words": 13701,
+   "tables": 0,
+   "sentence_words": 41.9,
+   "we_share": 0.028
+  },
+  {
+   "id": "PMC13008768",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.038
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.025
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.188
+    },
+    {
+     "level": 2,
+     "text": "Data and methods",
+     "share": 0.247,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Outcome data"
+    },
+    {
+     "level": 3,
+     "text": "Data analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.303,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.172
+    },
+    {
+     "level": 3,
+     "text": "Limitations"
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.027
+    }
+   ],
+   "words": 4319,
+   "tables": 3,
+   "sentence_words": 31.5,
+   "we_share": 0.168
+  },
+  {
+   "id": "PMC13017479",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.021
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.099
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.123
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.048
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.051
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.156
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.104
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.295
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.04
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.064
+    }
+   ],
+   "words": 8566,
+   "tables": 0,
+   "sentence_words": 28.6,
+   "we_share": 0.007
+  },
+  {
+   "id": "PMC13235709",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.023
+    },
+    {
+     "level": 2,
+     "text": "CONTEXT",
+     "share": 0.132
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.371
+    },
+    {
+     "level": 2,
+     "text": "DISCUSSION",
+     "share": 0.431
+    },
+    {
+     "level": 2,
+     "text": "CONCLUSION",
+     "share": 0.043
+    }
+   ],
+   "words": 8436,
+   "tables": 0,
+   "sentence_words": 33.5,
+   "we_share": 0.004
+  },
+  {
+   "id": "PMC13253888",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.021
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.129
+    },
+    {
+     "level": 2,
+     "text": "Background",
+     "share": 0.192
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.092
+    },
+    {
+     "level": 2,
+     "text": "Results and discussion",
+     "share": 0.478
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.088
+    },
+    {
+     "level": 3,
+     "text": "Study limitations and further research"
+    },
+    {
+     "level": 3,
+     "text": "Study implications and recommendations"
+    }
+   ],
+   "words": 10932,
+   "tables": 0,
+   "sentence_words": 30.0,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC13312961",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.014
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.029
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.107
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.079
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.554
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.186
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.031
+    }
+   ],
+   "words": 10314,
+   "tables": 0,
+   "sentence_words": 39.0,
+   "we_share": 0.08
+  },
+  {
+   "id": "PMC13570735",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.016
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.073
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.09
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.27
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.07
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.135
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.046
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.095
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.156
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.034
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.016
+    }
+   ],
+   "words": 9670,
+   "tables": 0,
+   "sentence_words": 25.4,
+   "we_share": 0.005
+  },
+  {
+   "id": "PMC13593415",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.032
+    },
+    {
+     "level": 3,
+     "text": "Introduction"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Discussion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.091
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.186
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.119
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.163,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.222,
+     "tables": 5
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.126
+    },
+    {
+     "level": 3,
+     "text": "Limitations"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.061
+    }
+   ],
+   "words": 9668,
+   "tables": 7,
+   "sentence_words": 22.6,
+   "we_share": 0.005
+  },
+  {
+   "id": "PMC13637550",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.022
+    },
+    {
+     "level": 2,
+     "text": "INTRODUCTION",
+     "share": 0.115
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.029
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.109
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.06
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.053
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.057
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.268
+    },
+    {
+     "level": 3,
+     "text": "Analysis"
+    },
+    {
+     "level": 2,
+     "text": "RESULTS",
+     "share": 0.171
+    },
+    {
+     "level": 2,
+     "text": "DISCUSSION",
+     "share": 0.116
+    }
+   ],
+   "words": 8924,
+   "tables": 0,
+   "sentence_words": 29.8,
+   "we_share": 0.452
+  },
+  {
+   "id": "PMC13715135",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.031
+    },
+    {
+     "level": 3,
+     "text": "Introduction"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Discussion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.18
+    },
+    {
+     "level": 2,
+     "text": "Materials and methods",
+     "share": 0.162,
+     "tables": 4
+    },
+    {
+     "level": 3,
+     "text": "Research design and legal materials"
+    },
+    {
+     "level": 3,
+     "text": "Case collection and inclusion criteria"
+    },
+    {
+     "level": 3,
+     "text": "Extraction protocol"
+    },
+    {
+     "level": 3,
+     "text": "Research scope"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.359
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.235
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.033
+    }
+   ],
+   "words": 5971,
+   "tables": 4,
+   "sentence_words": 17.2,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC4958094",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.043
+    },
+    {
+     "level": 2,
+     "text": "Background",
+     "share": 0.14
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.168
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.392,
+     "tables": 16
+    },
+    {
+     "level": 3,
+     "text": "Study design"
+    },
+    {
+     "level": 3,
+     "text": "Data collection"
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 3,
+     "text": "Hypothesis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.108
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.095
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.053
+    }
+   ],
+   "words": 4043,
+   "tables": 16,
+   "sentence_words": 29.7,
+   "we_share": 0.029
+  },
+  {
+   "id": "PMC5490222",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.051
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.049
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.06
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.105
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.184,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.112
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.057
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.11
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.106
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.141
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.025
+    }
+   ],
+   "words": 4777,
+   "tables": 1,
+   "sentence_words": 34.8,
+   "we_share": 0.008
+  },
+  {
+   "id": "PMC5749522",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.036
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.352
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.397
+    },
+    {
+     "level": 2,
+     "text": "Conclusion: Policy Implications",
+     "share": 0.216
+    }
+   ],
+   "words": 3069,
+   "tables": 0,
+   "sentence_words": 34.5,
+   "we_share": 0.022
+  },
+  {
+   "id": "PMC6116926",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.036
+    },
+    {
+     "level": 3,
+     "text": "Introduction"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.094
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.187
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.602
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.081
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.0
+    }
+   ],
+   "words": 7346,
+   "tables": 0,
+   "sentence_words": 26.8,
+   "we_share": 0.095
+  },
+  {
+   "id": "PMC6293355",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.034
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.062
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.151
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.242
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.074
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.088
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.12
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.03
+    }
+   ],
+   "words": 4769,
+   "tables": 0,
+   "sentence_words": 37.9,
+   "we_share": 0.111
+  },
+  {
+   "id": "PMC6294277",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.038
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.108
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.071
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.211,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.124
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.178
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.151,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.12
+    }
+   ],
+   "words": 6212,
+   "tables": 2,
+   "sentence_words": 29.4,
+   "we_share": 0.182
+  },
+  {
+   "id": "PMC7180356",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.196
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.134
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.493
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.177
+    }
+   ],
+   "words": 2917,
+   "tables": 0,
+   "sentence_words": 34.3,
+   "we_share": 0.106
+  },
+  {
+   "id": "PMC7187671",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.027
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.037
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.09
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.51
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.222
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.082
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.032
+    }
+   ],
+   "words": 3826,
+   "tables": 0,
+   "sentence_words": 39.2,
+   "we_share": 0.08
+  },
+  {
+   "id": "PMC7218183",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.031
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.124
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.24
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.233
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.289
+    },
+    {
+     "level": 2,
+     "text": "Concluding remarks",
+     "share": 0.083
+    }
+   ],
+   "words": 3129,
+   "tables": 0,
+   "sentence_words": 48.4,
+   "we_share": 0.177
+  },
+  {
+   "id": "PMC7248190",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.012
+    },
+    {
+     "level": 2,
+     "text": "Part 1. Introduction",
+     "share": 0.059
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.281
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.202
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.413
+    },
+    {
+     "level": 2,
+     "text": "Part 5. Conclusion",
+     "share": 0.034
+    }
+   ],
+   "words": 11297,
+   "tables": 0,
+   "sentence_words": 30.7,
+   "we_share": 0.057
+  },
+  {
+   "id": "PMC7281853",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.013
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.099
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.311
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.187
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.391
+    }
+   ],
+   "words": 7739,
+   "tables": 0,
+   "sentence_words": 25.7,
+   "we_share": 0.076
+  },
+  {
+   "id": "PMC7292476",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.024
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.167
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.285
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.524
+    }
+   ],
+   "words": 5218,
+   "tables": 0,
+   "sentence_words": 27.8,
+   "we_share": 0.011
+  },
+  {
+   "id": "PMC7616098",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.153
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.189
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.104
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.163
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.091
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.082
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.178
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.04
+    }
+   ],
+   "words": 7973,
+   "tables": 0,
+   "sentence_words": 36.7,
+   "we_share": 0.051
+  },
+  {
+   "id": "PMC7733051",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.053
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.175
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.145,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Eligibility criteria"
+    },
+    {
+     "level": 3,
+     "text": "Data analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.366
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.261
+    }
+   ],
+   "words": 3467,
+   "tables": 2,
+   "sentence_words": 28.4,
+   "we_share": 0.019
+  },
+  {
+   "id": "PMC7734948",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.015
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.247
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.302
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.262
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.175,
+     "tables": 1
+    }
+   ],
+   "words": 8516,
+   "tables": 1,
+   "sentence_words": 41.3,
+   "we_share": 0.07
+  },
+  {
+   "id": "PMC7736928",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.039
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.104
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.102
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.198
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.115
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.343
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.056
+    },
+    {
+     "level": 2,
+     "text": "Summary",
+     "share": 0.042
+    }
+   ],
+   "words": 3659,
+   "tables": 0,
+   "sentence_words": 22.7,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC7821842",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.131
+    },
+    {
+     "level": 2,
+     "text": "Previous Research",
+     "share": 0.169
+    },
+    {
+     "level": 3,
+     "text": "Participants"
+    },
+    {
+     "level": 3,
+     "text": "Survey Design"
+    },
+    {
+     "level": 3,
+     "text": "Methodology"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.553,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.112
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.036
+    }
+   ],
+   "words": 11793,
+   "tables": 1,
+   "sentence_words": 32.4,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC7905969",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.025
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.035
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.197
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.269
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.394
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.081
+    }
+   ],
+   "words": 4488,
+   "tables": 0,
+   "sentence_words": 28.4,
+   "we_share": 0.038
+  },
+  {
+   "id": "PMC7920021",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.041
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.099
+    },
+    {
+     "level": 2,
+     "text": "Background",
+     "share": 0.107
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.028
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.411,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.284,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.029
+    }
+   ],
+   "words": 4099,
+   "tables": 4,
+   "sentence_words": 33.8,
+   "we_share": 0.046
+  },
+  {
+   "id": "PMC7940865",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.021
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.057
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.153
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.411
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.286
+    },
+    {
+     "level": 3,
+     "text": "Evaluation"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.071
+    }
+   ],
+   "words": 11840,
+   "tables": 0,
+   "sentence_words": 27.9,
+   "we_share": 0.074
+  },
+  {
+   "id": "PMC7970721",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.008
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.081
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.164
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.235
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.396
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.068
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.048
+    }
+   ],
+   "words": 10269,
+   "tables": 0,
+   "sentence_words": 35.9,
+   "we_share": 0.188
+  },
+  {
+   "id": "PMC7994053",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.043
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 3,
+     "text": "Policy Implications"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.113
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.116
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.142
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.067
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.076
+    },
+    {
+     "level": 3,
+     "text": "Data Collection"
+    },
+    {
+     "level": 3,
+     "text": "Data Analysis"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.067
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.037
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.049
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.103
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.047
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.063
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.078
+    }
+   ],
+   "words": 7055,
+   "tables": 0,
+   "sentence_words": 28.3,
+   "we_share": 0.046
+  },
+  {
+   "id": "PMC8060612",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.033
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.085
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.124
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.254
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.388
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.115
+    }
+   ],
+   "words": 5636,
+   "tables": 0,
+   "sentence_words": 38.4,
+   "we_share": 0.248
+  },
+  {
+   "id": "PMC8060614",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.016
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.147
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.258
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.44
+    },
+    {
+     "level": 3,
+     "text": "Findings"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.138,
+     "tables": 2
+    }
+   ],
+   "words": 5742,
+   "tables": 2,
+   "sentence_words": 36.6,
+   "we_share": 0.206
+  },
+  {
+   "id": "PMC8319521",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.046
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.077
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.007
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.606
+    },
+    {
+     "level": 3,
+     "text": "Interpretation"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.123
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.14
+    }
+   ],
+   "words": 4137,
+   "tables": 0,
+   "sentence_words": 46.0,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC8319584",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.024
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.067
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.117
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.159
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.28
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.093
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.092
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.076
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.093
+    }
+   ],
+   "words": 9802,
+   "tables": 0,
+   "sentence_words": 33.4,
+   "we_share": 0.028
+  },
+  {
+   "id": "PMC8404024",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.172
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.213,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.164
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.141
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.267
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.043
+    }
+   ],
+   "words": 11944,
+   "tables": 1,
+   "sentence_words": 27.3,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC8414031",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.018
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.036
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.088
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.13
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.081
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.316
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.101
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.185
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.044
+    }
+   ],
+   "words": 11419,
+   "tables": 0,
+   "sentence_words": 29.4,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC8577632",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.027
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.046
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.138
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.557
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.194
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.038
+    }
+   ],
+   "words": 7791,
+   "tables": 0,
+   "sentence_words": 46.4,
+   "we_share": 0.138
+  },
+  {
+   "id": "PMC8661075",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.033
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.303
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.128
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.278
+    },
+    {
+     "level": 2,
+     "text": "Policy Implications",
+     "share": 0.258
+    }
+   ],
+   "words": 3354,
+   "tables": 0,
+   "sentence_words": 32.6,
+   "we_share": 0.04
+  },
+  {
+   "id": "PMC8921701",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.032
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.105
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.403
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.413
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.047
+    }
+   ],
+   "words": 6308,
+   "tables": 0,
+   "sentence_words": 39.2,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC8942620",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.032
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.125
+    },
+    {
+     "level": 2,
+     "text": "Related Work",
+     "share": 0.203
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.187
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.405
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.048
+    }
+   ],
+   "words": 4306,
+   "tables": 0,
+   "sentence_words": 24.4,
+   "we_share": 0.04
+  },
+  {
+   "id": "PMC9001162",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.024
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.094
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.34
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.494
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.048
+    }
+   ],
+   "words": 8823,
+   "tables": 0,
+   "sentence_words": 29.1,
+   "we_share": 0.003
+  },
+  {
+   "id": "PMC9126137",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.013
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.02
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.029
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.043
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.018
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.285
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.029
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.022
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.521
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.02
+    }
+   ],
+   "words": 10805,
+   "tables": 0,
+   "sentence_words": 37.7,
+   "we_share": 0.077
+  },
+  {
+   "id": "PMC9149587",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.024
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.152
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.079,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.201,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.233
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.272,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.038
+    }
+   ],
+   "words": 5606,
+   "tables": 4,
+   "sentence_words": 25.8,
+   "we_share": 0.009
+  },
+  {
+   "id": "PMC9170055",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.02
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.107
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.378
+    },
+    {
+     "level": 3,
+     "text": "Recommendations"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.194
+    },
+    {
+     "level": 3,
+     "text": "Recommendations"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.245
+    },
+    {
+     "level": 3,
+     "text": "Recommendations"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.055
+    }
+   ],
+   "words": 4936,
+   "tables": 0,
+   "sentence_words": 28.4,
+   "we_share": 0.115
+  },
+  {
+   "id": "PMC9349534",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.012
+    },
+    {
+     "level": 2,
+     "text": "INTRODUCTION",
+     "share": 0.113
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.109
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.221
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.16
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.156
+    },
+    {
+     "level": 2,
+     "text": "ANALYSIS",
+     "share": 0.149
+    },
+    {
+     "level": 2,
+     "text": "CONCLUSION",
+     "share": 0.08
+    }
+   ],
+   "words": 12597,
+   "tables": 0,
+   "sentence_words": 41.4,
+   "we_share": 0.162
+  },
+  {
+   "id": "PMC9368573",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.026
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.347
+    },
+    {
+     "level": 2,
+     "text": "Methodology",
+     "share": 0.072,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Findings",
+     "share": 0.278
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.22
+    },
+    {
+     "level": 2,
+     "text": "Conclusions and implications",
+     "share": 0.049
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.008
+    }
+   ],
+   "words": 6964,
+   "tables": 2,
+   "sentence_words": 24.5,
+   "we_share": 0.053
+  },
+  {
+   "id": "PMC9372470",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.065
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.174
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.157
+    },
+    {
+     "level": 2,
+     "text": "Research methodology",
+     "share": 0.225
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.272,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.107
+    }
+   ],
+   "words": 5628,
+   "tables": 3,
+   "sentence_words": 22.2,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC9412149",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.028
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.056
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.102,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.013
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.552
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.173
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.075
+    }
+   ],
+   "words": 6585,
+   "tables": 1,
+   "sentence_words": 30.7,
+   "we_share": 0.112
+  },
+  {
+   "id": "PMC9445291",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.016
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.063
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.147
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.21
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.505
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.059
+    }
+   ],
+   "words": 7617,
+   "tables": 0,
+   "sentence_words": 39.8,
+   "we_share": 0.055
+  },
+  {
+   "id": "PMC9511442",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.028
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.101
+    },
+    {
+     "level": 2,
+     "text": "Literature and theoretical framework",
+     "share": 0.278
+    },
+    {
+     "level": 3,
+     "text": "Literature"
+    },
+    {
+     "level": 3,
+     "text": "Theoretical framework"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.176
+    },
+    {
+     "level": 3,
+     "text": "Data"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.296,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Concluding remarks",
+     "share": 0.121
+    }
+   ],
+   "words": 6626,
+   "tables": 2,
+   "sentence_words": 31.9,
+   "we_share": 0.337
+  },
+  {
+   "id": "PMC9618271",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.013
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.032
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.06
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.123
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.764
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.008
+    }
+   ],
+   "words": 11187,
+   "tables": 0,
+   "sentence_words": 30.7,
+   "we_share": 0.011
+  },
+  {
+   "id": "PMC9679585",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.012
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.099
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.18
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.226
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.443
+    },
+    {
+     "level": 3,
+     "text": "Case Study"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.04
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.001
+    }
+   ],
+   "words": 10141,
+   "tables": 0,
+   "sentence_words": 33.1,
+   "we_share": 0.157
+  },
+  {
+   "id": "PMC9684816",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.041
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.068
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.214
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.089
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.149
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.124
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.274
+    },
+    {
+     "level": 2,
+     "text": "Concluding remarks",
+     "share": 0.041
+    }
+   ],
+   "words": 8377,
+   "tables": 0,
+   "sentence_words": 29.2,
+   "we_share": 0.153
+  },
+  {
+   "id": "PMC9778907",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.032
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.085
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.063
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.049
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.255
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.26
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.216
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.04
+    }
+   ],
+   "words": 5668,
+   "tables": 0,
+   "sentence_words": 24.5,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC9828371",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.017
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.151
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.245,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.097
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.384
+    },
+    {
+     "level": 2,
+     "text": "Concluding Remarks",
+     "share": 0.106
+    }
+   ],
+   "words": 8000,
+   "tables": 1,
+   "sentence_words": 39.5,
+   "we_share": 0.106
+  },
+  {
+   "id": "PMC9832415",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.208
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.081
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.155
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.18
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.269
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.107
+    }
+   ],
+   "words": 5969,
+   "tables": 0,
+   "sentence_words": 23.2,
+   "we_share": 0.113
+  },
+  {
+   "id": "PMC9836921",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.017
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.074
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.191
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.234
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.351
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.133
+    }
+   ],
+   "words": 7050,
+   "tables": 0,
+   "sentence_words": 36.1,
+   "we_share": 0.047
+  },
+  {
+   "id": "PMC9907431",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.07
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.065
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.033
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.505
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.298
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.028
+    }
+   ],
+   "words": 11238,
+   "tables": 0,
+   "sentence_words": 38.4,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC9942057",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.057
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.094
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.126
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.324
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.342
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.057
+    }
+   ],
+   "words": 6494,
+   "tables": 0,
+   "sentence_words": 27.4,
+   "we_share": 0.025
+  },
+  {
+   "id": "cap-12172986",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.02
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.98
+    },
+    {
+     "level": 3,
+     "text": "Facts & Background"
+    },
+    {
+     "level": 3,
+     "text": "Discussion"
+    }
+   ],
+   "words": 2651,
+   "tables": 0,
+   "sentence_words": 27.9,
+   "we_share": 0.117
+  },
+  {
+   "id": "cap-12174242",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.011
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.989
+    },
+    {
+     "level": 3,
+     "text": "I"
+    },
+    {
+     "level": 3,
+     "text": "II"
+    },
+    {
+     "level": 3,
+     "text": "A"
+    },
+    {
+     "level": 3,
+     "text": "III"
+    },
+    {
+     "level": 3,
+     "text": "IV"
+    },
+    {
+     "level": 3,
+     "text": "A"
+    }
+   ],
+   "words": 5554,
+   "tables": 0,
+   "sentence_words": 23.2,
+   "we_share": 0.009
+  },
+  {
+   "id": "cap-12263888",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.019
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.981
+    },
+    {
+     "level": 3,
+     "text": "OPINION"
+    },
+    {
+     "level": 3,
+     "text": "I"
+    },
+    {
+     "level": 3,
+     "text": "II"
+    },
+    {
+     "level": 3,
+     "text": "III"
+    },
+    {
+     "level": 3,
+     "text": "A"
+    },
+    {
+     "level": 3,
+     "text": "IV"
+    }
+   ],
+   "words": 3496,
+   "tables": 0,
+   "sentence_words": 26.8,
+   "we_share": 0.106
+  },
+  {
+   "id": "cap-12264705",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.033
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.967
+    },
+    {
+     "level": 3,
+     "text": "OPINION"
+    },
+    {
+     "level": 3,
+     "text": "BACKGROUND"
+    },
+    {
+     "level": 3,
+     "text": "DISCUSSION"
+    },
+    {
+     "level": 3,
+     "text": "CONCLUSION"
+    }
+   ],
+   "words": 4128,
+   "tables": 0,
+   "sentence_words": 22.6,
+   "we_share": 0.17
+  },
+  {
+   "id": "cap-12264754",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.01
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.812
+    },
+    {
+     "level": 3,
+     "text": "OPINION"
+    },
+    {
+     "level": 3,
+     "text": "I"
+    },
+    {
+     "level": 3,
+     "text": "II"
+    },
+    {
+     "level": 3,
+     "text": "III"
+    },
+    {
+     "level": 3,
+     "text": "A"
+    },
+    {
+     "level": 3,
+     "text": "IV"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.178
+    },
+    {
+     "level": 3,
+     "text": "I"
+    },
+    {
+     "level": 3,
+     "text": "II"
+    },
+    {
+     "level": 3,
+     "text": "III"
+    }
+   ],
+   "words": 5604,
+   "tables": 0,
+   "sentence_words": 21.1,
+   "we_share": 0.061
+  },
+  {
+   "id": "cap-12266203",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.016
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.984
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Discussion"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    }
+   ],
+   "words": 4256,
+   "tables": 0,
+   "sentence_words": 22.2,
+   "we_share": 0.087
+  },
+  {
+   "id": "cap-12266753",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.013
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.987
+    },
+    {
+     "level": 3,
+     "text": "OPINION"
+    },
+    {
+     "level": 3,
+     "text": "I"
+    },
+    {
+     "level": 3,
+     "text": "II"
+    },
+    {
+     "level": 3,
+     "text": "A"
+    },
+    {
+     "level": 3,
+     "text": "IV"
+    }
+   ],
+   "words": 5234,
+   "tables": 0,
+   "sentence_words": 28.3,
+   "we_share": 0.098
+  },
+  {
+   "id": "cap-12276196",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.015
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.566
+    },
+    {
+     "level": 3,
+     "text": "OPINION"
+    },
+    {
+     "level": 3,
+     "text": "I"
+    },
+    {
+     "level": 3,
+     "text": "II"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.418
+    }
+   ],
+   "words": 4853,
+   "tables": 0,
+   "sentence_words": 21.6,
+   "we_share": 0.054
+  },
+  {
+   "id": "cap-12276247",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.01
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.99
+    },
+    {
+     "level": 3,
+     "text": "I"
+    },
+    {
+     "level": 3,
+     "text": "II"
+    },
+    {
+     "level": 3,
+     "text": "A"
+    },
+    {
+     "level": 3,
+     "text": "III"
+    },
+    {
+     "level": 3,
+     "text": "IV"
+    }
+   ],
+   "words": 4378,
+   "tables": 0,
+   "sentence_words": 18.9,
+   "we_share": 0.078
+  },
+  {
+   "id": "cap-12276434",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.012
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.847
+    },
+    {
+     "level": 3,
+     "text": "OPINION"
+    },
+    {
+     "level": 3,
+     "text": "I"
+    },
+    {
+     "level": 3,
+     "text": "II"
+    },
+    {
+     "level": 3,
+     "text": "A"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.142
+    }
+   ],
+   "words": 5285,
+   "tables": 0,
+   "sentence_words": 25.1,
+   "we_share": 0.187
+  },
+  {
+   "id": "cap-12276505",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.012
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.988
+    }
+   ],
+   "words": 4419,
+   "tables": 0,
+   "sentence_words": 24.6,
+   "we_share": 0.044
+  },
+  {
+   "id": "cap-12276867",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.014
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.986
+    },
+    {
+     "level": 3,
+     "text": "OPINION"
+    },
+    {
+     "level": 3,
+     "text": "I"
+    },
+    {
+     "level": 3,
+     "text": "II"
+    },
+    {
+     "level": 3,
+     "text": "A"
+    },
+    {
+     "level": 3,
+     "text": "IV"
+    }
+   ],
+   "words": 4084,
+   "tables": 0,
+   "sentence_words": 22.8,
+   "we_share": 0.162
+  },
+  {
+   "id": "cap-12277078",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.015
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.985
+    },
+    {
+     "level": 3,
+     "text": "FACTS & PROCEDURAL HISTORY"
+    },
+    {
+     "level": 3,
+     "text": "ANALYSIS"
+    }
+   ],
+   "words": 4651,
+   "tables": 0,
+   "sentence_words": 22.8,
+   "we_share": 0.079
+  },
+  {
+   "id": "cap-12516737",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.011
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.989
+    },
+    {
+     "level": 3,
+     "text": "Factual and Procedural Background"
+    },
+    {
+     "level": 3,
+     "text": "Analysis"
+    }
+   ],
+   "words": 4355,
+   "tables": 0,
+   "sentence_words": 21.0,
+   "we_share": 0.092
+  },
+  {
+   "id": "cap-4085721",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.012
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.988
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Discussion"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    }
+   ],
+   "words": 4724,
+   "tables": 0,
+   "sentence_words": 29.0,
+   "we_share": 0.111
+  },
+  {
+   "id": "cap-4087262",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.013
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.987
+    },
+    {
+     "level": 3,
+     "text": "I"
+    },
+    {
+     "level": 3,
+     "text": "A"
+    },
+    {
+     "level": 3,
+     "text": "II"
+    },
+    {
+     "level": 3,
+     "text": "III"
+    },
+    {
+     "level": 3,
+     "text": "A"
+    },
+    {
+     "level": 3,
+     "text": "IV"
+    }
+   ],
+   "words": 5018,
+   "tables": 0,
+   "sentence_words": 23.1,
+   "we_share": 0.083
+  },
+  {
+   "id": "cap-4176480",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.01
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.99
+    },
+    {
+     "level": 3,
+     "text": "I"
+    },
+    {
+     "level": 3,
+     "text": "II"
+    },
+    {
+     "level": 3,
+     "text": "III"
+    },
+    {
+     "level": 3,
+     "text": "IV"
+    },
+    {
+     "level": 3,
+     "text": "A"
+    },
+    {
+     "level": 3,
+     "text": "A"
+    },
+    {
+     "level": 3,
+     "text": "VI"
+    }
+   ],
+   "words": 5473,
+   "tables": 0,
+   "sentence_words": 23.9,
+   "we_share": 0.123
+  },
+  {
+   "id": "cap-4335376",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.011
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.989
+    },
+    {
+     "level": 3,
+     "text": "OPINION"
+    },
+    {
+     "level": 3,
+     "text": "BACKGROUND"
+    },
+    {
+     "level": 3,
+     "text": "DISCUSSION"
+    },
+    {
+     "level": 3,
+     "text": "CONCLUSION"
+    }
+   ],
+   "words": 4429,
+   "tables": 0,
+   "sentence_words": 23.6,
+   "we_share": 0.011
+  },
+  {
+   "id": "cap-4351013",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.012
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.988
+    },
+    {
+     "level": 3,
+     "text": "I"
+    },
+    {
+     "level": 3,
+     "text": "II"
+    },
+    {
+     "level": 3,
+     "text": "A"
+    }
+   ],
+   "words": 3861,
+   "tables": 0,
+   "sentence_words": 22.4,
+   "we_share": 0.085
+  },
+  {
+   "id": "cap-4365413",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.008
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.992
+    },
+    {
+     "level": 3,
+     "text": "I"
+    },
+    {
+     "level": 3,
+     "text": "II"
+    },
+    {
+     "level": 3,
+     "text": "III"
+    },
+    {
+     "level": 3,
+     "text": "A"
+    },
+    {
+     "level": 3,
+     "text": "IV"
+    },
+    {
+     "level": 3,
+     "text": "A"
+    }
+   ],
+   "words": 6135,
+   "tables": 0,
+   "sentence_words": 22.4,
+   "we_share": 0.085
+  },
+  {
+   "id": "cap-4366800",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.019
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.981
+    },
+    {
+     "level": 3,
+     "text": "INTRODUCTION"
+    },
+    {
+     "level": 3,
+     "text": "BACKGROUND"
+    },
+    {
+     "level": 3,
+     "text": "ANALYSIS"
+    },
+    {
+     "level": 3,
+     "text": "CONCLUSION"
+    }
+   ],
+   "words": 2621,
+   "tables": 0,
+   "sentence_words": 28.8,
+   "we_share": 0.022
+  },
+  {
+   "id": "cap-5770326",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.019
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.981
+    },
+    {
+     "level": 3,
+     "text": "BACKGROUND"
+    }
+   ],
+   "words": 3770,
+   "tables": 0,
+   "sentence_words": 29.0,
+   "we_share": 0.121
+  },
+  {
+   "id": "cap-6886156",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.011
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.989
+    },
+    {
+     "level": 3,
+     "text": "BACKGROUND"
+    },
+    {
+     "level": 3,
+     "text": "DISCUSSION"
+    },
+    {
+     "level": 3,
+     "text": "CONCLUSION"
+    }
+   ],
+   "words": 4047,
+   "tables": 0,
+   "sentence_words": 28.0,
+   "we_share": 0.245
+  },
+  {
+   "id": "cap-6889809",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.009
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.187
+    },
+    {
+     "level": 3,
+     "text": "OPINION"
+    },
+    {
+     "level": 3,
+     "text": "^Background"
+    },
+    {
+     "level": 3,
+     "text": "Discussion"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.804
+    },
+    {
+     "level": 3,
+     "text": "I"
+    },
+    {
+     "level": 3,
+     "text": "II"
+    },
+    {
+     "level": 3,
+     "text": "III"
+    }
+   ],
+   "words": 6540,
+   "tables": 0,
+   "sentence_words": 23.9,
+   "we_share": 0.079
+  },
+  {
+   "id": "cap-6892812",
+   "outline": [
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.012
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.988
+    },
+    {
+     "level": 3,
+     "text": "FACTUAL BACKGROUND"
+    },
+    {
+     "level": 3,
+     "text": "DISCUSSION"
+    },
+    {
+     "level": 3,
+     "text": "A"
+    },
+    {
+     "level": 3,
+     "text": "IV"
+    }
+   ],
+   "words": 4234,
+   "tables": 0,
+   "sentence_words": 19.3,
+   "we_share": 0.073
+  }
+ ],
+ "dropped": {
+  "PMC10034875": "36 top-level sections (heading levels lost in conversion?)",
+  "PMC13100323": "16 top-level sections (heading levels lost in conversion?)"
+ },
+ "paper_types": {
+  "doctrinal": 73,
+  "court_opinion": 25,
+  "empirical_legal_study": 24,
+  "case_comment": 1
+ },
+ "paper_types_by_id": {
+  "PMC10008147": "doctrinal",
+  "PMC10016165": "doctrinal",
+  "PMC10018615": "doctrinal",
+  "PMC10032245": "empirical_legal_study",
+  "PMC10126761": "empirical_legal_study",
+  "PMC10170042": "empirical_legal_study",
+  "PMC10264218": "empirical_legal_study",
+  "PMC10295377": "empirical_legal_study",
+  "PMC10477054": "doctrinal",
+  "PMC10684896": "doctrinal",
+  "PMC10765871": "doctrinal",
+  "PMC10937180": "doctrinal",
+  "PMC11095730": "doctrinal",
+  "PMC11109589": "doctrinal",
+  "PMC11150977": "doctrinal",
+  "PMC11176405": "doctrinal",
+  "PMC11250763": "doctrinal",
+  "PMC11297081": "case_comment",
+  "PMC11308606": "empirical_legal_study",
+  "PMC11335679": "empirical_legal_study",
+  "PMC11347943": "empirical_legal_study",
+  "PMC11549566": "empirical_legal_study",
+  "PMC11681859": "doctrinal",
+  "PMC11954361": "empirical_legal_study",
+  "PMC11954362": "empirical_legal_study",
+  "PMC12174786": "doctrinal",
+  "PMC12174807": "doctrinal",
+  "PMC12395227": "doctrinal",
+  "PMC12469156": "empirical_legal_study",
+  "PMC12477964": "doctrinal",
+  "PMC12549741": "doctrinal",
+  "PMC12551035": "doctrinal",
+  "PMC12658474": "doctrinal",
+  "PMC12659925": "empirical_legal_study",
+  "PMC12680240": "empirical_legal_study",
+  "PMC12799019": "doctrinal",
+  "PMC12880725": "empirical_legal_study",
+  "PMC12912832": "doctrinal",
+  "PMC13008768": "doctrinal",
+  "PMC13017479": "doctrinal",
+  "PMC13235709": "doctrinal",
+  "PMC13253888": "doctrinal",
+  "PMC13312961": "doctrinal",
+  "PMC13570735": "doctrinal",
+  "PMC13593415": "empirical_legal_study",
+  "PMC13637550": "empirical_legal_study",
+  "PMC13715135": "doctrinal",
+  "PMC4958094": "doctrinal",
+  "PMC5490222": "doctrinal",
+  "PMC5749522": "empirical_legal_study",
+  "PMC6116926": "doctrinal",
+  "PMC6293355": "doctrinal",
+  "PMC6294277": "doctrinal",
+  "PMC7180356": "doctrinal",
+  "PMC7187671": "empirical_legal_study",
+  "PMC7218183": "doctrinal",
+  "PMC7248190": "doctrinal",
+  "PMC7281853": "doctrinal",
+  "PMC7292476": "doctrinal",
+  "PMC7616098": "doctrinal",
+  "PMC7733051": "doctrinal",
+  "PMC7734948": "doctrinal",
+  "PMC7736928": "doctrinal",
+  "PMC7821842": "empirical_legal_study",
+  "PMC7905969": "doctrinal",
+  "PMC7920021": "doctrinal",
+  "PMC7940865": "doctrinal",
+  "PMC7970721": "doctrinal",
+  "PMC7994053": "doctrinal",
+  "PMC8060612": "doctrinal",
+  "PMC8060614": "doctrinal",
+  "PMC8319521": "doctrinal",
+  "PMC8319584": "doctrinal",
+  "PMC8404024": "doctrinal",
+  "PMC8414031": "doctrinal",
+  "PMC8577632": "doctrinal",
+  "PMC8661075": "doctrinal",
+  "PMC8921701": "doctrinal",
+  "PMC8942620": "doctrinal",
+  "PMC9001162": "doctrinal",
+  "PMC9126137": "doctrinal",
+  "PMC9149587": "doctrinal",
+  "PMC9170055": "doctrinal",
+  "PMC9349534": "doctrinal",
+  "PMC9368573": "empirical_legal_study",
+  "PMC9372470": "empirical_legal_study",
+  "PMC9412149": "empirical_legal_study",
+  "PMC9445291": "doctrinal",
+  "PMC9511442": "empirical_legal_study",
+  "PMC9618271": "doctrinal",
+  "PMC9679585": "doctrinal",
+  "PMC9684816": "doctrinal",
+  "PMC9778907": "doctrinal",
+  "PMC9828371": "doctrinal",
+  "PMC9832415": "doctrinal",
+  "PMC9836921": "doctrinal",
+  "PMC9907431": "doctrinal",
+  "PMC9942057": "doctrinal",
+  "cap-12172986": "court_opinion",
+  "cap-12174242": "court_opinion",
+  "cap-12263888": "court_opinion",
+  "cap-12264705": "court_opinion",
+  "cap-12264754": "court_opinion",
+  "cap-12266203": "court_opinion",
+  "cap-12266753": "court_opinion",
+  "cap-12276196": "court_opinion",
+  "cap-12276247": "court_opinion",
+  "cap-12276434": "court_opinion",
+  "cap-12276505": "court_opinion",
+  "cap-12276867": "court_opinion",
+  "cap-12277078": "court_opinion",
+  "cap-12516737": "court_opinion",
+  "cap-4085721": "court_opinion",
+  "cap-4087262": "court_opinion",
+  "cap-4176480": "court_opinion",
+  "cap-4335376": "court_opinion",
+  "cap-4351013": "court_opinion",
+  "cap-4365413": "court_opinion",
+  "cap-4366800": "court_opinion",
+  "cap-5770326": "court_opinion",
+  "cap-6886156": "court_opinion",
+  "cap-6889809": "court_opinion",
+  "cap-6892812": "court_opinion"
+ },
+ "layouts": 101
+}

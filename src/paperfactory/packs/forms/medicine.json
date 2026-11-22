@@ -1,0 +1,7261 @@
+{
+ "cards": [
+  {
+   "id": "PMC10009510",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.076
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.139
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.267
+    },
+    {
+     "level": 3,
+     "text": "Main outcomes"
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.214,
+     "tables": 5
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.293
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.01
+    }
+   ],
+   "words": 3855,
+   "tables": 5,
+   "sentence_words": 23.4,
+   "we_share": 0.013
+  },
+  {
+   "id": "PMC10208129",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.045
+    },
+    {
+     "level": 3,
+     "text": "Objective"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.075
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.137
+    },
+    {
+     "level": 3,
+     "text": "Search strategy"
+    },
+    {
+     "level": 3,
+     "text": "Selection criteria"
+    },
+    {
+     "level": 3,
+     "text": "Data extraction"
+    },
+    {
+     "level": 3,
+     "text": "Quality assessment"
+    },
+    {
+     "level": 2,
+     "text": "Result",
+     "share": 0.534,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Search results"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.185
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.025
+    }
+   ],
+   "words": 4378,
+   "tables": 1,
+   "sentence_words": 27.5,
+   "we_share": 0.151
+  },
+  {
+   "id": "PMC10227460",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.018
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.068,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.032
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.082
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.097
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.361
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.136
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.063,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.107
+    },
+    {
+     "level": 2,
+     "text": "Summary",
+     "share": 0.023
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.006
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.008
+    }
+   ],
+   "words": 7441,
+   "tables": 2,
+   "sentence_words": 26.3,
+   "we_share": 0.025
+  },
+  {
+   "id": "PMC10334345",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.02
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.035
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.35
+    },
+    {
+     "level": 2,
+     "text": "Procedures",
+     "share": 0.292
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.139
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.132
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.032
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.0
+    }
+   ],
+   "words": 8555,
+   "tables": 0,
+   "sentence_words": 34.0,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC10449581",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.031
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.083
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.02
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.286,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.205
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.19
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.1
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.085
+    }
+   ],
+   "words": 7358,
+   "tables": 1,
+   "sentence_words": 25.5,
+   "we_share": 0.014
+  },
+  {
+   "id": "PMC10455720",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.046
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.078
+    },
+    {
+     "level": 2,
+     "text": "Materials and Methods",
+     "share": 0.108
+    },
+    {
+     "level": 3,
+     "text": "Inclusion and Exclusion Criteria"
+    },
+    {
+     "level": 3,
+     "text": "Data Extraction"
+    },
+    {
+     "level": 2,
+     "text": "Results and Discussion",
+     "share": 0.739
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.029
+    }
+   ],
+   "words": 4371,
+   "tables": 0,
+   "sentence_words": 23.8,
+   "we_share": 0.017
+  },
+  {
+   "id": "PMC10463362",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.084
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.117
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.356
+    },
+    {
+     "level": 3,
+     "text": "Outcome measures"
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.166,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.274
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.003
+    }
+   ],
+   "words": 4362,
+   "tables": 3,
+   "sentence_words": 28.7,
+   "we_share": 0.056
+  },
+  {
+   "id": "PMC10491626",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.078
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.133
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.335
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.244,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.21
+    }
+   ],
+   "words": 3072,
+   "tables": 3,
+   "sentence_words": 27.9,
+   "we_share": 0.055
+  },
+  {
+   "id": "PMC10547628",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.066
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Background",
+     "share": 0.107
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.567
+    },
+    {
+     "level": 3,
+     "text": "Eligibility criteria"
+    },
+    {
+     "level": 3,
+     "text": "Inclusion"
+    },
+    {
+     "level": 3,
+     "text": "Exclusion"
+    },
+    {
+     "level": 3,
+     "text": "Procedural setup"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.22
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.029
+    },
+    {
+     "level": 2,
+     "text": "Summary",
+     "share": 0.012
+    }
+   ],
+   "words": 2764,
+   "tables": 0,
+   "sentence_words": 21.1,
+   "we_share": 0.069
+  },
+  {
+   "id": "PMC10703676",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.018
+    },
+    {
+     "level": 2,
+     "text": "Main",
+     "share": 0.041
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.485,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.103
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.349
+    },
+    {
+     "level": 3,
+     "text": "Study participants"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.004
+    }
+   ],
+   "words": 8381,
+   "tables": 1,
+   "sentence_words": 24.0,
+   "we_share": 0.278
+  },
+  {
+   "id": "PMC10745262",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.051
+    },
+    {
+     "level": 3,
+     "text": "Aims"
+    },
+    {
+     "level": 3,
+     "text": "Methods and results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.092
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.194
+    },
+    {
+     "level": 3,
+     "text": "Recommendations"
+    },
+    {
+     "level": 3,
+     "text": "Data analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.314,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.317
+    },
+    {
+     "level": 3,
+     "text": "Limitations"
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.033
+    }
+   ],
+   "words": 5037,
+   "tables": 2,
+   "sentence_words": 32.0,
+   "we_share": 0.155
+  },
+  {
+   "id": "PMC10806519",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.104
+    },
+    {
+     "level": 3,
+     "text": "Objective"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.016
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.014
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.013
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.132
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.073
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.137,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.511
+    }
+   ],
+   "words": 2837,
+   "tables": 2,
+   "sentence_words": 31.9,
+   "we_share": 0.213
+  },
+  {
+   "id": "PMC10864718",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.039
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Aims"
+    },
+    {
+     "level": 3,
+     "text": "Methods and Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "INTRODUCTION",
+     "share": 0.096
+    },
+    {
+     "level": 2,
+     "text": "METHOD",
+     "share": 0.088
+    },
+    {
+     "level": 2,
+     "text": "RESULTS",
+     "share": 0.22,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "DISCUSSION",
+     "share": 0.533
+    },
+    {
+     "level": 2,
+     "text": "CONCLUSION",
+     "share": 0.025
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.0
+    }
+   ],
+   "words": 5552,
+   "tables": 3,
+   "sentence_words": 34,
+   "we_share": 0.213
+  },
+  {
+   "id": "PMC11060528",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.153
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Discussion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.255
+    },
+    {
+     "level": 3,
+     "text": "Objectives"
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.477
+    },
+    {
+     "level": 3,
+     "text": "Eligibility criteria"
+    },
+    {
+     "level": 3,
+     "text": "Study design"
+    },
+    {
+     "level": 3,
+     "text": "Population"
+    },
+    {
+     "level": 3,
+     "text": "Search strategy"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.114
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.0
+    }
+   ],
+   "words": 2568,
+   "tables": 0,
+   "sentence_words": 23.6,
+   "we_share": 0.092
+  },
+  {
+   "id": "PMC11141035",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.028
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.056
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.192
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.566
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.075
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.082
+    }
+   ],
+   "words": 8544,
+   "tables": 0,
+   "sentence_words": 24.5,
+   "we_share": 0.011
+  },
+  {
+   "id": "PMC11249799",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.102
+    },
+    {
+     "level": 3,
+     "text": "Introduction"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.374
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.382,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Data Extraction"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.132
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.005
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.005
+    }
+   ],
+   "words": 2880,
+   "tables": 1,
+   "sentence_words": 24.4,
+   "we_share": 0.036
+  },
+  {
+   "id": "PMC11263379",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.077,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.053
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.178
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.368,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.325
+    }
+   ],
+   "words": 3254,
+   "tables": 3,
+   "sentence_words": 24.5,
+   "we_share": 0.218
+  },
+  {
+   "id": "PMC11355461",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.042
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.052
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.238
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.263
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.35
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.029
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.026
+    }
+   ],
+   "words": 4095,
+   "tables": 0,
+   "sentence_words": 22.1,
+   "we_share": 0.168
+  },
+  {
+   "id": "PMC11432634",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.032
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.191
+    },
+    {
+     "level": 2,
+     "text": "Material and Methods",
+     "share": 0.061
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.056
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.626
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.034
+    }
+   ],
+   "words": 6374,
+   "tables": 0,
+   "sentence_words": 24.6,
+   "we_share": 0.015
+  },
+  {
+   "id": "PMC11751778",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.056
+    },
+    {
+     "level": 3,
+     "text": "Objectives"
+    },
+    {
+     "level": 3,
+     "text": "Design"
+    },
+    {
+     "level": 3,
+     "text": "Setting"
+    },
+    {
+     "level": 3,
+     "text": "Participants"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.016
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.006
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.099
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.328
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": "Result",
+     "share": 0.14,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.327
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.027
+    }
+   ],
+   "words": 4295,
+   "tables": 2,
+   "sentence_words": 31.6,
+   "we_share": 0.322
+  },
+  {
+   "id": "PMC11789932",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.08
+    },
+    {
+     "level": 2,
+     "text": "INTRODUCTION",
+     "share": 0.133
+    },
+    {
+     "level": 2,
+     "text": "METHODS",
+     "share": 0.135
+    },
+    {
+     "level": 3,
+     "text": "Search strategy"
+    },
+    {
+     "level": 2,
+     "text": "RESULTS",
+     "share": 0.241,
+     "tables": 4
+    },
+    {
+     "level": 3,
+     "text": "Risk of bias assessment"
+    },
+    {
+     "level": 2,
+     "text": "DISCUSSION",
+     "share": 0.376,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Limitations"
+    },
+    {
+     "level": 3,
+     "text": "Future directions"
+    },
+    {
+     "level": 2,
+     "text": "CONCLUSION",
+     "share": 0.028
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.007
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.0
+    }
+   ],
+   "words": 6314,
+   "tables": 5,
+   "sentence_words": 28.3,
+   "we_share": 0.07
+  },
+  {
+   "id": "PMC11899721",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.048
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.169
+    },
+    {
+     "level": 2,
+     "text": "Materials and Methods",
+     "share": 0.143
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.069
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.481
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.091
+    }
+   ],
+   "words": 4713,
+   "tables": 0,
+   "sentence_words": 24.5,
+   "we_share": 0.13
+  },
+  {
+   "id": "PMC12002086",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.039
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.085,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.063
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.751
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.063
+    }
+   ],
+   "words": 3227,
+   "tables": 1,
+   "sentence_words": 22.4,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC12035433",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.063
+    },
+    {
+     "level": 3,
+     "text": "Introduction"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.144
+    },
+    {
+     "level": 3,
+     "text": "Study design"
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.793,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Outcomes"
+    },
+    {
+     "level": 3,
+     "text": "Baseline assessment"
+    },
+    {
+     "level": 3,
+     "text": "Secondary outcomes"
+    }
+   ],
+   "words": 5398,
+   "tables": 1,
+   "sentence_words": 24.8,
+   "we_share": 0.032
+  },
+  {
+   "id": "PMC12065537",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.096
+    },
+    {
+     "level": 3,
+     "text": "Aim"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.189
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.234,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Data Sources"
+    },
+    {
+     "level": 3,
+     "text": "Statistical Analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.144,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.319
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.019
+    }
+   ],
+   "words": 3067,
+   "tables": 2,
+   "sentence_words": 27.9,
+   "we_share": 0.095
+  },
+  {
+   "id": "PMC12173916",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.021
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.062
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.071
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.112,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.211,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.42
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.103,
+     "tables": 1
+    }
+   ],
+   "words": 8362,
+   "tables": 3,
+   "sentence_words": 22.0,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC12238153",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.026
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Discussion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.116
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.242
+    },
+    {
+     "level": 3,
+     "text": "Eligibility criteria"
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.368,
+     "tables": 5
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.248
+    }
+   ],
+   "words": 10040,
+   "tables": 5,
+   "sentence_words": 30.0,
+   "we_share": 0.049
+  },
+  {
+   "id": "PMC12254580",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.061
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Objective"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.21
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.117
+    },
+    {
+     "level": 3,
+     "text": "Model Training"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.227,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.328
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.057
+    }
+   ],
+   "words": 4454,
+   "tables": 1,
+   "sentence_words": 27.7,
+   "we_share": 0.099
+  },
+  {
+   "id": "PMC12274049",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.03
+    },
+    {
+     "level": 3,
+     "text": "Introduction"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.137
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.376,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "General Procedure"
+    },
+    {
+     "level": 3,
+     "text": "Outcome Measures"
+    },
+    {
+     "level": 3,
+     "text": "Statistical Analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.193,
+     "tables": 4
+    },
+    {
+     "level": 3,
+     "text": "Primary Outcome"
+    },
+    {
+     "level": 3,
+     "text": "Secondary Outcomes"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.247
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.007
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.004
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.004
+    }
+   ],
+   "words": 10043,
+   "tables": 5,
+   "sentence_words": 28.1,
+   "we_share": 0.244
+  },
+  {
+   "id": "PMC12282298",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.017
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.135
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.217,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.067
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.069
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.333
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.069
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.094
+    }
+   ],
+   "words": 7477,
+   "tables": 2,
+   "sentence_words": 24.9,
+   "we_share": 0.027
+  },
+  {
+   "id": "PMC12331089",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.058
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Result"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.12
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.265
+    },
+    {
+     "level": 3,
+     "text": "Data collection"
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": "Result",
+     "share": 0.12,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.415
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.022
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.0
+    }
+   ],
+   "words": 4177,
+   "tables": 3,
+   "sentence_words": 23.5,
+   "we_share": 0.193
+  },
+  {
+   "id": "PMC12335097",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.052
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.104
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.039
+    },
+    {
+     "level": 2,
+     "text": "Eligibility criteria",
+     "share": 0.18,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Inclusion criteria"
+    },
+    {
+     "level": 3,
+     "text": "Quality assessment"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.288,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.251
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.086
+    },
+    {
+     "level": 3,
+     "text": "Limitations"
+    }
+   ],
+   "words": 4852,
+   "tables": 4,
+   "sentence_words": 25.4,
+   "we_share": 0.016
+  },
+  {
+   "id": "PMC12408307",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.053
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.124
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.087
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.296,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.252
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.158
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.03
+    }
+   ],
+   "words": 3565,
+   "tables": 2,
+   "sentence_words": 24.9,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC12549472",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.04
+    },
+    {
+     "level": 3,
+     "text": "Introduction"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.0
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.071
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.066
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.028
+    },
+    {
+     "level": 3,
+     "text": "Study Selection"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.037
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.567
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.186
+    },
+    {
+     "level": 3,
+     "text": "Strengths and Limitations"
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.006
+    }
+   ],
+   "words": 7485,
+   "tables": 0,
+   "sentence_words": 26.1,
+   "we_share": 0.028
+  },
+  {
+   "id": "PMC12558611",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.047
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.091
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.258
+    },
+    {
+     "level": 3,
+     "text": "Study population"
+    },
+    {
+     "level": 3,
+     "text": "Study procedures and design"
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.217,
+     "tables": 8
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.36
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.027
+    },
+    {
+     "level": 3,
+     "text": "Study limitations"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.0
+    }
+   ],
+   "words": 6445,
+   "tables": 8,
+   "sentence_words": 26.4,
+   "we_share": 0.092
+  },
+  {
+   "id": "PMC12699289",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.035
+    },
+    {
+     "level": 3,
+     "text": "Background and Purpose"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Discussion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.132
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.458
+    },
+    {
+     "level": 3,
+     "text": "Study Design"
+    },
+    {
+     "level": 3,
+     "text": "Participants"
+    },
+    {
+     "level": 3,
+     "text": "Outcomes"
+    },
+    {
+     "level": 3,
+     "text": "Data Analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.1,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.251
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.021
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.003
+    }
+   ],
+   "words": 4366,
+   "tables": 3,
+   "sentence_words": 24.9,
+   "we_share": 0.073
+  },
+  {
+   "id": "PMC12721486",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.087
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Objective"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.08
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.172
+    },
+    {
+     "level": 3,
+     "text": "Overview"
+    },
+    {
+     "level": 3,
+     "text": "Search Strategy"
+    },
+    {
+     "level": 3,
+     "text": "Data Extraction"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.277,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Study Selection"
+    },
+    {
+     "level": 3,
+     "text": "Quality Assessment"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.383
+    },
+    {
+     "level": 3,
+     "text": "Comparison to Prior Work"
+    },
+    {
+     "level": 3,
+     "text": "Future Directions"
+    },
+    {
+     "level": 3,
+     "text": "Limitations"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    }
+   ],
+   "words": 4208,
+   "tables": 1,
+   "sentence_words": 22.3,
+   "we_share": 0.055
+  },
+  {
+   "id": "PMC12733355",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.031
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.167
+    },
+    {
+     "level": 2,
+     "text": "Materials and Methods",
+     "share": 0.049
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.513
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.075
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.131
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.034
+    }
+   ],
+   "words": 5607,
+   "tables": 0,
+   "sentence_words": 27.5,
+   "we_share": 0.049
+  },
+  {
+   "id": "PMC12757437",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.064
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.144
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.286
+    },
+    {
+     "level": 3,
+     "text": "Data Sources"
+    },
+    {
+     "level": 3,
+     "text": "IV Selection"
+    },
+    {
+     "level": 2,
+     "text": "Result",
+     "share": 0.147
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.337,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.023
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.0
+    }
+   ],
+   "words": 3683,
+   "tables": 1,
+   "sentence_words": 25.8,
+   "we_share": 0.098
+  },
+  {
+   "id": "PMC12847652",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.091
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.091
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.29,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.463,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Limitations"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.066
+    }
+   ],
+   "words": 2728,
+   "tables": 3,
+   "sentence_words": 24.4,
+   "we_share": 0.223
+  },
+  {
+   "id": "PMC12901847",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.054
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Objectives"
+    },
+    {
+     "level": 3,
+     "text": "Design"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.095
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.302
+    },
+    {
+     "level": 3,
+     "text": "Data sources"
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.31,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.194
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.03
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.015
+    }
+   ],
+   "words": 5184,
+   "tables": 2,
+   "sentence_words": 32.1,
+   "we_share": 0.456
+  },
+  {
+   "id": "PMC12946776",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.094
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Objective"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.14
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Objective"
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.559,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Eligibility Criteria"
+    },
+    {
+     "level": 3,
+     "text": "Eligibility Assessment"
+    },
+    {
+     "level": 3,
+     "text": "Statistics"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.02
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.187
+    },
+    {
+     "level": 3,
+     "text": "Limitations"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    }
+   ],
+   "words": 3393,
+   "tables": 2,
+   "sentence_words": 22.3,
+   "we_share": 0.034
+  },
+  {
+   "id": "PMC12961200",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.059
+    },
+    {
+     "level": 3,
+     "text": "Objective"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.115
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.237
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.146,
+     "tables": 4
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.432
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.01
+    }
+   ],
+   "words": 3370,
+   "tables": 4,
+   "sentence_words": 26.6,
+   "we_share": 0.148
+  },
+  {
+   "id": "PMC13120904",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.079
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.056
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.253
+    },
+    {
+     "level": 3,
+     "text": "Study population"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.217,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.361
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.033
+    }
+   ],
+   "words": 3318,
+   "tables": 2,
+   "sentence_words": 20.7,
+   "we_share": 0.044
+  },
+  {
+   "id": "PMC13158490",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.058
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Objective"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.043
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.118
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.255
+    },
+    {
+     "level": 3,
+     "text": "Inclusion Criteria"
+    },
+    {
+     "level": 3,
+     "text": "Exclusion Criteria"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.035
+    },
+    {
+     "level": 3,
+     "text": "Study Selection"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.124,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.087
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.197
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.025
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.021
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.036
+    }
+   ],
+   "words": 4556,
+   "tables": 2,
+   "sentence_words": 23.6,
+   "we_share": 0.005
+  },
+  {
+   "id": "PMC13207003",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.047
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.103
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.31
+    },
+    {
+     "level": 3,
+     "text": "Eligibility Criteria"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.243
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.246
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.051
+    }
+   ],
+   "words": 5981,
+   "tables": 0,
+   "sentence_words": 22.7,
+   "we_share": 0.062
+  },
+  {
+   "id": "PMC13212576",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.071
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.099
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.216
+    },
+    {
+     "level": 3,
+     "text": "Data extraction"
+    },
+    {
+     "level": 3,
+     "text": "Quality assessment"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.037,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.265
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.297
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.016
+    }
+   ],
+   "words": 3884,
+   "tables": 1,
+   "sentence_words": 26.1,
+   "we_share": 0.148
+  },
+  {
+   "id": "PMC13296002",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.058
+    },
+    {
+     "level": 3,
+     "text": "Objective"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.008
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.009
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.006
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.074
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.221
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.333,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Outcomes"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.291
+    }
+   ],
+   "words": 4605,
+   "tables": 2,
+   "sentence_words": 29.8,
+   "we_share": 0.147
+  },
+  {
+   "id": "PMC13342687",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.088
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.117
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.208
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.244,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.311
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.033
+    }
+   ],
+   "words": 3677,
+   "tables": 3,
+   "sentence_words": 25.7,
+   "we_share": 0.035
+  },
+  {
+   "id": "PMC13459315",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.04
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.051
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.136
+    },
+    {
+     "level": 3,
+     "text": "Literature search"
+    },
+    {
+     "level": 3,
+     "text": "Study selection"
+    },
+    {
+     "level": 3,
+     "text": "Quality assessment"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.408
+    },
+    {
+     "level": 3,
+     "text": "Findings from our quality assessment"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.342
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.023
+    }
+   ],
+   "words": 5060,
+   "tables": 0,
+   "sentence_words": 21.2,
+   "we_share": 0.238
+  },
+  {
+   "id": "PMC13465142",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.028
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.079
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.189
+    },
+    {
+     "level": 3,
+     "text": "Data Extraction"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.298
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.365
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.041
+    }
+   ],
+   "words": 6038,
+   "tables": 0,
+   "sentence_words": 28.3,
+   "we_share": 0.103
+  },
+  {
+   "id": "PMC13522188",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.056
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.091
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.213
+    },
+    {
+     "level": 3,
+     "text": "Eligibility criteria"
+    },
+    {
+     "level": 3,
+     "text": "Study selection"
+    },
+    {
+     "level": 3,
+     "text": "Data extraction"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.295,
+     "tables": 3
+    },
+    {
+     "level": 3,
+     "text": "Primary outcomes"
+    },
+    {
+     "level": 3,
+     "text": "Secondary outcomes"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.331
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.015
+    }
+   ],
+   "words": 4353,
+   "tables": 3,
+   "sentence_words": 25.7,
+   "we_share": 0.051
+  },
+  {
+   "id": "PMC13540295",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.114
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Background",
+     "share": 0.071
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.252
+    },
+    {
+     "level": 3,
+     "text": "Inclusion and exclusion criteria"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.156,
+     "tables": 4
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.353
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.054
+    }
+   ],
+   "words": 2963,
+   "tables": 4,
+   "sentence_words": 24.5,
+   "we_share": 0.06
+  },
+  {
+   "id": "PMC13677274",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.076
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.088
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.175
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.263,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.33
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.021
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.026
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.012
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.005
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.003
+    }
+   ],
+   "words": 4370,
+   "tables": 3,
+   "sentence_words": 22.6,
+   "we_share": 0.044
+  },
+  {
+   "id": "PMC13721081",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.06
+    },
+    {
+     "level": 3,
+     "text": "Introduction"
+    },
+    {
+     "level": 3,
+     "text": "Aim"
+    },
+    {
+     "level": 3,
+     "text": "Material and methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": "Summary",
+     "share": 0.019
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.089
+    },
+    {
+     "level": 2,
+     "text": "Aim",
+     "share": 0.006
+    },
+    {
+     "level": 2,
+     "text": "Material and methods",
+     "share": 0.328
+    },
+    {
+     "level": 3,
+     "text": "Study population"
+    },
+    {
+     "level": 3,
+     "text": "Data collection"
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.188,
+     "tables": 5
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.311
+    }
+   ],
+   "words": 4410,
+   "tables": 5,
+   "sentence_words": 25.3,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC13723324",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.05
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.072
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.84,
+     "tables": 4
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.038
+    }
+   ],
+   "words": 4161,
+   "tables": 4,
+   "sentence_words": 23.4,
+   "we_share": 0.024
+  },
+  {
+   "id": "PMC13756443",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.15
+    },
+    {
+     "level": 3,
+     "text": "Introduction"
+    },
+    {
+     "level": 3,
+     "text": "Methods and analysis"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.096
+    },
+    {
+     "level": 2,
+     "text": "Methods and analysis",
+     "share": 0.594,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Participants"
+    },
+    {
+     "level": 3,
+     "text": "Outcomes"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.16
+    }
+   ],
+   "words": 2429,
+   "tables": 1,
+   "sentence_words": 23.4,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC4432084",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.054
+    },
+    {
+     "level": 3,
+     "text": "Rationale"
+    },
+    {
+     "level": 3,
+     "text": "Objectives"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.088
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.386
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 3,
+     "text": "Statistical methods"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.271,
+     "tables": 4
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.201
+    }
+   ],
+   "words": 3966,
+   "tables": 4,
+   "sentence_words": 29.1,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC4567784",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.08
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.01
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.018
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.014
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.084
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.312
+    },
+    {
+     "level": 3,
+     "text": "Study design and population"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.22,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.261
+    },
+    {
+     "level": 3,
+     "text": "Study limitations"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    }
+   ],
+   "words": 3176,
+   "tables": 2,
+   "sentence_words": 31.9,
+   "we_share": 0.06
+  },
+  {
+   "id": "PMC4599574",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.083
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.128
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.183
+    },
+    {
+     "level": 3,
+     "text": "Search strategy"
+    },
+    {
+     "level": 3,
+     "text": "Inclusion criteria"
+    },
+    {
+     "level": 3,
+     "text": "Data extraction"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.317
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.187
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.062
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.038
+    }
+   ],
+   "words": 2842,
+   "tables": 0,
+   "sentence_words": 26.6,
+   "we_share": 0.206
+  },
+  {
+   "id": "PMC4621030",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.022
+    },
+    {
+     "level": 2,
+     "text": "introduction",
+     "share": 0.159
+    },
+    {
+     "level": 2,
+     "text": "methods",
+     "share": 0.323
+    },
+    {
+     "level": 3,
+     "text": "statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.268,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "study population"
+    },
+    {
+     "level": 2,
+     "text": "discussion",
+     "share": 0.228
+    }
+   ],
+   "words": 2575,
+   "tables": 1,
+   "sentence_words": 24.5,
+   "we_share": 0.029
+  },
+  {
+   "id": "PMC4650834",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.061
+    },
+    {
+     "level": 3,
+     "text": "Introduction"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.067
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.057
+    },
+    {
+     "level": 3,
+     "text": "Study selection"
+    },
+    {
+     "level": 3,
+     "text": "Data extraction"
+    },
+    {
+     "level": 3,
+     "text": "Data analyses"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.473,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Discussion and conclusions",
+     "share": 0.337
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.005
+    }
+   ],
+   "words": 4774,
+   "tables": 2,
+   "sentence_words": 28.3,
+   "we_share": 0.02
+  },
+  {
+   "id": "PMC4699352",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.08
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Background",
+     "share": 0.061
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.289
+    },
+    {
+     "level": 3,
+     "text": "Statistical analyses"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.245,
+     "tables": 6
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.282
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.013
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.017
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.013
+    }
+   ],
+   "words": 4255,
+   "tables": 6,
+   "sentence_words": 25.5,
+   "we_share": 0.286
+  },
+  {
+   "id": "PMC4839159",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.069
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Discussion"
+    },
+    {
+     "level": 2,
+     "text": "Background",
+     "share": 0.16
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.652
+    },
+    {
+     "level": 3,
+     "text": "Design"
+    },
+    {
+     "level": 3,
+     "text": "Participants"
+    },
+    {
+     "level": 3,
+     "text": "Primary outcome measures"
+    },
+    {
+     "level": 3,
+     "text": "Secondary outcome measures"
+    },
+    {
+     "level": 3,
+     "text": "Data analysis"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.118
+    }
+   ],
+   "words": 5064,
+   "tables": 0,
+   "sentence_words": 27.5,
+   "we_share": 0.049
+  },
+  {
+   "id": "PMC4939027",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.062
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": "Background",
+     "share": 0.155
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.124
+    },
+    {
+     "level": 3,
+     "text": "Search strategy"
+    },
+    {
+     "level": 3,
+     "text": "Selection criteria"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.342,
+     "tables": 3
+    },
+    {
+     "level": 3,
+     "text": "Literature search"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.291
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.027
+    }
+   ],
+   "words": 4146,
+   "tables": 3,
+   "sentence_words": 28.4,
+   "we_share": 0.082
+  },
+  {
+   "id": "PMC5037076",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.078
+    },
+    {
+     "level": 2,
+     "text": "INTRODUCTION",
+     "share": 0.118
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.093
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.183
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.287
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.174
+    },
+    {
+     "level": 2,
+     "text": "CONCLUSION",
+     "share": 0.067
+    }
+   ],
+   "words": 3221,
+   "tables": 0,
+   "sentence_words": 25.6,
+   "we_share": 0.008
+  },
+  {
+   "id": "PMC5224684",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.062
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.079
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.062
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.157
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.101
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.269
+    },
+    {
+     "level": 3,
+     "text": "Practical issues"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.096
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.132
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.042
+    }
+   ],
+   "words": 4304,
+   "tables": 0,
+   "sentence_words": 26.4,
+   "we_share": 0.006
+  },
+  {
+   "id": "PMC5289926",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.066
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Findings"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.109
+    },
+    {
+     "level": 2,
+     "text": "Materials and methods",
+     "share": 0.381
+    },
+    {
+     "level": 3,
+     "text": "Study population and design"
+    },
+    {
+     "level": 3,
+     "text": "Study procedures"
+    },
+    {
+     "level": 3,
+     "text": "Outcomes"
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.274,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.17
+    }
+   ],
+   "words": 4200,
+   "tables": 3,
+   "sentence_words": 23.6,
+   "we_share": 0.118
+  },
+  {
+   "id": "PMC5393008",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.048
+    },
+    {
+     "level": 2,
+     "text": "Background",
+     "share": 0.028
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.177
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.164
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.246
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.296
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.041
+    }
+   ],
+   "words": 4540,
+   "tables": 0,
+   "sentence_words": 31.5,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC5415949",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.072
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods/design"
+    },
+    {
+     "level": 3,
+     "text": "Discussion"
+    },
+    {
+     "level": 2,
+     "text": "Background",
+     "share": 0.046
+    },
+    {
+     "level": 2,
+     "text": "Methods/design",
+     "share": 0.527,
+     "tables": 3
+    },
+    {
+     "level": 3,
+     "text": "Inclusion/exclusion criteria"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.301
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.014
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.023
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.019
+    }
+   ],
+   "words": 4647,
+   "tables": 3,
+   "sentence_words": 27.8,
+   "we_share": 0.048
+  },
+  {
+   "id": "PMC5461472",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.068
+    },
+    {
+     "level": 3,
+     "text": "Aims"
+    },
+    {
+     "level": 3,
+     "text": "Methods and results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.087
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.275,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.222
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.326
+    },
+    {
+     "level": 3,
+     "text": "Study limitations"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.022
+    }
+   ],
+   "words": 3626,
+   "tables": 2,
+   "sentence_words": 27.1,
+   "we_share": 0.245
+  },
+  {
+   "id": "PMC5507329",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.072
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.111
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.304
+    },
+    {
+     "level": 3,
+     "text": "Design and setting"
+    },
+    {
+     "level": 3,
+     "text": "Exclusion criteria"
+    },
+    {
+     "level": 3,
+     "text": "Outcomes"
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.153,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.315
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.046
+    }
+   ],
+   "words": 3446,
+   "tables": 3,
+   "sentence_words": 27.1,
+   "we_share": 0.126
+  },
+  {
+   "id": "PMC5686167",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.055
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.122
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.269
+    },
+    {
+     "level": 3,
+     "text": "Study selection"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.156,
+     "tables": 4
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.397
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.001
+    }
+   ],
+   "words": 3474,
+   "tables": 4,
+   "sentence_words": 28.5,
+   "we_share": 0.279
+  },
+  {
+   "id": "PMC5734576",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.108
+    },
+    {
+     "level": 3,
+     "text": "Objectives"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.104
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.195
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.238,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.355
+    }
+   ],
+   "words": 2789,
+   "tables": 3,
+   "sentence_words": 27.0,
+   "we_share": 0.214
+  },
+  {
+   "id": "PMC5759849",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.128
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.124
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.236
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.134
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.351
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.027
+    }
+   ],
+   "words": 2523,
+   "tables": 0,
+   "sentence_words": 33.3,
+   "we_share": 0.111
+  },
+  {
+   "id": "PMC5814393",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.039
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.136
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.075
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.144,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.105
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.334
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.084
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.052
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.032
+    }
+   ],
+   "words": 4174,
+   "tables": 1,
+   "sentence_words": 24.8,
+   "we_share": 0.006
+  },
+  {
+   "id": "PMC5853072",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.073
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Discussion"
+    },
+    {
+     "level": 2,
+     "text": "Background",
+     "share": 0.177
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.655,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.09
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.005
+    }
+   ],
+   "words": 4084,
+   "tables": 1,
+   "sentence_words": 26.9,
+   "we_share": 0.074
+  },
+  {
+   "id": "PMC6121590",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.048
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.072
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.256
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.105
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.104
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.197
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.132
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.052
+    },
+    {
+     "level": 2,
+     "text": "Concluding Remarks",
+     "share": 0.034
+    }
+   ],
+   "words": 4814,
+   "tables": 0,
+   "sentence_words": 24.0,
+   "we_share": 0.01
+  },
+  {
+   "id": "PMC6156014",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.102
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.095
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.354
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.258
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.159
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.031
+    }
+   ],
+   "words": 3313,
+   "tables": 0,
+   "sentence_words": 29.5,
+   "we_share": 0.037
+  },
+  {
+   "id": "PMC6240567",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.08
+    },
+    {
+     "level": 3,
+     "text": "Purpose"
+    },
+    {
+     "level": 3,
+     "text": "Materials and Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "INTRODUCTION",
+     "share": 0.078
+    },
+    {
+     "level": 2,
+     "text": "MATERIALS AND METHODS",
+     "share": 0.324
+    },
+    {
+     "level": 3,
+     "text": "Data source"
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": "RESULTS",
+     "share": 0.099
+    },
+    {
+     "level": 2,
+     "text": "DISCUSSION",
+     "share": 0.419
+    }
+   ],
+   "words": 3133,
+   "tables": 0,
+   "sentence_words": 31.3,
+   "we_share": 0.14
+  },
+  {
+   "id": "PMC6304170",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.149
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": "METHODS",
+     "share": 0.193
+    },
+    {
+     "level": 3,
+     "text": "Data extraction"
+    },
+    {
+     "level": 2,
+     "text": "RESULTS",
+     "share": 0.299,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "DISCUSSION",
+     "share": 0.334
+    },
+    {
+     "level": 2,
+     "text": "CONCLUSIONS",
+     "share": 0.025
+    },
+    {
+     "level": 2,
+     "text": "Additional material",
+     "share": 0.0
+    }
+   ],
+   "words": 3945,
+   "tables": 2,
+   "sentence_words": 28.6,
+   "we_share": 0.266
+  },
+  {
+   "id": "PMC6357543",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.001,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.88,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Design"
+    },
+    {
+     "level": 3,
+     "text": "Exclusion criteria"
+    },
+    {
+     "level": 3,
+     "text": "Procedures"
+    },
+    {
+     "level": 3,
+     "text": "Study variables"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.118
+    }
+   ],
+   "words": 2815,
+   "tables": 2,
+   "sentence_words": 27.1,
+   "we_share": 0.029
+  },
+  {
+   "id": "PMC6441501",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.043
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.169
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.313
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.112
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.172
+    },
+    {
+     "level": 2,
+     "text": "Conclusions and Future Implications",
+     "share": 0.191
+    }
+   ],
+   "words": 3721,
+   "tables": 0,
+   "sentence_words": 25.7,
+   "we_share": 0.034
+  },
+  {
+   "id": "PMC6588214",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.096
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.087
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.306
+    },
+    {
+     "level": 3,
+     "text": "Study procedure"
+    },
+    {
+     "level": 3,
+     "text": "Study measures"
+    },
+    {
+     "level": 3,
+     "text": "Study outcome"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.164,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.347
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.0
+    }
+   ],
+   "words": 6323,
+   "tables": 3,
+   "sentence_words": 28.5,
+   "we_share": 0.194
+  },
+  {
+   "id": "PMC6727323",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.08
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Method"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Background",
+     "share": 0.127
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.255
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.184,
+     "tables": 5
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.337
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.016
+    }
+   ],
+   "words": 4143,
+   "tables": 5,
+   "sentence_words": 28.2,
+   "we_share": 0.102
+  },
+  {
+   "id": "PMC7044902",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.154
+    },
+    {
+     "level": 3,
+     "text": "Introduction"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.211
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.445,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Objectives"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.171
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.019
+    }
+   ],
+   "words": 2746,
+   "tables": 1,
+   "sentence_words": 26.1,
+   "we_share": 0.013
+  },
+  {
+   "id": "PMC7178729",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.069
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.046
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.187
+    },
+    {
+     "level": 3,
+     "text": "Participants"
+    },
+    {
+     "level": 3,
+     "text": "Data collection"
+    },
+    {
+     "level": 3,
+     "text": "Statistical analyses"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.293,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.301,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.08
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.024
+    }
+   ],
+   "words": 3391,
+   "tables": 3,
+   "sentence_words": 25.6,
+   "we_share": 0.134
+  },
+  {
+   "id": "PMC7248262",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.084
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.154
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.21
+    },
+    {
+     "level": 3,
+     "text": "Inclusion Criteria"
+    },
+    {
+     "level": 3,
+     "text": "Extraction of Data"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.241,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.292
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.02
+    }
+   ],
+   "words": 3280,
+   "tables": 1,
+   "sentence_words": 29.7,
+   "we_share": 0.189
+  },
+  {
+   "id": "PMC7293253",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.028
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.101
+    },
+    {
+     "level": 2,
+     "text": "Method",
+     "share": 0.364
+    },
+    {
+     "level": 3,
+     "text": "Study design"
+    },
+    {
+     "level": 3,
+     "text": "Outcome measures"
+    },
+    {
+     "level": 3,
+     "text": "Statistics"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.217,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.29
+    }
+   ],
+   "words": 7287,
+   "tables": 2,
+   "sentence_words": 24.8,
+   "we_share": 0.206
+  },
+  {
+   "id": "PMC7356664",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.079
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.145
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.368
+    },
+    {
+     "level": 3,
+     "text": "Study Design"
+    },
+    {
+     "level": 3,
+     "text": "Statistical Analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.135
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.273
+    }
+   ],
+   "words": 3500,
+   "tables": 0,
+   "sentence_words": 23.5,
+   "we_share": 0.067
+  },
+  {
+   "id": "PMC7689870",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.096
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.098
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.083
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.139
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.343
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.18
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.06
+    }
+   ],
+   "words": 2770,
+   "tables": 0,
+   "sentence_words": 31.8,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC7772234",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.056
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.033
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.098
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.074
+    },
+    {
+     "level": 3,
+     "text": "Study Selection"
+    },
+    {
+     "level": 3,
+     "text": "Data Extraction"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.551,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.161
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.026
+    }
+   ],
+   "words": 5953,
+   "tables": 2,
+   "sentence_words": 23.5,
+   "we_share": 0.004
+  },
+  {
+   "id": "PMC7883513",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.09
+    },
+    {
+     "level": 3,
+     "text": "Introduction"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.141
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.213
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.187,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.369
+    }
+   ],
+   "words": 2802,
+   "tables": 2,
+   "sentence_words": 23.7,
+   "we_share": 0.119
+  },
+  {
+   "id": "PMC7892893",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.052
+    },
+    {
+     "level": 3,
+     "text": "Objective"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.127
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.297
+    },
+    {
+     "level": 3,
+     "text": "Statistical Analysis"
+    },
+    {
+     "level": 2,
+     "text": "Result",
+     "share": 0.214,
+     "tables": 4
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.31
+    }
+   ],
+   "words": 4320,
+   "tables": 4,
+   "sentence_words": 27.5,
+   "we_share": 0.172
+  },
+  {
+   "id": "PMC8004921",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.042
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.112
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.363
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.087
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.309
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.049
+    },
+    {
+     "level": 2,
+     "text": "Summary",
+     "share": 0.038
+    }
+   ],
+   "words": 2494,
+   "tables": 0,
+   "sentence_words": 27.1,
+   "we_share": 0.022
+  },
+  {
+   "id": "PMC8078286",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.097
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.379
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.446,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Inclusion criteria"
+    },
+    {
+     "level": 3,
+     "text": "Study collection"
+    },
+    {
+     "level": 3,
+     "text": "Quality assessment"
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.078
+    }
+   ],
+   "words": 2077,
+   "tables": 1,
+   "sentence_words": 25.9,
+   "we_share": 0.3
+  },
+  {
+   "id": "PMC8276065",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.049
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.067
+    },
+    {
+     "level": 2,
+     "text": "Materials and methods",
+     "share": 0.269,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Clinical variables"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.288
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.327
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.0
+    }
+   ],
+   "words": 5304,
+   "tables": 2,
+   "sentence_words": 30.1,
+   "we_share": 0.182
+  },
+  {
+   "id": "PMC8350125",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.053
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.112
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.138,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Selection criteria"
+    },
+    {
+     "level": 3,
+     "text": "Data extraction"
+    },
+    {
+     "level": 3,
+     "text": "Quality assessment"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.382
+    },
+    {
+     "level": 3,
+     "text": "Study selection"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.315
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    }
+   ],
+   "words": 4625,
+   "tables": 2,
+   "sentence_words": 28.1,
+   "we_share": 0.1
+  },
+  {
+   "id": "PMC8398928",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.035
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.12
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.671
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.162
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.012
+    }
+   ],
+   "words": 7142,
+   "tables": 0,
+   "sentence_words": 21.3,
+   "we_share": 0.099
+  },
+  {
+   "id": "PMC8411701",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.033
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.089
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.149
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.096
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.121,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.104
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.066
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.026
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.249
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.055
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.014
+    }
+   ],
+   "words": 4275,
+   "tables": 1,
+   "sentence_words": 26.1,
+   "we_share": 0.012
+  },
+  {
+   "id": "PMC8577893",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.085
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.116
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.234
+    },
+    {
+     "level": 3,
+     "text": "Search Strategy"
+    },
+    {
+     "level": 2,
+     "text": "Result",
+     "share": 0.263
+    },
+    {
+     "level": 3,
+     "text": "Search Results"
+    },
+    {
+     "level": 3,
+     "text": "Primary Outcomes"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.244
+    },
+    {
+     "level": 2,
+     "text": "Limitations",
+     "share": 0.041
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.019
+    }
+   ],
+   "words": 2887,
+   "tables": 0,
+   "sentence_words": 21.1,
+   "we_share": 0.058
+  },
+  {
+   "id": "PMC8657003",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.06
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.259
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.246
+    },
+    {
+     "level": 3,
+     "text": "Participants"
+    },
+    {
+     "level": 3,
+     "text": "Statistical Analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.102
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.301
+    },
+    {
+     "level": 3,
+     "text": "Limitations"
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.032
+    }
+   ],
+   "words": 3491,
+   "tables": 0,
+   "sentence_words": 28.4,
+   "we_share": 0.089
+  },
+  {
+   "id": "PMC8695876",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.019
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.109
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.417,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.198,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.126
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.12
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.01
+    }
+   ],
+   "words": 5769,
+   "tables": 2,
+   "sentence_words": 28.3,
+   "we_share": 0.044
+  },
+  {
+   "id": "PMC8782815",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.053,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Introduction"
+    },
+    {
+     "level": 3,
+     "text": "Objectives"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.125
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.216
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.263,
+     "tables": 6
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.314
+    },
+    {
+     "level": 3,
+     "text": "Strengths and limitations"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.029
+    }
+   ],
+   "words": 4490,
+   "tables": 7,
+   "sentence_words": 26.5,
+   "we_share": 0.115
+  },
+  {
+   "id": "PMC8783810",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.057
+    },
+    {
+     "level": 3,
+     "text": "Introduction"
+    },
+    {
+     "level": 3,
+     "text": "Methods and analysis"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.174
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.574,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Statistical analyses"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.173
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.023
+    }
+   ],
+   "words": 4129,
+   "tables": 1,
+   "sentence_words": 34.9,
+   "we_share": 0.014
+  },
+  {
+   "id": "PMC8899812",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.081
+    },
+    {
+     "level": 3,
+     "text": "Objective"
+    },
+    {
+     "level": 3,
+     "text": "Design"
+    },
+    {
+     "level": 3,
+     "text": "Setting"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.11
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.303,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Participants"
+    },
+    {
+     "level": 3,
+     "text": "Statistical Analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.229,
+     "tables": 2
+    },
+    {
+     "level": 3,
+     "text": "Outcome"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.258
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.02
+    }
+   ],
+   "words": 3080,
+   "tables": 3,
+   "sentence_words": 29.6,
+   "we_share": 0.03
+  },
+  {
+   "id": "PMC9009498",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.081
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.148
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.181
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.335,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.238
+    },
+    {
+     "level": 3,
+     "text": "Limitations"
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.017
+    }
+   ],
+   "words": 3120,
+   "tables": 2,
+   "sentence_words": 30.1,
+   "we_share": 0.02
+  },
+  {
+   "id": "PMC9102207",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.05
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.122
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.295
+    },
+    {
+     "level": 3,
+     "text": "Protocol"
+    },
+    {
+     "level": 3,
+     "text": "Search Strategy"
+    },
+    {
+     "level": 3,
+     "text": "Eligibility Criteria"
+    },
+    {
+     "level": 3,
+     "text": "Data Extraction"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.21
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.284
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.039
+    }
+   ],
+   "words": 3746,
+   "tables": 0,
+   "sentence_words": 27.6,
+   "we_share": 0.162
+  },
+  {
+   "id": "PMC9106059",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.058
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.189
+    },
+    {
+     "level": 2,
+     "text": "Materials and Methods",
+     "share": 0.392
+    },
+    {
+     "level": 3,
+     "text": "Participants"
+    },
+    {
+     "level": 3,
+     "text": "Procedures"
+    },
+    {
+     "level": 3,
+     "text": "Outcomes Measures"
+    },
+    {
+     "level": 3,
+     "text": "Testing Procedures"
+    },
+    {
+     "level": 3,
+     "text": "Statistical Analyses"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.068
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.281
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.012
+    }
+   ],
+   "words": 3453,
+   "tables": 0,
+   "sentence_words": 22.9,
+   "we_share": 0.113
+  },
+  {
+   "id": "PMC9147446",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.065
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.095
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.352
+    },
+    {
+     "level": 3,
+     "text": "Data Collection"
+    },
+    {
+     "level": 3,
+     "text": "Statistical Analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.191
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.283
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.014
+    }
+   ],
+   "words": 3110,
+   "tables": 0,
+   "sentence_words": 23.2,
+   "we_share": 0.18
+  },
+  {
+   "id": "PMC9168699",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.223
+    },
+    {
+     "level": 3,
+     "text": "Background and aims"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Materials and methods",
+     "share": 0.157,
+     "tables": 1
+    },
+    {
+     "level": 3,
+     "text": "Data Sources and Variables"
+    },
+    {
+     "level": 3,
+     "text": "Outcome"
+    },
+    {
+     "level": 3,
+     "text": "Statistical Methods"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.09,
+     "tables": 1
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.53
+    }
+   ],
+   "words": 2809,
+   "tables": 2,
+   "sentence_words": 24.4,
+   "we_share": 0.322
+  },
+  {
+   "id": "PMC9261189",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.072
+    },
+    {
+     "level": 3,
+     "text": "Introduction"
+    },
+    {
+     "level": 3,
+     "text": "Method"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.153
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.15
+    },
+    {
+     "level": 3,
+     "text": "Literature search"
+    },
+    {
+     "level": 3,
+     "text": "Quality assessment"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.151,
+     "tables": 6
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.459
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.015
+    }
+   ],
+   "words": 3194,
+   "tables": 6,
+   "sentence_words": 29.3,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC9437325",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.064
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.093
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.107
+    },
+    {
+     "level": 3,
+     "text": "Search strategy"
+    },
+    {
+     "level": 3,
+     "text": "Study selection criteria"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.665,
+     "tables": 4
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.07
+    }
+   ],
+   "words": 4550,
+   "tables": 4,
+   "sentence_words": 26.1,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC9606504",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.063
+    },
+    {
+     "level": 3,
+     "text": "Objective"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.01
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.01
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.009
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.065
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.295
+    },
+    {
+     "level": 3,
+     "text": "Statistical methods"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.332,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.216
+    }
+   ],
+   "words": 4411,
+   "tables": 2,
+   "sentence_words": 29.8,
+   "we_share": 0.007
+  },
+  {
+   "id": "PMC9606774",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.063
+    },
+    {
+     "level": 3,
+     "text": "Aim"
+    },
+    {
+     "level": 3,
+     "text": "Methods and results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.054
+    },
+    {
+     "level": 2,
+     "text": "Materials and methods",
+     "share": 0.178
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.385,
+     "tables": 5
+    },
+    {
+     "level": 3,
+     "text": "Outcomes"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.306
+    },
+    {
+     "level": 3,
+     "text": "Limitations"
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.013
+    }
+   ],
+   "words": 4200,
+   "tables": 5,
+   "sentence_words": 21.0,
+   "we_share": 0.177
+  },
+  {
+   "id": "PMC9714258",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.02
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.086,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.035,
+     "tables": 2
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.45
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.26
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.141
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.008
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.0,
+     "tables": 1
+    }
+   ],
+   "words": 6831,
+   "tables": 5,
+   "sentence_words": 22.1,
+   "we_share": 0.019
+  },
+  {
+   "id": "PMC9749773",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.037
+    },
+    {
+     "level": 3,
+     "text": "Objectives"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusions"
+    },
+    {
+     "level": 2,
+     "text": "INTRODUCTION",
+     "share": 0.156
+    },
+    {
+     "level": 2,
+     "text": "OBJECTIVES",
+     "share": 0.006
+    },
+    {
+     "level": 2,
+     "text": "METHODS",
+     "share": 0.24,
+     "tables": 3
+    },
+    {
+     "level": 2,
+     "text": "RESULTS",
+     "share": 0.117
+    },
+    {
+     "level": 2,
+     "text": "DISCUSSION",
+     "share": 0.393
+    },
+    {
+     "level": 3,
+     "text": "Study Limitations"
+    },
+    {
+     "level": 2,
+     "text": "CONCLUSIONS",
+     "share": 0.051
+    }
+   ],
+   "words": 3555,
+   "tables": 3,
+   "sentence_words": 30.6,
+   "we_share": 0.086
+  },
+  {
+   "id": "PMC9784389",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.03
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.08
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.126
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.66
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.061
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.041
+    }
+   ],
+   "words": 4998,
+   "tables": 0,
+   "sentence_words": 19.0,
+   "we_share": 0.015
+  },
+  {
+   "id": "PMC9858594",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.038
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.187
+    },
+    {
+     "level": 2,
+     "text": "Methods",
+     "share": 0.062
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.41
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.278
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.026
+    }
+   ],
+   "words": 3489,
+   "tables": 0,
+   "sentence_words": 22.8,
+   "we_share": 0.026
+  },
+  {
+   "id": "PMC9865277",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.042
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.149
+    },
+    {
+     "level": 2,
+     "text": "General Population",
+     "share": 0.176
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.106
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.016
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.12
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.066
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.058
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.046
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.056
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.036
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.04
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.09
+    }
+   ],
+   "words": 5287,
+   "tables": 0,
+   "sentence_words": 22.2,
+   "we_share": 0.0
+  },
+  {
+   "id": "PMC9933377",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.092
+    },
+    {
+     "level": 3,
+     "text": "Background"
+    },
+    {
+     "level": 3,
+     "text": "Methods"
+    },
+    {
+     "level": 3,
+     "text": "Results"
+    },
+    {
+     "level": 3,
+     "text": "Conclusion"
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.211
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.218
+    },
+    {
+     "level": 3,
+     "text": "Study design"
+    },
+    {
+     "level": 3,
+     "text": "Statistical analysis"
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.302,
+     "tables": 4
+    },
+    {
+     "level": 3,
+     "text": "Primary outcomes"
+    },
+    {
+     "level": 3,
+     "text": "Secondary outcomes"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.159
+    },
+    {
+     "level": 2,
+     "text": "Conclusion",
+     "share": 0.018
+    }
+   ],
+   "words": 3227,
+   "tables": 4,
+   "sentence_words": 23.1,
+   "we_share": 0.067
+  },
+  {
+   "id": "PMC9953442",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.027
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.142
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.201
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.096
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.116
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.386
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.032
+    }
+   ],
+   "words": 4931,
+   "tables": 0,
+   "sentence_words": 22.1,
+   "we_share": 0.027
+  },
+  {
+   "id": "PMC9961029",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.06
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.143
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.183
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.178
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.408
+    },
+    {
+     "level": 2,
+     "text": "Conclusions",
+     "share": 0.028
+    }
+   ],
+   "words": 3814,
+   "tables": 0,
+   "sentence_words": 27.2,
+   "we_share": 0.157
+  },
+  {
+   "id": "PMC9977880",
+   "outline": [
+    {
+     "level": 2,
+     "text": "Abstract",
+     "share": 0.053
+    },
+    {
+     "level": 2,
+     "text": "Introduction",
+     "share": 0.128
+    },
+    {
+     "level": 2,
+     "text": null,
+     "share": 0.27
+    },
+    {
+     "level": 2,
+     "text": "Results",
+     "share": 0.235,
+     "tables": 3
+    },
+    {
+     "level": 3,
+     "text": "Outcome"
+    },
+    {
+     "level": 2,
+     "text": "Discussion",
+     "share": 0.314
+    }
+   ],
+   "words": 4044,
+   "tables": 3,
+   "sentence_words": 26.6,
+   "we_share": 0.026
+  }
+ ],
+ "dropped": {
+  "PMC8714796": "1 sections besides the abstract"
+ },
+ "paper_types": {
+  "cohort_study": 29,
+  "randomised_trial": 28,
+  "systematic_review_meta_analysis": 28,
+  "narrative_review": 28,
+  "study_protocol": 9,
+  "other_original_research": 2
+ },
+ "paper_types_by_id": {
+  "PMC10009510": "randomised_trial",
+  "PMC10208129": "systematic_review_meta_analysis",
+  "PMC10227460": "narrative_review",
+  "PMC10334345": "narrative_review",
+  "PMC10449581": "narrative_review",
+  "PMC10455720": "systematic_review_meta_analysis",
+  "PMC10463362": "randomised_trial",
+  "PMC10491626": "randomised_trial",
+  "PMC10547628": "study_protocol",
+  "PMC10703676": "systematic_review_meta_analysis",
+  "PMC10745262": "randomised_trial",
+  "PMC10806519": "randomised_trial",
+  "PMC10864718": "other_original_research",
+  "PMC11060528": "systematic_review_meta_analysis",
+  "PMC11141035": "narrative_review",
+  "PMC11249799": "systematic_review_meta_analysis",
+  "PMC11263379": "cohort_study",
+  "PMC11355461": "cohort_study",
+  "PMC11432634": "systematic_review_meta_analysis",
+  "PMC11751778": "cohort_study",
+  "PMC11789932": "systematic_review_meta_analysis",
+  "PMC11899721": "cohort_study",
+  "PMC12002086": "narrative_review",
+  "PMC12035433": "study_protocol",
+  "PMC12065537": "randomised_trial",
+  "PMC12173916": "narrative_review",
+  "PMC12238153": "randomised_trial",
+  "PMC12254580": "other_original_research",
+  "PMC12274049": "randomised_trial",
+  "PMC12282298": "narrative_review",
+  "PMC12331089": "cohort_study",
+  "PMC12335097": "systematic_review_meta_analysis",
+  "PMC12408307": "narrative_review",
+  "PMC12549472": "narrative_review",
+  "PMC12558611": "randomised_trial",
+  "PMC12699289": "study_protocol",
+  "PMC12721486": "systematic_review_meta_analysis",
+  "PMC12733355": "narrative_review",
+  "PMC12757437": "randomised_trial",
+  "PMC12847652": "systematic_review_meta_analysis",
+  "PMC12901847": "cohort_study",
+  "PMC12946776": "study_protocol",
+  "PMC12961200": "cohort_study",
+  "PMC13120904": "cohort_study",
+  "PMC13158490": "systematic_review_meta_analysis",
+  "PMC13207003": "systematic_review_meta_analysis",
+  "PMC13212576": "systematic_review_meta_analysis",
+  "PMC13296002": "cohort_study",
+  "PMC13342687": "cohort_study",
+  "PMC13459315": "systematic_review_meta_analysis",
+  "PMC13465142": "cohort_study",
+  "PMC13522188": "systematic_review_meta_analysis",
+  "PMC13540295": "randomised_trial",
+  "PMC13677274": "cohort_study",
+  "PMC13721081": "randomised_trial",
+  "PMC13723324": "systematic_review_meta_analysis",
+  "PMC13756443": "study_protocol",
+  "PMC4432084": "randomised_trial",
+  "PMC4567784": "randomised_trial",
+  "PMC4599574": "systematic_review_meta_analysis",
+  "PMC4621030": "randomised_trial",
+  "PMC4650834": "systematic_review_meta_analysis",
+  "PMC4699352": "cohort_study",
+  "PMC4839159": "study_protocol",
+  "PMC4939027": "systematic_review_meta_analysis",
+  "PMC5037076": "narrative_review",
+  "PMC5224684": "narrative_review",
+  "PMC5289926": "randomised_trial",
+  "PMC5393008": "narrative_review",
+  "PMC5415949": "study_protocol",
+  "PMC5461472": "randomised_trial",
+  "PMC5507329": "cohort_study",
+  "PMC5686167": "systematic_review_meta_analysis",
+  "PMC5734576": "cohort_study",
+  "PMC5759849": "randomised_trial",
+  "PMC5814393": "narrative_review",
+  "PMC5853072": "study_protocol",
+  "PMC6121590": "narrative_review",
+  "PMC6156014": "randomised_trial",
+  "PMC6240567": "cohort_study",
+  "PMC6304170": "systematic_review_meta_analysis",
+  "PMC6357543": "study_protocol",
+  "PMC6441501": "narrative_review",
+  "PMC6588214": "randomised_trial",
+  "PMC6727323": "cohort_study",
+  "PMC7044902": "randomised_trial",
+  "PMC7178729": "cohort_study",
+  "PMC7248262": "systematic_review_meta_analysis",
+  "PMC7293253": "randomised_trial",
+  "PMC7356664": "randomised_trial",
+  "PMC7689870": "narrative_review",
+  "PMC7772234": "narrative_review",
+  "PMC7883513": "cohort_study",
+  "PMC7892893": "cohort_study",
+  "PMC8004921": "narrative_review",
+  "PMC8078286": "narrative_review",
+  "PMC8276065": "cohort_study",
+  "PMC8350125": "systematic_review_meta_analysis",
+  "PMC8398928": "narrative_review",
+  "PMC8411701": "narrative_review",
+  "PMC8577893": "systematic_review_meta_analysis",
+  "PMC8657003": "cohort_study",
+  "PMC8695876": "narrative_review",
+  "PMC8782815": "cohort_study",
+  "PMC8783810": "randomised_trial",
+  "PMC8899812": "cohort_study",
+  "PMC9009498": "cohort_study",
+  "PMC9102207": "systematic_review_meta_analysis",
+  "PMC9106059": "randomised_trial",
+  "PMC9147446": "cohort_study",
+  "PMC9168699": "cohort_study",
+  "PMC9261189": "systematic_review_meta_analysis",
+  "PMC9437325": "systematic_review_meta_analysis",
+  "PMC9606504": "randomised_trial",
+  "PMC9606774": "cohort_study",
+  "PMC9714258": "narrative_review",
+  "PMC9749773": "narrative_review",
+  "PMC9784389": "narrative_review",
+  "PMC9858594": "systematic_review_meta_analysis",
+  "PMC9865277": "narrative_review",
+  "PMC9933377": "randomised_trial",
+  "PMC9953442": "narrative_review",
+  "PMC9961029": "cohort_study",
+  "PMC9977880": "randomised_trial"
+ },
+ "layouts": 121
+}

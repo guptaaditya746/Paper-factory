@@ -33,7 +33,8 @@ def _folder(tmp_path, n: int = 30):
     man = []
     for i in range(n):
         (d / f"m{i:03d}.md").write_text(_donor(i, rng), encoding="utf-8")
-        man.append({"id": f"m{i:03d}", "paper_type": "systematic review" if i % 3 else "trial report",
+        man.append({"id": f"m{i:03d}", "title": f"Donor paper {i} about pemphigoid",
+                    "paper_type": "narrative_review" if i % 3 else "randomised_trial",
                     "licence": "CC-BY"})
     (d / "bad.md").write_text("no headings here. " * 50, encoding="utf-8")
     (tmp_path / "donors" / "manifest.jsonl").write_text("\n".join(map(json.dumps, man)), encoding="utf-8")
@@ -47,10 +48,25 @@ def test_generic_headings() -> None:
     assert forms._clean("IV. Discussion") == "Discussion"
 
 
+def test_heading_and_table_syntax_from_converters() -> None:
+    headings = forms._headings(["  ## Introduction", "<h2>Methods</h2>", "Results", "---"])
+    assert headings == [(0, 2, "Introduction"), (1, 2, "Methods"), (3, 2, "Results")]
+    assert forms._table_count(["name | result", "--- | :---:", "A | 2"], 0, 3) == 1
+
+
+def test_topical_and_two_section_layouts_are_usable() -> None:
+    card = {"outline": [
+        {"level": 2, "text": "Abstract"},
+        {"level": 2, "text": "Introduction"},
+        {"level": 2, "text": None},
+    ]}
+    assert forms.usable(card) is None
+
+
 def test_a_card_keeps_the_layout_and_none_of_the_donors_words(tmp_path) -> None:
     prof = forms.profile(_folder(tmp_path), tmp_path / "donors" / "manifest.jsonl")
     assert len(prof["cards"]) == 30 and "bad" in prof["dropped"]
-    assert prof["paper_types"] == {"systematic review": 20, "trial report": 10}
+    assert prof["paper_types"] == {"narrative_review": 20, "randomised_trial": 10}
     assert prof["layouts"] >= 10
     text = json.dumps(prof["cards"]).lower()
     assert not any(w in text for w in TOPIC_WORDS)                 # no topical word, no reference, no appendix
