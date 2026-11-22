@@ -21,5 +21,18 @@ paper with the world before evaluation. Used as a submodule of the thesis repo (
 On the GPU job: `srun --jobid <job> --overlap ops/injob.sh uv run paperfactory run --config ...`
 (`LLM_ENV_FILE` points to the gateway's env file; default: the parent repo's `llm-setup/.env`).
 
+## How it connects
+
+- Writes papers and fact rows into the benchmark repo (`thesis-benchmark`, at `../../data` in the thesis repo):
+  `data/seed/<domain>/` (facts) and `data/dataset/<domain>/` (papers).
+- The thesis repo's `evqa seed pfbench <domain>` turns those fact rows into questions and gold; `ops/bench4.sh`
+  there runs the whole four-domain build.
+- Model calls go to LiteLLM (served by `thesis-llm-setup`), optionally through `model-queue`.
+- Design notes: `docs/redesign-v3-brief.md` (v3 plan), `src/paperfactory/TODO.md` (open work).
+
+## Test
+
+    uv run pytest -q          # offline, 8 workers (pyproject.toml); no GPU or model needed
+
 Topic lists and number ranges are fetched once (`paperfactory fetch-topics`) and checked in under
 `src/paperfactory/packs/topics/`; the OpenAlex key is read from `OPENALEX_API_KEY` or `.env` and never logged.

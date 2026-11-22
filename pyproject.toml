@@ -42,7 +42,7 @@ module-name = ["paperfactory", "modelcall", "jsonio", "repo_paths"]
 module-root = "src"
 
 [tool.pytest.ini_options]
-addopts = "-n auto --timeout 600"
+addopts = "-n 8 --timeout 600"   # not auto: every worker re-imports all libraries from the network disk
 testpaths = ["src"]
 filterwarnings = ["ignore::DeprecationWarning:pyshacl.*", "ignore::DeprecationWarning:rdflib.*"]
 

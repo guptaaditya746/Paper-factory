@@ -34,7 +34,7 @@ you are in a fresh clone and must fetch it again (see each entry).
 | `paperfactory/configs/` | run configs; current pilot: `qwen/v2p3-{law,llm,materials,medicine}.json` |
 | `modelcall/`, `jsonio/` | model-call layer (OpenAI-compatible gateway, cache, retries), JSON helpers |
 
-More detail: `src/paperfactory/README.md`, `RUNBOOK-qwen.md`, `TODO.md`. Design log: `../../docs/design/codex-log.md`.
+More detail: `src/paperfactory/README.md`, `RUNBOOK-qwen.md`, `TODO.md`. Design notes: `docs/redesign-v3-brief.md`; old log: `../../docs/archive/codex-log.md`.
 
 ## Local data you can use
 
