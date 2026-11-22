@@ -324,7 +324,8 @@ def write_all(w: dict[str, Any], f: Field, g: Genre, out: Path,
         d = out / "papers" / pid
         d.mkdir(parents=True, exist_ok=True)
         if cards and g.raw.get("numeric_facts") and g.raw.get("content_plan"):
-            tmpl = (g.folder / "templates" / f"{cards[pid]['template']}.md").read_text(encoding="utf-8")
+            from paperfactory.packs import card_template
+            tmpl = card_template(g, cards[pid])
             cp = plan_.make(w, f, g, pid, tmpl, seed)
             idea, log = materials_v3(w, f, g, pid, cards[pid], cp)
             (d / "content_plan.json").write_text(json.dumps(cp, indent=1, ensure_ascii=False), encoding="utf-8")

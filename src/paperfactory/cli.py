@@ -19,7 +19,7 @@ from typing import Any
 
 from repo_paths import REPO
 
-from paperfactory import SCORING_VERSION, config, cost, files, labels, materials, meta, packs, repair, seed, style, topics, workbench, world, write
+from paperfactory import SCORING_VERSION, config, cost, files, forms, labels, materials, meta, packs, repair, seed, style, topics, workbench, world, write
 from paperfactory import quant
 from paperfactory.evaluate import Eval
 from paperfactory.llm import Caller, GatewayDown
@@ -113,8 +113,14 @@ def run(s: config.Settings, steps: list[str], use_cache: bool = True, allow_mixe
         files.write_json(out / "gold.json", {"scoring_version": SCORING_VERSION} | gold)
         print(f"seed: SHACL ok, {len(gold['facts'])} facts, {len(gold['questions'])} questions")
     # style cards (style.py): every paper its own template, tone, voice, opening and length (22 Nov 2026)
-    cards = style.cards(list(w["papers"]), f, g, s.seed) if g.raw.get("templates") else None
+    donors = forms.load(f, g) if g.raw.get("templates") else []
+    cards = style.cards(list(w["papers"]), f, g, s.seed, donors) if g.raw.get("templates") else None
+    for pid, c in (cards or {}).items():
+        if c.get("outline"):      # a donor's layout; its topical headings come from this paper's own entities
+            c["template_text"] = forms.template_text({"outline": c.pop("outline")}, w, f, pid, s.seed)
     if cards:
+        print(f"layouts: {len({c['donor'] for c in cards.values()})} donor outlines" if donors
+              else "layouts: the genre's templates (no form cards for this field and genre: paperfactory profile-corpus)")
         files.write_json(out / "style_cards.json", cards)
     if "materials" in steps:
         print("materials:", len(materials.write_all(w, f, g, out, cards, seed=s.seed)), "papers")
@@ -245,6 +251,9 @@ def main(argv: list[str] | None = None) -> None:
                     "parent repo's data/ when used as its submodule: --data-dir ../../data)")
     ft = sub.add_parser("fetch-topics", help="fetch topic lists (OpenAlex) and number ranges once (topics.py)")
     ft.add_argument("--field", action="append", required=True)
+    pc = sub.add_parser("profile-corpus", help="form cards from donor papers (forms.py): layouts without words")
+    pc.add_argument("--donors", required=True, help="folder with <field>/<id>.md and manifest.jsonl")
+    pc.add_argument("--field", action="append", help="default: every field folder that has a pack")
     c = sub.add_parser("check-world")
     c.add_argument("--config", required=True)
     c.add_argument("--world", required=True)
@@ -282,6 +291,15 @@ def main(argv: list[str] | None = None) -> None:
         print(json.dumps(labels.metrics_files([Path(p) for p in a.labels], Path(a.key) if a.key else None,
                                               Path(a.answers), make_eval if a.run_verifier else None,
                                               Path(a.adjudicated) if a.adjudicated else None), indent=1))
+        return
+    if a.cmd == "profile-corpus":
+        root = Path(a.donors)
+        for name in a.field or sorted(d.name for d in root.iterdir() if d.is_dir() and (packs.PACKS / "fields"
+                                                                                   / f"{d.name}.json").is_file()):
+            prof = forms.profile(root / name, root / "manifest.jsonl")
+            print(f"{name}: {len(prof['cards'])} cards, {prof['layouts']} different layouts, "
+                  f"{len(prof['dropped'])} dropped -> {forms.write(name, prof)}")
+            print("  paper types:", json.dumps(prof["paper_types"]))
         return
     s = config.load(a.config)
     if a.cmd == "export-workbench":

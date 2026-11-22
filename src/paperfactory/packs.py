@@ -90,12 +90,18 @@ def render_paper_template(f: Field, g: Genre, card: dict[str, Any], dest: Path) 
         "MAX_MENTIONS": g.raw.get("max_mentions_per_fact", 3), "MIN_TABLES": g.raw.get("min_tables", 0),
         "STYLE_CARD": style.card_text(card, g.raw.get("banned_phrases", []))}
     dest.mkdir(parents=True, exist_ok=True)
-    tmpl = g.folder / "templates" / f"{card['template']}.md"
-    (dest / "template.md").write_text(fill(tmpl.read_text(encoding="utf-8"), values), encoding="utf-8")
+    (dest / "template.md").write_text(fill(card_template(g, card), values), encoding="utf-8")
     (dest / "guidelines.md").write_text(fill((g.folder / "guidelines.md").read_text(encoding="utf-8"), values),
                                         encoding="utf-8")
     shutil.copy(g.folder / "genre.json", dest / "genre.json")
     return dest
+
+
+def card_template(g: Genre, card: dict[str, Any]) -> str:
+    """The template of a style card: its own text (a donor outline, forms.py) or the genre's template file."""
+    if card.get("template_text"):
+        return card["template_text"]
+    return (g.folder / "templates" / f"{card['template']}.md").read_text(encoding="utf-8")
 
 
 def relation_table(f: Field) -> str:

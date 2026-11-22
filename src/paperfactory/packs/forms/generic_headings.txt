@@ -1,0 +1,21 @@
+# Every word a kept heading may contain: section words of research papers in any field, and joining words.
+# A donor heading with any other word is topical: the form card keeps its place, never its words (forms.py).
+# Data, not code: add a field's section words here.
+abstract introduction background overview motivation preliminaries context scope aims aim objectives objective
+purpose rationale related prior previous work literature review state art survey
+method methods methodology methodological approach design procedure procedures protocol materials material
+experimental experiment experiments setup settings setting implementation details data dataset datasets sources
+source collection extraction search strategy selection eligibility criteria inclusion exclusion screening study
+studies participants population sample sampling measures outcomes outcome variables analysis analyses statistical
+statistics synthesis quality assessment risk bias baselines baseline models model metrics evaluation training
+characterization characterisation preparation testing tests
+results result findings main primary secondary additional further ablation ablations error comparison comparisons
+discussion general interpretation implications practical clinical policy limitations limitation strengths
+threats validity future directions research conclusion conclusions concluding remarks summary outlook
+recommendations lessons learned
+facts factual procedural history legal framework issue issues question questions presented holding holdings
+reasoning judgment decision decisions opinion commentary comment assessment critique doctrine doctrinal
+analytical theoretical conceptual framework theory hypotheses hypothesis
+case cases report reports
+and of the a an in on for to with from by or its their this these our we is are as at into versus vs
+part i ii iii iv v vi vii viii ix x

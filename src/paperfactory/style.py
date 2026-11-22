@@ -26,7 +26,8 @@ def templates_for(g: Genre, f: Field) -> list[dict[str, Any]]:
     return t
 
 
-def cards(pids: list[str], f: Field, g: Genre, seed: Any) -> dict[str, dict[str, Any]]:
+def cards(pids: list[str], f: Field, g: Genre, seed: Any,
+          donors: list[dict[str, Any]] | None = None) -> dict[str, dict[str, Any]]:
     """{pid: card} for the papers in this order. Each axis cycles through a shuffled list of its values, so values
     spread evenly; a card whose (template, tone, opening) is already used moves on to the next tone."""
     rng = random.Random(f"{seed}:style:{f.name}:{g.name}")
@@ -46,6 +47,16 @@ def cards(pids: list[str], f: Field, g: Genre, seed: Any) -> dict[str, dict[str,
         used.add((pick["template"], pick["tone"], pick["opening"]))
         t = tmpl[pick["template"]]
         out[pid] = {"template": t["name"], "paper_kind": t["paper_kind"], **{a: pick[a] for a in AXES}}
+    if donors:
+        # forms.py (23 Nov 2026): each paper takes a real paper's outline, voice, sentence length and length. Every
+        # donor is used once before any is used twice; the tone and the opening still come from the axes above.
+        from paperfactory import forms
+        pool = rng.sample(donors, len(donors))
+        lo, hi = g.raw["words_per_page"]
+        for i, pid in enumerate(pids):
+            d = pool[i % len(pool)]
+            out[pid] |= {"template": f"donor:{d['id']}", "donor": d["id"], "outline": d["outline"],
+                         "donor_tables": d.get("tables", 0)} | forms.style_of(d, lo, hi)
     return out
 
 
