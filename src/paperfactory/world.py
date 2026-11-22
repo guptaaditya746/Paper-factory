@@ -159,8 +159,9 @@ def decoy_warnings(w: dict[str, Any], f: Field) -> list[str]:
 def shape(w: dict[str, Any], f: Field, g: Genre, pages: int) -> dict[str, Any]:
     """D4: what each paper will contain (facts, decoys, conflict, plan, sections, length)."""
     lo, hi = g.raw["words_per_page"]
-    sections = sum(1 for line in (g.folder / "template.md").read_text(encoding="utf-8").splitlines()
-                   if line.startswith("#"))
+    t = g.folder / "template.md"     # genres with per-paper templates (templates/*.md) have no shared one
+    sections = (sum(1 for line in t.read_text(encoding="utf-8").splitlines() if line.startswith("#"))
+                if t.exists() else None)
     return {"papers": len(w.get("papers", {})), "entities": len(w.get("entities", {})),
             "per_paper": {pid: {"claims": len(p.get("claims", [])), "decoys": len(p.get("decoys", [])),
                                 "facts": len(p.get("claims", [])) + len(p.get("decoys", [])),

@@ -1,0 +1,3442 @@
+{
+ "field": "materials",
+ "genre": "argument",
+ "entities": {
+  "M1": {
+   "kind": "material",
+   "label": "alloy Stetrugel-6",
+   "alt": [
+    "Stetrugel-6"
+   ],
+   "attrs": {
+    "family": "titanium alloys"
+   }
+  },
+  "M2": {
+   "kind": "material",
+   "label": "alloy Sapifin-2",
+   "alt": [
+    "Sapifin-2"
+   ],
+   "attrs": {
+    "family": "titanium alloys"
+   }
+  },
+  "M3": {
+   "kind": "material",
+   "label": "coating Kogal-8",
+   "alt": [
+    "Kogal-8"
+   ],
+   "attrs": {
+    "family": "ceramic coatings"
+   }
+  },
+  "M4": {
+   "kind": "material",
+   "label": "coating Bumom-7",
+   "alt": [
+    "Bumom-7"
+   ],
+   "attrs": {
+    "family": "ceramic coatings"
+   }
+  },
+  "S1": {
+   "kind": "study",
+   "label": "the Thithegam Lab 2012 study",
+   "alt": [
+    "Thithegam Lab 2012"
+   ],
+   "attrs": {
+    "property": "hardness",
+    "year": 2012,
+    "method": "Vickers indentation"
+   }
+  },
+  "S2": {
+   "kind": "study",
+   "label": "the Pagragrar Lab 2012 study",
+   "alt": [
+    "Pagragrar Lab 2012"
+   ],
+   "attrs": {
+    "property": "corrosion resistance",
+    "year": 2012,
+    "method": "salt spray test"
+   }
+  },
+  "S3": {
+   "kind": "study",
+   "label": "the Kronor Lab 2013 study",
+   "alt": [
+    "Kronor Lab 2013"
+   ],
+   "attrs": {
+    "property": "wear rate",
+    "year": 2013,
+    "method": "pin-on-disc test"
+   }
+  },
+  "S4": {
+   "kind": "study",
+   "label": "the Dozado Lab 2013 study",
+   "alt": [
+    "Dozado Lab 2013"
+   ],
+   "attrs": {
+    "property": "fatigue life",
+    "year": 2013,
+    "method": "cyclic loading"
+   }
+  },
+  "S5": {
+   "kind": "study",
+   "label": "the Drithekra Lab 2014 study",
+   "alt": [
+    "Drithekra Lab 2014"
+   ],
+   "attrs": {
+    "property": "thermal conductivity",
+    "year": 2014,
+    "method": "laser flash analysis"
+   }
+  },
+  "S6": {
+   "kind": "study",
+   "label": "the Trebun Lab 2014 study",
+   "alt": [
+    "Trebun Lab 2014"
+   ],
+   "attrs": {
+    "property": "oxidation resistance",
+    "year": 2014,
+    "method": "high-temperature exposure"
+   }
+  },
+  "S7": {
+   "kind": "study",
+   "label": "the Brogathin Lab 2015 study",
+   "alt": [
+    "Brogathin Lab 2015"
+   ],
+   "attrs": {
+    "property": "hardness",
+    "year": 2015,
+    "method": "Knoop indentation"
+   }
+  },
+  "S8": {
+   "kind": "study",
+   "label": "the Vupostas Lab 2015 study",
+   "alt": [
+    "Vupostas Lab 2015"
+   ],
+   "attrs": {
+    "property": "corrosion resistance",
+    "year": 2015,
+    "method": "electrochemical impedance"
+   }
+  },
+  "S9": {
+   "kind": "study",
+   "label": "the Brihoher Lab 2016 study",
+   "alt": [
+    "Brihoher Lab 2016"
+   ],
+   "attrs": {
+    "property": "wear rate",
+    "year": 2016,
+    "method": "ball-on-plate test"
+   }
+  },
+  "S10": {
+   "kind": "study",
+   "label": "the Zefos Lab 2016 study",
+   "alt": [
+    "Zefos Lab 2016"
+   ],
+   "attrs": {
+    "property": "fatigue life",
+    "year": 2016,
+    "method": "rotating beam test"
+   }
+  },
+  "S11": {
+   "kind": "study",
+   "label": "the Panos Lab 2017 study",
+   "alt": [
+    "Panos Lab 2017"
+   ],
+   "attrs": {
+    "property": "thermal conductivity",
+    "year": 2017,
+    "method": "steady-state heat flow"
+   }
+  },
+  "S12": {
+   "kind": "study",
+   "label": "the Begrur Lab 2017 study",
+   "alt": [
+    "Begrur Lab 2017"
+   ],
+   "attrs": {
+    "property": "oxidation resistance",
+    "year": 2017,
+    "method": "thermogravimetric analysis"
+   }
+  },
+  "S13": {
+   "kind": "study",
+   "label": "the Bropulon Lab 2018 study",
+   "alt": [
+    "Bropulon Lab 2018"
+   ],
+   "attrs": {
+    "property": "hardness",
+    "year": 2018,
+    "method": "nanoindentation"
+   }
+  },
+  "S14": {
+   "kind": "study",
+   "label": "the Zugreden Lab 2018 study",
+   "alt": [
+    "Zugreden Lab 2018"
+   ],
+   "attrs": {
+    "property": "corrosion resistance",
+    "year": 2018,
+    "method": "potentiodynamic polarization"
+   }
+  },
+  "S15": {
+   "kind": "study",
+   "label": "the Stamen Lab 2019 study",
+   "alt": [
+    "Stamen Lab 2019"
+   ],
+   "attrs": {
+    "property": "wear rate",
+    "year": 2019,
+    "method": "reciprocating slider"
+   }
+  },
+  "S16": {
+   "kind": "study",
+   "label": "the Stever Lab 2019 study",
+   "alt": [
+    "Stever Lab 2019"
+   ],
+   "attrs": {
+    "property": "fatigue life",
+    "year": 2019,
+    "method": "ultrasonic fatigue"
+   }
+  },
+  "S17": {
+   "kind": "study",
+   "label": "the Dranam Lab 2020 study",
+   "alt": [
+    "Dranam Lab 2020"
+   ],
+   "attrs": {
+    "property": "thermal conductivity",
+    "year": 2020,
+    "method": "transient plane source"
+   }
+  },
+  "S18": {
+   "kind": "study",
+   "label": "the Mebrikim Lab 2020 study",
+   "alt": [
+    "Mebrikim Lab 2020"
+   ],
+   "attrs": {
+    "property": "oxidation resistance",
+    "year": 2020,
+    "method": "differential thermal analysis"
+   }
+  },
+  "S19": {
+   "kind": "study",
+   "label": "the Putro Lab 2021 study",
+   "alt": [
+    "Putro Lab 2021"
+   ],
+   "attrs": {
+    "property": "hardness",
+    "year": 2021,
+    "method": "micro-Vickers"
+   }
+  },
+  "S20": {
+   "kind": "study",
+   "label": "the Kevastur Lab 2021 study",
+   "alt": [
+    "Kevastur Lab 2021"
+   ],
+   "attrs": {
+    "property": "corrosion resistance",
+    "year": 2021,
+    "method": "accelerated corrosion"
+   }
+  },
+  "S21": {
+   "kind": "study",
+   "label": "the Dratefar Lab 2022 study",
+   "alt": [
+    "Dratefar Lab 2022"
+   ],
+   "attrs": {
+    "property": "wear rate",
+    "year": 2022,
+    "method": "dry sliding"
+   }
+  },
+  "S22": {
+   "kind": "study",
+   "label": "the Dikrur Lab 2022 study",
+   "alt": [
+    "Dikrur Lab 2022"
+   ],
+   "attrs": {
+    "property": "fatigue life",
+    "year": 2022,
+    "method": "axial fatigue"
+   }
+  },
+  "S23": {
+   "kind": "study",
+   "label": "the Kudram Lab 2023 study",
+   "alt": [
+    "Kudram Lab 2023"
+   ],
+   "attrs": {
+    "property": "thermal conductivity",
+    "year": 2023,
+    "method": "hot wire method"
+   }
+  },
+  "S24": {
+   "kind": "study",
+   "label": "the Stomestim Lab 2023 study",
+   "alt": [
+    "Stomestim Lab 2023"
+   ],
+   "attrs": {
+    "property": "oxidation resistance",
+    "year": 2023,
+    "method": "isothermal oxidation"
+   }
+  },
+  "S25": {
+   "kind": "study",
+   "label": "the Rogisar Lab 2024 study",
+   "alt": [
+    "Rogisar Lab 2024"
+   ],
+   "attrs": {
+    "property": "hardness",
+    "year": 2024,
+    "method": "scratch test"
+   }
+  },
+  "S26": {
+   "kind": "study",
+   "label": "the Brudes Lab 2024 study",
+   "alt": [
+    "Brudes Lab 2024"
+   ],
+   "attrs": {
+    "property": "corrosion resistance",
+    "year": 2024,
+    "method": "immersion test"
+   }
+  },
+  "S27": {
+   "kind": "study",
+   "label": "the Thorem Lab 2025 study",
+   "alt": [
+    "Thorem Lab 2025"
+   ],
+   "attrs": {
+    "property": "wear rate",
+    "year": 2025,
+    "method": "tribometer"
+   }
+  },
+  "S28": {
+   "kind": "study",
+   "label": "the Tofere Lab 2025 study",
+   "alt": [
+    "Tofere Lab 2025"
+   ],
+   "attrs": {
+    "property": "fatigue life",
+    "year": 2025,
+    "method": "bending fatigue"
+   }
+  },
+  "S29": {
+   "kind": "study",
+   "label": "the Legrer Lab 2012 study",
+   "alt": [
+    "Legrer Lab 2012"
+   ],
+   "attrs": {
+    "property": "thermal conductivity",
+    "year": 2012,
+    "method": "laser flash analysis"
+   }
+  },
+  "S30": {
+   "kind": "study",
+   "label": "the Vogem Lab 2013 study",
+   "alt": [
+    "Vogem Lab 2013"
+   ],
+   "attrs": {
+    "property": "oxidation resistance",
+    "year": 2013,
+    "method": "high-temperature exposure"
+   }
+  },
+  "S31": {
+   "kind": "study",
+   "label": "the Kuhazo Lab 2014 study",
+   "alt": [
+    "Kuhazo Lab 2014"
+   ],
+   "attrs": {
+    "property": "hardness",
+    "year": 2014,
+    "method": "Vickers indentation"
+   }
+  },
+  "S32": {
+   "kind": "study",
+   "label": "the Ratrol Lab 2015 study",
+   "alt": [
+    "Ratrol Lab 2015"
+   ],
+   "attrs": {
+    "property": "corrosion resistance",
+    "year": 2015,
+    "method": "salt spray test"
+   }
+  },
+  "S33": {
+   "kind": "study",
+   "label": "the Rebre Lab 2016 study",
+   "alt": [
+    "Rebre Lab 2016"
+   ],
+   "attrs": {
+    "property": "wear rate",
+    "year": 2016,
+    "method": "pin-on-disc test"
+   }
+  },
+  "S34": {
+   "kind": "study",
+   "label": "the Thukepel Lab 2017 study",
+   "alt": [
+    "Thukepel Lab 2017"
+   ],
+   "attrs": {
+    "property": "fatigue life",
+    "year": 2017,
+    "method": "cyclic loading"
+   }
+  },
+  "S35": {
+   "kind": "study",
+   "label": "the Satho Lab 2018 study",
+   "alt": [
+    "Satho Lab 2018"
+   ],
+   "attrs": {
+    "property": "thermal conductivity",
+    "year": 2018,
+    "method": "steady-state heat flow"
+   }
+  },
+  "S36": {
+   "kind": "study",
+   "label": "the Briror Lab 2019 study",
+   "alt": [
+    "Briror Lab 2019"
+   ],
+   "attrs": {
+    "property": "oxidation resistance",
+    "year": 2019,
+    "method": "thermogravimetric analysis"
+   }
+  },
+  "S37": {
+   "kind": "study",
+   "label": "the Goter Lab 2020 study",
+   "alt": [
+    "Goter Lab 2020"
+   ],
+   "attrs": {
+    "property": "hardness",
+    "year": 2020,
+    "method": "Knoop indentation"
+   }
+  },
+  "S38": {
+   "kind": "study",
+   "label": "the Bopor Lab 2021 study",
+   "alt": [
+    "Bopor Lab 2021"
+   ],
+   "attrs": {
+    "property": "corrosion resistance",
+    "year": 2021,
+    "method": "electrochemical impedance"
+   }
+  },
+  "S39": {
+   "kind": "study",
+   "label": "the Kinal Lab 2022 study",
+   "alt": [
+    "Kinal Lab 2022"
+   ],
+   "attrs": {
+    "property": "wear rate",
+    "year": 2022,
+    "method": "ball-on-plate test"
+   }
+  },
+  "S40": {
+   "kind": "study",
+   "label": "the Furetho Lab 2023 study",
+   "alt": [
+    "Furetho Lab 2023"
+   ],
+   "attrs": {
+    "property": "fatigue life",
+    "year": 2023,
+    "method": "rotating beam test"
+   }
+  },
+  "S41": {
+   "kind": "study",
+   "label": "the Likrir Lab 2024 study",
+   "alt": [
+    "Likrir Lab 2024"
+   ],
+   "attrs": {
+    "property": "thermal conductivity",
+    "year": 2024,
+    "method": "transient plane source"
+   }
+  },
+  "S42": {
+   "kind": "study",
+   "label": "the Krestos Lab 2025 study",
+   "alt": [
+    "Krestos Lab 2025"
+   ],
+   "attrs": {
+    "property": "oxidation resistance",
+    "year": 2025,
+    "method": "differential thermal analysis"
+   }
+  },
+  "S43": {
+   "kind": "study",
+   "label": "the Lostam Lab 2012 study",
+   "alt": [
+    "Lostam Lab 2012"
+   ],
+   "attrs": {
+    "property": "hardness",
+    "year": 2012,
+    "method": "nanoindentation"
+   }
+  },
+  "S44": {
+   "kind": "study",
+   "label": "the Volar Lab 2013 study",
+   "alt": [
+    "Volar Lab 2013"
+   ],
+   "attrs": {
+    "property": "corrosion resistance",
+    "year": 2013,
+    "method": "potentiodynamic polarization"
+   }
+  },
+  "S45": {
+   "kind": "study",
+   "label": "the Dresta Lab 2014 study",
+   "alt": [
+    "Dresta Lab 2014"
+   ],
+   "attrs": {
+    "property": "wear rate",
+    "year": 2014,
+    "method": "reciprocating slider"
+   }
+  },
+  "S46": {
+   "kind": "study",
+   "label": "the Testu Lab 2015 study",
+   "alt": [
+    "Testu Lab 2015"
+   ],
+   "attrs": {
+    "property": "fatigue life",
+    "year": 2015,
+    "method": "ultrasonic fatigue"
+   }
+  },
+  "S47": {
+   "kind": "study",
+   "label": "the Nistipun Lab 2016 study",
+   "alt": [
+    "Nistipun Lab 2016"
+   ],
+   "attrs": {
+    "property": "thermal conductivity",
+    "year": 2016,
+    "method": "hot wire method"
+   }
+  },
+  "S48": {
+   "kind": "study",
+   "label": "the Nusto Lab 2017 study",
+   "alt": [
+    "Nusto Lab 2017"
+   ],
+   "attrs": {
+    "property": "oxidation resistance",
+    "year": 2017,
+    "method": "isothermal oxidation"
+   }
+  },
+  "S49": {
+   "kind": "study",
+   "label": "the Nafir Lab 2018 study",
+   "alt": [
+    "Nafir Lab 2018"
+   ],
+   "attrs": {
+    "property": "hardness",
+    "year": 2018,
+    "method": "micro-Vickers"
+   }
+  },
+  "S50": {
+   "kind": "study",
+   "label": "the Rathu Lab 2019 study",
+   "alt": [
+    "Rathu Lab 2019"
+   ],
+   "attrs": {
+    "property": "corrosion resistance",
+    "year": 2019,
+    "method": "accelerated corrosion"
+   }
+  },
+  "S51": {
+   "kind": "study",
+   "label": "the Grubave Lab 2020 study",
+   "alt": [
+    "Grubave Lab 2020"
+   ],
+   "attrs": {
+    "property": "wear rate",
+    "year": 2020,
+    "method": "dry sliding"
+   }
+  },
+  "S52": {
+   "kind": "study",
+   "label": "the Megrekron Lab 2021 study",
+   "alt": [
+    "Megrekron Lab 2021"
+   ],
+   "attrs": {
+    "property": "fatigue life",
+    "year": 2021,
+    "method": "axial fatigue"
+   }
+  },
+  "S53": {
+   "kind": "study",
+   "label": "the Gilor Lab 2022 study",
+   "alt": [
+    "Gilor Lab 2022"
+   ],
+   "attrs": {
+    "property": "thermal conductivity",
+    "year": 2022,
+    "method": "laser flash analysis"
+   }
+  },
+  "S54": {
+   "kind": "study",
+   "label": "the Stukos Lab 2023 study",
+   "alt": [
+    "Stukos Lab 2023"
+   ],
+   "attrs": {
+    "property": "oxidation resistance",
+    "year": 2023,
+    "method": "high-temperature exposure"
+   }
+  },
+  "S55": {
+   "kind": "study",
+   "label": "the Rosemam Lab 2024 study",
+   "alt": [
+    "Rosemam Lab 2024"
+   ],
+   "attrs": {
+    "property": "hardness",
+    "year": 2024,
+    "method": "scratch test"
+   }
+  },
+  "S56": {
+   "kind": "study",
+   "label": "the Stipuma Lab 2025 study",
+   "alt": [
+    "Stipuma Lab 2025"
+   ],
+   "attrs": {
+    "property": "corrosion resistance",
+    "year": 2025,
+    "method": "immersion test"
+   }
+  },
+  "S57": {
+   "kind": "study",
+   "label": "the Thagrogral Lab 2012 study",
+   "alt": [
+    "Thagrogral Lab 2012"
+   ],
+   "attrs": {
+    "property": "wear rate",
+    "year": 2012,
+    "method": "tribometer"
+   }
+  },
+  "S58": {
+   "kind": "study",
+   "label": "the Hozus Lab 2013 study",
+   "alt": [
+    "Hozus Lab 2013"
+   ],
+   "attrs": {
+    "property": "fatigue life",
+    "year": 2013,
+    "method": "bending fatigue"
+   }
+  },
+  "S59": {
+   "kind": "study",
+   "label": "the Brusizal Lab 2014 study",
+   "alt": [
+    "Brusizal Lab 2014"
+   ],
+   "attrs": {
+    "property": "thermal conductivity",
+    "year": 2014,
+    "method": "steady-state heat flow"
+   }
+  },
+  "S60": {
+   "kind": "study",
+   "label": "the Grebrom Lab 2015 study",
+   "alt": [
+    "Grebrom Lab 2015"
+   ],
+   "attrs": {
+    "property": "oxidation resistance",
+    "year": 2015,
+    "method": "thermogravimetric analysis"
+   }
+  },
+  "S61": {
+   "kind": "study",
+   "label": "the Pagadol Lab 2016 study",
+   "alt": [
+    "Pagadol Lab 2016"
+   ],
+   "attrs": {
+    "property": "hardness",
+    "year": 2016,
+    "method": "Vickers indentation"
+   }
+  },
+  "S62": {
+   "kind": "study",
+   "label": "the Setes Lab 2017 study",
+   "alt": [
+    "Setes Lab 2017"
+   ],
+   "attrs": {
+    "property": "corrosion resistance",
+    "year": 2017,
+    "method": "salt spray test"
+   }
+  },
+  "S63": {
+   "kind": "study",
+   "label": "the Lozem Lab 2018 study",
+   "alt": [
+    "Lozem Lab 2018"
+   ],
+   "attrs": {
+    "property": "wear rate",
+    "year": 2018,
+    "method": "pin-on-disc test"
+   }
+  },
+  "S64": {
+   "kind": "study",
+   "label": "the Merum Lab 2019 study",
+   "alt": [
+    "Merum Lab 2019"
+   ],
+   "attrs": {
+    "property": "fatigue life",
+    "year": 2019,
+    "method": "cyclic loading"
+   }
+  },
+  "S65": {
+   "kind": "study",
+   "label": "the Grazor Lab 2020 study",
+   "alt": [
+    "Grazor Lab 2020"
+   ],
+   "attrs": {
+    "property": "thermal conductivity",
+    "year": 2020,
+    "method": "transient plane source"
+   }
+  },
+  "S66": {
+   "kind": "study",
+   "label": "the Hozethe Lab 2021 study",
+   "alt": [
+    "Hozethe Lab 2021"
+   ],
+   "attrs": {
+    "property": "oxidation resistance",
+    "year": 2021,
+    "method": "differential thermal analysis"
+   }
+  },
+  "S67": {
+   "kind": "study",
+   "label": "the Dulel Lab 2022 study",
+   "alt": [
+    "Dulel Lab 2022"
+   ],
+   "attrs": {
+    "property": "hardness",
+    "year": 2022,
+    "method": "Knoop indentation"
+   }
+  },
+  "S68": {
+   "kind": "study",
+   "label": "the Krebro Lab 2023 study",
+   "alt": [
+    "Krebro Lab 2023"
+   ],
+   "attrs": {
+    "property": "corrosion resistance",
+    "year": 2023,
+    "method": "electrochemical impedance"
+   }
+  },
+  "S69": {
+   "kind": "study",
+   "label": "the Zekistam Lab 2024 study",
+   "alt": [
+    "Zekistam Lab 2024"
+   ],
+   "attrs": {
+    "property": "wear rate",
+    "year": 2024,
+    "method": "ball-on-plate test"
+   }
+  },
+  "S70": {
+   "kind": "study",
+   "label": "the Fulel Lab 2025 study",
+   "alt": [
+    "Fulel Lab 2025"
+   ],
+   "attrs": {
+    "property": "fatigue life",
+    "year": 2025,
+    "method": "rotating beam test"
+   }
+  },
+  "S71": {
+   "kind": "study",
+   "label": "the Mehol Lab 2012 study",
+   "alt": [
+    "Mehol Lab 2012"
+   ],
+   "attrs": {
+    "property": "thermal conductivity",
+    "year": 2012,
+    "method": "hot wire method"
+   }
+  },
+  "S72": {
+   "kind": "study",
+   "label": "the Budrol Lab 2013 study",
+   "alt": [
+    "Budrol Lab 2013"
+   ],
+   "attrs": {
+    "property": "oxidation resistance",
+    "year": 2013,
+    "method": "isothermal oxidation"
+   }
+  },
+  "S73": {
+   "kind": "study",
+   "label": "the Thotheso Lab 2014 study",
+   "alt": [
+    "Thotheso Lab 2014"
+   ],
+   "attrs": {
+    "property": "hardness",
+    "year": 2014,
+    "method": "nanoindentation"
+   }
+  },
+  "S74": {
+   "kind": "study",
+   "label": "the Dedri Lab 2015 study",
+   "alt": [
+    "Dedri Lab 2015"
+   ],
+   "attrs": {
+    "property": "corrosion resistance",
+    "year": 2015,
+    "method": "potentiodynamic polarization"
+   }
+  },
+  "S75": {
+   "kind": "study",
+   "label": "the Diper Lab 2016 study",
+   "alt": [
+    "Diper Lab 2016"
+   ],
+   "attrs": {
+    "property": "wear rate",
+    "year": 2016,
+    "method": "reciprocating slider"
+   }
+  },
+  "S76": {
+   "kind": "study",
+   "label": "the Rebru Lab 2017 study",
+   "alt": [
+    "Rebru Lab 2017"
+   ],
+   "attrs": {
+    "property": "fatigue life",
+    "year": 2017,
+    "method": "ultrasonic fatigue"
+   }
+  },
+  "S77": {
+   "kind": "study",
+   "label": "the Stogrel Lab 2018 study",
+   "alt": [
+    "Stogrel Lab 2018"
+   ],
+   "attrs": {
+    "property": "thermal conductivity",
+    "year": 2018,
+    "method": "laser flash analysis"
+   }
+  },
+  "S78": {
+   "kind": "study",
+   "label": "the Papoden Lab 2019 study",
+   "alt": [
+    "Papoden Lab 2019"
+   ],
+   "attrs": {
+    "property": "oxidation resistance",
+    "year": 2019,
+    "method": "high-temperature exposure"
+   }
+  },
+  "S79": {
+   "kind": "study",
+   "label": "the Travatron Lab 2020 study",
+   "alt": [
+    "Travatron Lab 2020"
+   ],
+   "attrs": {
+    "property": "hardness",
+    "year": 2020,
+    "method": "micro-Vickers"
+   }
+  },
+  "S80": {
+   "kind": "study",
+   "label": "the Vosom Lab 2021 study",
+   "alt": [
+    "Vosom Lab 2021"
+   ],
+   "attrs": {
+    "property": "corrosion resistance",
+    "year": 2021,
+    "method": "accelerated corrosion"
+   }
+  },
+  "AM1": {
+   "kind": "material",
+   "label": "alloy Tugedrum-6",
+   "alt": [
+    "Tugedrum-6"
+   ],
+   "attrs": {
+    "family": "magnesium-based metal hydrides",
+    "summary": "a magnesium-nickel alloy with a high hydrogen absorption capacity but slow desorption kinetics"
+   }
+  },
+  "AM2": {
+   "kind": "material",
+   "label": "alloy Bimeke-2",
+   "alt": [
+    "Bimeke-2"
+   ],
+   "attrs": {
+    "family": "magnesium-based metal hydrides",
+    "summary": "a magnesium-iron alloy designed for improved thermal stability and reversible hydrogen uptake"
+   }
+  },
+  "AM3": {
+   "kind": "material",
+   "label": "compound Bapor-8",
+   "alt": [
+    "Bapor-8"
+   ],
+   "attrs": {
+    "family": "magnesium-based metal hydrides",
+    "summary": "a magnesium hydride compound doped with titanium to enhance hydrogen diffusion rates"
+   }
+  },
+  "AS1": {
+   "kind": "study",
+   "label": "the Hamezom Lab 2014 study",
+   "alt": [
+    "Hamezom Lab 2014"
+   ],
+   "attrs": {
+    "property": "hydrogen absorption capacity",
+    "year": 2014,
+    "method": "sieve tube reactor",
+    "reference": "pure magnesium hydride",
+    "summary": "measured maximum hydrogen uptake at 300 C under 100 bar pressure"
+   }
+  },
+  "AS2": {
+   "kind": "study",
+   "label": "the Kekrun Lab 2016 study",
+   "alt": [
+    "Kekrun Lab 2016"
+   ],
+   "attrs": {
+    "property": "desorption kinetics",
+    "year": 2016,
+    "method": "constant volume variable pressure",
+    "reference": "unmodified magnesium-nickel alloy",
+    "summary": "tracked hydrogen release rate over 2 hours at 250 C"
+   }
+  },
+  "AS3": {
+   "kind": "study",
+   "label": "the Dithe Lab 2018 study",
+   "alt": [
+    "Dithe Lab 2018"
+   ],
+   "attrs": {
+    "property": "cycling stability",
+    "year": 2018,
+    "method": "automated pressure-composition-temperature analysis",
+    "reference": "magnesium-iron alloy",
+    "summary": "evaluated capacity retention over 50 charge-discharge cycles"
+   }
+  },
+  "AS4": {
+   "kind": "study",
+   "label": "the Feves Lab 2020 study",
+   "alt": [
+    "Feves Lab 2020"
+   ],
+   "attrs": {
+    "property": "hydrogen diffusion rate",
+    "year": 2020,
+    "method": "quasi-elastic neutron scattering",
+    "reference": "titanium-doped magnesium hydride",
+    "summary": "quantified atomic mobility of hydrogen within the lattice structure"
+   }
+  },
+  "AS5": {
+   "kind": "study",
+   "label": "the Fusal Lab 2022 study",
+   "alt": [
+    "Fusal Lab 2022"
+   ],
+   "attrs": {
+    "property": "thermal stability",
+    "year": 2022,
+    "method": "differential scanning calorimetry",
+    "reference": "magnesium-iron alloy",
+    "summary": "determined decomposition temperature and enthalpy of reaction"
+   }
+  },
+  "AS6": {
+   "kind": "study",
+   "label": "the Rehonor Lab 2024 study",
+   "alt": [
+    "Rehonor Lab 2024"
+   ],
+   "attrs": {
+    "property": "absorption kinetics",
+    "year": 2024,
+    "method": "in-situ X-ray diffraction",
+    "reference": "magnesium-nickel alloy",
+    "summary": "monitored phase transformation during rapid hydrogen charging"
+   }
+  },
+  "BM1": {
+   "kind": "material",
+   "label": "coating Trastol-4",
+   "alt": [
+    "Trastol-4"
+   ],
+   "attrs": {
+    "family": "thermal barrier coatings",
+    "summary": "a cold-sprayed yttria-stabilized zirconia top coat with a molybdenum bond layer"
+   }
+  },
+  "BM2": {
+   "kind": "material",
+   "label": "coating Faletre-6",
+   "alt": [
+    "Faletre-6"
+   ],
+   "attrs": {
+    "family": "thermal barrier coatings",
+    "summary": "an atmospheric plasma-sprayed gadolinium zirconate top coat on a nickel aluminide bond coat"
+   }
+  },
+  "BM3": {
+   "kind": "material",
+   "label": "coating Grogro-2",
+   "alt": [
+    "Grogro-2"
+   ],
+   "attrs": {
+    "family": "thermal barrier coatings",
+    "summary": "a laser-deposited lanthanum zirconate top coat with a cobalt chromium bond layer"
+   }
+  },
+  "BS1": {
+   "kind": "study",
+   "label": "the Thipenus Lab 2014 study",
+   "alt": [
+    "Thipenus Lab 2014"
+   ],
+   "attrs": {
+    "property": "thermal conductivity",
+    "year": 2014,
+    "method": "laser flash analysis",
+    "reference": "as-sprayed coating",
+    "summary": "measured thermal conductivity of cold-sprayed zirconia at room temperature and 1000C"
+   }
+  },
+  "BS2": {
+   "kind": "study",
+   "label": "the Stasto Lab 2016 study",
+   "alt": [
+    "Stasto Lab 2016"
+   ],
+   "attrs": {
+    "property": "oxidation resistance",
+    "year": 2016,
+    "method": "isothermal oxidation test",
+    "reference": "air at 1100C",
+    "summary": "exposed coating to air at 1100C for 500 hours and measured weight gain"
+   }
+  },
+  "BS3": {
+   "kind": "study",
+   "label": "the Stoher Lab 2018 study",
+   "alt": [
+    "Stoher Lab 2018"
+   ],
+   "attrs": {
+    "property": "thermal conductivity",
+    "year": 2018,
+    "method": "laser flash analysis",
+    "reference": "as-sprayed coating",
+    "summary": "repeated thermal conductivity measurements on cold-sprayed zirconia samples"
+   }
+  },
+  "BS4": {
+   "kind": "study",
+   "label": "the Gozothom Lab 2020 study",
+   "alt": [
+    "Gozothom Lab 2020"
+   ],
+   "attrs": {
+    "property": "high-temperature corrosion",
+    "year": 2020,
+    "method": "molten salt exposure",
+    "reference": "Na2SO4-MgSO4 mixture",
+    "summary": "exposed coating to molten sulfate salts at 900C for 200 hours"
+   }
+  },
+  "BS5": {
+   "kind": "study",
+   "label": "the Stosimam Lab 2022 study",
+   "alt": [
+    "Stosimam Lab 2022"
+   ],
+   "attrs": {
+    "property": "oxidation resistance",
+    "year": 2022,
+    "method": "isothermal oxidation test",
+    "reference": "air at 1100C",
+    "summary": "tested oxidation behavior of gadolinium zirconate coating in air at 1100C"
+   }
+  },
+  "BS6": {
+   "kind": "study",
+   "label": "the Grasam Lab 2024 study",
+   "alt": [
+    "Grasam Lab 2024"
+   ],
+   "attrs": {
+    "property": "bond strength",
+    "year": 2024,
+    "method": "shear test",
+    "reference": "substrate-coating interface",
+    "summary": "measured interfacial bond strength of laser-deposited zirconate coating"
+   }
+  },
+  "CM1": {
+   "kind": "material",
+   "label": "polymer Krulo-9",
+   "alt": [
+    "Krulo-9"
+   ],
+   "attrs": {
+    "family": "hydrophilic polymer fibers",
+    "summary": "a modified polyamide fiber with grafted hydroxyl groups to enhance moisture absorption"
+   }
+  },
+  "CM2": {
+   "kind": "material",
+   "label": "polymer Pedenes-2",
+   "alt": [
+    "Pedenes-2"
+   ],
+   "attrs": {
+    "family": "hydrophilic polymer fibers",
+    "summary": "a blended polyester fiber with a core-shell structure designed for rapid wicking"
+   }
+  },
+  "CM3": {
+   "kind": "material",
+   "label": "polymer Vuger-8",
+   "alt": [
+    "Vuger-8"
+   ],
+   "attrs": {
+    "family": "hydrophilic polymer fibers",
+    "summary": "a cellulose-based nonwoven fabric treated with a superhydrophilic coating"
+   }
+  },
+  "CS1": {
+   "kind": "study",
+   "label": "the Kanam Lab 2014 study",
+   "alt": [
+    "Kanam Lab 2014"
+   ],
+   "attrs": {
+    "property": "moisture wicking rate",
+    "year": 2014,
+    "method": "AATM 1957 capillary rise test",
+    "reference": "CM1",
+    "summary": "measured the speed of water transport along the fiber axis under standard humidity conditions"
+   }
+  },
+  "CS2": {
+   "kind": "study",
+   "label": "the Stoste Lab 2016 study",
+   "alt": [
+    "Stoste Lab 2016"
+   ],
+   "attrs": {
+    "property": "moisture wicking rate",
+    "year": 2016,
+    "method": "AATM 1957 capillary rise test",
+    "reference": "CM1",
+    "summary": "repeated the capillary rise protocol but observed significantly lower transport rates than previously reported"
+   }
+  },
+  "CS3": {
+   "kind": "study",
+   "label": "the Stolir Lab 2018 study",
+   "alt": [
+    "Stolir Lab 2018"
+   ],
+   "attrs": {
+    "property": "air permeability",
+    "year": 2018,
+    "method": "ASTM D737 air permeability test",
+    "reference": "CM2",
+    "summary": "evaluated the airflow through the core-shell fiber structure at various pressure differentials"
+   }
+  },
+  "CS4": {
+   "kind": "study",
+   "label": "the Zadrathom Lab 2020 study",
+   "alt": [
+    "Zadrathom Lab 2020"
+   ],
+   "attrs": {
+    "property": "air permeability",
+    "year": 2020,
+    "method": "ASTM D737 air permeability test",
+    "reference": "CM2",
+    "summary": "found that the core-shell structure actually reduced airflow compared to standard polyester controls"
+   }
+  },
+  "CS5": {
+   "kind": "study",
+   "label": "the Hotrar Lab 2022 study",
+   "alt": [
+    "Hotrar Lab 2022"
+   ],
+   "attrs": {
+    "property": "thermal insulation",
+    "year": 2022,
+    "method": "ASTM E1850 thermal resistance test",
+    "reference": "CM3",
+    "summary": "assessed the heat retention capability of the superhydrophilic nonwoven fabric in a cold environment"
+   }
+  },
+  "CS6": {
+   "kind": "study",
+   "label": "the Bahen Lab 2024 study",
+   "alt": [
+    "Bahen Lab 2024"
+   ],
+   "attrs": {
+    "property": "moisture absorption capacity",
+    "year": 2024,
+    "method": "gravimetric water uptake test",
+    "reference": "CM3",
+    "summary": "quantified the maximum water weight gain of the treated cellulose fabric after immersion"
+   }
+  }
+ },
+ "papers": {
+  "MAT-01": {
+   "title_hint": "Divergent Corrosion and Wear Findings in Recent Material Studies",
+   "issue": "Inconsistencies in reported property changes for ceramic coatings and titanium alloys across different testing methodologies.",
+   "thesis": "The Brudes Lab 2024 study and the Thagrogral Lab 2012 study report conflicting outcomes for their respective materials, highlighting the sensitivity of corrosion and wear metrics to specific test conditions.",
+   "claims": [
+    [
+     "S26",
+     "reports_improvement",
+     "M3"
+    ],
+    [
+     "S26",
+     "reports_no_change",
+     "M4"
+    ],
+    [
+     "S57",
+     "reports_degradation",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S57",
+     "reports_degradation",
+     "M2"
+    ],
+    [
+     "S69",
+     "reports_no_change",
+     "M4"
+    ],
+    [
+     "S52",
+     "reports_no_change",
+     "M4"
+    ]
+   ],
+   "focus": [
+    "S26",
+    "S57"
+   ],
+   "source": "v1-qwen40:MAT-01"
+  },
+  "MAT-02": {
+   "title_hint": "Wear Rate and Oxidation Resistance: A Comparative Analysis",
+   "issue": "The stability of wear and oxidation properties in titanium alloys and ceramic coatings under varying thermal and mechanical loads.",
+   "thesis": "The Grubave Lab 2020 study and the Papoden Lab 2019 study demonstrate that while wear rates may degrade in certain alloys, oxidation resistance remains stable in specific ceramic coatings.",
+   "claims": [
+    [
+     "S51",
+     "reports_degradation",
+     "M2"
+    ],
+    [
+     "S78",
+     "reports_no_change",
+     "M3"
+    ],
+    [
+     "S78",
+     "reports_improvement",
+     "M4"
+    ]
+   ],
+   "decoys": [
+    [
+     "S51",
+     "reports_degradation",
+     "M1"
+    ],
+    [
+     "S57",
+     "reports_degradation",
+     "M2"
+    ],
+    [
+     "S10",
+     "reports_degradation",
+     "M2"
+    ]
+   ],
+   "focus": [
+    "S51",
+    "S78"
+   ],
+   "source": "v1-qwen40:MAT-02"
+  },
+  "MAT-03": {
+   "title_hint": "Thermal Conductivity Discrepancies in Ceramic Coatings",
+   "issue": "Conflicting reports on thermal conductivity improvements in ceramic coatings Kogal-8 and Bumom-7.",
+   "thesis": "The Satho Lab 2018 study and the Grazor Lab 2020 study present a direct conflict regarding the thermal conductivity of coating Kogal-8, with one reporting improvement and the other reporting no change.",
+   "claims": [
+    [
+     "S35",
+     "reports_improvement",
+     "M3"
+    ],
+    [
+     "S65",
+     "reports_no_change",
+     "M3"
+    ],
+    [
+     "S65",
+     "reports_improvement",
+     "M4"
+    ]
+   ],
+   "decoys": [
+    [
+     "S35",
+     "reports_improvement",
+     "M4"
+    ],
+    [
+     "S78",
+     "reports_improvement",
+     "M4"
+    ],
+    [
+     "S78",
+     "reports_no_change",
+     "M3"
+    ]
+   ],
+   "focus": [
+    "S35",
+    "S65"
+   ],
+   "source": "v1-qwen40:MAT-03"
+  },
+  "MAT-04": {
+   "title_hint": "Fatigue Life Variability in Titanium Alloys",
+   "issue": "The impact of ultrasonic versus rotating beam fatigue testing on the perceived durability of titanium alloys.",
+   "thesis": "The Tofere Lab 2025 study and the Rebru Lab 2017 study show that fatigue life outcomes for alloy Stetrugel-6 are method-dependent, with one reporting improvement and the other degradation.",
+   "claims": [
+    [
+     "S28",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S76",
+     "reports_degradation",
+     "M1"
+    ],
+    [
+     "S76",
+     "reports_no_change",
+     "M2"
+    ]
+   ],
+   "decoys": [
+    [
+     "S28",
+     "reports_improvement",
+     "M2"
+    ],
+    [
+     "S51",
+     "reports_degradation",
+     "M1"
+    ],
+    [
+     "S57",
+     "reports_degradation",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S28",
+    "S76"
+   ],
+   "source": "v1-qwen40:MAT-04"
+  },
+  "MAT-05": {
+   "title_hint": "Hardness and Fatigue: Cross-Property Correlations in Alloys",
+   "issue": "The relationship between hardness measurements and fatigue life in titanium alloys Stetrugel-6 and Sapifin-2.",
+   "thesis": "The Putro Lab 2021 study and the Fulel Lab 2025 study indicate that hardness improvements in alloy Sapifin-2 do not necessarily correlate with fatigue life improvements in alloy Stetrugel-6.",
+   "claims": [
+    [
+     "S19",
+     "reports_improvement",
+     "M2"
+    ],
+    [
+     "S70",
+     "reports_no_change",
+     "M1"
+    ],
+    [
+     "S70",
+     "reports_improvement",
+     "M2"
+    ]
+   ],
+   "decoys": [
+    [
+     "S19",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S28",
+     "reports_improvement",
+     "M2"
+    ],
+    [
+     "S38",
+     "reports_no_change",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S19",
+    "S70"
+   ],
+   "source": "v1-qwen40:MAT-05"
+  },
+  "MAT-06": {
+   "title_hint": "Early Hardness and Fatigue Discrepancies in Titanium Alloys",
+   "issue": "Inconsistencies in early mechanical property testing for Stetrugel-6 and Sapifin-2.",
+   "thesis": "The Thithegam Lab 2012 study reported an improvement in hardness with Stetrugel-6, while the Thukepel Lab 2017 study reported no change in fatigue life with Sapifin-2, highlighting methodological variability in early alloy characterization.",
+   "claims": [
+    [
+     "S1",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S34",
+     "reports_no_change",
+     "M2"
+    ],
+    [
+     "S34",
+     "reports_improvement",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S1",
+     "reports_improvement",
+     "M2"
+    ],
+    [
+     "S19",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S28",
+     "reports_improvement",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S1",
+    "S34"
+   ],
+   "source": "v1-qwen40:MAT-06"
+  },
+  "MAT-07": {
+   "title_hint": "Thermal and Oxidative Stability of Ceramic Coatings",
+   "issue": "Comparative performance of Kogal-8 and Bumom-7 under thermal and oxidative stress.",
+   "thesis": "The Mebrikim Lab 2020 study reported degradation in oxidation resistance with Bumom-7, whereas the Drithekra Lab 2014 study reported an improvement in thermal conductivity with Kogal-8, suggesting divergent degradation pathways for ceramic coatings.",
+   "claims": [
+    [
+     "S18",
+     "reports_degradation",
+     "M4"
+    ],
+    [
+     "S5",
+     "reports_improvement",
+     "M3"
+    ],
+    [
+     "S18",
+     "reports_no_change",
+     "M3"
+    ]
+   ],
+   "decoys": [
+    [
+     "S5",
+     "reports_improvement",
+     "M4"
+    ],
+    [
+     "S78",
+     "reports_no_change",
+     "M3"
+    ],
+    [
+     "S35",
+     "reports_improvement",
+     "M3"
+    ]
+   ],
+   "focus": [
+    "S18",
+    "S5"
+   ],
+   "source": "v1-qwen40:MAT-07"
+  },
+  "MAT-08": {
+   "title_hint": "Corrosion Resistance Conflicts in Titanium Alloys",
+   "issue": "Contradictory findings regarding the corrosion resistance of Stetrugel-6 and Sapifin-2.",
+   "thesis": "A direct conflict exists where the Zefos Lab 2016 study reported degradation in fatigue life with Sapifin-2, while the Ratrol Lab 2015 study reported an improvement in corrosion resistance with Stetrugel-6, indicating that different test methods yield opposing conclusions for alloy durability.",
+   "claims": [
+    [
+     "S10",
+     "reports_degradation",
+     "M2"
+    ],
+    [
+     "S32",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S32",
+     "reports_no_change",
+     "M2"
+    ]
+   ],
+   "decoys": [
+    [
+     "S10",
+     "reports_degradation",
+     "M1"
+    ],
+    [
+     "S51",
+     "reports_degradation",
+     "M2"
+    ],
+    [
+     "S76",
+     "reports_no_change",
+     "M2"
+    ]
+   ],
+   "focus": [
+    "S10",
+    "S32"
+   ],
+   "source": "v1-qwen40:MAT-08"
+  },
+  "MAT-09": {
+   "title_hint": "Replication Failures in Thermal Conductivity Studies",
+   "issue": "The reliability of thermal conductivity measurements for ceramic coatings over time.",
+   "thesis": "The Legrer Lab 2012 study reported an improvement in thermal conductivity with Kogal-8, but the Krebro Lab 2023 study failed to replicate the findings of the Legrer Lab 2012 study, suggesting that early thermal data for Kogal-8 may be unreliable.",
+   "claims": [
+    [
+     "S29",
+     "reports_improvement",
+     "M3"
+    ],
+    [
+     "S68",
+     "fails_to_replicate",
+     "S29"
+    ],
+    [
+     "S68",
+     "reports_no_change",
+     "M4"
+    ]
+   ],
+   "decoys": [
+    [
+     "S29",
+     "reports_improvement",
+     "M4"
+    ],
+    [
+     "S68",
+     "fails_to_replicate",
+     "S5"
+    ],
+    [
+     "S68",
+     "reports_no_change",
+     "M3"
+    ]
+   ],
+   "focus": [
+    "S29",
+    "S68"
+   ],
+   "source": "v1-qwen40:MAT-09"
+  },
+  "MAT-10": {
+   "title_hint": "Wear Rate Variability in Ceramic Coatings",
+   "issue": "Divergent wear rate results for Bumom-7 and Kogal-8 in recent studies.",
+   "thesis": "The Dikrur Lab 2022 study reported an improvement in fatigue life with Kogal-8, while the Kinal Lab 2022 study reported degradation in wear rate with Bumom-7, indicating that coating performance is highly sensitive to the specific tribological test method employed.",
+   "claims": [
+    [
+     "S22",
+     "reports_improvement",
+     "M3"
+    ],
+    [
+     "S39",
+     "reports_degradation",
+     "M4"
+    ],
+    [
+     "S39",
+     "reports_no_change",
+     "M3"
+    ]
+   ],
+   "decoys": [
+    [
+     "S22",
+     "reports_improvement",
+     "M4"
+    ],
+    [
+     "S29",
+     "reports_improvement",
+     "M3"
+    ],
+    [
+     "S68",
+     "reports_no_change",
+     "M3"
+    ]
+   ],
+   "focus": [
+    "S22",
+    "S39"
+   ],
+   "source": "v1-qwen40:MAT-10"
+  },
+  "MAT-11": {
+   "title_hint": "Oxidation and Corrosion Stability of Ceramic Coatings in Recent Trials",
+   "issue": "The reliability of Kogal-8 and Bumom-7 under high-temperature and corrosive conditions.",
+   "thesis": "Recent studies indicate that ceramic coatings Kogal-8 and Bumom-7 exhibit stable performance, with no significant degradation in oxidation resistance or corrosion resistance.",
+   "claims": [
+    [
+     "S24",
+     "reports_no_change",
+     "M3"
+    ],
+    [
+     "S24",
+     "reports_no_change",
+     "M4"
+    ],
+    [
+     "S56",
+     "reports_no_change",
+     "M3"
+    ]
+   ],
+   "decoys": [
+    [
+     "S56",
+     "reports_degradation",
+     "M4"
+    ],
+    [
+     "S24",
+     "reports_no_change",
+     "M1"
+    ],
+    [
+     "S68",
+     "reports_no_change",
+     "M4"
+    ]
+   ],
+   "focus": [
+    "S24",
+    "S56"
+   ],
+   "source": "v1-qwen40:MAT-11"
+  },
+  "MAT-12": {
+   "title_hint": "Wear and Corrosion Discrepancies in Titanium Alloys",
+   "issue": "Conflicting reports on the wear rate and corrosion resistance of Stetrugel-6 and Sapifin-2.",
+   "thesis": "There is a significant disagreement in the literature regarding the wear performance of Stetrugel-6, with one study reporting improvement and another reporting no change, while corrosion resistance remains stable.",
+   "claims": [
+    [
+     "S27",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S27",
+     "reports_no_change",
+     "M2"
+    ],
+    [
+     "S8",
+     "reports_no_change",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S8",
+     "reports_improvement",
+     "M2"
+    ],
+    [
+     "S27",
+     "reports_no_change",
+     "M3"
+    ],
+    [
+     "S34",
+     "reports_improvement",
+     "M1"
+    ]
+   ],
+   "conflict": [
+    [
+     "S27",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S8",
+     "reports_no_change",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S27",
+    "S8"
+   ],
+   "source": "v1-qwen40:MAT-12"
+  },
+  "MAT-13": {
+   "title_hint": "Hardness Assessment of Titanium Alloys via Indentation Methods",
+   "issue": "Consistency of hardness measurements for Stetrugel-6 and Sapifin-2 across different indentation techniques.",
+   "thesis": "Both Stetrugel-6 and Sapifin-2 show improved hardness in recent nanoindentation and scratch tests, suggesting a robust mechanical response.",
+   "claims": [
+    [
+     "S49",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S49",
+     "reports_improvement",
+     "M2"
+    ],
+    [
+     "S55",
+     "reports_improvement",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S55",
+     "reports_degradation",
+     "M2"
+    ],
+    [
+     "S49",
+     "reports_improvement",
+     "M3"
+    ],
+    [
+     "S34",
+     "reports_improvement",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S49",
+    "S55"
+   ],
+   "source": "v1-qwen40:MAT-13"
+  },
+  "MAT-14": {
+   "title_hint": "Wear Rate Variability in Ceramic Coatings and Alloys",
+   "issue": "The impact of different wear testing methods on the reported performance of Kogal-8 and Stetrugel-6.",
+   "thesis": "Wear rate results for Kogal-8 and Stetrugel-6 are inconsistent, with some studies reporting degradation and others showing no change, highlighting methodological sensitivity.",
+   "claims": [
+    [
+     "S15",
+     "reports_degradation",
+     "M3"
+    ],
+    [
+     "S15",
+     "reports_no_change",
+     "M1"
+    ],
+    [
+     "S33",
+     "reports_degradation",
+     "M3"
+    ]
+   ],
+   "decoys": [
+    [
+     "S33",
+     "reports_no_change",
+     "M1"
+    ],
+    [
+     "S15",
+     "reports_degradation",
+     "M4"
+    ],
+    [
+     "S24",
+     "reports_no_change",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S15",
+    "S33"
+   ],
+   "source": "v1-qwen40:MAT-14"
+  },
+  "MAT-15": {
+   "title_hint": "Corrosion and Fatigue Life of Titanium Alloys in Long-Term Studies",
+   "issue": "The long-term corrosion resistance and fatigue life of Stetrugel-6 and Sapifin-2.",
+   "thesis": "Stetrugel-6 and Sapifin-2 demonstrate stable corrosion resistance and improved fatigue life in recent accelerated and cyclic loading tests.",
+   "claims": [
+    [
+     "S62",
+     "reports_no_change",
+     "M1"
+    ],
+    [
+     "S62",
+     "reports_no_change",
+     "M2"
+    ],
+    [
+     "S64",
+     "reports_improvement",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S64",
+     "reports_degradation",
+     "M2"
+    ],
+    [
+     "S62",
+     "reports_no_change",
+     "M3"
+    ],
+    [
+     "S19",
+     "reports_improvement",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S62",
+    "S64"
+   ],
+   "source": "v1-qwen40:MAT-15"
+  },
+  "MAT-16": {
+   "title_hint": "Recent Hardness and Corrosion Assessments of Titanium Alloys",
+   "issue": "The consistency of recent hardness and corrosion resistance data for Stetrugel-6 and Sapifin-2.",
+   "thesis": "The Travatron Lab 2020 study reported an improvement in hardness for Stetrugel-6, while the Vosom Lab 2021 study reported no change in corrosion resistance for Sapifin-2.",
+   "claims": [
+    [
+     "S79",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S80",
+     "reports_no_change",
+     "M2"
+    ],
+    [
+     "S79",
+     "reports_no_change",
+     "M2"
+    ]
+   ],
+   "decoys": [
+    [
+     "S80",
+     "reports_no_change",
+     "M1"
+    ],
+    [
+     "S28",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S64",
+     "reports_improvement",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S79",
+    "S80"
+   ],
+   "source": "v1-qwen40:MAT-16"
+  },
+  "MAT-17": {
+   "title_hint": "Corrosion Resistance Discrepancies in Titanium Alloys",
+   "issue": "Conflicting reports on the corrosion resistance of Stetrugel-6 from the Zugreden Lab 2018 and Bopor Lab 2021 studies.",
+   "thesis": "The Zugreden Lab 2018 study reported an improvement in corrosion resistance for Stetrugel-6, whereas the Bopor Lab 2021 study reported no change for the same material.",
+   "claims": [
+    [
+     "S14",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S38",
+     "reports_no_change",
+     "M1"
+    ],
+    [
+     "S14",
+     "reports_no_change",
+     "M2"
+    ]
+   ],
+   "decoys": [
+    [
+     "S38",
+     "reports_no_change",
+     "M2"
+    ],
+    [
+     "S27",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S49",
+     "reports_improvement",
+     "M1"
+    ]
+   ],
+   "conflict": [
+    [
+     "S14",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S38",
+     "reports_no_change",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S14",
+    "S38"
+   ],
+   "source": "v1-qwen40:MAT-17"
+  },
+  "MAT-18": {
+   "title_hint": "Wear and Oxidation Performance of Ceramic Coatings",
+   "issue": "The impact of the Kronor Lab 2013 and Grebrom Lab 2015 studies on the perceived performance of Kogal-8 and Bumom-7.",
+   "thesis": "The Kronor Lab 2013 study reported degradation in wear rate for Kogal-8, while the Grebrom Lab 2015 study reported no change in oxidation resistance for Bumom-7.",
+   "claims": [
+    [
+     "S3",
+     "reports_degradation",
+     "M3"
+    ],
+    [
+     "S60",
+     "reports_no_change",
+     "M4"
+    ],
+    [
+     "S3",
+     "reports_no_change",
+     "M4"
+    ]
+   ],
+   "decoys": [
+    [
+     "S60",
+     "reports_no_change",
+     "M3"
+    ],
+    [
+     "S26",
+     "reports_no_change",
+     "M4"
+    ],
+    [
+     "S24",
+     "reports_no_change",
+     "M4"
+    ]
+   ],
+   "focus": [
+    "S3",
+    "S60"
+   ],
+   "source": "v1-qwen40:MAT-18"
+  },
+  "MAT-19": {
+   "title_hint": "Fatigue Life and Oxidation Resistance in Advanced Materials",
+   "issue": "Evaluating the fatigue life of Sapifin-2 and oxidation resistance of Stetrugel-6 based on Furetho Lab 2023 and Hozethe Lab 2021 data.",
+   "thesis": "The Furetho Lab 2023 study reported an improvement in fatigue life for Sapifin-2, and the Hozethe Lab 2021 study reported an improvement in oxidation resistance for Stetrugel-6.",
+   "claims": [
+    [
+     "S40",
+     "reports_improvement",
+     "M2"
+    ],
+    [
+     "S66",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S40",
+     "reports_no_change",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S66",
+     "reports_improvement",
+     "M2"
+    ],
+    [
+     "S1",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S33",
+     "reports_no_change",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S40",
+    "S66"
+   ],
+   "source": "v1-qwen40:MAT-19"
+  },
+  "MAT-20": {
+   "title_hint": "Oxidation and Fatigue Studies on Titanium Alloys and Coatings",
+   "issue": "Comparing the findings of the Krestos Lab 2025 and Hozus Lab 2013 studies regarding material degradation.",
+   "thesis": "The Krestos Lab 2025 study reported degradation in oxidation resistance for Kogal-8, while the Hozus Lab 2013 study reported no change in fatigue life for Stetrugel-6.",
+   "claims": [
+    [
+     "S42",
+     "reports_degradation",
+     "M3"
+    ],
+    [
+     "S58",
+     "reports_no_change",
+     "M1"
+    ],
+    [
+     "S42",
+     "reports_no_change",
+     "M4"
+    ]
+   ],
+   "decoys": [
+    [
+     "S58",
+     "reports_no_change",
+     "M2"
+    ],
+    [
+     "S69",
+     "reports_no_change",
+     "M4"
+    ],
+    [
+     "S15",
+     "reports_degradation",
+     "M3"
+    ]
+   ],
+   "focus": [
+    "S42",
+    "S58"
+   ],
+   "source": "v1-qwen40:MAT-20"
+  },
+  "MAT-21": {
+   "title_hint": "Divergent Thermal Conductivity Findings in Ceramic Coatings",
+   "issue": "Inconsistency in thermal conductivity measurements for ceramic coatings Kogal-8 and Bumom-7 across different labs and years.",
+   "thesis": "The Nistipun Lab 2016 study reported an improvement in thermal conductivity for both ceramic coatings, while the Brogathin Lab 2015 study reported no change, suggesting methodological differences in laser flash analysis versus Knoop indentation contexts.",
+   "claims": [
+    [
+     "S47",
+     "reports_improvement",
+     "M3"
+    ],
+    [
+     "S47",
+     "reports_improvement",
+     "M4"
+    ],
+    [
+     "S7",
+     "reports_no_change",
+     "M3"
+    ]
+   ],
+   "decoys": [
+    [
+     "S47",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S7",
+     "reports_no_change",
+     "M4"
+    ],
+    [
+     "S7",
+     "reports_no_change",
+     "M2"
+    ]
+   ],
+   "focus": [
+    "S47",
+    "S7"
+   ],
+   "source": "v1-qwen40:MAT-21"
+  },
+  "MAT-22": {
+   "title_hint": "Oxidation Resistance and Wear Rate Discrepancies in Titanium Alloys",
+   "issue": "Conflicting reports on oxidation resistance and wear rate for titanium alloys Stetrugel-6 and Sapifin-2.",
+   "thesis": "The Begrur Lab 2017 study found no change in oxidation resistance for both titanium alloys, whereas the Diper Lab 2016 study reported degradation in wear rate for Stetrugel-6, indicating potential instability in high-temperature performance.",
+   "claims": [
+    [
+     "S12",
+     "reports_no_change",
+     "M1"
+    ],
+    [
+     "S12",
+     "reports_no_change",
+     "M2"
+    ],
+    [
+     "S75",
+     "reports_degradation",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S12",
+     "reports_no_change",
+     "M3"
+    ],
+    [
+     "S75",
+     "reports_degradation",
+     "M2"
+    ],
+    [
+     "S75",
+     "reports_degradation",
+     "M4"
+    ]
+   ],
+   "focus": [
+    "S12",
+    "S75"
+   ],
+   "source": "v1-qwen40:MAT-22"
+  },
+  "MAT-23": {
+   "title_hint": "Hardness Variability in Titanium Alloys: A Conflict in Nanoindentation Results",
+   "issue": "Disagreement between the Bropulon Lab 2018 and Kuhazo Lab 2014 studies regarding the hardness of titanium alloy Stetrugel-6.",
+   "thesis": "The Bropulon Lab 2018 study reported an improvement in hardness for Stetrugel-6, while the Kuhazo Lab 2014 study reported no change, creating a direct conflict in the assessment of the alloy's mechanical properties.",
+   "claims": [
+    [
+     "S13",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S31",
+     "reports_no_change",
+     "M1"
+    ],
+    [
+     "S13",
+     "reports_improvement",
+     "M2"
+    ]
+   ],
+   "decoys": [
+    [
+     "S13",
+     "reports_improvement",
+     "M3"
+    ],
+    [
+     "S31",
+     "reports_no_change",
+     "M2"
+    ],
+    [
+     "S31",
+     "reports_no_change",
+     "M4"
+    ]
+   ],
+   "focus": [
+    "S13",
+    "S31"
+   ],
+   "source": "v1-qwen40:MAT-23"
+  },
+  "MAT-24": {
+   "title_hint": "Thermal Conductivity Consistency in Ceramic Coatings",
+   "issue": "Verification of thermal conductivity improvements in ceramic coatings Kogal-8 and Bumom-7.",
+   "thesis": "Both the Kudram Lab 2023 and Gilor Lab 2022 studies reported improvements in thermal conductivity for both ceramic coatings, confirming the material's suitability for heat dissipation applications.",
+   "claims": [
+    [
+     "S23",
+     "reports_improvement",
+     "M3"
+    ],
+    [
+     "S23",
+     "reports_improvement",
+     "M4"
+    ],
+    [
+     "S53",
+     "reports_improvement",
+     "M3"
+    ]
+   ],
+   "decoys": [
+    [
+     "S23",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S53",
+     "reports_improvement",
+     "M4"
+    ],
+    [
+     "S53",
+     "reports_improvement",
+     "M2"
+    ]
+   ],
+   "focus": [
+    "S23",
+    "S53"
+   ],
+   "source": "v1-qwen40:MAT-24"
+  },
+  "MAT-25": {
+   "title_hint": "Oxidation and Thermal Conductivity in Ceramic Coatings",
+   "issue": "Assessment of oxidation resistance and thermal conductivity for ceramic coatings Kogal-8 and Bumom-7.",
+   "thesis": "The Vogem Lab 2013 study reported no change in oxidation resistance for both ceramic coatings, while the Brusizal Lab 2014 study reported an improvement in thermal conductivity for Kogal-8, highlighting distinct performance characteristics.",
+   "claims": [
+    [
+     "S30",
+     "reports_no_change",
+     "M3"
+    ],
+    [
+     "S30",
+     "reports_no_change",
+     "M4"
+    ],
+    [
+     "S59",
+     "reports_improvement",
+     "M3"
+    ]
+   ],
+   "decoys": [
+    [
+     "S30",
+     "reports_no_change",
+     "M1"
+    ],
+    [
+     "S59",
+     "reports_improvement",
+     "M4"
+    ],
+    [
+     "S59",
+     "reports_improvement",
+     "M2"
+    ]
+   ],
+   "focus": [
+    "S30",
+    "S59"
+   ],
+   "source": "v1-qwen40:MAT-25"
+  },
+  "MAT-26": {
+   "title_hint": "Wear Rate Stability of Ceramic Coatings: A Comparative Analysis of 2024 and 2013 Studies",
+   "issue": "The consistency of wear rate findings for ceramic coating Bumom-7 across different testing methodologies and time periods.",
+   "thesis": "Recent tribological studies indicate that while Bumom-7 shows no change in wear rate under specific conditions, its performance remains inconsistent with earlier degradation reports, whereas Kogal-8 exhibits a stable improvement trend.",
+   "claims": [
+    [
+     "S69",
+     "reports_no_change",
+     "M4"
+    ],
+    [
+     "S69",
+     "reports_improvement",
+     "M3"
+    ],
+    [
+     "S72",
+     "reports_improvement",
+     "M4"
+    ]
+   ],
+   "decoys": [
+    [
+     "S72",
+     "reports_improvement",
+     "M3"
+    ],
+    [
+     "S59",
+     "reports_improvement",
+     "M4"
+    ],
+    [
+     "S29",
+     "reports_improvement",
+     "M3"
+    ]
+   ],
+   "focus": [
+    "S69",
+    "S72"
+   ],
+   "source": "v1-qwen40:MAT-26"
+  },
+  "MAT-27": {
+   "title_hint": "Fatigue Life Discrepancies in Titanium Alloys: A Critical Review of Cyclic Loading and Ultrasonic Fatigue Results",
+   "issue": "Conflicting reports on the fatigue life of titanium alloys Stetrugel-6 and Sapifin-2 from studies conducted in 2013 and 2019.",
+   "thesis": "The Dozado Lab 2013 study reported degradation in fatigue life for both alloys, while the Stever Lab 2019 study reported no change, suggesting that testing method (cyclic loading vs. ultrasonic fatigue) significantly influences the observed fatigue performance.",
+   "claims": [
+    [
+     "S4",
+     "reports_degradation",
+     "M1"
+    ],
+    [
+     "S4",
+     "reports_degradation",
+     "M2"
+    ],
+    [
+     "S16",
+     "reports_no_change",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S4",
+     "reports_degradation",
+     "M3"
+    ],
+    [
+     "S16",
+     "reports_no_change",
+     "M2"
+    ],
+    [
+     "S57",
+     "reports_degradation",
+     "M2"
+    ]
+   ],
+   "focus": [
+    "S16",
+    "S4"
+   ],
+   "source": "v1-qwen40:MAT-27"
+  },
+  "MAT-29": {
+   "title_hint": "Thermal Conductivity Trends in Ceramic Coatings: A Longitudinal Study from 2017 to 2024",
+   "issue": "The evolution of thermal conductivity findings for ceramic coatings Kogal-8 and Bumom-7 over a seven-year period.",
+   "thesis": "Both the Panos Lab 2017 and Likrir Lab 2024 studies report improvements in thermal conductivity for both ceramic coatings, indicating a consistent trend of enhanced thermal performance in this material family over time.",
+   "claims": [
+    [
+     "S11",
+     "reports_improvement",
+     "M3"
+    ],
+    [
+     "S11",
+     "reports_improvement",
+     "M4"
+    ],
+    [
+     "S41",
+     "reports_improvement",
+     "M3"
+    ]
+   ],
+   "decoys": [
+    [
+     "S11",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S41",
+     "reports_improvement",
+     "M4"
+    ],
+    [
+     "S35",
+     "reports_improvement",
+     "M4"
+    ]
+   ],
+   "focus": [
+    "S11",
+    "S41"
+   ],
+   "source": "v1-qwen40:MAT-29"
+  },
+  "MAT-30": {
+   "title_hint": "Oxidation Resistance in Titanium Alloys: A Comparative Analysis of 2017 and 2018 Studies",
+   "issue": "The consistency of oxidation resistance findings for titanium alloys Stetrugel-6 and Sapifin-2 from studies conducted in consecutive years.",
+   "thesis": "The Nusto Lab 2017 study reported no change in oxidation resistance for Stetrugel-6, while the Stogrel Lab 2018 study reported an improvement in thermal conductivity for the same material, suggesting that different properties may respond differently to material modifications over time.",
+   "claims": [
+    [
+     "S48",
+     "reports_no_change",
+     "M1"
+    ],
+    [
+     "S48",
+     "reports_improvement",
+     "M2"
+    ],
+    [
+     "S77",
+     "reports_improvement",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S77",
+     "reports_improvement",
+     "M2"
+    ],
+    [
+     "S28",
+     "reports_improvement",
+     "M2"
+    ],
+    [
+     "S49",
+     "reports_improvement",
+     "M2"
+    ]
+   ],
+   "focus": [
+    "S48",
+    "S77"
+   ],
+   "source": "v1-qwen40:MAT-30"
+  },
+  "MAT-31": {
+   "title_hint": "Early Corrosion and Thermal Conductivity Benchmarks for Titanium Alloys",
+   "issue": "Establishing baseline performance for Stetrugel-6 and Sapifin-2 in 2012",
+   "thesis": "The Thithegam Lab 2012 study and the Mehol Lab 2012 study provide the foundational data for corrosion resistance and thermal conductivity of the primary titanium alloys, showing consistent improvements.",
+   "claims": [
+    [
+     "S2",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S2",
+     "reports_improvement",
+     "M2"
+    ],
+    [
+     "S71",
+     "reports_improvement",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S2",
+     "reports_improvement",
+     "M3"
+    ],
+    [
+     "S71",
+     "reports_improvement",
+     "M2"
+    ],
+    [
+     "S71",
+     "reports_improvement",
+     "M4"
+    ]
+   ],
+   "focus": [
+    "S2",
+    "S71"
+   ],
+   "source": "v1-qwen40:MAT-31"
+  },
+  "MAT-32": {
+   "title_hint": "Divergent Wear and Hardness Findings in Ceramic Coatings",
+   "issue": "Reconciling conflicting reports on the wear rate of Kogal-8 and Bumom-7",
+   "thesis": "While the Pagadol Lab 2016 study reported no change in hardness for the ceramic coatings, the Brihoher Lab 2016 study reported significant degradation in their wear rate, suggesting a trade-off between hardness and wear performance.",
+   "claims": [
+    [
+     "S61",
+     "reports_no_change",
+     "M3"
+    ],
+    [
+     "S61",
+     "reports_no_change",
+     "M4"
+    ],
+    [
+     "S9",
+     "reports_degradation",
+     "M3"
+    ]
+   ],
+   "decoys": [
+    [
+     "S61",
+     "reports_no_change",
+     "M1"
+    ],
+    [
+     "S9",
+     "reports_degradation",
+     "M4"
+    ],
+    [
+     "S9",
+     "reports_degradation",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S61",
+    "S9"
+   ],
+   "source": "v1-qwen40:MAT-32"
+  },
+  "MAT-33": {
+   "title_hint": "Hardness vs. Wear: A Conflict in Ceramic Coating Characterization",
+   "issue": "Discrepancy between hardness improvement and wear degradation in Kogal-8",
+   "thesis": "The Lozem Lab 2018 study and the Thotheso Lab 2014 study present a direct conflict regarding the performance of coating Kogal-8: one reports an improvement in wear rate while the other reports an improvement in hardness, yet the wear data contradicts the expected correlation, indicating a complex material behavior.",
+   "claims": [
+    [
+     "S63",
+     "reports_improvement",
+     "M3"
+    ],
+    [
+     "S73",
+     "reports_no_change",
+     "M3"
+    ],
+    [
+     "S63",
+     "reports_degradation",
+     "M4"
+    ]
+   ],
+   "decoys": [
+    [
+     "S73",
+     "reports_no_change",
+     "M4"
+    ],
+    [
+     "S73",
+     "reports_no_change",
+     "M1"
+    ],
+    [
+     "S5",
+     "reports_improvement",
+     "M3"
+    ]
+   ],
+   "conflict": [
+    [
+     "S63",
+     "reports_improvement",
+     "M3"
+    ],
+    [
+     "S73",
+     "reports_no_change",
+     "M3"
+    ]
+   ],
+   "focus": [
+    "S63",
+    "S73"
+   ],
+   "source": "v1-qwen40:MAT-33"
+  },
+  "MAT-34": {
+   "title_hint": "Oxidation Resistance and Corrosion Stability in Titanium Alloys",
+   "issue": "Assessing the long-term stability of Stetrugel-6 and Sapifin-2",
+   "thesis": "The Briror Lab 2019 study and the Rathu Lab 2019 study confirm that both titanium alloys exhibit stable oxidation resistance and corrosion resistance, with no significant degradation observed over the test periods.",
+   "claims": [
+    [
+     "S36",
+     "reports_no_change",
+     "M1"
+    ],
+    [
+     "S36",
+     "reports_no_change",
+     "M2"
+    ],
+    [
+     "S50",
+     "reports_no_change",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S36",
+     "reports_no_change",
+     "M3"
+    ],
+    [
+     "S50",
+     "reports_no_change",
+     "M2"
+    ],
+    [
+     "S50",
+     "reports_no_change",
+     "M3"
+    ]
+   ],
+   "focus": [
+    "S36",
+    "S50"
+   ],
+   "source": "v1-qwen40:MAT-34"
+  },
+  "MAT-35": {
+   "title_hint": "Corrosion and Oxidation: Early Findings for Ceramic Coatings",
+   "issue": "Initial assessment of Kogal-8 and Bumom-7 in corrosive and high-temperature environments",
+   "thesis": "The Volar Lab 2013 study and the Trebun Lab 2014 study indicate that ceramic coatings Kogal-8 and Bumom-7 show improved corrosion resistance and oxidation resistance, respectively, making them suitable for harsh environments.",
+   "claims": [
+    [
+     "S44",
+     "reports_improvement",
+     "M3"
+    ],
+    [
+     "S44",
+     "reports_improvement",
+     "M4"
+    ],
+    [
+     "S6",
+     "reports_improvement",
+     "M3"
+    ]
+   ],
+   "decoys": [
+    [
+     "S44",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S6",
+     "reports_improvement",
+     "M4"
+    ],
+    [
+     "S6",
+     "reports_improvement",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S44",
+    "S6"
+   ],
+   "source": "v1-qwen40:MAT-35"
+  },
+  "MAT-36": {
+   "title_hint": "Thermal Conductivity and Wear Rate Discrepancies in Titanium Alloys",
+   "issue": "Inconsistent findings regarding the thermal conductivity and wear rate performance of alloy Stetrugel-6 across different testing methodologies.",
+   "thesis": "The Dranam Lab 2020 study and the Dratefar Lab 2022 study present conflicting evidence on the material properties of Stetrugel-6, suggesting method-dependent variability in reported improvements.",
+   "claims": [
+    [
+     "S17",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S21",
+     "reports_no_change",
+     "M1"
+    ],
+    [
+     "S17",
+     "reports_improvement",
+     "M2"
+    ]
+   ],
+   "decoys": [
+    [
+     "S17",
+     "reports_improvement",
+     "M3"
+    ],
+    [
+     "S21",
+     "reports_no_change",
+     "M2"
+    ],
+    [
+     "S17",
+     "reports_improvement",
+     "M4"
+    ]
+   ],
+   "conflict": [
+    [
+     "S17",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S21",
+     "reports_no_change",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S17",
+    "S21"
+   ],
+   "source": "v1-qwen40:MAT-36"
+  },
+  "MAT-37": {
+   "title_hint": "Fatigue Life and Wear Rate Stability in Ceramic Coatings",
+   "issue": "Evaluating the stability of coating Bumom-7 under fatigue and wear conditions, with a focus on the Dresta Lab 2014 and Megrekron Lab 2021 studies.",
+   "thesis": "While the Dresta Lab 2014 study reported degradation in wear rate for Bumom-7, the Megrekron Lab 2021 study found no change in fatigue life, indicating that wear mechanisms do not necessarily correlate with fatigue performance.",
+   "claims": [
+    [
+     "S45",
+     "reports_degradation",
+     "M4"
+    ],
+    [
+     "S52",
+     "reports_no_change",
+     "M4"
+    ],
+    [
+     "S45",
+     "reports_degradation",
+     "M3"
+    ]
+   ],
+   "decoys": [
+    [
+     "S45",
+     "reports_degradation",
+     "M1"
+    ],
+    [
+     "S52",
+     "reports_no_change",
+     "M3"
+    ],
+    [
+     "S45",
+     "reports_degradation",
+     "M2"
+    ]
+   ],
+   "focus": [
+    "S45",
+    "S52"
+   ],
+   "source": "v1-qwen40:MAT-37"
+  },
+  "MAT-38": {
+   "title_hint": "Hardness and Oxidation Resistance in Titanium Alloys",
+   "issue": "Comparing the hardness and oxidation resistance outcomes for alloy Stetrugel-6 from the Goter Lab 2020 and Stukos Lab 2023 studies.",
+   "thesis": "The Goter Lab 2020 study reported an improvement in hardness for Stetrugel-6, while the Stukos Lab 2023 study reported no change in oxidation resistance, highlighting a divergence between mechanical and chemical stability metrics.",
+   "claims": [
+    [
+     "S37",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S54",
+     "reports_no_change",
+     "M1"
+    ],
+    [
+     "S37",
+     "reports_improvement",
+     "M2"
+    ]
+   ],
+   "decoys": [
+    [
+     "S37",
+     "reports_improvement",
+     "M3"
+    ],
+    [
+     "S54",
+     "reports_no_change",
+     "M2"
+    ],
+    [
+     "S37",
+     "reports_improvement",
+     "M4"
+    ]
+   ],
+   "focus": [
+    "S37",
+    "S54"
+   ],
+   "source": "v1-qwen40:MAT-38"
+  },
+  "MAT-39": {
+   "title_hint": "Fatigue and Hardness Performance of Alloy Sapifin-2",
+   "issue": "Assessing the fatigue life and hardness of alloy Sapifin-2 based on the Testu Lab 2015 and Dulel Lab 2022 studies.",
+   "thesis": "Both the Testu Lab 2015 and Dulel Lab 2022 studies reported improvements in the performance of Sapifin-2, suggesting consistent positive trends in both fatigue and hardness metrics over time.",
+   "claims": [
+    [
+     "S46",
+     "reports_improvement",
+     "M2"
+    ],
+    [
+     "S67",
+     "reports_improvement",
+     "M2"
+    ],
+    [
+     "S46",
+     "reports_improvement",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S46",
+     "reports_improvement",
+     "M3"
+    ],
+    [
+     "S67",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S46",
+     "reports_improvement",
+     "M4"
+    ]
+   ],
+   "focus": [
+    "S46",
+    "S67"
+   ],
+   "source": "v1-qwen40:MAT-39"
+  },
+  "MAT-40": {
+   "title_hint": "Hardness and Corrosion Resistance in Alloy Stetrugel-6",
+   "issue": "Investigating the hardness and corrosion resistance of alloy Stetrugel-6 through the Lostam Lab 2012 and Dedri Lab 2015 studies.",
+   "thesis": "The Lostam Lab 2012 study reported an improvement in hardness for Stetrugel-6, whereas the Dedri Lab 2015 study reported no change in corrosion resistance, indicating that early mechanical gains did not translate to chemical stability improvements.",
+   "claims": [
+    [
+     "S43",
+     "reports_improvement",
+     "M1"
+    ],
+    [
+     "S74",
+     "reports_no_change",
+     "M1"
+    ],
+    [
+     "S43",
+     "reports_improvement",
+     "M2"
+    ]
+   ],
+   "decoys": [
+    [
+     "S43",
+     "reports_improvement",
+     "M3"
+    ],
+    [
+     "S74",
+     "reports_no_change",
+     "M2"
+    ],
+    [
+     "S43",
+     "reports_improvement",
+     "M4"
+    ]
+   ],
+   "focus": [
+    "S43",
+    "S74"
+   ],
+   "source": "v1-qwen40:MAT-40"
+  },
+  "MAT-42": {
+   "title_hint": "Divergent Fatigue and Corrosion Responses in Titanium Alloys: A Comparative Analysis of Stever Lab 2019 and Ratrol Lab 2015",
+   "issue": "The discrepancy between the fatigue life results reported by Stever Lab (2019) and the corrosion resistance results reported by Ratrol Lab (2015) for the titanium alloy Stetrugel-6, specifically regarding whether the material exhibits improvement or no change in performance.",
+   "thesis": "While Stever Lab 2019 reported no change in fatigue life for Stetrugel-6, Ratrol Lab 2015 reported an improvement in corrosion resistance for the same material, indicating that performance metrics are property-dependent and not universally consistent across different test methods.",
+   "claims": [
+    [
+     "S16",
+     "reports_no_change",
+     "M1"
+    ],
+    [
+     "S16",
+     "reports_no_change",
+     "M2"
+    ],
+    [
+     "S32",
+     "reports_improvement",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S16",
+     "reports_no_change",
+     "M3"
+    ],
+    [
+     "S74",
+     "reports_no_change",
+     "M1"
+    ],
+    [
+     "S6",
+     "reports_improvement",
+     "M1"
+    ]
+   ],
+   "conflict": [
+    [
+     "S16",
+     "reports_no_change",
+     "M1"
+    ],
+    [
+     "S32",
+     "reports_improvement",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S16",
+    "S32"
+   ],
+   "source": "v1-qwen40:MAT-42"
+  },
+  "MAT-43": {
+   "title_hint": "Thermal Stability and Cycling Performance of Magnesium-Iron Hydrides",
+   "issue": "The reliability of magnesium-iron based alloys for long-term hydrogen storage applications.",
+   "thesis": "Recent studies indicate that while the magnesium-iron alloy Bimeke-2 exhibits excellent thermal stability, its cycling stability remains unproven or inconsistent, raising concerns about its practical viability for repeated charge-discharge cycles.",
+   "claims": [
+    [
+     "AS3",
+     "reports_no_change",
+     "AM2"
+    ],
+    [
+     "AS5",
+     "reports_improvement",
+     "AM2"
+    ],
+    [
+     "AS5",
+     "reports_improvement",
+     "AM1"
+    ]
+   ],
+   "decoys": [
+    [
+     "AS3",
+     "reports_no_change",
+     "AM1"
+    ],
+    [
+     "AS5",
+     "reports_improvement",
+     "AM3"
+    ],
+    [
+     "AS3",
+     "reports_no_change",
+     "AM3"
+    ]
+   ],
+   "conflict": [
+    [
+     "AS3",
+     "reports_no_change",
+     "AM2"
+    ],
+    [
+     "AS5",
+     "reports_improvement",
+     "AM2"
+    ]
+   ],
+   "focus": [
+    "AS3",
+    "AS5"
+   ],
+   "cluster": "A",
+   "source": "v2p3:MAT-01"
+  },
+  "MAT-44": {
+   "title_hint": "Thermal Conductivity and Oxidation Stability of Zirconia-Based TBCs",
+   "issue": "Evaluating the thermal conductivity of cold-sprayed zirconia and the oxidation resistance of gadolinium zirconate coatings.",
+   "thesis": "The Thipenus Lab 2014 study reported an improvement in thermal conductivity with Trastol-4, while the Stosimam Lab 2022 study reported an improvement in oxidation resistance with Faletre-6, highlighting distinct performance gains in different TBC systems.",
+   "claims": [
+    [
+     "BS1",
+     "reports_improvement",
+     "BM1"
+    ],
+    [
+     "BS5",
+     "reports_improvement",
+     "BM2"
+    ],
+    [
+     "BS1",
+     "reports_no_change",
+     "BM2"
+    ]
+   ],
+   "decoys": [
+    [
+     "BS5",
+     "reports_improvement",
+     "BM1"
+    ],
+    [
+     "BS1",
+     "reports_improvement",
+     "BM3"
+    ],
+    [
+     "BS3",
+     "reports_improvement",
+     "BM1"
+    ]
+   ],
+   "conflict": [
+    [
+     "BS1",
+     "reports_no_change",
+     "BM2"
+    ],
+    [
+     "BS5",
+     "reports_improvement",
+     "BM2"
+    ]
+   ],
+   "focus": [
+    "BS1",
+    "BS5"
+   ],
+   "cluster": "B",
+   "source": "v2p3:MAT-02"
+  },
+  "MAT-45": {
+   "title_hint": "Reproducibility Crisis in Hydrophilic Polymer Wicking: A Comparative Analysis of Krulo-9",
+   "issue": "The discrepancy in moisture wicking rate results for polymer Krulo-9 between the 2014 and 2016 studies, and the broader implications for reliability in textile comfort testing.",
+   "thesis": "The Stoste Lab 2016 study failed to replicate the positive wicking findings of the Kanam Lab 2014 study, suggesting that the initial improvement reported for Krulo-9 was not robust under repeated testing conditions.",
+   "claims": [
+    [
+     "CS1",
+     "reports_improvement",
+     "CM1"
+    ],
+    [
+     "CS2",
+     "fails_to_replicate",
+     "CS1"
+    ],
+    [
+     "CS2",
+     "reports_degradation",
+     "CM1"
+    ]
+   ],
+   "decoys": [
+    [
+     "CS1",
+     "reports_improvement",
+     "CM2"
+    ],
+    [
+     "CS2",
+     "reports_degradation",
+     "CM3"
+    ],
+    [
+     "CS3",
+     "fails_to_replicate",
+     "CS1"
+    ]
+   ],
+   "conflict": [
+    [
+     "CS1",
+     "reports_improvement",
+     "CM1"
+    ],
+    [
+     "CS2",
+     "reports_degradation",
+     "CM1"
+    ]
+   ],
+   "focus": [
+    "CS1",
+    "CS2"
+   ],
+   "cluster": "C",
+   "source": "v2p3:MAT-04"
+  }
+ },
+ "joins": {
+  "sources": [
+   "v1-qwen40",
+   "v2p3"
+  ],
+  "unified": {},
+  "ids": {},
+  "papers": {
+   "v2p3:MAT-01": "MAT-43",
+   "v2p3:MAT-02": "MAT-44",
+   "v2p3:MAT-04": "MAT-45"
+  },
+  "renamed_words": {
+   "v2p3:stetrugel": "tugedrum",
+   "v2p3:sapifin": "bimeke",
+   "v2p3:kogal": "bapor",
+   "v2p3:bumom": "hamezom",
+   "v2p3:dozado": "trastol",
+   "v2p3:zefos": "gozothom",
+   "v2p3:panos": "stosimam",
+   "v2p3:begrur": "grasam",
+   "v2p3:bropulon": "krulo",
+   "v2p3:mebrikim": "stoste",
+   "v2p3:putro": "stolir",
+   "v2p3:kevastur": "zadrathom",
+   "v2p3:dratefar": "hotrar",
+   "v2p3:dikrur": "bahen"
+  },
+  "clashes": []
+ },
+ "clusters": [
+  {
+   "id": "A",
+   "topic": {
+    "id": "T10811",
+    "name": "Hydrogen Storage and Materials",
+    "subfield": "Materials Chemistry",
+    "description": "This cluster of papers focuses on the materials, methods, and technologies for hydrogen storage, including metal hydrides, chemical storage solutions like ammonia borane, nanostructured carbon materials, and various catalysts for enhancing hydrogen generation and storage. It covers a wide range of research on improving the capacity, kinetics, and stability of hydrogen storage systems for mobile and stationary applications.",
+    "keywords": [
+     "hydrogen storage",
+     "metal hydrides",
+     "hydrogen absorption",
+     "hydrogen adsorption",
+     "magnesium hydride",
+     "hydrogen storage alloys",
+     "hydrogen desorption",
+     "hydrogen diffusion"
+    ],
+    "works": 78620
+   }
+  },
+  {
+   "id": "B",
+   "topic": {
+    "id": "T10626",
+    "name": "High-Temperature Coating Behaviors",
+    "subfield": "Surfaces, Coatings and Films",
+    "description": "This cluster of papers focuses on advancements in thermal barrier coatings for gas turbine engines, covering topics such as cold spray deposition, high-temperature corrosion, plasma spraying, rare-earth zirconates, oxidation behavior, bonding mechanisms, microstructural evolution, and thermal conductivity. The research aims to improve the durability and efficiency of thermal barrier coatings in high-temperature environments.",
+    "keywords": [
+     "thermal barrier coatings",
+     "high-temperature oxidation",
+     "high-temperature corrosion",
+     "plasma spraying",
+     "coating microstructure",
+     "yttria-stabilized zirconia",
+     "atmospheric plasma spraying",
+     "cold spray"
+    ],
+    "works": 77902
+   }
+  },
+  {
+   "id": "C",
+   "topic": {
+    "id": "T11595",
+    "name": "Textile materials and evaluations",
+    "subfield": "Polymers and Plastics",
+    "description": "This cluster of papers focuses on the science of clothing comfort and textile properties, including moisture management, thermal properties, wicking mechanisms, and the influence of fiber properties on fabric comfort. It also explores the application of artificial intelligence in fabric testing and the engineering of knitted fabrics for improved heat transfer.",
+    "keywords": [
+     "woven fabrics",
+     "knitted fabrics",
+     "textile fibers",
+     "protective clothing",
+     "air permeability",
+     "textile machinery",
+     "nonwoven fabrics",
+     "fabric properties"
+    ],
+    "works": 133799
+   }
+  }
+ ]
+}

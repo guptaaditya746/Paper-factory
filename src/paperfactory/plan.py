@@ -149,9 +149,13 @@ def number_rows(w: dict[str, Any], f: Field, g: Genre, pid: str, plan: dict[str,
     name = lambda e: w["entities"][e]["label"]  # noqa: E731
     rows: list[dict[str, str]] = []
 
-    def add(label: str, value: Any, unit: str, decimals: int | None = None) -> str:
+    def add(label: str, value: Any, unit: str, decimals: int | None = None,
+            about: dict[str, Any] | None = None) -> str:
+        """about: what the number is, in world ids (the benchmark's gold rows read it; never shown to a writer):
+        {"entity", "attr"} | {"fact": [s, r, o], "stat"} | {"pool": object, "stat", "studies": [subjects]}."""
         rid = f"{row_prefix}-{len(rows) + 1:02d}"
-        rows.append({"id": rid, "label": label, "value": _fmt(value, decimals), "unit": unit, "placement": "table"})
+        rows.append({"id": rid, "label": label, "value": _fmt(value, decimals), "unit": unit, "placement": "table",
+                     "about": about or {}})
         return rid
     ents = list(dict.fromkeys([x for s, _, o in plan["order"] for x in (s, o)]))
     by_attr: dict[str, list[str]] = {}          # attr -> row ids
@@ -164,7 +168,8 @@ def number_rows(w: dict[str, Any], f: Field, g: Genre, pid: str, plan: dict[str,
             v = nums["entities"].get(e, {}).get(col["attr"])
             if v is None:
                 continue
-            rid = add(f"{name(e)}: {col['label']}", v, spec[col["attr"]].get("unit", ""))
+            rid = add(f"{name(e)}: {col['label']}", v, spec[col["attr"]].get("unit", ""),
+                      about={"entity": e, "attr": col["attr"]})
             by_attr.setdefault(col["attr"], []).append(rid)
             by_ent.setdefault(e, []).append(rid)
             label_of[col["attr"]] = col["label"]
@@ -172,6 +177,7 @@ def number_rows(w: dict[str, Any], f: Field, g: Genre, pid: str, plan: dict[str,
     by_subj: dict[str, list[str]] = {}
     xs_obj: dict[str, list[dict[str, Any]]] = {}
     pooled: list[str] = []
+    subj_of: dict[str, list[str]] = {}          # object -> subjects with an effect row (a pool's studies)
     if eff:
         d, unit = eff.get("decimals", 2), eff["unit"]
         for s, r, o in plan["order"]:
@@ -179,25 +185,29 @@ def number_rows(w: dict[str, Any], f: Field, g: Genre, pid: str, plan: dict[str,
             if x is None:
                 continue
             what = f"{name(s)} / {name(o)}"
-            ids = []
+            ids, fa = [], [s, r, o]
             if "baseline" in x:
-                ids.append(add(f"{what}: baseline {eff['short']}", x["baseline"], unit, d))
-                ids.append(add(f"{what}: {eff['short']} with the method", x["with"], unit, d))
-            ids.append(add(f"{what}: {eff['name']}", x["estimate"], unit, d))
-            ids.append(add(f"{what}: 95% CI lower bound", x["ci_low"], unit, d))
-            ids.append(add(f"{what}: 95% CI upper bound", x["ci_high"], unit, d))
+                ids.append(add(f"{what}: baseline {eff['short']}", x["baseline"], unit, d,
+                               {"fact": fa, "stat": "baseline"}))
+                ids.append(add(f"{what}: {eff['short']} with the method", x["with"], unit, d,
+                               {"fact": fa, "stat": "with"}))
+            ids.append(add(f"{what}: {eff['name']}", x["estimate"], unit, d, {"fact": fa, "stat": "estimate"}))
+            ids.append(add(f"{what}: 95% CI lower bound", x["ci_low"], unit, d, {"fact": fa, "stat": "ci_low"}))
+            ids.append(add(f"{what}: 95% CI upper bound", x["ci_high"], unit, d, {"fact": fa, "stat": "ci_high"}))
             by_obj.setdefault(o, []).extend(ids)
             by_subj.setdefault(s, []).extend(ids)
             xs_obj.setdefault(o, []).append(x)
+            subj_of.setdefault(o, []).append(s)
         for o, xs in xs_obj.items():
             if len(xs) < 2:
                 continue
             pool = quant.pooled(xs, eff)
             lab = f"{eff.get('pool_label', 'pooled estimate')} for {name(o)} ({pool['studies']} {words['SP']})"
-            pooled += [add(f"{lab}: estimate", pool["estimate"], unit, d),
-                       add(f"{lab}: 95% CI lower bound", pool["ci_low"], unit, d),
-                       add(f"{lab}: 95% CI upper bound", pool["ci_high"], unit, d),
-                       add(f"{lab}: heterogeneity I²", pool["i2"], "%", 1)]
+            pa = lambda stat: {"pool": o, "stat": stat, "studies": subj_of[o]}  # noqa: E731
+            pooled += [add(f"{lab}: estimate", pool["estimate"], unit, d, pa("estimate")),
+                       add(f"{lab}: 95% CI lower bound", pool["ci_low"], unit, d, pa("ci_low")),
+                       add(f"{lab}: 95% CI upper bound", pool["ci_high"], unit, d, pa("ci_high")),
+                       add(f"{lab}: heterogeneity I²", pool["i2"], "%", 1, pa("i2"))]
     setups = [r for ids in by_attr.values() for r in ids]
     effects = [r for ids in by_obj.values() for r in ids]
     tw = words | {"E": (eff or {}).get("name", "results")}

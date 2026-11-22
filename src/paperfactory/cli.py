@@ -254,6 +254,12 @@ def main(argv: list[str] | None = None) -> None:
     pc = sub.add_parser("profile-corpus", help="form cards from donor papers (forms.py): layouts without words")
     pc.add_argument("--donors", required=True, help="folder with <field>/<id>.md and manifest.jsonl")
     pc.add_argument("--field", action="append", help="default: every field folder that has a pack")
+    jw = sub.add_parser("join-worlds", help="join worlds of one field into one (join.py); clashes are kept and listed")
+    jw.add_argument("--field", required=True)
+    jw.add_argument("--genre", required=True)
+    jw.add_argument("--world", action="append", required=True, help="NAME=PATH; the first keeps its ids and names")
+    jw.add_argument("--out", required=True)
+    jw.add_argument("--seed", default=1)
     c = sub.add_parser("check-world")
     c.add_argument("--config", required=True)
     c.add_argument("--world", required=True)
@@ -292,6 +298,25 @@ def main(argv: list[str] | None = None) -> None:
                                               Path(a.answers), make_eval if a.run_verifier else None,
                                               Path(a.adjudicated) if a.adjudicated else None), indent=1))
         return
+    if a.cmd == "join-worlds":
+        from paperfactory import join
+        f, g = packs.field(a.field), packs.genre(a.genre)
+        srcs = [x.split("=", 1) for x in a.world]
+        w = json.loads(Path(srcs[0][1]).read_text(encoding="utf-8"))
+        w.setdefault("joins", {"sources": [], "unified": {}, "ids": {}, "papers": {}, "renamed_words": {},
+                               "clashes": []})["sources"].insert(0, srcs[0][0])
+        w["papers"] = {pid: {**p, "source": p.get("source", f"{srcs[0][0]}:{pid}")} for pid, p in w["papers"].items()}
+        for name, path in srcs[1:]:
+            w = join.join(w, json.loads(Path(path).read_text(encoding="utf-8")), f, a.seed, name)
+        w.pop("dropped_papers", None)
+        w.pop("decoy_repairs", None)
+        errs = world.check(w, f, g)
+        files.write_json(Path(a.out), w)
+        j = w["joins"]
+        print(f"{len(w['papers'])} papers, {len(w['entities'])} entities; same thing: {len(j['unified'])}, "
+              f"renamed words: {len(j['renamed_words'])}, clashes: {len(j['clashes'])}")
+        print("\n".join(errs) or "world check ok")
+        sys.exit(1 if errs else 0)
     if a.cmd == "profile-corpus":
         root = Path(a.donors)
         for name in a.field or sorted(d.name for d in root.iterdir() if d.is_dir() and (packs.PACKS / "fields"

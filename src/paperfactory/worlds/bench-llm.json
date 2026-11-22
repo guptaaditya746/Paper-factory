@@ -1,0 +1,3741 @@
+{
+ "field": "llm",
+ "genre": "argument",
+ "entities": {
+  "M1": {
+   "kind": "method",
+   "label": "Kabaso prompting",
+   "alt": [
+    "Kabaso"
+   ],
+   "attrs": {
+    "family": "prompting"
+   }
+  },
+  "M2": {
+   "kind": "method",
+   "label": "Thetran prompting",
+   "alt": [
+    "Thetran"
+   ],
+   "attrs": {
+    "family": "prompting"
+   }
+  },
+  "M3": {
+   "kind": "method",
+   "label": "Ragrer decoding",
+   "alt": [
+    "Ragrer"
+   ],
+   "attrs": {
+    "family": "decoding"
+   }
+  },
+  "M4": {
+   "kind": "method",
+   "label": "Tedroso adapter",
+   "alt": [
+    "Tedroso"
+   ],
+   "attrs": {
+    "family": "fine-tuning"
+   }
+  },
+  "M5": {
+   "kind": "method",
+   "label": "Thoradram retrieval",
+   "alt": [
+    "Thoradram"
+   ],
+   "attrs": {
+    "family": "retrieval"
+   }
+  },
+  "M6": {
+   "kind": "method",
+   "label": "Gofabran decoding",
+   "alt": [
+    "Gofabran"
+   ],
+   "attrs": {
+    "family": "decoding"
+   }
+  },
+  "MD1": {
+   "kind": "model",
+   "label": "Thipom-7B",
+   "alt": [
+    "Thipom"
+   ],
+   "attrs": {
+    "size": "7B"
+   }
+  },
+  "MD2": {
+   "kind": "model",
+   "label": "Nimel-13B",
+   "alt": [
+    "Nimel"
+   ],
+   "attrs": {
+    "size": "13B"
+   }
+  },
+  "MD3": {
+   "kind": "model",
+   "label": "Nodrana-70B",
+   "alt": [
+    "Nodrana"
+   ],
+   "attrs": {
+    "size": "70B"
+   }
+  },
+  "B1": {
+   "kind": "benchmark",
+   "label": "the Mupadem-QA benchmark",
+   "alt": [
+    "Mupadem-QA"
+   ],
+   "attrs": {
+    "task": "multi-hop question answering"
+   }
+  },
+  "B2": {
+   "kind": "benchmark",
+   "label": "the Vofal-Math benchmark",
+   "alt": [
+    "Vofal-Math"
+   ],
+   "attrs": {
+    "task": "arithmetic reasoning"
+   }
+  },
+  "B3": {
+   "kind": "benchmark",
+   "label": "the Donar-Code benchmark",
+   "alt": [
+    "Donar-Code"
+   ],
+   "attrs": {
+    "task": "code generation"
+   }
+  },
+  "S1": {
+   "kind": "study",
+   "label": "the Banagro 2019 study",
+   "alt": [
+    "Banagro 2019"
+   ],
+   "attrs": {
+    "year": 2019,
+    "model": "MD1",
+    "benchmark": "B1",
+    "setting": "zero-shot"
+   }
+  },
+  "S2": {
+   "kind": "study",
+   "label": "the Gredapos 2019 study",
+   "alt": [
+    "Gredapos 2019"
+   ],
+   "attrs": {
+    "year": 2019,
+    "model": "MD1",
+    "benchmark": "B2",
+    "setting": "zero-shot"
+   }
+  },
+  "S3": {
+   "kind": "study",
+   "label": "the Bruke 2019 study",
+   "alt": [
+    "Bruke 2019"
+   ],
+   "attrs": {
+    "year": 2019,
+    "model": "MD1",
+    "benchmark": "B3",
+    "setting": "zero-shot"
+   }
+  },
+  "S4": {
+   "kind": "study",
+   "label": "the Brulum 2020 study",
+   "alt": [
+    "Brulum 2020"
+   ],
+   "attrs": {
+    "year": 2020,
+    "model": "MD1",
+    "benchmark": "B1",
+    "setting": "few-shot"
+   }
+  },
+  "S5": {
+   "kind": "study",
+   "label": "the Dogres 2020 study",
+   "alt": [
+    "Dogres 2020"
+   ],
+   "attrs": {
+    "year": 2020,
+    "model": "MD1",
+    "benchmark": "B2",
+    "setting": "few-shot"
+   }
+  },
+  "S6": {
+   "kind": "study",
+   "label": "the Sakem 2020 study",
+   "alt": [
+    "Sakem 2020"
+   ],
+   "attrs": {
+    "year": 2020,
+    "model": "MD1",
+    "benchmark": "B3",
+    "setting": "few-shot"
+   }
+  },
+  "S7": {
+   "kind": "study",
+   "label": "the Tilutron 2020 study",
+   "alt": [
+    "Tilutron 2020"
+   ],
+   "attrs": {
+    "year": 2020,
+    "model": "MD2",
+    "benchmark": "B1",
+    "setting": "zero-shot"
+   }
+  },
+  "S8": {
+   "kind": "study",
+   "label": "the Vokosti 2020 study",
+   "alt": [
+    "Vokosti 2020"
+   ],
+   "attrs": {
+    "year": 2020,
+    "model": "MD2",
+    "benchmark": "B2",
+    "setting": "zero-shot"
+   }
+  },
+  "S9": {
+   "kind": "study",
+   "label": "the Netras 2020 study",
+   "alt": [
+    "Netras 2020"
+   ],
+   "attrs": {
+    "year": 2020,
+    "model": "MD2",
+    "benchmark": "B3",
+    "setting": "zero-shot"
+   }
+  },
+  "S10": {
+   "kind": "study",
+   "label": "the Megreda 2021 study",
+   "alt": [
+    "Megreda 2021"
+   ],
+   "attrs": {
+    "year": 2021,
+    "model": "MD2",
+    "benchmark": "B1",
+    "setting": "few-shot"
+   }
+  },
+  "S11": {
+   "kind": "study",
+   "label": "the Brastom 2021 study",
+   "alt": [
+    "Brastom 2021"
+   ],
+   "attrs": {
+    "year": 2021,
+    "model": "MD2",
+    "benchmark": "B2",
+    "setting": "few-shot"
+   }
+  },
+  "S12": {
+   "kind": "study",
+   "label": "the Dedrola 2021 study",
+   "alt": [
+    "Dedrola 2021"
+   ],
+   "attrs": {
+    "year": 2021,
+    "model": "MD2",
+    "benchmark": "B3",
+    "setting": "few-shot"
+   }
+  },
+  "S13": {
+   "kind": "study",
+   "label": "the Grodrokris 2021 study",
+   "alt": [
+    "Grodrokris 2021"
+   ],
+   "attrs": {
+    "year": 2021,
+    "model": "MD3",
+    "benchmark": "B1",
+    "setting": "zero-shot"
+   }
+  },
+  "S14": {
+   "kind": "study",
+   "label": "the Nozur 2021 study",
+   "alt": [
+    "Nozur 2021"
+   ],
+   "attrs": {
+    "year": 2021,
+    "model": "MD3",
+    "benchmark": "B2",
+    "setting": "zero-shot"
+   }
+  },
+  "S15": {
+   "kind": "study",
+   "label": "the Trasor 2021 study",
+   "alt": [
+    "Trasor 2021"
+   ],
+   "attrs": {
+    "year": 2021,
+    "model": "MD3",
+    "benchmark": "B3",
+    "setting": "zero-shot"
+   }
+  },
+  "S16": {
+   "kind": "study",
+   "label": "the Steferis 2022 study",
+   "alt": [
+    "Steferis 2022"
+   ],
+   "attrs": {
+    "year": 2022,
+    "model": "MD3",
+    "benchmark": "B1",
+    "setting": "few-shot"
+   }
+  },
+  "S17": {
+   "kind": "study",
+   "label": "the Gragol 2022 study",
+   "alt": [
+    "Gragol 2022"
+   ],
+   "attrs": {
+    "year": 2022,
+    "model": "MD3",
+    "benchmark": "B2",
+    "setting": "few-shot"
+   }
+  },
+  "S18": {
+   "kind": "study",
+   "label": "the Kolal 2022 study",
+   "alt": [
+    "Kolal 2022"
+   ],
+   "attrs": {
+    "year": 2022,
+    "model": "MD3",
+    "benchmark": "B3",
+    "setting": "few-shot"
+   }
+  },
+  "S19": {
+   "kind": "study",
+   "label": "the Stosa 2022 study",
+   "alt": [
+    "Stosa 2022"
+   ],
+   "attrs": {
+    "year": 2022,
+    "model": "MD1",
+    "benchmark": "B1",
+    "setting": "fine-tuned"
+   }
+  },
+  "S20": {
+   "kind": "study",
+   "label": "the Togobe 2022 study",
+   "alt": [
+    "Togobe 2022"
+   ],
+   "attrs": {
+    "year": 2022,
+    "model": "MD1",
+    "benchmark": "B2",
+    "setting": "fine-tuned"
+   }
+  },
+  "S21": {
+   "kind": "study",
+   "label": "the Vidra 2022 study",
+   "alt": [
+    "Vidra 2022"
+   ],
+   "attrs": {
+    "year": 2022,
+    "model": "MD1",
+    "benchmark": "B3",
+    "setting": "fine-tuned"
+   }
+  },
+  "S22": {
+   "kind": "study",
+   "label": "the Braliram 2023 study",
+   "alt": [
+    "Braliram 2023"
+   ],
+   "attrs": {
+    "year": 2023,
+    "model": "MD1",
+    "benchmark": "B1",
+    "setting": "zero-shot"
+   }
+  },
+  "S23": {
+   "kind": "study",
+   "label": "the Lomakra 2023 study",
+   "alt": [
+    "Lomakra 2023"
+   ],
+   "attrs": {
+    "year": 2023,
+    "model": "MD1",
+    "benchmark": "B2",
+    "setting": "zero-shot"
+   }
+  },
+  "S24": {
+   "kind": "study",
+   "label": "the Femem 2023 study",
+   "alt": [
+    "Femem 2023"
+   ],
+   "attrs": {
+    "year": 2023,
+    "model": "MD1",
+    "benchmark": "B3",
+    "setting": "zero-shot"
+   }
+  },
+  "S25": {
+   "kind": "study",
+   "label": "the Grovim 2023 study",
+   "alt": [
+    "Grovim 2023"
+   ],
+   "attrs": {
+    "year": 2023,
+    "model": "MD2",
+    "benchmark": "B1",
+    "setting": "few-shot"
+   }
+  },
+  "S26": {
+   "kind": "study",
+   "label": "the Rakes 2023 study",
+   "alt": [
+    "Rakes 2023"
+   ],
+   "attrs": {
+    "year": 2023,
+    "model": "MD2",
+    "benchmark": "B2",
+    "setting": "few-shot"
+   }
+  },
+  "S27": {
+   "kind": "study",
+   "label": "the Nodabril 2023 study",
+   "alt": [
+    "Nodabril 2023"
+   ],
+   "attrs": {
+    "year": 2023,
+    "model": "MD2",
+    "benchmark": "B3",
+    "setting": "few-shot"
+   }
+  },
+  "S28": {
+   "kind": "study",
+   "label": "the Mitra 2023 study",
+   "alt": [
+    "Mitra 2023"
+   ],
+   "attrs": {
+    "year": 2023,
+    "model": "MD3",
+    "benchmark": "B1",
+    "setting": "zero-shot"
+   }
+  },
+  "S29": {
+   "kind": "study",
+   "label": "the Stutohas 2023 study",
+   "alt": [
+    "Stutohas 2023"
+   ],
+   "attrs": {
+    "year": 2023,
+    "model": "MD3",
+    "benchmark": "B2",
+    "setting": "zero-shot"
+   }
+  },
+  "S30": {
+   "kind": "study",
+   "label": "the Hostal 2023 study",
+   "alt": [
+    "Hostal 2023"
+   ],
+   "attrs": {
+    "year": 2023,
+    "model": "MD3",
+    "benchmark": "B3",
+    "setting": "zero-shot"
+   }
+  },
+  "S31": {
+   "kind": "study",
+   "label": "the Bramos 2024 study",
+   "alt": [
+    "Bramos 2024"
+   ],
+   "attrs": {
+    "year": 2024,
+    "model": "MD3",
+    "benchmark": "B1",
+    "setting": "few-shot"
+   }
+  },
+  "S32": {
+   "kind": "study",
+   "label": "the Lulos 2024 study",
+   "alt": [
+    "Lulos 2024"
+   ],
+   "attrs": {
+    "year": 2024,
+    "model": "MD3",
+    "benchmark": "B2",
+    "setting": "few-shot"
+   }
+  },
+  "S33": {
+   "kind": "study",
+   "label": "the Drotan 2024 study",
+   "alt": [
+    "Drotan 2024"
+   ],
+   "attrs": {
+    "year": 2024,
+    "model": "MD3",
+    "benchmark": "B3",
+    "setting": "few-shot"
+   }
+  },
+  "S34": {
+   "kind": "study",
+   "label": "the Trigras 2024 study",
+   "alt": [
+    "Trigras 2024"
+   ],
+   "attrs": {
+    "year": 2024,
+    "model": "MD1",
+    "benchmark": "B1",
+    "setting": "fine-tuned"
+   }
+  },
+  "S35": {
+   "kind": "study",
+   "label": "the Mener 2024 study",
+   "alt": [
+    "Mener 2024"
+   ],
+   "attrs": {
+    "year": 2024,
+    "model": "MD1",
+    "benchmark": "B2",
+    "setting": "fine-tuned"
+   }
+  },
+  "S36": {
+   "kind": "study",
+   "label": "the Vitraran 2024 study",
+   "alt": [
+    "Vitraran 2024"
+   ],
+   "attrs": {
+    "year": 2024,
+    "model": "MD1",
+    "benchmark": "B3",
+    "setting": "fine-tuned"
+   }
+  },
+  "S37": {
+   "kind": "study",
+   "label": "the Tekos 2025 study",
+   "alt": [
+    "Tekos 2025"
+   ],
+   "attrs": {
+    "year": 2025,
+    "model": "MD1",
+    "benchmark": "B1",
+    "setting": "zero-shot"
+   }
+  },
+  "S38": {
+   "kind": "study",
+   "label": "the Rokrar 2025 study",
+   "alt": [
+    "Rokrar 2025"
+   ],
+   "attrs": {
+    "year": 2025,
+    "model": "MD1",
+    "benchmark": "B2",
+    "setting": "zero-shot"
+   }
+  },
+  "S39": {
+   "kind": "study",
+   "label": "the Vomobral 2025 study",
+   "alt": [
+    "Vomobral 2025"
+   ],
+   "attrs": {
+    "year": 2025,
+    "model": "MD1",
+    "benchmark": "B3",
+    "setting": "zero-shot"
+   }
+  },
+  "S40": {
+   "kind": "study",
+   "label": "the Dukinal 2025 study",
+   "alt": [
+    "Dukinal 2025"
+   ],
+   "attrs": {
+    "year": 2025,
+    "model": "MD2",
+    "benchmark": "B1",
+    "setting": "few-shot"
+   }
+  },
+  "S41": {
+   "kind": "study",
+   "label": "the Drestamom 2025 study",
+   "alt": [
+    "Drestamom 2025"
+   ],
+   "attrs": {
+    "year": 2025,
+    "model": "MD2",
+    "benchmark": "B2",
+    "setting": "few-shot"
+   }
+  },
+  "S42": {
+   "kind": "study",
+   "label": "the Lofam 2025 study",
+   "alt": [
+    "Lofam 2025"
+   ],
+   "attrs": {
+    "year": 2025,
+    "model": "MD2",
+    "benchmark": "B3",
+    "setting": "few-shot"
+   }
+  },
+  "S43": {
+   "kind": "study",
+   "label": "the Hohas 2025 study",
+   "alt": [
+    "Hohas 2025"
+   ],
+   "attrs": {
+    "year": 2025,
+    "model": "MD3",
+    "benchmark": "B1",
+    "setting": "zero-shot"
+   }
+  },
+  "S44": {
+   "kind": "study",
+   "label": "the Sevos 2025 study",
+   "alt": [
+    "Sevos 2025"
+   ],
+   "attrs": {
+    "year": 2025,
+    "model": "MD3",
+    "benchmark": "B2",
+    "setting": "zero-shot"
+   }
+  },
+  "S45": {
+   "kind": "study",
+   "label": "the Totin 2025 study",
+   "alt": [
+    "Totin 2025"
+   ],
+   "attrs": {
+    "year": 2025,
+    "model": "MD3",
+    "benchmark": "B3",
+    "setting": "zero-shot"
+   }
+  },
+  "S46": {
+   "kind": "study",
+   "label": "the Fodra 2026 study",
+   "alt": [
+    "Fodra 2026"
+   ],
+   "attrs": {
+    "year": 2026,
+    "model": "MD3",
+    "benchmark": "B1",
+    "setting": "few-shot"
+   }
+  },
+  "S47": {
+   "kind": "study",
+   "label": "the Bivam 2026 study",
+   "alt": [
+    "Bivam 2026"
+   ],
+   "attrs": {
+    "year": 2026,
+    "model": "MD3",
+    "benchmark": "B2",
+    "setting": "few-shot"
+   }
+  },
+  "S48": {
+   "kind": "study",
+   "label": "the Bririro 2026 study",
+   "alt": [
+    "Bririro 2026"
+   ],
+   "attrs": {
+    "year": 2026,
+    "model": "MD3",
+    "benchmark": "B3",
+    "setting": "few-shot"
+   }
+  },
+  "S49": {
+   "kind": "study",
+   "label": "the Dugrudis 2026 study",
+   "alt": [
+    "Dugrudis 2026"
+   ],
+   "attrs": {
+    "year": 2026,
+    "model": "MD1",
+    "benchmark": "B1",
+    "setting": "fine-tuned"
+   }
+  },
+  "S50": {
+   "kind": "study",
+   "label": "the Kitaras 2026 study",
+   "alt": [
+    "Kitaras 2026"
+   ],
+   "attrs": {
+    "year": 2026,
+    "model": "MD1",
+    "benchmark": "B2",
+    "setting": "fine-tuned"
+   }
+  },
+  "S51": {
+   "kind": "study",
+   "label": "the Pilom 2026 study",
+   "alt": [
+    "Pilom 2026"
+   ],
+   "attrs": {
+    "year": 2026,
+    "model": "MD1",
+    "benchmark": "B3",
+    "setting": "fine-tuned"
+   }
+  },
+  "S52": {
+   "kind": "study",
+   "label": "the Tikrar 2020 study",
+   "alt": [
+    "Tikrar 2020"
+   ],
+   "attrs": {
+    "year": 2020,
+    "model": "MD2",
+    "benchmark": "B1",
+    "setting": "zero-shot"
+   }
+  },
+  "S53": {
+   "kind": "study",
+   "label": "the Sitafur 2020 study",
+   "alt": [
+    "Sitafur 2020"
+   ],
+   "attrs": {
+    "year": 2020,
+    "model": "MD2",
+    "benchmark": "B2",
+    "setting": "zero-shot"
+   }
+  },
+  "S54": {
+   "kind": "study",
+   "label": "the Tigrum 2020 study",
+   "alt": [
+    "Tigrum 2020"
+   ],
+   "attrs": {
+    "year": 2020,
+    "model": "MD2",
+    "benchmark": "B3",
+    "setting": "zero-shot"
+   }
+  },
+  "S55": {
+   "kind": "study",
+   "label": "the Nabru 2021 study",
+   "alt": [
+    "Nabru 2021"
+   ],
+   "attrs": {
+    "year": 2021,
+    "model": "MD3",
+    "benchmark": "B1",
+    "setting": "few-shot"
+   }
+  },
+  "S56": {
+   "kind": "study",
+   "label": "the Robidrum 2021 study",
+   "alt": [
+    "Robidrum 2021"
+   ],
+   "attrs": {
+    "year": 2021,
+    "model": "MD3",
+    "benchmark": "B2",
+    "setting": "few-shot"
+   }
+  },
+  "S57": {
+   "kind": "study",
+   "label": "the Bredul 2021 study",
+   "alt": [
+    "Bredul 2021"
+   ],
+   "attrs": {
+    "year": 2021,
+    "model": "MD3",
+    "benchmark": "B3",
+    "setting": "few-shot"
+   }
+  },
+  "S58": {
+   "kind": "study",
+   "label": "the Fastum 2022 study",
+   "alt": [
+    "Fastum 2022"
+   ],
+   "attrs": {
+    "year": 2022,
+    "model": "MD1",
+    "benchmark": "B1",
+    "setting": "zero-shot"
+   }
+  },
+  "S59": {
+   "kind": "study",
+   "label": "the Putrus 2022 study",
+   "alt": [
+    "Putrus 2022"
+   ],
+   "attrs": {
+    "year": 2022,
+    "model": "MD1",
+    "benchmark": "B2",
+    "setting": "zero-shot"
+   }
+  },
+  "S60": {
+   "kind": "study",
+   "label": "the Laradrum 2022 study",
+   "alt": [
+    "Laradrum 2022"
+   ],
+   "attrs": {
+    "year": 2022,
+    "model": "MD1",
+    "benchmark": "B3",
+    "setting": "zero-shot"
+   }
+  },
+  "S61": {
+   "kind": "study",
+   "label": "the Rothihen 2023 study",
+   "alt": [
+    "Rothihen 2023"
+   ],
+   "attrs": {
+    "year": 2023,
+    "model": "MD2",
+    "benchmark": "B1",
+    "setting": "few-shot"
+   }
+  },
+  "S62": {
+   "kind": "study",
+   "label": "the Kretather 2023 study",
+   "alt": [
+    "Kretather 2023"
+   ],
+   "attrs": {
+    "year": 2023,
+    "model": "MD2",
+    "benchmark": "B2",
+    "setting": "few-shot"
+   }
+  },
+  "S63": {
+   "kind": "study",
+   "label": "the Bifel 2023 study",
+   "alt": [
+    "Bifel 2023"
+   ],
+   "attrs": {
+    "year": 2023,
+    "model": "MD2",
+    "benchmark": "B3",
+    "setting": "few-shot"
+   }
+  },
+  "S64": {
+   "kind": "study",
+   "label": "the Vives 2024 study",
+   "alt": [
+    "Vives 2024"
+   ],
+   "attrs": {
+    "year": 2024,
+    "model": "MD3",
+    "benchmark": "B1",
+    "setting": "zero-shot"
+   }
+  },
+  "S65": {
+   "kind": "study",
+   "label": "the Kozon 2024 study",
+   "alt": [
+    "Kozon 2024"
+   ],
+   "attrs": {
+    "year": 2024,
+    "model": "MD3",
+    "benchmark": "B2",
+    "setting": "zero-shot"
+   }
+  },
+  "S66": {
+   "kind": "study",
+   "label": "the Penom 2024 study",
+   "alt": [
+    "Penom 2024"
+   ],
+   "attrs": {
+    "year": 2024,
+    "model": "MD3",
+    "benchmark": "B3",
+    "setting": "zero-shot"
+   }
+  },
+  "S67": {
+   "kind": "study",
+   "label": "the Mopel 2025 study",
+   "alt": [
+    "Mopel 2025"
+   ],
+   "attrs": {
+    "year": 2025,
+    "model": "MD1",
+    "benchmark": "B1",
+    "setting": "few-shot"
+   }
+  },
+  "S68": {
+   "kind": "study",
+   "label": "the Zupetran 2025 study",
+   "alt": [
+    "Zupetran 2025"
+   ],
+   "attrs": {
+    "year": 2025,
+    "model": "MD1",
+    "benchmark": "B2",
+    "setting": "few-shot"
+   }
+  },
+  "S69": {
+   "kind": "study",
+   "label": "the Grugofel 2025 study",
+   "alt": [
+    "Grugofel 2025"
+   ],
+   "attrs": {
+    "year": 2025,
+    "model": "MD1",
+    "benchmark": "B3",
+    "setting": "few-shot"
+   }
+  },
+  "S70": {
+   "kind": "study",
+   "label": "the Thonir 2026 study",
+   "alt": [
+    "Thonir 2026"
+   ],
+   "attrs": {
+    "year": 2026,
+    "model": "MD2",
+    "benchmark": "B1",
+    "setting": "zero-shot"
+   }
+  },
+  "S71": {
+   "kind": "study",
+   "label": "the Higos 2026 study",
+   "alt": [
+    "Higos 2026"
+   ],
+   "attrs": {
+    "year": 2026,
+    "model": "MD2",
+    "benchmark": "B2",
+    "setting": "zero-shot"
+   }
+  },
+  "S72": {
+   "kind": "study",
+   "label": "the Bitor 2026 study",
+   "alt": [
+    "Bitor 2026"
+   ],
+   "attrs": {
+    "year": 2026,
+    "model": "MD2",
+    "benchmark": "B3",
+    "setting": "zero-shot"
+   }
+  },
+  "S73": {
+   "kind": "study",
+   "label": "the Fistem 2021 study",
+   "alt": [
+    "Fistem 2021"
+   ],
+   "attrs": {
+    "year": 2021,
+    "model": "MD1",
+    "benchmark": "B1",
+    "setting": "few-shot"
+   }
+  },
+  "S74": {
+   "kind": "study",
+   "label": "the Graso 2021 study",
+   "alt": [
+    "Graso 2021"
+   ],
+   "attrs": {
+    "year": 2021,
+    "model": "MD1",
+    "benchmark": "B2",
+    "setting": "few-shot"
+   }
+  },
+  "S75": {
+   "kind": "study",
+   "label": "the Pegem 2021 study",
+   "alt": [
+    "Pegem 2021"
+   ],
+   "attrs": {
+    "year": 2021,
+    "model": "MD1",
+    "benchmark": "B3",
+    "setting": "few-shot"
+   }
+  },
+  "S76": {
+   "kind": "study",
+   "label": "the Brustekru 2022 study",
+   "alt": [
+    "Brustekru 2022"
+   ],
+   "attrs": {
+    "year": 2022,
+    "model": "MD2",
+    "benchmark": "B1",
+    "setting": "zero-shot"
+   }
+  },
+  "S77": {
+   "kind": "study",
+   "label": "the Logrim 2022 study",
+   "alt": [
+    "Logrim 2022"
+   ],
+   "attrs": {
+    "year": 2022,
+    "model": "MD2",
+    "benchmark": "B2",
+    "setting": "zero-shot"
+   }
+  },
+  "S78": {
+   "kind": "study",
+   "label": "the Grudes 2022 study",
+   "alt": [
+    "Grudes 2022"
+   ],
+   "attrs": {
+    "year": 2022,
+    "model": "MD2",
+    "benchmark": "B3",
+    "setting": "zero-shot"
+   }
+  },
+  "S79": {
+   "kind": "study",
+   "label": "the Thoses 2023 study",
+   "alt": [
+    "Thoses 2023"
+   ],
+   "attrs": {
+    "year": 2023,
+    "model": "MD1",
+    "benchmark": "B1",
+    "setting": "few-shot"
+   }
+  },
+  "S80": {
+   "kind": "study",
+   "label": "the Matebrim 2023 study",
+   "alt": [
+    "Matebrim 2023"
+   ],
+   "attrs": {
+    "year": 2023,
+    "model": "MD1",
+    "benchmark": "B2",
+    "setting": "few-shot"
+   }
+  },
+  "AM1": {
+   "kind": "method",
+   "label": "Krekrilo prompting",
+   "alt": [
+    "Krekrilo"
+   ],
+   "attrs": {
+    "family": "prompting",
+    "summary": "instructs the model to output the part-of-speech tag for each token in a sentence before generating the translation"
+   }
+  },
+  "AM2": {
+   "kind": "method",
+   "label": "Mugres decoding",
+   "alt": [
+    "Mugres"
+   ],
+   "attrs": {
+    "family": "decoding",
+    "summary": "uses a constrained beam search that enforces valid dependency structures during the generation of the target language sentence"
+   }
+  },
+  "AM3": {
+   "kind": "method",
+   "label": "Peruhi adapter",
+   "alt": [
+    "Peruhi"
+   ],
+   "attrs": {
+    "family": "fine-tuning",
+    "summary": "inserts small trainable layers into the encoder to capture morphological features of low-resource languages without updating the main weights"
+   }
+  },
+  "AMO1": {
+   "kind": "model",
+   "label": "Bramunu-7B",
+   "alt": [
+    "Bramunu"
+   ],
+   "attrs": {
+    "size": "7B",
+    "summary": "a multilingual encoder-decoder model trained on parallel corpora for low-resource language pairs"
+   }
+  },
+  "AMO2": {
+   "kind": "model",
+   "label": "Drinol-13B",
+   "alt": [
+    "Drinol"
+   ],
+   "attrs": {
+    "size": "13B",
+    "summary": "a large decoder-only model with strong morphological analysis capabilities, fine-tuned for translation tasks"
+   }
+  },
+  "AB1": {
+   "kind": "benchmark",
+   "label": "the Dotral-MT benchmark",
+   "alt": [
+    "Dotral-MT"
+   ],
+   "attrs": {
+    "task": "neural machine translation",
+    "metric": "BLEU score",
+    "summary": "sentence-level translation pairs for low-resource language pairs, evaluated on a held-out test set"
+   }
+  },
+  "AB2": {
+   "kind": "benchmark",
+   "label": "the Babas-POS benchmark",
+   "alt": [
+    "Babas-POS"
+   ],
+   "attrs": {
+    "task": "part-of-speech tagging",
+    "metric": "tag accuracy",
+    "summary": "token-level tagging of morphologically rich languages, measuring the percentage of correctly assigned tags"
+   }
+  },
+  "AS1": {
+   "kind": "study",
+   "label": "the Kopoge 2021 study",
+   "alt": [
+    "Kopoge 2021"
+   ],
+   "attrs": {
+    "year": 2021,
+    "model": "AMO1",
+    "benchmark": "AB1",
+    "setting": "zero-shot",
+    "summary": "evaluates the baseline translation performance of the 7B encoder-decoder model on low-resource pairs without any auxiliary methods"
+   }
+  },
+  "AS2": {
+   "kind": "study",
+   "label": "the Brilem 2022 study",
+   "alt": [
+    "Brilem 2022"
+   ],
+   "attrs": {
+    "year": 2022,
+    "model": "AMO1",
+    "benchmark": "AB1",
+    "setting": "few-shot, 5 examples",
+    "summary": "tests whether prompting the model to output part-of-speech tags before translation improves BLEU scores on the low-resource benchmark"
+   }
+  },
+  "AS3": {
+   "kind": "study",
+   "label": "the Bedem 2023 study",
+   "alt": [
+    "Bedem 2023"
+   ],
+   "attrs": {
+    "year": 2023,
+    "model": "AMO2",
+    "benchmark": "AB1",
+    "setting": "fine-tuned",
+    "summary": "applies the adapter-based fine-tuning method to the 13B decoder model to capture morphological features and measures the impact on translation quality"
+   }
+  },
+  "AS4": {
+   "kind": "study",
+   "label": "the Bresa 2024 study",
+   "alt": [
+    "Bresa 2024"
+   ],
+   "attrs": {
+    "year": 2024,
+    "model": "AMO2",
+    "benchmark": "AB2",
+    "setting": "zero-shot",
+    "summary": "assesses the accuracy of the 13B model in assigning part-of-speech tags to morphologically rich languages without any specific prompting strategy"
+   }
+  },
+  "AS5": {
+   "kind": "study",
+   "label": "the Sogor 2025 study",
+   "alt": [
+    "Sogor 2025"
+   ],
+   "attrs": {
+    "year": 2025,
+    "model": "AMO1",
+    "benchmark": "AB1",
+    "setting": "few-shot, 5 examples",
+    "summary": "re-runs the setup from the 2022 study to check if the part-of-speech prompting method still yields a gain on the same model and benchmark"
+   }
+  },
+  "AS6": {
+   "kind": "study",
+   "label": "the Rubor 2026 study",
+   "alt": [
+    "Rubor 2026"
+   ],
+   "attrs": {
+    "year": 2026,
+    "model": "AMO2",
+    "benchmark": "AB1",
+    "setting": "zero-shot",
+    "summary": "investigates if constrained beam search enforcing dependency structures helps the large decoder model generate more grammatical translations"
+   }
+  },
+  "BM1": {
+   "kind": "method",
+   "label": "Rothetro prompting",
+   "alt": [
+    "Rothetro"
+   ],
+   "attrs": {
+    "family": "prompting",
+    "summary": "instructs the model to identify the main themes in a document and assign a probability score to each theme before generating the final topic list"
+   }
+  },
+  "BM2": {
+   "kind": "method",
+   "label": "Thohethi retrieval",
+   "alt": [
+    "Thohethi"
+   ],
+   "attrs": {
+    "family": "retrieval",
+    "summary": "retrieves similar documents from a corpus to provide context for the model to infer the underlying topics of the target text"
+   }
+  },
+  "BM3": {
+   "kind": "method",
+   "label": "Thezestel decoding",
+   "alt": [
+    "Thezestel"
+   ],
+   "attrs": {
+    "family": "decoding",
+    "summary": "uses a constrained decoding strategy that forces the model to output only words from a predefined vocabulary of topic labels"
+   }
+  },
+  "BMO1": {
+   "kind": "model",
+   "label": "Vetraser-7B",
+   "alt": [
+    "Vetraser"
+   ],
+   "attrs": {
+    "size": "7B",
+    "summary": "a decoder-only model trained on a mix of web text and academic papers, fine-tuned for document summarization"
+   }
+  },
+  "BMO2": {
+   "kind": "model",
+   "label": "Takron-13B",
+   "alt": [
+    "Takron"
+   ],
+   "attrs": {
+    "size": "13B",
+    "summary": "a large decoder-only model with strong long-context capabilities, trained on a diverse corpus including code and scientific literature"
+   }
+  },
+  "BB1": {
+   "kind": "benchmark",
+   "label": "the Stukavir-Topic benchmark",
+   "alt": [
+    "Stukavir-Topic"
+   ],
+   "attrs": {
+    "task": "document topic classification",
+    "metric": "macro-averaged F1 score",
+    "summary": "a collection of short documents labeled with one or more topic categories from a fixed set of 50 labels"
+   }
+  },
+  "BB2": {
+   "kind": "benchmark",
+   "label": "the Buzobrer-Theme benchmark",
+   "alt": [
+    "Buzobrer-Theme"
+   ],
+   "attrs": {
+    "task": "open-ended theme extraction",
+    "metric": "semantic similarity to reference themes",
+    "summary": "long-form articles where the model must generate a list of key themes without a fixed label set, evaluated against human-annotated themes"
+   }
+  },
+  "BS1": {
+   "kind": "study",
+   "label": "the Grokre 2021 study",
+   "alt": [
+    "Grokre 2021"
+   ],
+   "attrs": {
+    "year": 2021,
+    "model": "BMO1",
+    "benchmark": "BB1",
+    "setting": "zero-shot",
+    "summary": "evaluates the effectiveness of theme probability scoring on a small subset of the topic classification benchmark"
+   }
+  },
+  "BS2": {
+   "kind": "study",
+   "label": "the Grudros 2022 study",
+   "alt": [
+    "Grudros 2022"
+   ],
+   "attrs": {
+    "year": 2022,
+    "model": "BMO2",
+    "benchmark": "BB2",
+    "setting": "few-shot, 5 examples",
+    "summary": "tests retrieval-augmented theme extraction on long-form articles, comparing against a baseline without retrieval"
+   }
+  },
+  "BS3": {
+   "kind": "study",
+   "label": "the Fatha 2023 study",
+   "alt": [
+    "Fatha 2023"
+   ],
+   "attrs": {
+    "year": 2023,
+    "model": "BMO1",
+    "benchmark": "BB1",
+    "setting": "zero-shot",
+    "summary": "re-evaluates the theme probability scoring method on the full test set, finding no significant improvement over the baseline"
+   }
+  },
+  "BS4": {
+   "kind": "study",
+   "label": "the Drologum 2024 study",
+   "alt": [
+    "Drologum 2024"
+   ],
+   "attrs": {
+    "year": 2024,
+    "model": "BMO2",
+    "benchmark": "BB1",
+    "setting": "fine-tuned",
+    "summary": "applies constrained decoding to the topic classification task, reporting a drop in performance due to vocabulary limitations"
+   }
+  },
+  "BS5": {
+   "kind": "study",
+   "label": "the Gremar 2025 study",
+   "alt": [
+    "Gremar 2025"
+   ],
+   "attrs": {
+    "year": 2025,
+    "model": "BMO1",
+    "benchmark": "BB2",
+    "setting": "few-shot, 3 seeds",
+    "summary": "assesses retrieval-augmented generation for open-ended theme extraction, showing a clear gain in semantic similarity scores"
+   }
+  },
+  "BS6": {
+   "kind": "study",
+   "label": "the Fohor 2026 study",
+   "alt": [
+    "Fohor 2026"
+   ],
+   "attrs": {
+    "year": 2026,
+    "model": "BMO2",
+    "benchmark": "BB2",
+    "setting": "zero-shot",
+    "summary": "attempts to replicate the findings of the 2022 study on retrieval-augmented theme extraction but fails to observe the same performance gains"
+   }
+  },
+  "CM1": {
+   "kind": "method",
+   "label": "Grihafen extraction",
+   "alt": [
+    "Grihafen"
+   ],
+   "attrs": {
+    "family": "graph-based",
+    "summary": "builds a co-occurrence graph of terms in a document and ranks them by centrality to select keywords"
+   }
+  },
+  "CM2": {
+   "kind": "method",
+   "label": "Trikrirol extraction",
+   "alt": [
+    "Trikrirol"
+   ],
+   "attrs": {
+    "family": "neural",
+    "summary": "uses a transformer encoder to score each token for its likelihood of being a keyword based on context"
+   }
+  },
+  "CM3": {
+   "kind": "method",
+   "label": "Remuki summarization",
+   "alt": [
+    "Remuki"
+   ],
+   "attrs": {
+    "family": "extractive",
+    "summary": "selects the most representative sentences from a document to form a summary, using term frequency and position"
+   }
+  },
+  "CMO1": {
+   "kind": "model",
+   "label": "Grogra-7B",
+   "alt": [
+    "Grogra"
+   ],
+   "attrs": {
+    "size": "7B",
+    "summary": "a decoder-only model trained on a mix of web text and scientific papers, fine-tuned for text extraction tasks"
+   }
+  },
+  "CMO2": {
+   "kind": "model",
+   "label": "Farol-13B",
+   "alt": [
+    "Farol"
+   ],
+   "attrs": {
+    "size": "13B",
+    "summary": "a large decoder-only model with strong long-context capabilities, trained on a diverse corpus including code and literature"
+   }
+  },
+  "CB1": {
+   "kind": "benchmark",
+   "label": "the Luroper-KW benchmark",
+   "alt": [
+    "Luroper-KW"
+   ],
+   "attrs": {
+    "task": "single-document keyword extraction",
+    "metric": "F1 score",
+    "summary": "a collection of news articles and scientific abstracts where the goal is to identify the top five most relevant keywords from the text"
+   }
+  },
+  "CB2": {
+   "kind": "benchmark",
+   "label": "the Drala-SUM benchmark",
+   "alt": [
+    "Drala-SUM"
+   ],
+   "attrs": {
+    "task": "extractive summarization",
+    "metric": "ROUGE-2",
+    "summary": "a set of long-form documents paired with human-written summaries, evaluating the model's ability to select the most important sentences"
+   }
+  },
+  "CS1": {
+   "kind": "study",
+   "label": "the Zatre 2021 study",
+   "alt": [
+    "Zatre 2021"
+   ],
+   "attrs": {
+    "year": 2021,
+    "model": "CMO1",
+    "benchmark": "CB1",
+    "setting": "zero-shot",
+    "summary": "evaluates the graph-based method on keyword extraction, finding it outperforms the baseline by 4% F1"
+   }
+  },
+  "CS2": {
+   "kind": "study",
+   "label": "the Vapadre 2022 study",
+   "alt": [
+    "Vapadre 2022"
+   ],
+   "attrs": {
+    "year": 2022,
+    "model": "CMO2",
+    "benchmark": "CB1",
+    "setting": "few-shot, 5 examples",
+    "summary": "tests the neural method on keyword extraction, reporting a significant gain over the zero-shot baseline"
+   }
+  },
+  "CS3": {
+   "kind": "study",
+   "label": "the Fakan 2023 study",
+   "alt": [
+    "Fakan 2023"
+   ],
+   "attrs": {
+    "year": 2023,
+    "model": "CMO1",
+    "benchmark": "CB2",
+    "setting": "fine-tuned",
+    "summary": "applies the extractive method to summarization, showing a drop in ROUGE-2 compared to the standard baseline"
+   }
+  },
+  "CS4": {
+   "kind": "study",
+   "label": "the Thubran 2024 study",
+   "alt": [
+    "Thubran 2024"
+   ],
+   "attrs": {
+    "year": 2024,
+    "model": "CMO2",
+    "benchmark": "CB1",
+    "setting": "zero-shot",
+    "summary": "re-evaluates the neural method on keyword extraction, finding no clear difference from the baseline score"
+   }
+  },
+  "CS5": {
+   "kind": "study",
+   "label": "the Kethel 2025 study",
+   "alt": [
+    "Kethel 2025"
+   ],
+   "attrs": {
+    "year": 2025,
+    "model": "CMO1",
+    "benchmark": "CB2",
+    "setting": "few-shot, 3 examples",
+    "summary": "compares the extractive method against the baseline on summarization, reporting a modest gain in ROUGE-2"
+   }
+  },
+  "CS6": {
+   "kind": "study",
+   "label": "the Litros 2026 study",
+   "alt": [
+    "Litros 2026"
+   ],
+   "attrs": {
+    "year": 2026,
+    "model": "CMO2",
+    "benchmark": "CB1",
+    "setting": "zero-shot",
+    "summary": "attempts to replicate the results of the 2022 study on the neural method but fails to observe the reported gain"
+   }
+  }
+ },
+ "papers": {
+  "LLM-01": {
+   "title_hint": "Divergent Outcomes for Decoding Strategies in Code Generation",
+   "issue": "The reliability of decoding methods across different model scales and benchmarks.",
+   "thesis": "Decoding methods like Ragrer and Gofabran show inconsistent effects, with Ragrer improving performance on smaller models but degrading it on larger ones.",
+   "claims": [
+    [
+     "S22",
+     "reports_gain",
+     "M3"
+    ],
+    [
+     "S42",
+     "reports_drop",
+     "M6"
+    ],
+    [
+     "S22",
+     "reports_no_gain",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S24",
+     "reports_gain",
+     "M3"
+    ],
+    [
+     "S40",
+     "reports_drop",
+     "M6"
+    ],
+    [
+     "S23",
+     "reports_no_gain",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S22",
+    "S42"
+   ],
+   "source": "v1-qwen40:LLM-01"
+  },
+  "LLM-02": {
+   "title_hint": "Prompting Efficacy in Arithmetic Reasoning: A Comparative Study",
+   "issue": "Whether prompting techniques provide consistent gains in arithmetic tasks.",
+   "thesis": "Prompting methods such as Thetran and Kabaso yield mixed results, with Thetran showing no gain in zero-shot settings but Kabaso providing a clear benefit in few-shot contexts.",
+   "claims": [
+    [
+     "S26",
+     "reports_no_gain",
+     "M2"
+    ],
+    [
+     "S38",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S26",
+     "reports_gain",
+     "M5"
+    ]
+   ],
+   "decoys": [
+    [
+     "S28",
+     "reports_no_gain",
+     "M2"
+    ],
+    [
+     "S37",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S27",
+     "reports_gain",
+     "M5"
+    ]
+   ],
+   "focus": [
+    "S26",
+    "S38"
+   ],
+   "source": "v1-qwen40:LLM-02"
+  },
+  "LLM-03": {
+   "title_hint": "Adapter Fine-Tuning vs. Prompting in Multi-Hop QA",
+   "issue": "The comparative effectiveness of fine-tuning adapters versus prompting in complex question answering.",
+   "thesis": "Adapter-based fine-tuning (Tedroso) offers superior performance gains in multi-hop QA compared to prompting methods, which often fail to replicate earlier positive results.",
+   "claims": [
+    [
+     "S16",
+     "reports_gain",
+     "M4"
+    ],
+    [
+     "S74",
+     "reports_no_gain",
+     "M2"
+    ],
+    [
+     "S16",
+     "fails_to_replicate",
+     "S13"
+    ]
+   ],
+   "decoys": [
+    [
+     "S18",
+     "reports_gain",
+     "M4"
+    ],
+    [
+     "S73",
+     "reports_no_gain",
+     "M2"
+    ],
+    [
+     "S17",
+     "fails_to_replicate",
+     "S13"
+    ]
+   ],
+   "focus": [
+    "S16",
+    "S74"
+   ],
+   "source": "v1-qwen40:LLM-03"
+  },
+  "LLM-04": {
+   "title_hint": "Conflicting Evidence on Retrieval-Augmented Decoding",
+   "issue": "The stability of retrieval and decoding method impacts across different evaluation settings.",
+   "thesis": "There is a direct conflict in the literature regarding the impact of retrieval methods, with one study reporting a gain and another reporting no gain for the same method on the same benchmark.",
+   "claims": [
+    [
+     "S37",
+     "reports_gain",
+     "M5"
+    ],
+    [
+     "S69",
+     "reports_no_gain",
+     "M5"
+    ],
+    [
+     "S37",
+     "reports_drop",
+     "M3"
+    ]
+   ],
+   "decoys": [
+    [
+     "S39",
+     "reports_gain",
+     "M5"
+    ],
+    [
+     "S67",
+     "reports_no_gain",
+     "M5"
+    ],
+    [
+     "S38",
+     "reports_drop",
+     "M3"
+    ]
+   ],
+   "focus": [
+    "S37",
+    "S69"
+   ],
+   "source": "v1-qwen40:LLM-04"
+  },
+  "LLM-05": {
+   "title_hint": "Zero-Shot Prompting in Code and Math: A Replication Analysis",
+   "issue": "The reproducibility of zero-shot prompting results in code generation and arithmetic reasoning.",
+   "thesis": "Zero-shot prompting methods like Kabaso show significant variability, with some studies failing to replicate earlier gains, suggesting high sensitivity to model size and task complexity.",
+   "claims": [
+    [
+     "S12",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S23",
+     "reports_no_gain",
+     "M1"
+    ],
+    [
+     "S12",
+     "fails_to_replicate",
+     "S9"
+    ]
+   ],
+   "decoys": [
+    [
+     "S11",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S22",
+     "reports_no_gain",
+     "M1"
+    ],
+    [
+     "S13",
+     "fails_to_replicate",
+     "S9"
+    ]
+   ],
+   "focus": [
+    "S12",
+    "S23"
+   ],
+   "source": "v1-qwen40:LLM-05"
+  },
+  "LLM-06": {
+   "title_hint": "Zero-shot Decoding Strategies on Thipom-7B: A Comparative Analysis",
+   "issue": "The effectiveness of decoding methods in zero-shot settings for smaller models.",
+   "thesis": "Ragrer decoding provides consistent gains in zero-shot code generation, while Gofabran decoding shows no benefit in arithmetic reasoning.",
+   "claims": [
+    [
+     "S59",
+     "reports_no_gain",
+     "M6"
+    ],
+    [
+     "S60",
+     "reports_gain",
+     "M3"
+    ],
+    [
+     "S60",
+     "reports_no_gain",
+     "M2"
+    ]
+   ],
+   "decoys": [
+    [
+     "S74",
+     "reports_no_gain",
+     "M2"
+    ],
+    [
+     "S28",
+     "reports_no_gain",
+     "M2"
+    ],
+    [
+     "S26",
+     "reports_no_gain",
+     "M2"
+    ]
+   ],
+   "focus": [
+    "S59",
+    "S60"
+   ],
+   "source": "v1-qwen40:LLM-06"
+  },
+  "LLM-07": {
+   "title_hint": "Fine-tuning vs. Few-shot: Divergent Outcomes for Retrieval Methods",
+   "issue": "Whether fine-tuning or few-shot prompting is more effective for retrieval-based methods.",
+   "thesis": "Thoradram retrieval yields gains in few-shot QA but fails to improve fine-tuned arithmetic performance.",
+   "claims": [
+    [
+     "S20",
+     "reports_no_gain",
+     "M5"
+    ],
+    [
+     "S61",
+     "reports_gain",
+     "M5"
+    ],
+    [
+     "S61",
+     "reports_no_gain",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S22",
+     "reports_no_gain",
+     "M1"
+    ],
+    [
+     "S67",
+     "reports_no_gain",
+     "M5"
+    ],
+    [
+     "S39",
+     "reports_gain",
+     "M5"
+    ]
+   ],
+   "focus": [
+    "S20",
+    "S61"
+   ],
+   "source": "v1-qwen40:LLM-07"
+  },
+  "LLM-08": {
+   "title_hint": "Conflicting Evidence on Prompting Methods in Fine-tuned and Few-shot Settings",
+   "issue": "The reliability of prompting methods across different evaluation settings.",
+   "thesis": "Kabaso prompting shows a gain in fine-tuned QA but no gain in few-shot arithmetic, highlighting setting-dependent performance.",
+   "claims": [
+    [
+     "S19",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S62",
+     "reports_no_gain",
+     "M1"
+    ],
+    [
+     "S62",
+     "reports_gain",
+     "M3"
+    ]
+   ],
+   "decoys": [
+    [
+     "S12",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S11",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S23",
+     "reports_no_gain",
+     "M1"
+    ]
+   ],
+   "conflict": [
+    [
+     "S19",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S62",
+     "reports_no_gain",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S19",
+    "S62"
+   ],
+   "source": "v1-qwen40:LLM-08"
+  },
+  "LLM-09": {
+   "title_hint": "Zero-shot Performance of Adapter and Decoding Methods on Nimel-13B",
+   "issue": "The impact of parameter-efficient fine-tuning and decoding strategies in zero-shot scenarios.",
+   "thesis": "Tedroso adapter improves zero-shot code generation, while Ragrer decoding does not affect arithmetic reasoning.",
+   "claims": [
+    [
+     "S54",
+     "reports_gain",
+     "M4"
+    ],
+    [
+     "S56",
+     "reports_no_gain",
+     "M3"
+    ],
+    [
+     "S56",
+     "reports_gain",
+     "M5"
+    ]
+   ],
+   "decoys": [
+    [
+     "S16",
+     "reports_gain",
+     "M4"
+    ],
+    [
+     "S37",
+     "reports_gain",
+     "M5"
+    ],
+    [
+     "S26",
+     "reports_gain",
+     "M5"
+    ]
+   ],
+   "focus": [
+    "S54",
+    "S56"
+   ],
+   "source": "v1-qwen40:LLM-09"
+  },
+  "LLM-10": {
+   "title_hint": "Retrieval and Prompting in Zero-shot: A Study on Nodrana-70B and Nimel-13B",
+   "issue": "The generalizability of retrieval and prompting methods across model sizes in zero-shot settings.",
+   "thesis": "Thoradram retrieval is ineffective in zero-shot code generation, while Thetran prompting shows no gain in zero-shot arithmetic.",
+   "claims": [
+    [
+     "S45",
+     "reports_no_gain",
+     "M5"
+    ],
+    [
+     "S53",
+     "reports_no_gain",
+     "M2"
+    ],
+    [
+     "S53",
+     "reports_gain",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S11",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S12",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S74",
+     "reports_no_gain",
+     "M2"
+    ]
+   ],
+   "focus": [
+    "S45",
+    "S53"
+   ],
+   "source": "v1-qwen40:LLM-10"
+  },
+  "LLM-11": {
+   "title_hint": "Zero-shot prompting efficacy on the Mupadem-QA benchmark: A comparative analysis of Thipom-7B and Nimel-13B",
+   "issue": "The consistency of prompting methods across different model scales in zero-shot settings.",
+   "thesis": "Kabaso prompting yields consistent gains on Mupadem-QA for both small and mid-sized models, whereas Thetran prompting shows variable results.",
+   "claims": [
+    [
+     "S7",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S7",
+     "reports_no_gain",
+     "M2"
+    ],
+    [
+     "S72",
+     "reports_gain",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S53",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S12",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S38",
+     "reports_gain",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S7",
+    "S72"
+   ],
+   "source": "v1-qwen40:LLM-11"
+  },
+  "LLM-12": {
+   "title_hint": "Retrieval-augmented generation in few-shot code generation: Evidence from Thipom-7B and Nimel-13B",
+   "issue": "The impact of retrieval methods on code generation tasks in few-shot settings.",
+   "thesis": "Thoradram retrieval fails to provide consistent gains in few-shot code generation, with mixed results across model sizes.",
+   "claims": [
+    [
+     "S67",
+     "reports_no_gain",
+     "M5"
+    ],
+    [
+     "S67",
+     "reports_gain",
+     "M3"
+    ],
+    [
+     "S71",
+     "reports_no_gain",
+     "M5"
+    ]
+   ],
+   "decoys": [
+    [
+     "S60",
+     "reports_gain",
+     "M3"
+    ],
+    [
+     "S45",
+     "reports_no_gain",
+     "M5"
+    ],
+    [
+     "S69",
+     "reports_no_gain",
+     "M5"
+    ]
+   ],
+   "focus": [
+    "S67",
+    "S71"
+   ],
+   "source": "v1-qwen40:LLM-12"
+  },
+  "LLM-13": {
+   "title_hint": "Disagreement in zero-shot and few-shot evaluations of Thetran prompting on Mupadem-QA",
+   "issue": "Conflicting findings regarding the effectiveness of Thetran prompting on the Mupadem-QA benchmark.",
+   "thesis": "There is a direct conflict in the reported effectiveness of Thetran prompting on Mupadem-QA, with one study reporting no gain and another reporting a gain.",
+   "claims": [
+    [
+     "S28",
+     "reports_no_gain",
+     "M2"
+    ],
+    [
+     "S31",
+     "reports_gain",
+     "M2"
+    ],
+    [
+     "S31",
+     "reports_gain",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S11",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S12",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S26",
+     "reports_no_gain",
+     "M2"
+    ]
+   ],
+   "conflict": [
+    [
+     "S28",
+     "reports_no_gain",
+     "M2"
+    ],
+    [
+     "S31",
+     "reports_gain",
+     "M2"
+    ]
+   ],
+   "focus": [
+    "S28",
+    "S31"
+   ],
+   "source": "v1-qwen40:LLM-13"
+  },
+  "LLM-14": {
+   "title_hint": "Few-shot prompting on Mupadem-QA: A replication study of Thetran prompting",
+   "issue": "The replicability of Thetran prompting results in few-shot settings on Mupadem-QA.",
+   "thesis": "Thetran prompting does not yield consistent gains in few-shot Mupadem-QA evaluations, as evidenced by non-replication of earlier positive results.",
+   "claims": [
+    [
+     "S55",
+     "reports_gain",
+     "M2"
+    ],
+    [
+     "S73",
+     "reports_no_gain",
+     "M2"
+    ],
+    [
+     "S73",
+     "fails_to_replicate",
+     "S4"
+    ]
+   ],
+   "decoys": [
+    [
+     "S74",
+     "reports_no_gain",
+     "M2"
+    ],
+    [
+     "S31",
+     "reports_gain",
+     "M2"
+    ],
+    [
+     "S7",
+     "reports_no_gain",
+     "M2"
+    ]
+   ],
+   "focus": [
+    "S55",
+    "S73"
+   ],
+   "source": "v1-qwen40:LLM-14"
+  },
+  "LLM-15": {
+   "title_hint": "Decoding strategies in zero-shot code generation: Ragrer vs. Baseline",
+   "issue": "The effectiveness of Ragrer decoding in zero-shot code generation tasks.",
+   "thesis": "Ragrer decoding provides a significant gain in zero-shot code generation on Donar-Code, a result that has been consistently replicated.",
+   "claims": [
+    [
+     "S24",
+     "reports_gain",
+     "M3"
+    ],
+    [
+     "S9",
+     "reports_gain",
+     "M3"
+    ],
+    [
+     "S24",
+     "reports_no_gain",
+     "M6"
+    ]
+   ],
+   "decoys": [
+    [
+     "S59",
+     "reports_no_gain",
+     "M6"
+    ],
+    [
+     "S60",
+     "reports_gain",
+     "M3"
+    ],
+    [
+     "S67",
+     "reports_gain",
+     "M3"
+    ]
+   ],
+   "focus": [
+    "S24",
+    "S9"
+   ],
+   "source": "v1-qwen40:LLM-15"
+  },
+  "LLM-16": {
+   "title_hint": "Divergent Outcomes for Retrieval and Prompting in Large-Scale Zero-Shot Evaluation",
+   "issue": "The reliability of Thoradram retrieval and Thetran prompting on the Nodrana-70B model across different benchmarks and settings.",
+   "thesis": "Thoradram retrieval yields inconsistent results on the Vofal-Math benchmark, while Thetran prompting shows no gain on the Mupadem-QA benchmark in zero-shot settings.",
+   "claims": [
+    [
+     "S47",
+     "reports_no_gain",
+     "M5"
+    ],
+    [
+     "S47",
+     "reports_gain",
+     "M2"
+    ],
+    [
+     "S70",
+     "reports_no_gain",
+     "M2"
+    ]
+   ],
+   "decoys": [
+    [
+     "S46",
+     "reports_no_gain",
+     "M5"
+    ],
+    [
+     "S47",
+     "reports_no_gain",
+     "M1"
+    ],
+    [
+     "S70",
+     "reports_no_gain",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S47",
+    "S70"
+   ],
+   "source": "v1-qwen40:LLM-16"
+  },
+  "LLM-17": {
+   "title_hint": "Replication Failures and the Limits of Adapter Methods in Few-Shot Code Generation",
+   "issue": "The reproducibility of early few-shot findings on Thipom-7B and the efficacy of Tedroso adapter on Nodrana-70B.",
+   "thesis": "The Fistem 2021 study failed to replicate the Brulum 2020 findings, and the Bredul 2021 study reported a gain from Tedroso adapter on the Donar-Code benchmark.",
+   "claims": [
+    [
+     "S4",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S57",
+     "reports_gain",
+     "M4"
+    ],
+    [
+     "S4",
+     "reports_no_gain",
+     "M3"
+    ]
+   ],
+   "decoys": [
+    [
+     "S73",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S57",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S4",
+     "reports_gain",
+     "M2"
+    ]
+   ],
+   "focus": [
+    "S4",
+    "S57"
+   ],
+   "source": "v1-qwen40:LLM-17"
+  },
+  "LLM-18": {
+   "title_hint": "Conflicting Evidence for Ragrer Decoding in Fine-Tuned and Few-Shot Settings",
+   "issue": "Disagreement between recent fine-tuned and historical few-shot studies regarding the impact of Ragrer decoding on Thipom-7B.",
+   "thesis": "The Dugrudis 2026 study reported a drop with Ragrer decoding, while the Sakem 2020 study reported a gain from Ragrer decoding, creating a direct conflict in the literature.",
+   "claims": [
+    [
+     "S49",
+     "reports_drop",
+     "M3"
+    ],
+    [
+     "S6",
+     "reports_gain",
+     "M3"
+    ],
+    [
+     "S49",
+     "reports_gain",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S49",
+     "reports_drop",
+     "M6"
+    ],
+    [
+     "S6",
+     "reports_gain",
+     "M6"
+    ],
+    [
+     "S49",
+     "reports_gain",
+     "M2"
+    ]
+   ],
+   "focus": [
+    "S49",
+    "S6"
+   ],
+   "source": "v1-qwen40:LLM-18"
+  },
+  "LLM-19": {
+   "title_hint": "Zero-Shot Stability of Gofabran Decoding and Thoradram Retrieval",
+   "issue": "The performance of Gofabran decoding and Thoradram retrieval in zero-shot settings on Thipom-7B and Nimel-13B.",
+   "thesis": "Gofabran decoding shows no gain in zero-shot settings on both Thipom-7B and Nimel-13B, while Thoradram retrieval also fails to show gains in these specific zero-shot evaluations.",
+   "claims": [
+    [
+     "S58",
+     "reports_no_gain",
+     "M6"
+    ],
+    [
+     "S77",
+     "reports_no_gain",
+     "M6"
+    ],
+    [
+     "S58",
+     "reports_no_gain",
+     "M5"
+    ]
+   ],
+   "decoys": [
+    [
+     "S59",
+     "reports_no_gain",
+     "M6"
+    ],
+    [
+     "S77",
+     "reports_no_gain",
+     "M3"
+    ],
+    [
+     "S58",
+     "reports_no_gain",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S58",
+    "S77"
+   ],
+   "source": "v1-qwen40:LLM-19"
+  },
+  "LLM-20": {
+   "title_hint": "The Replication Crisis in Large Model Evaluation: A Case Study of Nodrana-70B",
+   "issue": "The failure of subsequent studies to replicate the initial findings of the Grodrokris 2021 study on the Nodrana-70B model.",
+   "thesis": "The Grodrokris 2021 study's findings were not replicated by the Steferis 2022 and Brastom 2021 studies, and the Stutohas 2023 study reported no gain from Thetran prompting on the Vofal-Math benchmark.",
+   "claims": [
+    [
+     "S13",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S29",
+     "reports_no_gain",
+     "M2"
+    ],
+    [
+     "S13",
+     "reports_no_gain",
+     "M2"
+    ]
+   ],
+   "decoys": [
+    [
+     "S29",
+     "reports_no_gain",
+     "M1"
+    ],
+    [
+     "S38",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S28",
+     "reports_no_gain",
+     "M2"
+    ]
+   ],
+   "focus": [
+    "S13",
+    "S29"
+   ],
+   "source": "v1-qwen40:LLM-20"
+  },
+  "LLM-21": {
+   "title_hint": "Divergent Outcomes for Decoding Strategies in Fine-Tuned and Few-Shot Settings",
+   "issue": "The impact of decoding methods on arithmetic reasoning and code generation tasks across different evaluation settings.",
+   "thesis": "Decoding methods like Ragrer and Gofabran show inconsistent performance, with Ragrer failing to improve fine-tuned models on arithmetic but Gofabran showing no gain in few-shot code generation.",
+   "claims": [
+    [
+     "S32",
+     "reports_no_gain",
+     "M3"
+    ],
+    [
+     "S35",
+     "reports_drop",
+     "M6"
+    ],
+    [
+     "S32",
+     "reports_gain",
+     "M5"
+    ]
+   ],
+   "decoys": [
+    [
+     "S32",
+     "reports_no_gain",
+     "M6"
+    ],
+    [
+     "S35",
+     "reports_drop",
+     "M3"
+    ],
+    [
+     "S32",
+     "reports_gain",
+     "M4"
+    ]
+   ],
+   "focus": [
+    "S32",
+    "S35"
+   ],
+   "source": "v1-qwen40:LLM-21"
+  },
+  "LLM-22": {
+   "title_hint": "Replication Failures and Retrieval Gains in Zero-Shot Evaluation",
+   "issue": "The reliability of early zero-shot findings and the specific benefits of retrieval methods on large models.",
+   "thesis": "The Vokosti 2020 study's findings on prompting are not replicated by later studies, while Thoradram retrieval consistently provides gains in zero-shot settings for larger models.",
+   "claims": [
+    [
+     "S65",
+     "fails_to_replicate",
+     "S8"
+    ],
+    [
+     "S8",
+     "reports_gain",
+     "M5"
+    ],
+    [
+     "S65",
+     "reports_no_gain",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S65",
+     "fails_to_replicate",
+     "S9"
+    ],
+    [
+     "S8",
+     "reports_gain",
+     "M4"
+    ],
+    [
+     "S65",
+     "reports_no_gain",
+     "M2"
+    ]
+   ],
+   "focus": [
+    "S65",
+    "S8"
+   ],
+   "source": "v1-qwen40:LLM-22"
+  },
+  "LLM-23": {
+   "title_hint": "Conflicting Evidence on Prompting and Decoding in Code and Math Tasks",
+   "issue": "Disagreement between studies regarding the effectiveness of prompting and decoding methods on code generation and arithmetic reasoning.",
+   "thesis": "There is a direct conflict in the reported effects of prompting methods on code generation, with one study reporting a gain and another reporting no gain, while decoding methods show mixed results.",
+   "claims": [
+    [
+     "S33",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S68",
+     "reports_no_gain",
+     "M1"
+    ],
+    [
+     "S33",
+     "reports_drop",
+     "M3"
+    ]
+   ],
+   "decoys": [
+    [
+     "S33",
+     "reports_gain",
+     "M2"
+    ],
+    [
+     "S68",
+     "reports_no_gain",
+     "M2"
+    ],
+    [
+     "S33",
+     "reports_drop",
+     "M6"
+    ]
+   ],
+   "conflict": [
+    [
+     "S33",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S68",
+     "reports_no_gain",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S33",
+    "S68"
+   ],
+   "source": "v1-qwen40:LLM-23"
+  },
+  "LLM-24": {
+   "title_hint": "Prompting Efficacy in Few-Shot vs Zero-Shot Multi-Hop QA",
+   "issue": "How prompting methods perform differently when moving from few-shot to zero-shot settings on multi-hop question answering.",
+   "thesis": "Kabaso prompting shows a gain in few-shot settings but fails to provide a gain in zero-shot settings for the same benchmark, suggesting a dependency on demonstration examples.",
+   "claims": [
+    [
+     "S25",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S43",
+     "reports_no_gain",
+     "M1"
+    ],
+    [
+     "S25",
+     "reports_gain",
+     "M2"
+    ]
+   ],
+   "decoys": [
+    [
+     "S25",
+     "reports_gain",
+     "M3"
+    ],
+    [
+     "S43",
+     "reports_no_gain",
+     "M2"
+    ],
+    [
+     "S25",
+     "reports_gain",
+     "M4"
+    ]
+   ],
+   "focus": [
+    "S25",
+    "S43"
+   ],
+   "source": "v1-qwen40:LLM-24"
+  },
+  "LLM-25": {
+   "title_hint": "Adapter Methods and Replication Challenges in Few-Shot Evaluation",
+   "issue": "The role of adapter methods in few-shot settings and the difficulty in replicating earlier zero-shot findings.",
+   "thesis": "The Tedroso adapter method provides consistent gains in few-shot settings, while the Brulum 2020 study's findings on prompting are not replicated by the Steferis 2022 study.",
+   "claims": [
+    [
+     "S17",
+     "fails_to_replicate",
+     "S13"
+    ],
+    [
+     "S48",
+     "reports_gain",
+     "M4"
+    ],
+    [
+     "S17",
+     "reports_gain",
+     "M4"
+    ]
+   ],
+   "decoys": [
+    [
+     "S17",
+     "fails_to_replicate",
+     "S14"
+    ],
+    [
+     "S48",
+     "reports_gain",
+     "M5"
+    ],
+    [
+     "S17",
+     "reports_gain",
+     "M5"
+    ]
+   ],
+   "focus": [
+    "S17",
+    "S48"
+   ],
+   "source": "v1-qwen40:LLM-25"
+  },
+  "LLM-26": {
+   "title_hint": "Divergent Outcomes for Adapter and Retrieval Methods in Code Generation",
+   "issue": "The inconsistent effectiveness of fine-tuning and retrieval strategies on the Donar-Code benchmark across different model scales and evaluation settings.",
+   "thesis": "While Tedroso adapter shows promise in few-shot settings for mid-sized models, Thoradram retrieval fails to provide consistent gains in fine-tuned settings for smaller models, suggesting a trade-off between parameter efficiency and task-specific adaptation.",
+   "claims": [
+    [
+     "S34",
+     "reports_gain",
+     "M4"
+    ],
+    [
+     "S34",
+     "reports_no_gain",
+     "M5"
+    ],
+    [
+     "S63",
+     "reports_gain",
+     "M5"
+    ]
+   ],
+   "decoys": [
+    [
+     "S36",
+     "reports_gain",
+     "M4"
+    ],
+    [
+     "S63",
+     "reports_gain",
+     "M4"
+    ],
+    [
+     "S47",
+     "reports_no_gain",
+     "M5"
+    ]
+   ],
+   "focus": [
+    "S34",
+    "S63"
+   ],
+   "source": "v1-qwen40:LLM-26"
+  },
+  "LLM-27": {
+   "title_hint": "Decoding Strategies in Zero-Shot Arithmetic and Code Reasoning",
+   "issue": "The impact of decoding methods on large models in zero-shot settings for arithmetic and code tasks.",
+   "thesis": "Ragrer decoding provides a significant boost in zero-shot arithmetic reasoning for large models, whereas Gofabran decoding yields negligible results in zero-shot code generation, indicating task-specific sensitivity to decoding strategies.",
+   "claims": [
+    [
+     "S15",
+     "reports_gain",
+     "M3"
+    ],
+    [
+     "S15",
+     "reports_no_gain",
+     "M6"
+    ],
+    [
+     "S44",
+     "reports_no_gain",
+     "M3"
+    ]
+   ],
+   "decoys": [
+    [
+     "S45",
+     "reports_no_gain",
+     "M3"
+    ],
+    [
+     "S9",
+     "reports_gain",
+     "M3"
+    ],
+    [
+     "S56",
+     "reports_no_gain",
+     "M3"
+    ]
+   ],
+   "focus": [
+    "S15",
+    "S44"
+   ],
+   "source": "v1-qwen40:LLM-27"
+  },
+  "LLM-28": {
+   "title_hint": "Replicability and Retrieval Gains in Multi-Hop QA and Code Generation",
+   "issue": "The reliability of reported gains for prompting and retrieval methods across different benchmarks and the difficulty of replicating early findings.",
+   "thesis": "While Kabaso prompting consistently shows gains in few-shot multi-hop QA, Thoradram retrieval's effectiveness in code generation is less stable, and early findings on decoding methods are often not replicated in subsequent studies.",
+   "claims": [
+    [
+     "S11",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S39",
+     "reports_gain",
+     "M5"
+    ],
+    [
+     "S39",
+     "fails_to_replicate",
+     "S3"
+    ]
+   ],
+   "decoys": [
+    [
+     "S11",
+     "reports_gain",
+     "M2"
+    ],
+    [
+     "S39",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S38",
+     "fails_to_replicate",
+     "S3"
+    ]
+   ],
+   "focus": [
+    "S11",
+    "S39"
+   ],
+   "source": "v1-qwen40:LLM-28"
+  },
+  "LLM-29": {
+   "title_hint": "Conflicting Evidence on Prompting and Decoding in Zero-Shot QA",
+   "issue": "The contradictory findings regarding the effectiveness of prompting and decoding methods in zero-shot multi-hop question answering.",
+   "thesis": "There is a direct conflict in the literature regarding the utility of Kabaso prompting and Ragrer decoding in zero-shot QA, with some studies reporting gains and others reporting no gain or drops, highlighting the instability of these methods in this setting.",
+   "claims": [
+    [
+     "S36",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S64",
+     "reports_no_gain",
+     "M1"
+    ],
+    [
+     "S64",
+     "reports_gain",
+     "M3"
+    ]
+   ],
+   "decoys": [
+    [
+     "S36",
+     "reports_gain",
+     "M2"
+    ],
+    [
+     "S64",
+     "reports_no_gain",
+     "M2"
+    ],
+    [
+     "S64",
+     "reports_gain",
+     "M6"
+    ]
+   ],
+   "conflict": [
+    [
+     "S36",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S64",
+     "reports_no_gain",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S36",
+    "S64"
+   ],
+   "source": "v1-qwen40:LLM-29"
+  },
+  "LLM-30": {
+   "title_hint": "Adapter and Decoding Methods in Fine-Tuned Code Generation",
+   "issue": "The performance of fine-tuning and decoding methods in fine-tuned settings for code generation tasks.",
+   "thesis": "Tedroso adapter provides a robust gain in fine-tuned code generation, while Ragrer decoding leads to performance drops, suggesting that fine-tuning may interfere with the benefits of certain decoding strategies.",
+   "claims": [
+    [
+     "S18",
+     "reports_gain",
+     "M4"
+    ],
+    [
+     "S21",
+     "reports_drop",
+     "M3"
+    ],
+    [
+     "S21",
+     "reports_gain",
+     "M6"
+    ]
+   ],
+   "decoys": [
+    [
+     "S18",
+     "reports_gain",
+     "M5"
+    ],
+    [
+     "S48",
+     "reports_gain",
+     "M4"
+    ],
+    [
+     "S35",
+     "reports_drop",
+     "M3"
+    ]
+   ],
+   "focus": [
+    "S18",
+    "S21"
+   ],
+   "source": "v1-qwen40:LLM-30"
+  },
+  "LLM-31": {
+   "title_hint": "Retrieval Augmentation in Few-Shot Code Generation: A Replication Study",
+   "issue": "Does the Thoradram retrieval method consistently improve performance on the Donar-Code benchmark in few-shot settings, and how does it compare to other methods?",
+   "thesis": "The Thoradram retrieval method yields significant gains in few-shot code generation, while the Tedroso adapter method shows no clear benefit in the same setting.",
+   "claims": [
+    [
+     "S27",
+     "reports_gain",
+     "M5"
+    ],
+    [
+     "S27",
+     "reports_no_gain",
+     "M4"
+    ],
+    [
+     "S76",
+     "reports_gain",
+     "M5"
+    ]
+   ],
+   "decoys": [
+    [
+     "S27",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S76",
+     "reports_gain",
+     "M3"
+    ],
+    [
+     "S27",
+     "reports_no_gain",
+     "M6"
+    ]
+   ],
+   "focus": [
+    "S27",
+    "S76"
+   ],
+   "source": "v1-qwen40:LLM-31"
+  },
+  "LLM-32": {
+   "title_hint": "Decoding Strategies for Fine-Tuned Small Models: Gains and Drops",
+   "issue": "How do different decoding methods (Ragrer vs Gofabran) affect the performance of the Thipom-7B model on the Donar-Code benchmark when fine-tuned?",
+   "thesis": "The Ragrer decoding method causes a performance drop in fine-tuned settings, whereas the Gofabran decoding method provides a gain.",
+   "claims": [
+    [
+     "S51",
+     "reports_drop",
+     "M3"
+    ],
+    [
+     "S51",
+     "reports_gain",
+     "M6"
+    ],
+    [
+     "S66",
+     "reports_gain",
+     "M3"
+    ]
+   ],
+   "decoys": [
+    [
+     "S66",
+     "reports_gain",
+     "M6"
+    ],
+    [
+     "S51",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S62",
+     "reports_gain",
+     "M3"
+    ]
+   ],
+   "focus": [
+    "S51",
+    "S66"
+   ],
+   "source": "v1-qwen40:LLM-32"
+  },
+  "LLM-33": {
+   "title_hint": "The Limits of Retrieval in Zero-Shot Question Answering",
+   "issue": "Is the Thoradram retrieval method effective for zero-shot multi-hop question answering on the Mupadem-QA benchmark?",
+   "thesis": "The Thoradram retrieval method fails to provide gains in zero-shot QA, while the Kabaso prompting method shows a drop in performance.",
+   "claims": [
+    [
+     "S46",
+     "reports_no_gain",
+     "M5"
+    ],
+    [
+     "S46",
+     "reports_drop",
+     "M1"
+    ],
+    [
+     "S5",
+     "reports_gain",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S5",
+     "reports_gain",
+     "M2"
+    ],
+    [
+     "S46",
+     "reports_drop",
+     "M2"
+    ],
+    [
+     "S12",
+     "reports_gain",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S46",
+    "S5"
+   ],
+   "source": "v1-qwen40:LLM-33"
+  },
+  "LLM-34": {
+   "title_hint": "Conflicting Evidence on Prompting Methods in Few-Shot QA",
+   "issue": "Do prompting methods (Kabaso and Thetran) consistently improve few-shot performance on the Mupadem-QA benchmark across different models?",
+   "thesis": "There is a conflict in the literature: one study reports a gain from Kabaso prompting, while another reports no gain from the same method in a similar few-shot setting.",
+   "claims": [
+    [
+     "S10",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S52",
+     "reports_no_gain",
+     "M1"
+    ],
+    [
+     "S10",
+     "reports_gain",
+     "M2"
+    ]
+   ],
+   "decoys": [
+    [
+     "S10",
+     "reports_gain",
+     "M3"
+    ],
+    [
+     "S52",
+     "reports_no_gain",
+     "M2"
+    ],
+    [
+     "S10",
+     "reports_gain",
+     "M4"
+    ]
+   ],
+   "focus": [
+    "S10",
+    "S52"
+   ],
+   "source": "v1-qwen40:LLM-34"
+  },
+  "LLM-35": {
+   "title_hint": "Replication Failures and Adapter Methods in Zero-Shot Arithmetic",
+   "issue": "Can the results of the Nozur 2021 study on arithmetic reasoning be replicated, and what is the impact of the Tedroso adapter method?",
+   "thesis": "The Nozur 2021 study failed to replicate earlier findings, and the Tedroso adapter method provides a gain in zero-shot arithmetic reasoning.",
+   "claims": [
+    [
+     "S14",
+     "reports_gain",
+     "M4"
+    ],
+    [
+     "S75",
+     "reports_gain",
+     "M4"
+    ],
+    [
+     "S14",
+     "reports_no_gain",
+     "M5"
+    ]
+   ],
+   "decoys": [
+    [
+     "S75",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S14",
+     "reports_no_gain",
+     "M1"
+    ],
+    [
+     "S17",
+     "reports_gain",
+     "M4"
+    ]
+   ],
+   "focus": [
+    "S14",
+    "S75"
+   ],
+   "source": "v1-qwen40:LLM-35"
+  },
+  "LLM-36": {
+   "title_hint": "The Fragility of Early Code Generation Claims: A Replication Crisis",
+   "issue": "Why do recent studies fail to replicate the positive results reported in the foundational Bruke 2019 study on code generation?",
+   "thesis": "The apparent gains from decoding methods in early code generation studies are artifacts of specific evaluation settings that do not generalize to later, more rigorous zero-shot evaluations.",
+   "claims": [
+    [
+     "S1",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S3",
+     "reports_gain",
+     "M3"
+    ],
+    [
+     "S3",
+     "reports_gain",
+     "M6"
+    ]
+   ],
+   "decoys": [
+    [
+     "S2",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S3",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S3",
+     "reports_gain",
+     "M4"
+    ]
+   ],
+   "focus": [
+    "S1",
+    "S3"
+   ],
+   "source": "v1-qwen40:LLM-36"
+  },
+  "LLM-37": {
+   "title_hint": "Adapter Efficacy in Fine-Tuned Arithmetic: A Comparative Analysis",
+   "issue": "Does the Tedroso adapter method provide consistent benefits in fine-tuned arithmetic reasoning compared to prompting strategies?",
+   "thesis": "The Tedroso adapter method demonstrates superior stability in fine-tuned settings for arithmetic tasks, whereas prompting methods show inconsistent or negative effects.",
+   "claims": [
+    [
+     "S50",
+     "reports_gain",
+     "M4"
+    ],
+    [
+     "S50",
+     "reports_no_gain",
+     "M1"
+    ],
+    [
+     "S80",
+     "reports_gain",
+     "M4"
+    ]
+   ],
+   "decoys": [
+    [
+     "S50",
+     "reports_gain",
+     "M2"
+    ],
+    [
+     "S80",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S75",
+     "reports_gain",
+     "M4"
+    ]
+   ],
+   "focus": [
+    "S50",
+    "S80"
+   ],
+   "source": "v1-qwen40:LLM-37"
+  },
+  "LLM-38": {
+   "title_hint": "Prompting vs. Retrieval in Multi-Hop QA: A Longitudinal View",
+   "issue": "How do prompting and retrieval methods compare in their effectiveness for multi-hop question answering across different model scales and years?",
+   "thesis": "Retrieval methods like Thoradram offer more consistent gains in multi-hop QA than prompting methods, which are highly sensitive to the specific model and evaluation setting.",
+   "claims": [
+    [
+     "S2",
+     "reports_gain",
+     "M5"
+    ],
+    [
+     "S79",
+     "reports_gain",
+     "M5"
+    ],
+    [
+     "S79",
+     "reports_no_gain",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S2",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S79",
+     "reports_gain",
+     "M2"
+    ],
+    [
+     "S43",
+     "reports_no_gain",
+     "M1"
+    ]
+   ],
+   "focus": [
+    "S2",
+    "S79"
+   ],
+   "source": "v1-qwen40:LLM-38"
+  },
+  "LLM-39": {
+   "title_hint": "Decoding Strategies in Code Generation: Gains and Drops",
+   "issue": "What is the impact of different decoding strategies on code generation performance in large models?",
+   "thesis": "Decoding methods yield mixed results in code generation, with some studies reporting significant drops while others show gains, indicating high variance in method efficacy.",
+   "claims": [
+    [
+     "S30",
+     "reports_gain",
+     "M3"
+    ],
+    [
+     "S41",
+     "reports_drop",
+     "M3"
+    ],
+    [
+     "S41",
+     "reports_gain",
+     "M1"
+    ]
+   ],
+   "decoys": [
+    [
+     "S30",
+     "reports_gain",
+     "M6"
+    ],
+    [
+     "S41",
+     "reports_drop",
+     "M6"
+    ],
+    [
+     "S41",
+     "reports_gain",
+     "M2"
+    ]
+   ],
+   "focus": [
+    "S30",
+    "S41"
+   ],
+   "source": "v1-qwen40:LLM-39"
+  },
+  "LLM-40": {
+   "title_hint": "Conflicting Evidence on Decoding Methods in Code Generation",
+   "issue": "Why do different studies report contradictory findings regarding the effectiveness of the Gofabran decoding method in code generation?",
+   "thesis": "The Gofabran decoding method exhibits conflicting effects in code generation, with some studies reporting drops and others reporting gains, suggesting that the method's efficacy is context-dependent.",
+   "claims": [
+    [
+     "S40",
+     "reports_drop",
+     "M6"
+    ],
+    [
+     "S78",
+     "reports_gain",
+     "M6"
+    ],
+    [
+     "S78",
+     "reports_gain",
+     "M3"
+    ]
+   ],
+   "decoys": [
+    [
+     "S40",
+     "reports_drop",
+     "M3"
+    ],
+    [
+     "S78",
+     "reports_gain",
+     "M1"
+    ],
+    [
+     "S78",
+     "reports_gain",
+     "M5"
+    ]
+   ],
+   "focus": [
+    "S40",
+    "S78"
+   ],
+   "source": "v1-qwen40:LLM-40"
+  },
+  "LLM-41": {
+   "title_hint": "Divergent Outcomes in Morphological Tagging and Translation Replication",
+   "issue": "The reliability of part-of-speech prompting in low-resource translation and the consistency of zero-shot tagging performance across different model architectures.",
+   "thesis": "While the Bresa 2024 study demonstrates that the Drinol-13B model achieves a gain in part-of-speech tagging accuracy using the Krekrilo prompting method, the Sogor 2025 study fails to replicate the earlier positive findings of the Brilem 2022 study regarding the same method's impact on translation quality.",
+   "claims": [
+    [
+     "AS4",
+     "reports_gain",
+     "AM1"
+    ],
+    [
+     "AS5",
+     "fails_to_replicate",
+     "AS2"
+    ],
+    [
+     "AS5",
+     "reports_no_gain",
+     "AM1"
+    ]
+   ],
+   "decoys": [
+    [
+     "AS4",
+     "reports_gain",
+     "AM2"
+    ],
+    [
+     "AS5",
+     "fails_to_replicate",
+     "AS1"
+    ],
+    [
+     "AS5",
+     "reports_no_gain",
+     "AM3"
+    ]
+   ],
+   "conflict": [
+    [
+     "AS4",
+     "reports_gain",
+     "AM1"
+    ],
+    [
+     "AS5",
+     "reports_no_gain",
+     "AM1"
+    ]
+   ],
+   "focus": [
+    "AS4",
+    "AS5"
+   ],
+   "cluster": "A",
+   "source": "v2p3:LLM-01"
+  },
+  "LLM-42": {
+   "title_hint": "Revisiting Theme Probability Scoring: A Replication Study on Topic Classification",
+   "issue": "Does the Rothetro prompting method consistently improve topic classification performance, or are earlier gains artifacts of small sample sizes?",
+   "thesis": "The initial reported gain from Rothetro prompting in the Grokre 2021 study is not robust; a full-scale re-evaluation in the Fatha 2023 study shows no significant improvement, suggesting the method's effectiveness is context-dependent or negligible.",
+   "claims": [
+    [
+     "BS1",
+     "reports_gain",
+     "BM1"
+    ],
+    [
+     "BS3",
+     "reports_no_gain",
+     "BM1"
+    ],
+    [
+     "BS3",
+     "fails_to_replicate",
+     "BS1"
+    ]
+   ],
+   "decoys": [
+    [
+     "BS1",
+     "reports_gain",
+     "BM2"
+    ],
+    [
+     "BS3",
+     "reports_no_gain",
+     "BM3"
+    ],
+    [
+     "BS6",
+     "reports_no_gain",
+     "BM1"
+    ]
+   ],
+   "focus": [
+    "BS1",
+    "BS3"
+   ],
+   "cluster": "B",
+   "source": "v2p3:LLM-02"
+  },
+  "LLM-43": {
+   "title_hint": "Reproducibility and Variability in Neural Keyword Extraction: A Comparative Study",
+   "issue": "Inconsistencies in the reported effectiveness of neural keyword extraction methods across different models and evaluation settings.",
+   "thesis": "The performance of neural keyword extraction methods is unstable, with recent studies failing to replicate earlier gains and reporting no significant improvement over baselines.",
+   "claims": [
+    [
+     "CS4",
+     "reports_no_gain",
+     "CM2"
+    ],
+    [
+     "CS6",
+     "fails_to_replicate",
+     "CS2"
+    ],
+    [
+     "CS6",
+     "reports_no_gain",
+     "CM2"
+    ]
+   ],
+   "decoys": [
+    [
+     "CS2",
+     "reports_gain",
+     "CM2"
+    ],
+    [
+     "CS4",
+     "reports_no_gain",
+     "CM1"
+    ],
+    [
+     "CS6",
+     "fails_to_replicate",
+     "CS1"
+    ]
+   ],
+   "conflict": [
+    [
+     "CS4",
+     "reports_no_gain",
+     "CM2"
+    ],
+    [
+     "CS2",
+     "reports_gain",
+     "CM2"
+    ]
+   ],
+   "focus": [
+    "CS4",
+    "CS6"
+   ],
+   "cluster": "C",
+   "source": "v2p3:LLM-04"
+  }
+ },
+ "joins": {
+  "sources": [
+   "v1-qwen40",
+   "v2p3"
+  ],
+  "unified": {},
+  "ids": {},
+  "papers": {
+   "v2p3:LLM-01": "LLM-41",
+   "v2p3:LLM-02": "LLM-42",
+   "v2p3:LLM-04": "LLM-43"
+  },
+  "renamed_words": {
+   "v2p3:kabaso": "krekrilo",
+   "v2p3:thetran": "mugres",
+   "v2p3:ragrer": "peruhi",
+   "v2p3:tedroso": "bramunu",
+   "v2p3:thoradram": "drinol",
+   "v2p3:gofabran": "dotral",
+   "v2p3:thipom": "babas",
+   "v2p3:nimel": "kopoge",
+   "v2p3:nodrana": "brilem",
+   "v2p3:mupadem": "bedem",
+   "v2p3:vofal": "bresa",
+   "v2p3:donar": "sogor",
+   "v2p3:banagro": "rubor",
+   "v2p3:gredapos": "rothetro",
+   "v2p3:bruke": "thohethi",
+   "v2p3:brulum": "thezestel",
+   "v2p3:dogres": "vetraser",
+   "v2p3:sakem": "takron",
+   "v2p3:tilutron": "stukavir",
+   "v2p3:vokosti": "buzobrer",
+   "v2p3:netras": "grokre",
+   "v2p3:megreda": "grudros",
+   "v2p3:brastom": "fatha",
+   "v2p3:dedrola": "drologum",
+   "v2p3:grodrokris": "gremar",
+   "v2p3:nozur": "fohor",
+   "v2p3:trasor": "grihafen",
+   "v2p3:steferis": "trikrirol",
+   "v2p3:gragol": "remuki",
+   "v2p3:kolal": "grogra",
+   "v2p3:stosa": "farol",
+   "v2p3:togobe": "luroper",
+   "v2p3:vidra": "drala",
+   "v2p3:braliram": "zatre",
+   "v2p3:lomakra": "vapadre",
+   "v2p3:femem": "fakan",
+   "v2p3:grovim": "thubran",
+   "v2p3:rakes": "kethel",
+   "v2p3:nodabril": "litros"
+  },
+  "clashes": []
+ },
+ "clusters": [
+  {
+   "id": "A",
+   "topic": {
+    "id": "T10181",
+    "name": "Natural Language Processing Techniques",
+    "subfield": "Artificial Intelligence",
+    "description": "This cluster of papers focuses on statistical machine translation, neural machine translation, dependency parsing, word sense disambiguation, and part-of-speech tagging. It also covers topics such as corpus linguistics, syntax-based translation models, multilingual neural machine translation, and language modeling.",
+    "keywords": [
+     "machine translation",
+     "low-resource languages",
+     "part-of-speech tagging",
+     "word sense disambiguation",
+     "statistical machine translation",
+     "morphological analysis",
+     "neural machine translation",
+     "parallel corpus"
+    ],
+    "works": 202848
+   }
+  },
+  {
+   "id": "B",
+   "topic": {
+    "id": "T10028",
+    "name": "Topic Modeling",
+    "subfield": "Artificial Intelligence",
+    "description": "This cluster of papers covers a wide range of advancements in natural language processing, including neural network architectures, word representation models, machine translation techniques, text classification algorithms, semantic similarity measures, named entity recognition methods, pretrained language models, sequence-to-sequence learning approaches, topic modeling strategies, and information retrieval systems.",
+    "keywords": [
+     "named entity recognition",
+     "retrieval-augmented generation",
+     "BERT",
+     "word embeddings",
+     "question answering",
+     "pre-trained language models",
+     "intermediate-task training",
+     "sentence retrieval"
+    ],
+    "works": 173830
+   }
+  },
+  {
+   "id": "C",
+   "topic": {
+    "id": "T13083",
+    "name": "Advanced Text Analysis Techniques",
+    "subfield": "Artificial Intelligence",
+    "description": "This cluster of papers focuses on the automatic extraction of keywords from textual data using various techniques such as graph-based methods, unsupervised approaches, and neural networks. The research explores the application of linguistic knowledge and statistical information to improve the accuracy of keyword extraction from documents.",
+    "keywords": [
+     "text summarization",
+     "keyword extraction",
+     "extractive summarization",
+     "multi-document summarization",
+     "abstractive summarization",
+     "automatic summarization",
+     "ROUGE evaluation",
+     "term extraction"
+    ],
+    "works": 26196
+   }
+  }
+ ]
+}

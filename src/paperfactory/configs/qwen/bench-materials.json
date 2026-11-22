@@ -1,0 +1,33 @@
+{
+ "_note": "benchmark set (22 Nov 2026): one world per field joined from the v1 40-paper pilot and the v2 3-paper pilot (paperfactory join-worlds; worlds/bench-<field>.json); numbers made by code for the whole joined world; every planned paper written by the current generator (form cards, content plans); keep all that pass.",
+ "field": "materials",
+ "genre": "synthesis",
+ "papers": 43,
+ "pages": 6,
+ "models": {
+  "default": {
+   "model": "orch-model",
+   "backend": "openai",
+   "context_window": 65536,
+   "max_tokens": 8192,
+   "max_parallel": 9,
+   "timeout": 1800,
+   "local": true
+  },
+  "world": {
+   "model": "orch-model",
+   "backend": "openai",
+   "context_window": 65536,
+   "max_tokens": 16384,
+   "max_parallel": 9,
+   "timeout": 1800,
+   "local": true
+  }
+ },
+ "out": "runs/paperfactory/bench-materials",
+ "parallel": 9,
+ "qa_papers_per_question": 3,
+ "leak_trials": 30,
+ "seed": 1,
+ "world_file": "src/paperfactory/worlds/bench-materials.json"
+}

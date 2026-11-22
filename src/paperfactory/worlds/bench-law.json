@@ -1,0 +1,3273 @@
+{
+ "field": "law",
+ "genre": "argument",
+ "entities": {
+  "C1": {
+   "kind": "court",
+   "label": "Tetre District Court",
+   "alt": [
+    "District Court"
+   ],
+   "attrs": {
+    "level": 1
+   }
+  },
+  "C2": {
+   "kind": "court",
+   "label": "Tetre Court of Appeal",
+   "alt": [
+    "Court of Appeal"
+   ],
+   "attrs": {
+    "level": 2
+   }
+  },
+  "C3": {
+   "kind": "court",
+   "label": "Tetre Supreme Court",
+   "alt": [
+    "Supreme Court"
+   ],
+   "attrs": {
+    "level": 3
+   }
+  },
+  "P1": {
+   "kind": "provision",
+   "label": "section 1 of the Tetre Data Privacy Act",
+   "alt": [],
+   "attrs": {
+    "topic": "definition of personal data"
+   }
+  },
+  "P2": {
+   "kind": "provision",
+   "label": "section 2 of the Tetre Data Privacy Act",
+   "alt": [],
+   "attrs": {
+    "topic": "lawful basis for processing"
+   }
+  },
+  "P3": {
+   "kind": "provision",
+   "label": "section 3 of the Tetre Data Privacy Act",
+   "alt": [],
+   "attrs": {
+    "topic": "right to erasure"
+   }
+  },
+  "P4": {
+   "kind": "provision",
+   "label": "section 4 of the Tetre Data Privacy Act",
+   "alt": [],
+   "attrs": {
+    "topic": "data breach notification"
+   }
+  },
+  "P5": {
+   "kind": "provision",
+   "label": "section 5 of the Tetre Data Privacy Act",
+   "alt": [],
+   "attrs": {
+    "topic": "cross-border data transfer"
+   }
+  },
+  "P6": {
+   "kind": "provision",
+   "label": "section 1 of the Tetre Digital Rights Ordinance",
+   "alt": [],
+   "attrs": {
+    "topic": "access to digital records"
+   }
+  },
+  "P7": {
+   "kind": "provision",
+   "label": "section 2 of the Tetre Digital Rights Ordinance",
+   "alt": [],
+   "attrs": {
+    "topic": "automated decision making"
+   }
+  },
+  "D1": {
+   "kind": "decision",
+   "label": "Sadepo v. Rubrothes Bank",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2010,
+    "facts": "a bank retained customer data after account closure"
+   }
+  },
+  "D2": {
+   "kind": "decision",
+   "label": "Zudur v. Stupus Health",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2011,
+    "facts": "a hospital shared patient records with a research group"
+   }
+  },
+  "D3": {
+   "kind": "decision",
+   "label": "Pomuthel v. Hemem Media",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2012,
+    "facts": "a news outlet published private emails of a public figure"
+   }
+  },
+  "D4": {
+   "kind": "decision",
+   "label": "Kuhizun v. Trefezer Insurance",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2013,
+    "facts": "an insurer used genetic data to deny coverage"
+   }
+  },
+  "D5": {
+   "kind": "decision",
+   "label": "Bruse v. Kikom Systems",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2014,
+    "facts": "a tech company failed to notify users of a data breach"
+   }
+  },
+  "D6": {
+   "kind": "decision",
+   "label": "Hutheno v. Pagre Bank",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2015,
+    "facts": "a bank sold transaction history to third parties"
+   }
+  },
+  "D7": {
+   "kind": "decision",
+   "label": "Pugram v. Povul Health",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2016,
+    "facts": "a clinic refused to delete patient files upon request"
+   }
+  },
+  "D8": {
+   "kind": "decision",
+   "label": "Laper v. Dravun Media",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2017,
+    "facts": "a magazine used facial recognition to identify readers"
+   }
+  },
+  "D9": {
+   "kind": "decision",
+   "label": "Gothukur v. Didota Insurance",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2018,
+    "facts": "an insurer accessed social media posts to assess claims"
+   }
+  },
+  "D10": {
+   "kind": "decision",
+   "label": "Mokrol v. Vubravum Systems",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2019,
+    "facts": "a platform transferred user data to a foreign server"
+   }
+  },
+  "D11": {
+   "kind": "decision",
+   "label": "Begon v. Bomebros Bank",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2020,
+    "facts": "a bank used automated systems to deny loans without explanation"
+   }
+  },
+  "D12": {
+   "kind": "decision",
+   "label": "Thisas v. Ribror Health",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2021,
+    "facts": "a health app shared location data with advertisers"
+   }
+  },
+  "D13": {
+   "kind": "decision",
+   "label": "Graro v. Drede Media",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2022,
+    "facts": "a streaming service retained viewing habits after account deletion"
+   }
+  },
+  "D14": {
+   "kind": "decision",
+   "label": "Stogretron v. Stadrer Insurance",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2023,
+    "facts": "an insurer used wearable device data to adjust premiums"
+   }
+  },
+  "D15": {
+   "kind": "decision",
+   "label": "Roham v. Polotrim Systems",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2024,
+    "facts": "a cloud provider failed to secure backup data"
+   }
+  },
+  "D16": {
+   "kind": "decision",
+   "label": "Medar v. Truvin Bank",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2025,
+    "facts": "a bank used biometric data for identity verification"
+   }
+  },
+  "D17": {
+   "kind": "decision",
+   "label": "Sunen v. Thegom Health",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2011,
+    "facts": "a hospital network shared anonymized data with a pharma company"
+   }
+  },
+  "D18": {
+   "kind": "decision",
+   "label": "Lofilom v. Rizal Media",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2012,
+    "facts": "a newspaper used metadata to track a journalist's movements"
+   }
+  },
+  "D19": {
+   "kind": "decision",
+   "label": "Drusethis v. Thuthiki Insurance",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2013,
+    "facts": "an insurer used credit scores to determine life insurance rates"
+   }
+  },
+  "D20": {
+   "kind": "decision",
+   "label": "Fepogre v. Kragrehom Systems",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2014,
+    "facts": "a software company failed to encrypt user passwords"
+   }
+  },
+  "D21": {
+   "kind": "decision",
+   "label": "Tagustu v. Satritrul Bank",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2015,
+    "facts": "a bank used dark patterns to collect extra data"
+   }
+  },
+  "D22": {
+   "kind": "decision",
+   "label": "Hemis v. Hador Health",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2016,
+    "facts": "a telemedicine service stored data on unsecured servers"
+   }
+  },
+  "D23": {
+   "kind": "decision",
+   "label": "Thepas v. Zireto Media",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2017,
+    "facts": "a social media platform allowed targeted ads based on political views"
+   }
+  },
+  "D24": {
+   "kind": "decision",
+   "label": "Zothopar v. Bramotrer Insurance",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2018,
+    "facts": "an insurer used driving data from a connected car"
+   }
+  },
+  "D25": {
+   "kind": "decision",
+   "label": "Setrisas v. Tribrim Systems",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2019,
+    "facts": "a gaming company sold player behavior data to marketers"
+   }
+  },
+  "D26": {
+   "kind": "decision",
+   "label": "Hosom v. Tavul Bank",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2020,
+    "facts": "a bank used AI to monitor employee emails"
+   }
+  },
+  "D27": {
+   "kind": "decision",
+   "label": "Grestin v. Gesum Health",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2021,
+    "facts": "a fitness tracker shared heart rate data with an employer"
+   }
+  },
+  "D28": {
+   "kind": "decision",
+   "label": "Levahe v. Lithapal Media",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2022,
+    "facts": "a podcast network used voice recognition to identify guests"
+   }
+  },
+  "D29": {
+   "kind": "decision",
+   "label": "Depogras v. Gumar Insurance",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2023,
+    "facts": "an insurer used mental health app data for underwriting"
+   }
+  },
+  "D30": {
+   "kind": "decision",
+   "label": "Desamur v. Vebopes Systems",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2024,
+    "facts": "a smart home device leaked audio recordings"
+   }
+  },
+  "D31": {
+   "kind": "decision",
+   "label": "Dibres v. Hastas Bank",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2025,
+    "facts": "a bank used geolocation data for fraud detection"
+   }
+  },
+  "D32": {
+   "kind": "decision",
+   "label": "Bemebi v. Dronir Health",
+   "alt": [],
+   "attrs": {
+    "court": "C3",
+    "year": 2012,
+    "facts": "a national health database was accessed without consent"
+   }
+  },
+  "D33": {
+   "kind": "decision",
+   "label": "Krodos v. Pavus Media",
+   "alt": [],
+   "attrs": {
+    "court": "C3",
+    "year": 2013,
+    "facts": "a state broadcaster used surveillance data for news stories"
+   }
+  },
+  "D34": {
+   "kind": "decision",
+   "label": "Stonan v. Tredum Insurance",
+   "alt": [],
+   "attrs": {
+    "court": "C3",
+    "year": 2014,
+    "facts": "a national insurer used census data for risk assessment"
+   }
+  },
+  "D35": {
+   "kind": "decision",
+   "label": "Zibrogre v. Lifur Systems",
+   "alt": [],
+   "attrs": {
+    "court": "C3",
+    "year": 2015,
+    "facts": "a government IT system failed to protect citizen records"
+   }
+  },
+  "D36": {
+   "kind": "decision",
+   "label": "Zefes v. Gabrustim Bank",
+   "alt": [],
+   "attrs": {
+    "court": "C3",
+    "year": 2016,
+    "facts": "a central bank shared financial data with foreign agencies"
+   }
+  },
+  "D37": {
+   "kind": "decision",
+   "label": "Mizun v. Manostal Health",
+   "alt": [],
+   "attrs": {
+    "court": "C3",
+    "year": 2017,
+    "facts": "a public health agency used contact tracing data for research"
+   }
+  },
+  "D38": {
+   "kind": "decision",
+   "label": "Pedim v. Detam Media",
+   "alt": [],
+   "attrs": {
+    "court": "C3",
+    "year": 2018,
+    "facts": "a state media outlet used facial recognition in public spaces"
+   }
+  },
+  "D39": {
+   "kind": "decision",
+   "label": "Hapar v. Brapil Insurance",
+   "alt": [],
+   "attrs": {
+    "court": "C3",
+    "year": 2019,
+    "facts": "a national insurer used tax data for premium calculation"
+   }
+  },
+  "D40": {
+   "kind": "decision",
+   "label": "Gagan v. Famogras Systems",
+   "alt": [],
+   "attrs": {
+    "court": "C3",
+    "year": 2020,
+    "facts": "a national ID system failed to secure biometric data"
+   }
+  },
+  "D41": {
+   "kind": "decision",
+   "label": "Zuman v. Stotros Bank",
+   "alt": [],
+   "attrs": {
+    "court": "C3",
+    "year": 2021,
+    "facts": "a state bank used transaction data for social scoring"
+   }
+  },
+  "D42": {
+   "kind": "decision",
+   "label": "Trostotham v. Grefesel Health",
+   "alt": [],
+   "attrs": {
+    "court": "C3",
+    "year": 2022,
+    "facts": "a national health service used genetic data for population studies"
+   }
+  },
+  "D43": {
+   "kind": "decision",
+   "label": "Retron v. Nosor Media",
+   "alt": [],
+   "attrs": {
+    "court": "C3",
+    "year": 2023,
+    "facts": "a state broadcaster used voice data for content moderation"
+   }
+  },
+  "D44": {
+   "kind": "decision",
+   "label": "Trabror v. Dikikris Insurance",
+   "alt": [],
+   "attrs": {
+    "court": "C3",
+    "year": 2024,
+    "facts": "a national insurer used travel data for risk assessment"
+   }
+  },
+  "D45": {
+   "kind": "decision",
+   "label": "Dregor v. Tetron Systems",
+   "alt": [],
+   "attrs": {
+    "court": "C3",
+    "year": 2025,
+    "facts": "a national cloud service failed to protect government data"
+   }
+  },
+  "D46": {
+   "kind": "decision",
+   "label": "Drabren v. Borel Bank",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2010,
+    "facts": "a bank used customer data for marketing without consent"
+   }
+  },
+  "D47": {
+   "kind": "decision",
+   "label": "Lolahan v. Rikroben Health",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2011,
+    "facts": "a hospital used patient data for internal research"
+   }
+  },
+  "D48": {
+   "kind": "decision",
+   "label": "Brufegro v. Zogrus Media",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2012,
+    "facts": "a news site used reader data for personalized ads"
+   }
+  },
+  "D49": {
+   "kind": "decision",
+   "label": "Stagelol v. Bikrem Insurance",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2013,
+    "facts": "an insurer used health data from a wearable device"
+   }
+  },
+  "D50": {
+   "kind": "decision",
+   "label": "Thalul v. Loritom Systems",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2014,
+    "facts": "a tech company used user data for product development"
+   }
+  },
+  "D51": {
+   "kind": "decision",
+   "label": "Drudetos v. Grostum Bank",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2015,
+    "facts": "a bank used location data for targeted offers"
+   }
+  },
+  "D52": {
+   "kind": "decision",
+   "label": "Fogol v. Kufen Health",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2016,
+    "facts": "a clinic used patient data for quality improvement"
+   }
+  },
+  "D53": {
+   "kind": "decision",
+   "label": "Gonustor v. Hekris Media",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2017,
+    "facts": "a magazine used subscriber data for cross-promotion"
+   }
+  },
+  "D54": {
+   "kind": "decision",
+   "label": "Bakiko v. Treham Insurance",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2018,
+    "facts": "an insurer used driving data for usage-based insurance"
+   }
+  },
+  "D55": {
+   "kind": "decision",
+   "label": "Thotrun v. Brotem Systems",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2019,
+    "facts": "a platform used user data for algorithmic training"
+   }
+  },
+  "D56": {
+   "kind": "decision",
+   "label": "Zapas v. Rathovin Bank",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2020,
+    "facts": "a bank used transaction data for credit scoring"
+   }
+  },
+  "D57": {
+   "kind": "decision",
+   "label": "Truvodrim v. Stetrehon Health",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2021,
+    "facts": "a hospital used patient data for AI model training"
+   }
+  },
+  "D58": {
+   "kind": "decision",
+   "label": "Stebrin v. Gamor Media",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2022,
+    "facts": "a streaming service used viewing data for content recommendations"
+   }
+  },
+  "D59": {
+   "kind": "decision",
+   "label": "Sostothu v. Betham Insurance",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2023,
+    "facts": "an insurer used health data for dynamic pricing"
+   }
+  },
+  "D60": {
+   "kind": "decision",
+   "label": "Sostohen v. Vatros Systems",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2024,
+    "facts": "a tech company used user data for ad targeting"
+   }
+  },
+  "D61": {
+   "kind": "decision",
+   "label": "Stegrepor v. Hakruze Bank",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2025,
+    "facts": "a bank used biometric data for transaction verification"
+   }
+  },
+  "D62": {
+   "kind": "decision",
+   "label": "Stukreze v. Krepol Health",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2011,
+    "facts": "a hospital network used patient data for research collaboration"
+   }
+  },
+  "D63": {
+   "kind": "decision",
+   "label": "Budrem v. Gokraka Media",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2012,
+    "facts": "a news outlet used reader data for content personalization"
+   }
+  },
+  "D64": {
+   "kind": "decision",
+   "label": "Kehetral v. Soves Insurance",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2013,
+    "facts": "an insurer used health data for risk stratification"
+   }
+  },
+  "D65": {
+   "kind": "decision",
+   "label": "Krizon v. Thela Systems",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2014,
+    "facts": "a tech company used user data for service improvement"
+   }
+  },
+  "D66": {
+   "kind": "decision",
+   "label": "Stades v. Kolin Bank",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2015,
+    "facts": "a bank used transaction data for fraud prevention"
+   }
+  },
+  "D67": {
+   "kind": "decision",
+   "label": "Trumadu v. Zetruhal Health",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2016,
+    "facts": "a clinic used patient data for clinical trials"
+   }
+  },
+  "D68": {
+   "kind": "decision",
+   "label": "Dogekrem v. Gikriso Media",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2017,
+    "facts": "a social media platform used user data for ad optimization"
+   }
+  },
+  "D69": {
+   "kind": "decision",
+   "label": "Fakes v. Sebovim Insurance",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2018,
+    "facts": "an insurer used driving data for telematics insurance"
+   }
+  },
+  "D70": {
+   "kind": "decision",
+   "label": "Bronu v. Bibrer Systems",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2019,
+    "facts": "a gaming company used player data for game balancing"
+   }
+  },
+  "D71": {
+   "kind": "decision",
+   "label": "Bretha v. Ladem Bank",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2020,
+    "facts": "a bank used employee data for performance monitoring"
+   }
+  },
+  "D72": {
+   "kind": "decision",
+   "label": "Tredrer v. Rikrus Health",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2021,
+    "facts": "a fitness tracker used health data for wellness insights"
+   }
+  },
+  "D73": {
+   "kind": "decision",
+   "label": "Gathana v. Kristur Media",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2022,
+    "facts": "a podcast network used listener data for content curation"
+   }
+  },
+  "D74": {
+   "kind": "decision",
+   "label": "Dretus v. Ratrethas Insurance",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2023,
+    "facts": "an insurer used mental health data for care coordination"
+   }
+  },
+  "D75": {
+   "kind": "decision",
+   "label": "Rapol v. Grememor Systems",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2024,
+    "facts": "a smart home device used audio data for voice control"
+   }
+  },
+  "D76": {
+   "kind": "decision",
+   "label": "Stodol v. Zelis Bank",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2025,
+    "facts": "a bank used geolocation data for branch optimization"
+   }
+  },
+  "D77": {
+   "kind": "decision",
+   "label": "Krugrama v. Basolem Health",
+   "alt": [],
+   "attrs": {
+    "court": "C3",
+    "year": 2012,
+    "facts": "a national health database used patient data for public health surveillance"
+   }
+  },
+  "D78": {
+   "kind": "decision",
+   "label": "Nevatrun v. Lerenu Media",
+   "alt": [],
+   "attrs": {
+    "court": "C3",
+    "year": 2013,
+    "facts": "a state broadcaster used viewer data for programming decisions"
+   }
+  },
+  "D79": {
+   "kind": "decision",
+   "label": "Kozos v. Tenin Insurance",
+   "alt": [],
+   "attrs": {
+    "court": "C3",
+    "year": 2014,
+    "facts": "a national insurer used census data for actuarial modeling"
+   }
+  },
+  "D80": {
+   "kind": "decision",
+   "label": "Gregestel v. Geter Systems",
+   "alt": [],
+   "attrs": {
+    "court": "C3",
+    "year": 2015,
+    "facts": "a government IT system used citizen data for service delivery"
+   }
+  },
+  "AP1": {
+   "kind": "provision",
+   "label": "section 4 of the Tetre Corporate Insolvency Act",
+   "alt": [],
+   "attrs": {
+    "topic": "commencement of insolvency proceedings",
+    "summary": "a court may open insolvency proceedings if the debtor is unable to pay its debts as they fall due, upon application by the debtor or a creditor"
+   }
+  },
+  "AP2": {
+   "kind": "provision",
+   "label": "section 12 of the Tetre Corporate Insolvency Act",
+   "alt": [],
+   "attrs": {
+    "topic": "debtor-in-possession financing",
+    "summary": "the court may authorize the debtor to obtain new financing during insolvency proceedings, granting such financing super-priority status over existing secured claims"
+   }
+  },
+  "AP3": {
+   "kind": "provision",
+   "label": "section 25 of the Tetre Corporate Insolvency Act",
+   "alt": [],
+   "attrs": {
+    "topic": "creditor voting on reorganization plans",
+    "summary": "a reorganization plan is confirmed only if it is accepted by a majority in number and two-thirds in amount of the voting creditors in each impaired class"
+   }
+  },
+  "AP4": {
+   "kind": "provision",
+   "label": "section 31 of the Tetre Corporate Insolvency Act",
+   "alt": [],
+   "attrs": {
+    "topic": "avoidance of pre-insolvency transfers",
+    "summary": "transfers made by the debtor within one year before the commencement of proceedings are voidable if made with intent to hinder, delay, or defraud creditors"
+   }
+  },
+  "AD1": {
+   "kind": "decision",
+   "label": "Fudro v. Teman Bank",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2012,
+    "facts": "a creditor applied to open insolvency proceedings against a debtor who had missed three consecutive loan payments",
+    "outcome": "proceedings opened; the court found the debtor unable to pay debts as they fell due"
+   }
+  },
+  "AD2": {
+   "kind": "decision",
+   "label": "Bepor v. Gipol Systems",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2015,
+    "facts": "the debtor sought authorization for new financing to keep operations running during insolvency, claiming existing secured lenders were not providing adequate support",
+    "outcome": "financing authorized with super-priority status; the court emphasized the need to preserve enterprise value"
+   }
+  },
+  "AD3": {
+   "kind": "decision",
+   "label": "Rahus v. Hatrom Insurance",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2018,
+    "facts": "a reorganization plan was submitted, but a class of unsecured creditors voted against it, arguing the plan did not provide sufficient recovery",
+    "outcome": "plan rejected; the court held that the two-thirds in amount threshold was not met in the impaired class"
+   }
+  },
+  "AD4": {
+   "kind": "decision",
+   "label": "Krafego v. Pakis Media",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2020,
+    "facts": "a creditor alleged that the debtor had transferred assets to a related party eight months before insolvency proceedings began, with the intent to defraud other creditors",
+    "outcome": "transfer voided; the court found clear evidence of fraudulent intent and ordered the assets returned to the estate"
+   }
+  },
+  "AD5": {
+   "kind": "decision",
+   "label": "Kezer v. Stogrotul Health",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2022,
+    "facts": "the debtor argued that a transfer made to a supplier six months before insolvency was a normal business transaction and not fraudulent, despite the debtor being in financial distress",
+    "outcome": "transfer upheld; the court distinguished earlier case law and found no intent to hinder or defraud, as the supplier provided essential services"
+   }
+  },
+  "AD6": {
+   "kind": "decision",
+   "label": "Thome v. Stako Bank",
+   "alt": [],
+   "attrs": {
+    "court": "C3",
+    "year": 2024,
+    "facts": "a dispute arose over whether a creditor's application to open insolvency proceedings was timely, given that the debtor had recently received a large asset sale",
+    "outcome": "application dismissed; the court held that the debtor was not unable to pay debts as they fell due at the time of the application"
+   }
+  },
+  "BP1": {
+   "kind": "provision",
+   "label": "section 4 of the Tetre Administrative Procedure Act",
+   "alt": [],
+   "attrs": {
+    "topic": "duty to give reasons",
+    "summary": "every administrative decision that adversely affects a person must be accompanied by a written statement of the facts and legal grounds relied upon"
+   }
+  },
+  "BP2": {
+   "kind": "provision",
+   "label": "section 12 of the Tetre Administrative Procedure Act",
+   "alt": [],
+   "attrs": {
+    "topic": "right to be heard",
+    "summary": "before a final decision is made, the affected party must be given a reasonable opportunity to present their case and respond to any adverse evidence"
+   }
+  },
+  "BP3": {
+   "kind": "provision",
+   "label": "section 21 of the Tetre Administrative Procedure Act",
+   "alt": [],
+   "attrs": {
+    "topic": "proportionality of sanctions",
+    "summary": "any administrative sanction imposed must be proportionate to the gravity of the breach and the circumstances of the offender"
+   }
+  },
+  "BP4": {
+   "kind": "provision",
+   "label": "section 35 of the Tetre Administrative Procedure Act",
+   "alt": [],
+   "attrs": {
+    "topic": "access to information",
+    "summary": "citizens have a right to access administrative records unless disclosure would prejudice national security or the privacy of a third party"
+   }
+  },
+  "BD1": {
+   "kind": "decision",
+   "label": "Krerer v. Beketrel Health",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2012,
+    "facts": "a hospital authority denied a patient access to their medical records citing internal policy",
+    "outcome": "access granted; authority ordered to provide records within 14 days"
+   }
+  },
+  "BD2": {
+   "kind": "decision",
+   "label": "Bragres v. Dagize Bank",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2015,
+    "facts": "a bank regulator imposed a fine on a branch for minor procedural errors without providing detailed reasons",
+    "outcome": "fine upheld; court found the summary of reasons sufficient for the gravity of the breach"
+   }
+  },
+  "BD3": {
+   "kind": "decision",
+   "label": "Drodramum v. Faduther Media",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2018,
+    "facts": "a broadcasting commission revoked a license without allowing the licensee to respond to new evidence of misconduct",
+    "outcome": "revocation quashed; case remitted for a hearing in accordance with procedural rights"
+   }
+  },
+  "BD4": {
+   "kind": "decision",
+   "label": "Stogro v. Fopemar Insurance",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2020,
+    "facts": "an insurance regulator refused to disclose internal audit reports to a policyholder claiming unfair denial of claims",
+    "outcome": "disclosure denied; court accepted the regulator's claim that disclosure would prejudice third-party privacy"
+   }
+  },
+  "BD5": {
+   "kind": "decision",
+   "label": "Thohim v. Tupem Systems",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2022,
+    "facts": "a data protection authority fined a tech company for automated decision-making without human review, citing lack of specific legal basis",
+    "outcome": "fine reduced; court found the sanction disproportionate to the initial breach given the company's cooperation"
+   }
+  },
+  "BD6": {
+   "kind": "decision",
+   "label": "Brove v. Rader Health",
+   "alt": [],
+   "attrs": {
+    "court": "C3",
+    "year": 2024,
+    "facts": "a public health agency issued a directive restricting movement without providing written reasons, relying on emergency powers",
+    "outcome": "directive upheld; court ruled that in emergencies, the duty to give reasons is satisfied by the public announcement of the directive"
+   }
+  },
+  "CP1": {
+   "kind": "provision",
+   "label": "section 4 of the Tetre Intellectual Property Act",
+   "alt": [],
+   "attrs": {
+    "topic": "copyright ownership",
+    "summary": "the author of an original work is the first owner of the copyright in that work, unless the work is made in the course of employment"
+   }
+  },
+  "CP2": {
+   "kind": "provision",
+   "label": "section 12 of the Tetre Intellectual Property Act",
+   "alt": [],
+   "attrs": {
+    "topic": "fair dealing for criticism",
+    "summary": "fair dealing with a work for the purpose of criticism or review does not infringe copyright, provided that sufficient acknowledgment is given"
+   }
+  },
+  "CP3": {
+   "kind": "provision",
+   "label": "section 25 of the Tetre Intellectual Property Act",
+   "alt": [],
+   "attrs": {
+    "topic": "trademark infringement",
+    "summary": "a person infringes a registered trademark if they use a sign in the course of trade that is identical to the trademark in relation to identical goods or services"
+   }
+  },
+  "CP4": {
+   "kind": "provision",
+   "label": "section 31 of the Tetre Intellectual Property Act",
+   "alt": [],
+   "attrs": {
+    "topic": "patent validity",
+    "summary": "a patent shall be invalid if the invention was not novel or did not involve an inventive step at the date of filing"
+   }
+  },
+  "CD1": {
+   "kind": "decision",
+   "label": "Nuveden v. Trokruver Publishing",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2012,
+    "facts": "a publisher claimed ownership of a novel written by a freelance author under a standard contract",
+    "outcome": "claim dismissed; copyright remained with the author as the work was not made in the course of employment"
+   }
+  },
+  "CD2": {
+   "kind": "decision",
+   "label": "Folano v. Thosedrir Media",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2015,
+    "facts": "a news outlet used excerpts from a book in a review article without explicit permission",
+    "outcome": "no infringement found; the use qualified as fair dealing for criticism with sufficient acknowledgment"
+   }
+  },
+  "CD3": {
+   "kind": "decision",
+   "label": "Drekre v. Tedros Retail",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2018,
+    "facts": "a retailer sold goods bearing a logo identical to a registered trademark for the same category of products",
+    "outcome": "infringement established; injunction granted and damages awarded to the trademark owner"
+   }
+  },
+  "CD4": {
+   "kind": "decision",
+   "label": "Pothar v. Mehur Tech",
+   "alt": [],
+   "attrs": {
+    "court": "C3",
+    "year": 2020,
+    "facts": "a technology company challenged the validity of a patent on a data processing method, arguing it was obvious",
+    "outcome": "patent upheld; the court found the invention involved an inventive step over the prior art"
+   }
+  },
+  "CD5": {
+   "kind": "decision",
+   "label": "Hoger v. Naser Education",
+   "alt": [],
+   "attrs": {
+    "court": "C2",
+    "year": 2022,
+    "facts": "a university used a copyrighted image in a lecture slide deck for educational purposes",
+    "outcome": "infringement found; the court rejected the fair dealing defense, stating the use was not for criticism or review"
+   }
+  },
+  "CD6": {
+   "kind": "decision",
+   "label": "Rezithal v. Thakon Logistics",
+   "alt": [],
+   "attrs": {
+    "court": "C1",
+    "year": 2024,
+    "facts": "a logistics firm used a sign similar to a registered trademark for different goods, arguing no confusion was likely",
+    "outcome": "no infringement; the court distinguished the earlier ruling on identical goods, finding the goods were dissimilar"
+   }
+  }
+ },
+ "papers": {
+  "LAW-01": {
+   "title_hint": "The Divergent Paths of Data Monetization in Media and Systems",
+   "issue": "How courts have treated the commercial exploitation of user data by different types of organizations.",
+   "thesis": "While both media and systems companies face scrutiny for data monetization, the legal basis for their liability differs significantly based on the nature of the data and the consent mechanisms employed.",
+   "claims": [
+    [
+     "D25",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D8",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D25",
+     "distinguishes",
+     "D18"
+    ]
+   ],
+   "decoys": [
+    [
+     "D26",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D9",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D25",
+     "distinguishes",
+     "D19"
+    ]
+   ],
+   "focus": [
+    "D25",
+    "D8"
+   ],
+   "source": "v1-qwen40:LAW-01"
+  },
+  "LAW-02": {
+   "title_hint": "Actuarial Modeling vs. Public Health Surveillance: A Conflict of Interests",
+   "issue": "The tension between private insurance risk assessment and public health data usage.",
+   "thesis": "The Supreme Court's approach to public health data usage in D77 conflicts with the Court of Appeal's stricter interpretation of lawful basis in D64, creating a jurisdictional inconsistency regarding the definition of 'lawful basis' for sensitive data.",
+   "claims": [
+    [
+     "D64",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D77",
+     "rejects",
+     "P2"
+    ],
+    [
+     "D64",
+     "distinguishes",
+     "D47"
+    ]
+   ],
+   "decoys": [
+    [
+     "D65",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D78",
+     "rejects",
+     "P2"
+    ],
+    [
+     "D64",
+     "distinguishes",
+     "D48"
+    ]
+   ],
+   "conflict": [
+    [
+     "D64",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D77",
+     "rejects",
+     "P2"
+    ]
+   ],
+   "focus": [
+    "D64",
+    "D77"
+   ],
+   "source": "v1-qwen40:LAW-02"
+  },
+  "LAW-03": {
+   "title_hint": "Security Failures and the Rejection of Statutory Safe Harbors",
+   "issue": "Whether technical security failures constitute a rejection of statutory compliance standards.",
+   "thesis": "Both D20 and D35 demonstrate a judicial trend of rejecting the applicability of general data protection provisions when specific security breaches occur, prioritizing substantive harm over procedural compliance.",
+   "claims": [
+    [
+     "D20",
+     "rejects",
+     "P4"
+    ],
+    [
+     "D35",
+     "rejects",
+     "P4"
+    ],
+    [
+     "D20",
+     "relies_on",
+     "P1"
+    ]
+   ],
+   "decoys": [
+    [
+     "D21",
+     "rejects",
+     "P4"
+    ],
+    [
+     "D36",
+     "rejects",
+     "P4"
+    ],
+    [
+     "D20",
+     "relies_on",
+     "P2"
+    ]
+   ],
+   "focus": [
+    "D20",
+    "D35"
+   ],
+   "source": "v1-qwen40:LAW-03"
+  },
+  "LAW-04": {
+   "title_hint": "Usage-Based Insurance and the Limits of Viewer Data",
+   "issue": "The legal boundaries of using behavioral data for insurance pricing versus media programming.",
+   "thesis": "The courts have drawn a sharp line between using driving data for insurance (D54) and viewer data for media programming (D78), with the former being upheld under specific consent frameworks and the latter rejected due to lack of transparency.",
+   "claims": [
+    [
+     "D54",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D78",
+     "rejects",
+     "P2"
+    ],
+    [
+     "D54",
+     "distinguishes",
+     "D53"
+    ]
+   ],
+   "decoys": [
+    [
+     "D55",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D79",
+     "rejects",
+     "P2"
+    ],
+    [
+     "D54",
+     "distinguishes",
+     "D52"
+    ]
+   ],
+   "focus": [
+    "D54",
+    "D78"
+   ],
+   "source": "v1-qwen40:LAW-04"
+  },
+  "LAW-05": {
+   "title_hint": "Location Data and Ad Targeting: A Consistent Judicial Stance",
+   "issue": "The permissibility of using location data for advertising purposes.",
+   "thesis": "Both D12 and D60 consistently rely on the definition of personal data to uphold the legality of location-based ad targeting, provided that the data is not combined with sensitive health or financial information.",
+   "claims": [
+    [
+     "D12",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D60",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D12",
+     "distinguishes",
+     "D11"
+    ]
+   ],
+   "decoys": [
+    [
+     "D13",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D61",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D12",
+     "distinguishes",
+     "D10"
+    ]
+   ],
+   "focus": [
+    "D12",
+    "D60"
+   ],
+   "source": "v1-qwen40:LAW-05"
+  },
+  "LAW-06": {
+   "title_hint": "The Boundary of Erasure Rights in Telemedicine and Clinical Settings",
+   "issue": "Whether the right to erasure under section 3 of the Tetre Data Privacy Act applies to data stored on unsecured servers or in clinical files.",
+   "thesis": "The right to erasure is a fundamental statutory obligation that cannot be waived by storage conditions or clinical necessity, as established by the Court of Appeal and District Court.",
+   "claims": [
+    [
+     "D22",
+     "relies_on",
+     "P3"
+    ],
+    [
+     "D7",
+     "relies_on",
+     "P3"
+    ],
+    [
+     "D22",
+     "distinguishes",
+     "D5"
+    ]
+   ],
+   "decoys": [
+    [
+     "D21",
+     "relies_on",
+     "P3"
+    ],
+    [
+     "D6",
+     "relies_on",
+     "P3"
+    ],
+    [
+     "D22",
+     "distinguishes",
+     "D4"
+    ]
+   ],
+   "focus": [
+    "D22",
+    "D7"
+   ],
+   "source": "v1-qwen40:LAW-06"
+  },
+  "LAW-07": {
+   "title_hint": "Consent and Lawful Basis in Early Data Processing Disputes",
+   "issue": "The interpretation of lawful basis for processing when consent is absent in marketing and product development contexts.",
+   "thesis": "Section 2 of the Tetre Data Privacy Act requires explicit consent for secondary uses of data, a standard applied consistently in early District Court rulings.",
+   "claims": [
+    [
+     "D46",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D50",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D50",
+     "distinguishes",
+     "D1"
+    ]
+   ],
+   "decoys": [
+    [
+     "D47",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D51",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D50",
+     "distinguishes",
+     "D2"
+    ]
+   ],
+   "focus": [
+    "D46",
+    "D50"
+   ],
+   "source": "v1-qwen40:LAW-07"
+  },
+  "LAW-08": {
+   "title_hint": "Divergent Interpretations of Lawful Basis in Financial and Insurance Sectors",
+   "issue": "The conflict between relying on and rejecting section 2 of the Tetre Data Privacy Act in credit scoring and dynamic pricing cases.",
+   "thesis": "There is a judicial split regarding whether transaction and health data can be processed under a legitimate interest basis without explicit consent, with the District Court rejecting the provision in insurance contexts while relying on it in banking.",
+   "claims": [
+    [
+     "D56",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D59",
+     "rejects",
+     "P2"
+    ],
+    [
+     "D56",
+     "distinguishes",
+     "D54"
+    ]
+   ],
+   "decoys": [
+    [
+     "D57",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D58",
+     "rejects",
+     "P2"
+    ],
+    [
+     "D56",
+     "distinguishes",
+     "D55"
+    ]
+   ],
+   "focus": [
+    "D56",
+    "D59"
+   ],
+   "source": "v1-qwen40:LAW-08"
+  },
+  "LAW-09": {
+   "title_hint": "Metadata and Dark Patterns: The Limits of Data Protection",
+   "issue": "How courts treat metadata tracking and dark pattern data collection under the Tetre Data Privacy Act.",
+   "thesis": "Courts distinguish between passive metadata collection and active dark patterns, rejecting the applicability of breach notification provisions to design flaws while relying on definition clauses.",
+   "claims": [
+    [
+     "D18",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D21",
+     "rejects",
+     "P4"
+    ],
+    [
+     "D21",
+     "distinguishes",
+     "D18"
+    ]
+   ],
+   "decoys": [
+    [
+     "D19",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D20",
+     "rejects",
+     "P4"
+    ],
+    [
+     "D21",
+     "distinguishes",
+     "D19"
+    ]
+   ],
+   "focus": [
+    "D18",
+    "D21"
+   ],
+   "source": "v1-qwen40:LAW-09"
+  },
+  "LAW-10": {
+   "title_hint": "Voice Data and Fraud Prevention: A Comparative Analysis",
+   "issue": "The legal treatment of voice data for content moderation versus geolocation data for fraud detection.",
+   "thesis": "The Supreme Court and Court of Appeal apply different standards to biometric and location data, with the Supreme Court relying on the definition of personal data for voice moderation while the Court of Appeal relies on lawful basis for fraud prevention.",
+   "claims": [
+    [
+     "D43",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D66",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D43",
+     "distinguishes",
+     "D38"
+    ]
+   ],
+   "decoys": [
+    [
+     "D44",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D67",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D43",
+     "distinguishes",
+     "D39"
+    ]
+   ],
+   "focus": [
+    "D43",
+    "D66"
+   ],
+   "source": "v1-qwen40:LAW-10"
+  },
+  "LAW-11": {
+   "title_hint": "The Divergent Paths of Genetic and Biometric Data in Tetre Jurisprudence",
+   "issue": "How the Tetre courts have treated sensitive data categories (genetic vs. biometric) under the Data Privacy Act.",
+   "thesis": "While the Supreme Court has established a strict standard for genetic data processing, the District Court has applied a more flexible interpretation to biometric verification, creating a potential inconsistency in the protection of sensitive personal data.",
+   "claims": [
+    [
+     "D42",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D42",
+     "distinguishes",
+     "D37"
+    ],
+    [
+     "D61",
+     "relies_on",
+     "P1"
+    ]
+   ],
+   "decoys": [
+    [
+     "D44",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D42",
+     "distinguishes",
+     "D38"
+    ],
+    [
+     "D60",
+     "relies_on",
+     "P1"
+    ]
+   ],
+   "focus": [
+    "D42",
+    "D61"
+   ],
+   "source": "v1-qwen40:LAW-11"
+  },
+  "LAW-12": {
+   "title_hint": "Health Data and Gaming Metrics: A Comparative Analysis of Lawful Basis",
+   "issue": "The application of the 'lawful basis for processing' provision to health data versus behavioral data in gaming.",
+   "thesis": "The Court of Appeal and District Court have consistently relied on Section 2 of the Data Privacy Act to validate processing of health and gaming data, suggesting a unified approach to 'legitimate interest' in non-financial sectors.",
+   "claims": [
+    [
+     "D27",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D27",
+     "distinguishes",
+     "D22"
+    ],
+    [
+     "D70",
+     "relies_on",
+     "P2"
+    ]
+   ],
+   "decoys": [
+    [
+     "D26",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D27",
+     "distinguishes",
+     "D21"
+    ],
+    [
+     "D71",
+     "relies_on",
+     "P2"
+    ]
+   ],
+   "focus": [
+    "D27",
+    "D70"
+   ],
+   "source": "v1-qwen40:LAW-12"
+  },
+  "LAW-13": {
+   "title_hint": "Conflicting Interpretations of Data Breach Notification Duties",
+   "issue": "Whether the duty to notify of data breaches under Section 4 applies to all data types or only specific categories.",
+   "thesis": "There is a direct conflict in the jurisprudence regarding Section 4: the Court of Appeal has rejected its application in certain contexts, while the District Court has relied on it to establish liability, indicating a lack of clarity in the statute's scope.",
+   "claims": [
+    [
+     "D23",
+     "rejects",
+     "P4"
+    ],
+    [
+     "D6",
+     "relies_on",
+     "P4"
+    ],
+    [
+     "D6",
+     "distinguishes",
+     "D5"
+    ]
+   ],
+   "decoys": [
+    [
+     "D21",
+     "rejects",
+     "P4"
+    ],
+    [
+     "D7",
+     "relies_on",
+     "P3"
+    ],
+    [
+     "D6",
+     "distinguishes",
+     "D4"
+    ]
+   ],
+   "conflict": [
+    [
+     "D23",
+     "rejects",
+     "P4"
+    ],
+    [
+     "D6",
+     "relies_on",
+     "P4"
+    ]
+   ],
+   "focus": [
+    "D23",
+    "D6"
+   ],
+   "source": "v1-qwen40:LAW-13"
+  },
+  "LAW-14": {
+   "title_hint": "The Evolution of Consent Standards in Health and Insurance Sectors",
+   "issue": "How the definition of personal data and consent requirements have evolved in health and insurance cases.",
+   "thesis": "Both the District Court and Court of Appeal have moved towards a stricter interpretation of consent for health and insurance data, relying heavily on the foundational definition in Section 1 to expand the scope of protected data.",
+   "claims": [
+    [
+     "D2",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D2",
+     "distinguishes",
+     "D1"
+    ],
+    [
+     "D69",
+     "relies_on",
+     "P1"
+    ]
+   ],
+   "decoys": [
+    [
+     "D3",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D2",
+     "distinguishes",
+     "D46"
+    ],
+    [
+     "D68",
+     "relies_on",
+     "P1"
+    ]
+   ],
+   "focus": [
+    "D2",
+    "D69"
+   ],
+   "source": "v1-qwen40:LAW-14"
+  },
+  "LAW-15": {
+   "title_hint": "Media and Health: Distinguishing Public Interest from Private Rights",
+   "issue": "The balance between media freedom and data privacy rights in the context of public figures and patient data.",
+   "thesis": "The courts have distinguished between media processing of public figure data and health processing of patient data, applying different standards of 'lawful basis' and 'definition of personal data' to these distinct contexts.",
+   "claims": [
+    [
+     "D3",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D3",
+     "distinguishes",
+     "D2"
+    ],
+    [
+     "D52",
+     "relies_on",
+     "P2"
+    ]
+   ],
+   "decoys": [
+    [
+     "D4",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D3",
+     "distinguishes",
+     "D1"
+    ],
+    [
+     "D51",
+     "relies_on",
+     "P2"
+    ]
+   ],
+   "focus": [
+    "D3",
+    "D52"
+   ],
+   "source": "v1-qwen40:LAW-15"
+  },
+  "LAW-16": {
+   "title_hint": "The Erosion of Erasure Rights in the Digital Age",
+   "issue": "Whether the right to erasure under section 3 of the Tetre Data Privacy Act applies to data retained after account deletion or used for voice control features.",
+   "thesis": "Recent decisions have narrowed the scope of the right to erasure, distinguishing it from general data processing obligations, creating a gap in protection for users who delete accounts or use smart devices.",
+   "claims": [
+    [
+     "D13",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D13",
+     "distinguishes",
+     "D7"
+    ],
+    [
+     "D75",
+     "relies_on",
+     "P2"
+    ]
+   ],
+   "decoys": [
+    [
+     "D13",
+     "relies_on",
+     "P3"
+    ],
+    [
+     "D75",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D73",
+     "relies_on",
+     "P2"
+    ]
+   ],
+   "focus": [
+    "D13",
+    "D75"
+   ],
+   "source": "v1-qwen40:LAW-16"
+  },
+  "LAW-17": {
+   "title_hint": "Surveillance and the Definition of Personal Data",
+   "issue": "How the definition of personal data in section 1 of the Tetre Data Privacy Act is applied to state surveillance and social media metadata.",
+   "thesis": "The Supreme Court and Court of Appeal have consistently relied on the broad definition of personal data to invalidate surveillance practices, establishing a high threshold for state and corporate monitoring.",
+   "claims": [
+    [
+     "D38",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D38",
+     "distinguishes",
+     "D33"
+    ],
+    [
+     "D68",
+     "relies_on",
+     "P1"
+    ]
+   ],
+   "decoys": [
+    [
+     "D38",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D68",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D69",
+     "relies_on",
+     "P1"
+    ]
+   ],
+   "focus": [
+    "D38",
+    "D68"
+   ],
+   "source": "v1-qwen40:LAW-17"
+  },
+  "LAW-18": {
+   "title_hint": "Biometric Data and the Lawful Basis for Processing",
+   "issue": "The legal basis required for processing biometric data for identity verification and the use of listener data for content curation.",
+   "thesis": "Courts are increasingly requiring explicit consent or a specific lawful basis under section 2 for biometric processing, while distinguishing these cases from general data usage in media contexts.",
+   "claims": [
+    [
+     "D16",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D16",
+     "distinguishes",
+     "D1"
+    ],
+    [
+     "D73",
+     "relies_on",
+     "P2"
+    ]
+   ],
+   "decoys": [
+    [
+     "D16",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D73",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D72",
+     "relies_on",
+     "P2"
+    ]
+   ],
+   "focus": [
+    "D16",
+    "D73"
+   ],
+   "source": "v1-qwen40:LAW-18"
+  },
+  "LAW-20": {
+   "title_hint": "Geolocation Data and National Risk Assessment",
+   "issue": "The use of geolocation data for fraud detection and census data for risk assessment in the insurance sector.",
+   "thesis": "The Supreme Court has established that the use of census data for risk assessment is distinct from the use of real-time geolocation data for fraud detection, applying different standards of lawful basis.",
+   "claims": [
+    [
+     "D31",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D34",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D34",
+     "distinguishes",
+     "D1"
+    ]
+   ],
+   "decoys": [
+    [
+     "D31",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D34",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D33",
+     "relies_on",
+     "P1"
+    ]
+   ],
+   "focus": [
+    "D31",
+    "D34"
+   ],
+   "source": "v1-qwen40:LAW-20"
+  },
+  "LAW-21": {
+   "title_hint": "The Scope of Public Health Research and Wearable Data in Insurance",
+   "issue": "Whether public health agencies and insurers can process sensitive data for research and underwriting purposes under the Tetre Data Privacy Act.",
+   "thesis": "The Supreme Court's ruling in Mizun v. Manostal Health establishes that public health research is a valid lawful basis for processing, while the District Court in Stagelol v. Bikrem Insurance confirms that insurers must rely on explicit consent for wearable data, distinguishing it from general health data.",
+   "claims": [
+    [
+     "D37",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D37",
+     "distinguishes",
+     "D32"
+    ],
+    [
+     "D49",
+     "relies_on",
+     "P2"
+    ]
+   ],
+   "decoys": [
+    [
+     "D37",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D49",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D49",
+     "distinguishes",
+     "D48"
+    ]
+   ],
+   "focus": [
+    "D37",
+    "D49"
+   ],
+   "source": "v1-qwen40:LAW-21"
+  },
+  "LAW-23": {
+   "title_hint": "Media Surveillance and the Limits of Lawful Basis",
+   "issue": "How media organizations justify the processing of reader and subscriber data for advertising and surveillance purposes.",
+   "thesis": "The District Court in Brufegro v. Zogrus Media relied on the lawful basis provision to permit personalized ads, while in Gothukur v. Didota Insurance, the court relied on the definition of personal data to assess the scope of social media monitoring, distinguishing it from earlier media cases.",
+   "claims": [
+    [
+     "D48",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D9",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D9",
+     "distinguishes",
+     "D3"
+    ]
+   ],
+   "decoys": [
+    [
+     "D48",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D9",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D9",
+     "distinguishes",
+     "D4"
+    ]
+   ],
+   "focus": [
+    "D48",
+    "D9"
+   ],
+   "source": "v1-qwen40:LAW-23"
+  },
+  "LAW-24": {
+   "title_hint": "State Scoring and Travel Data in National Insurance",
+   "issue": "The permissibility of using state transaction data for social scoring and travel data for risk assessment by national insurers.",
+   "thesis": "The Supreme Court in Zuman v. Stotros Bank relied on the definition of personal data to scrutinize social scoring, while in Trabror v. Dikikris Insurance, the court relied on the same provision to validate travel data usage, creating a tension in how 'personal data' is applied to state-level processing.",
+   "claims": [
+    [
+     "D41",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D44",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D41",
+     "distinguishes",
+     "D36"
+    ]
+   ],
+   "decoys": [
+    [
+     "D41",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D44",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D44",
+     "distinguishes",
+     "D39"
+    ]
+   ],
+   "focus": [
+    "D41",
+    "D44"
+   ],
+   "source": "v1-qwen40:LAW-24"
+  },
+  "LAW-26": {
+   "title_hint": "The Evolving Scope of Lawful Basis in Automated and AI-Driven Processing",
+   "issue": "How courts interpret the lawful basis for processing (Section 2) in the context of automated decision-making and AI model training.",
+   "thesis": "Recent decisions have expanded the application of Section 2 to cover complex algorithmic and AI-driven data processing, moving beyond traditional consent models.",
+   "claims": [
+    [
+     "D11",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D57",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D11",
+     "distinguishes",
+     "D10"
+    ]
+   ],
+   "decoys": [
+    [
+     "D12",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D56",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D11",
+     "distinguishes",
+     "D9"
+    ]
+   ],
+   "focus": [
+    "D11",
+    "D57"
+   ],
+   "source": "v1-qwen40:LAW-26"
+  },
+  "LAW-27": {
+   "title_hint": "Defining Personal Data in Health and Financial Contexts",
+   "issue": "The judicial interpretation of 'personal data' (Section 1) across different sectors, specifically health research and credit scoring.",
+   "thesis": "Courts consistently apply Section 1 to define the scope of protected data in both health and financial sectors, establishing a uniform standard for what constitutes personal data.",
+   "claims": [
+    [
+     "D19",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D47",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D19",
+     "distinguishes",
+     "D18"
+    ]
+   ],
+   "decoys": [
+    [
+     "D18",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D48",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D19",
+     "distinguishes",
+     "D17"
+    ]
+   ],
+   "focus": [
+    "D19",
+    "D47"
+   ],
+   "source": "v1-qwen40:LAW-27"
+  },
+  "LAW-28": {
+   "title_hint": "Biometric and Health Data: The Boundary of Lawful Processing",
+   "issue": "The legal status of processing sensitive biometric and health data for wellness and identification purposes under Section 2.",
+   "thesis": "Decisions regarding biometric identification and health data for wellness insights rely on Section 2 to determine if the processing has a valid lawful basis, often distinguishing between commercial and health-related uses.",
+   "claims": [
+    [
+     "D28",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D72",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D28",
+     "distinguishes",
+     "D27"
+    ]
+   ],
+   "decoys": [
+    [
+     "D27",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D71",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D28",
+     "distinguishes",
+     "D26"
+    ]
+   ],
+   "focus": [
+    "D28",
+    "D72"
+   ],
+   "source": "v1-qwen40:LAW-28"
+  },
+  "LAW-29": {
+   "title_hint": "Conflicting Approaches to Data Breach Notification and Employee Monitoring",
+   "issue": "The divergence in judicial treatment of data security obligations (Section 4) and employee data processing (Section 2).",
+   "thesis": "There is a significant conflict in how courts treat data breach notification obligations versus the lawful basis for employee monitoring, with some decisions rejecting the applicability of Section 4 in specific contexts while others rely on Section 2 for monitoring.",
+   "claims": [
+    [
+     "D14",
+     "rejects",
+     "P4"
+    ],
+    [
+     "D26",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D14",
+     "distinguishes",
+     "D13"
+    ]
+   ],
+   "decoys": [
+    [
+     "D15",
+     "rejects",
+     "P4"
+    ],
+    [
+     "D25",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D14",
+     "distinguishes",
+     "D12"
+    ]
+   ],
+   "focus": [
+    "D14",
+    "D26"
+   ],
+   "source": "v1-qwen40:LAW-29"
+  },
+  "LAW-31": {
+   "title_hint": "The Divergent Paths of Data Utilization in Financial and Corporate Sectors",
+   "issue": "How courts have interpreted the lawful basis for processing personal data in banking and corporate monitoring contexts.",
+   "thesis": "Recent appellate decisions have established a stricter standard for 'legitimate interest' in financial services compared to general corporate environments, leading to inconsistent application of Section 2 of the Tetre Data Privacy Act.",
+   "claims": [
+    [
+     "D24",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D71",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D24",
+     "distinguishes",
+     "D19"
+    ]
+   ],
+   "decoys": [
+    [
+     "D25",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D72",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D24",
+     "distinguishes",
+     "D18"
+    ]
+   ],
+   "focus": [
+    "D24",
+    "D71"
+   ],
+   "source": "v1-qwen40:LAW-31"
+  },
+  "LAW-33": {
+   "title_hint": "Conflicting Interpretations of Lawful Basis in Data Breach and Recommendation Systems",
+   "issue": "The tension between security obligations and data processing rights in the context of breach notification and algorithmic recommendations.",
+   "thesis": "There is a significant conflict in the jurisprudence regarding the application of Section 2 of the Tetre Data Privacy Act, with some decisions rejecting its applicability in specific technological contexts while others rely on it, creating legal uncertainty for data controllers.",
+   "claims": [
+    [
+     "D5",
+     "rejects",
+     "P2"
+    ],
+    [
+     "D58",
+     "rejects",
+     "P2"
+    ],
+    [
+     "D5",
+     "distinguishes",
+     "D1"
+    ]
+   ],
+   "decoys": [
+    [
+     "D6",
+     "rejects",
+     "P2"
+    ],
+    [
+     "D59",
+     "rejects",
+     "P2"
+    ],
+    [
+     "D5",
+     "distinguishes",
+     "D2"
+    ]
+   ],
+   "focus": [
+    "D5",
+    "D58"
+   ],
+   "source": "v1-qwen40:LAW-33"
+  },
+  "LAW-34": {
+   "title_hint": "Underwriting and Cross-Border Transfers: The Role of Data Privacy Provisions",
+   "issue": "The legal treatment of sensitive data in insurance underwriting and the regulation of cross-border data transfers.",
+   "thesis": "The Tetre Supreme Court and Court of Appeal have adopted a protective stance towards sensitive data in insurance underwriting, while simultaneously enforcing strict compliance with cross-border transfer regulations, highlighting a dual focus on data sensitivity and jurisdictional integrity.",
+   "claims": [
+    [
+     "D29",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D36",
+     "relies_on",
+     "P5"
+    ],
+    [
+     "D29",
+     "distinguishes",
+     "D21"
+    ]
+   ],
+   "decoys": [
+    [
+     "D30",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D37",
+     "relies_on",
+     "P5"
+    ],
+    [
+     "D29",
+     "distinguishes",
+     "D22"
+    ]
+   ],
+   "focus": [
+    "D29",
+    "D36"
+   ],
+   "source": "v1-qwen40:LAW-34"
+  },
+  "LAW-35": {
+   "title_hint": "Anonymization and Location Data: Evolving Standards in Health and Banking",
+   "issue": "The legal status of anonymized data in health research and the use of location data in banking services.",
+   "thesis": "Courts have recognized the value of anonymized data for public health research while imposing strict limitations on the use of location data in banking, reflecting a nuanced approach to data privacy that balances public interest with individual rights.",
+   "claims": [
+    [
+     "D17",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D51",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D17",
+     "distinguishes",
+     "D1"
+    ]
+   ],
+   "decoys": [
+    [
+     "D18",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D52",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D17",
+     "distinguishes",
+     "D46"
+    ]
+   ],
+   "focus": [
+    "D17",
+    "D51"
+   ],
+   "source": "v1-qwen40:LAW-35"
+  },
+  "LAW-36": {
+   "title_hint": "The Divergent Paths of State Surveillance and Geolocation Privacy",
+   "issue": "How the Tetre Supreme Court and Court of Appeal have interpreted the scope of personal data protection in the context of state media operations versus modern banking geolocation services.",
+   "thesis": "While the Supreme Court in D33 established a broad definition of personal data for state actors, the Court of Appeal in D76 has applied a narrower, functional interpretation to geolocation data, creating a jurisdictional split on the definition of sensitive data.",
+   "claims": [
+    [
+     "D33",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D76",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D76",
+     "relies_on",
+     "P2"
+    ]
+   ],
+   "decoys": [
+    [
+     "D38",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D31",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D76",
+     "relies_on",
+     "P3"
+    ]
+   ],
+   "focus": [
+    "D33",
+    "D76"
+   ],
+   "source": "v1-qwen40:LAW-36"
+  },
+  "LAW-37": {
+   "title_hint": "Genetic Data and the Limits of Lawful Basis: A Comparative Analysis",
+   "issue": "The tension between using genetic data for insurance underwriting and using subscriber data for media cross-promotion under the lawful basis provisions.",
+   "thesis": "D4 and D53 both rely on the definition of personal data (P1) but diverge in their application of lawful basis (P2), with D4 rejecting the sufficiency of consent for genetic data while D53 upholding it for commercial media use.",
+   "claims": [
+    [
+     "D4",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D53",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D53",
+     "relies_on",
+     "P2"
+    ]
+   ],
+   "decoys": [
+    [
+     "D4",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D53",
+     "relies_on",
+     "P3"
+    ],
+    [
+     "D49",
+     "relies_on",
+     "P1"
+    ]
+   ],
+   "focus": [
+    "D4",
+    "D53"
+   ],
+   "source": "v1-qwen40:LAW-37"
+  },
+  "LAW-38": {
+   "title_hint": "Tax Data and Reader Data: The Boundary of Personal Information",
+   "issue": "Whether tax data used for premium calculation and reader data used for content personalization constitute the same category of personal data under Section 1.",
+   "thesis": "Both D39 and D63 rely on P1 to define the scope of personal data, but D39's use of state tax data represents a more intrusive form of processing than D63's commercial reader data, yet both are treated as valid under the current statutory definition.",
+   "claims": [
+    [
+     "D39",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D63",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D39",
+     "relies_on",
+     "P2"
+    ]
+   ],
+   "decoys": [
+    [
+     "D34",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D63",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D39",
+     "relies_on",
+     "P3"
+    ]
+   ],
+   "focus": [
+    "D39",
+    "D63"
+   ],
+   "source": "v1-qwen40:LAW-38"
+  },
+  "LAW-40": {
+   "title_hint": "Security Failures in Smart Devices and National Clouds",
+   "issue": "The legal consequences of failing to secure data in consumer smart home devices versus national government cloud services.",
+   "thesis": "Both D30 and D45 involve security failures, but D30 relies on the definition of personal data (P1) to establish liability for a smart home device, whereas D45, as a 2025 Supreme Court decision, has not yet established a specific reliance on P1 in the provided facts, suggesting a potential gap in the application of data privacy statutes to national infrastructure.",
+   "claims": [
+    [
+     "D30",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D45",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D30",
+     "relies_on",
+     "P2"
+    ]
+   ],
+   "decoys": [
+    [
+     "D45",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D30",
+     "relies_on",
+     "P3"
+    ],
+    [
+     "D40",
+     "relies_on",
+     "P1"
+    ]
+   ],
+   "focus": [
+    "D30",
+    "D45"
+   ],
+   "source": "v1-qwen40:LAW-40"
+  },
+  "LAW-41": {
+   "title_hint": "The Supreme Court's Divergent Paths on Genetic and Surveillance Data",
+   "issue": "How the Tetre Supreme Court has interpreted the scope of personal data protection in cases involving genetic research versus state surveillance.",
+   "thesis": "While the Supreme Court consistently relies on the definition of personal data (P1) to protect citizens, it distinguishes between the contexts of health research and media surveillance, leading to different applications of the lawful basis for processing (P2).",
+   "claims": [
+    [
+     "D33",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D42",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D42",
+     "relies_on",
+     "P2"
+    ]
+   ],
+   "decoys": [
+    [
+     "D38",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D37",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D42",
+     "relies_on",
+     "P3"
+    ]
+   ],
+   "focus": [
+    "D33",
+    "D42"
+   ],
+   "source": "v1-qwen40:LAW-41"
+  },
+  "LAW-42": {
+   "title_hint": "Rejecting Breach Notification: A Comparative Analysis of Government and Banking Failures",
+   "issue": "The legal basis for rejecting the data breach notification provision (P4) in cases of systemic security failures.",
+   "thesis": "Both the Supreme Court and the Court of Appeal have rejected the applicability of the data breach notification provision (P4) when the failure is systemic rather than a single incident, prioritizing the definition of personal data (P1) in their rulings.",
+   "claims": [
+    [
+     "D35",
+     "rejects",
+     "P4"
+    ],
+    [
+     "D66",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D35",
+     "relies_on",
+     "P1"
+    ]
+   ],
+   "decoys": [
+    [
+     "D36",
+     "rejects",
+     "P4"
+    ],
+    [
+     "D65",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D35",
+     "relies_on",
+     "P2"
+    ]
+   ],
+   "focus": [
+    "D35",
+    "D66"
+   ],
+   "source": "v1-qwen40:LAW-42"
+  },
+  "LAW-43": {
+   "title_hint": "Dark Patterns and Unsecured Servers: The Court of Appeal's Stance on Data Integrity",
+   "issue": "The interplay between the right to erasure (P3) and the rejection of breach notification (P4) in cases involving deceptive data collection and security negligence.",
+   "thesis": "The Court of Appeal distinguishes between active deception (dark patterns) and passive negligence (unsecured servers), relying on the right to erasure (P3) in both but rejecting the breach notification provision (P4) in the deception case.",
+   "claims": [
+    [
+     "D21",
+     "rejects",
+     "P4"
+    ],
+    [
+     "D22",
+     "relies_on",
+     "P3"
+    ],
+    [
+     "D21",
+     "relies_on",
+     "P3"
+    ]
+   ],
+   "decoys": [
+    [
+     "D20",
+     "rejects",
+     "P4"
+    ],
+    [
+     "D21",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D22",
+     "relies_on",
+     "P2"
+    ]
+   ],
+   "focus": [
+    "D21",
+    "D22"
+   ],
+   "source": "v1-qwen40:LAW-43"
+  },
+  "LAW-44": {
+   "title_hint": "From Bank Retention to Connected Cars: The Evolution of Lawful Basis Interpretations",
+   "issue": "The shift in judicial interpretation of the lawful basis for processing (P2) from early bank data retention cases to modern connected vehicle data usage.",
+   "thesis": "The Tetre District Court's early reliance on the definition of personal data (P1) in bank cases has evolved into a more nuanced application of the lawful basis for processing (P2) in the Court of Appeal's handling of connected car data, distinguishing earlier precedents.",
+   "claims": [
+    [
+     "D1",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D24",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D24",
+     "distinguishes",
+     "D18"
+    ]
+   ],
+   "decoys": [
+    [
+     "D2",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D25",
+     "relies_on",
+     "P2"
+    ],
+    [
+     "D24",
+     "distinguishes",
+     "D19"
+    ]
+   ],
+   "focus": [
+    "D1",
+    "D24"
+   ],
+   "source": "v1-qwen40:LAW-44"
+  },
+  "LAW-45": {
+   "title_hint": "The Conflict of Interests: Mental Health Data vs. Travel Data in Insurance Underwriting",
+   "issue": "The contradictory judicial treatment of the definition of personal data (P1) in insurance underwriting cases involving sensitive health data versus travel data.",
+   "thesis": "A conflict arises in the Tetre legal system where the Court of Appeal relies on the definition of personal data (P1) to protect mental health data, while the Supreme Court relies on the same provision to permit the use of travel data for risk assessment, creating a tension in the scope of 'personal data'.",
+   "claims": [
+    [
+     "D29",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D44",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D44",
+     "relies_on",
+     "P2"
+    ]
+   ],
+   "decoys": [
+    [
+     "D28",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D43",
+     "relies_on",
+     "P1"
+    ],
+    [
+     "D44",
+     "relies_on",
+     "P3"
+    ]
+   ],
+   "focus": [
+    "D29",
+    "D44"
+   ],
+   "source": "v1-qwen40:LAW-45"
+  },
+  "LAW-47": {
+   "title_hint": "The Divergent Paths of Data Breach Liability and Erasure Rights in Tetre Jurisprudence",
+   "issue": "How the Tetre courts have interpreted the scope of data breach notification duties versus the right to erasure, specifically regarding the rejection of statutory notification requirements in favor of broader privacy protections.",
+   "thesis": "Recent District Court decisions have moved away from strict reliance on the data breach notification provision (Section 4) in favor of applying the right to erasure (Section 3) and distinguishing earlier precedents to protect individual privacy from systemic data retention failures.",
+   "claims": [
+    [
+     "D14",
+     "rejects",
+     "P4"
+    ],
+    [
+     "D6",
+     "relies_on",
+     "P4"
+    ],
+    [
+     "D14",
+     "distinguishes",
+     "D12"
+    ]
+   ],
+   "decoys": [
+    [
+     "D15",
+     "rejects",
+     "P4"
+    ],
+    [
+     "D5",
+     "relies_on",
+     "P4"
+    ],
+    [
+     "D13",
+     "distinguishes",
+     "D12"
+    ]
+   ],
+   "conflict": [
+    [
+     "D14",
+     "rejects",
+     "P4"
+    ],
+    [
+     "D6",
+     "relies_on",
+     "P4"
+    ]
+   ],
+   "focus": [
+    "D14",
+    "D6"
+   ],
+   "source": "v1-qwen40:LAW-47"
+  },
+  "LAW-48": {
+   "title_hint": "The Threshold of Insolvency: Timeliness and the Ability to Pay",
+   "issue": "Determining the precise moment a debtor is considered 'unable to pay debts as they fall due' for the purpose of commencing insolvency proceedings, particularly in light of recent asset realizations.",
+   "thesis": "The statutory test for commencing insolvency proceedings under section 4 is a point-in-time assessment of liquidity; a recent large asset sale that restores solvency at the moment of application negates the statutory basis for opening proceedings, even if prior defaults existed.",
+   "claims": [
+    [
+     "AD1",
+     "relies_on",
+     "AP1"
+    ],
+    [
+     "AD6",
+     "rejects",
+     "AP1"
+    ],
+    [
+     "AD6",
+     "distinguishes",
+     "AD1"
+    ]
+   ],
+   "decoys": [
+    [
+     "AD2",
+     "relies_on",
+     "AP1"
+    ],
+    [
+     "AD6",
+     "distinguishes",
+     "AD2"
+    ],
+    [
+     "AD6",
+     "rejects",
+     "AP2"
+    ]
+   ],
+   "focus": [
+    "AD1",
+    "AD6"
+   ],
+   "cluster": "A",
+   "source": "v2p3:LAW-01"
+  },
+  "LAW-49": {
+   "title_hint": "Proportionality and Access: Divergent Standards in Administrative Sanctions and Information Rights",
+   "issue": "How courts balance the proportionality of administrative sanctions against the right to access information, and whether these principles operate independently or in tension.",
+   "thesis": "The Tetre courts apply a strict proportionality test to administrative sanctions (BD5) while maintaining a narrower, privacy-focused interpretation of access to information rights (BD1), indicating that procedural fairness in sanctioning is distinct from substantive access rights.",
+   "claims": [
+    [
+     "BD5",
+     "relies_on",
+     "BP3"
+    ],
+    [
+     "BD1",
+     "relies_on",
+     "BP4"
+    ],
+    [
+     "BD5",
+     "rejects",
+     "BP4"
+    ]
+   ],
+   "decoys": [
+    [
+     "BD2",
+     "relies_on",
+     "BP3"
+    ],
+    [
+     "BD4",
+     "relies_on",
+     "BP4"
+    ],
+    [
+     "BD5",
+     "rejects",
+     "BP1"
+    ]
+   ],
+   "conflict": [
+    [
+     "BD1",
+     "relies_on",
+     "BP4"
+    ],
+    [
+     "BD5",
+     "rejects",
+     "BP4"
+    ]
+   ],
+   "focus": [
+    "BD1",
+    "BD5"
+   ],
+   "cluster": "B",
+   "source": "v2p3:LAW-05"
+  },
+  "LAW-50": {
+   "title_hint": "Divergent Paths in Intellectual Property: Ownership and Infringement Standards",
+   "issue": "How do courts interpret the Tetre Intellectual Property Act regarding copyright ownership versus trademark infringement?",
+   "thesis": "The application of the Tetre Intellectual Property Act reveals a strict adherence to statutory definitions for copyright ownership (Section 4) and trademark infringement (Section 25), but with distinct evidentiary thresholds for each.",
+   "claims": [
+    [
+     "CD1",
+     "relies_on",
+     "CP1"
+    ],
+    [
+     "CD3",
+     "relies_on",
+     "CP3"
+    ],
+    [
+     "CD1",
+     "rejects",
+     "CP3"
+    ]
+   ],
+   "decoys": [
+    [
+     "CD3",
+     "relies_on",
+     "CP1"
+    ],
+    [
+     "CD1",
+     "relies_on",
+     "CP2"
+    ],
+    [
+     "CD3",
+     "relies_on",
+     "CP4"
+    ]
+   ],
+   "conflict": [
+    [
+     "CD1",
+     "rejects",
+     "CP3"
+    ],
+    [
+     "CD3",
+     "relies_on",
+     "CP3"
+    ]
+   ],
+   "focus": [
+    "CD1",
+    "CD3"
+   ],
+   "cluster": "C",
+   "source": "v2p3:LAW-09"
+  }
+ },
+ "joins": {
+  "sources": [
+   "v1-qwen40",
+   "v2p3"
+  ],
+  "unified": {
+   "v2p3:C1": "C1",
+   "v2p3:C2": "C2",
+   "v2p3:C3": "C3"
+  },
+  "ids": {},
+  "papers": {
+   "v2p3:LAW-01": "LAW-48",
+   "v2p3:LAW-05": "LAW-49",
+   "v2p3:LAW-09": "LAW-50"
+  },
+  "renamed_words": {
+   "v2p3:rubrothes": "teman",
+   "v2p3:sadepo": "fudro",
+   "v2p3:stupus": "gipol",
+   "v2p3:zudur": "bepor",
+   "v2p3:pomuthel": "rahus",
+   "v2p3:hemem": "hatrom",
+   "v2p3:kuhizun": "krafego",
+   "v2p3:trefezer": "pakis",
+   "v2p3:kikom": "stogrotul",
+   "v2p3:bruse": "kezer",
+   "v2p3:hutheno": "thome",
+   "v2p3:pagre": "stako",
+   "v2p3:povul": "beketrel",
+   "v2p3:pugram": "krerer",
+   "v2p3:dravun": "dagize",
+   "v2p3:laper": "bragres",
+   "v2p3:didota": "faduther",
+   "v2p3:gothukur": "drodramum",
+   "v2p3:mokrol": "stogro",
+   "v2p3:vubravum": "fopemar",
+   "v2p3:begon": "thohim",
+   "v2p3:bomebros": "tupem",
+   "v2p3:thisas": "brove",
+   "v2p3:ribror": "rader",
+   "v2p3:drede": "trokruver",
+   "v2p3:graro": "nuveden",
+   "v2p3:stogretron": "folano",
+   "v2p3:stadrer": "thosedrir",
+   "v2p3:polotrim": "tedros",
+   "v2p3:roham": "drekre",
+   "v2p3:truvin": "mehur",
+   "v2p3:medar": "pothar",
+   "v2p3:sunen": "hoger",
+   "v2p3:thegom": "naser",
+   "v2p3:lofilom": "rezithal",
+   "v2p3:rizal": "thakon"
+  },
+  "clashes": []
+ },
+ "clusters": [
+  {
+   "id": "A",
+   "topic": {
+    "id": "T12509",
+    "name": "Corporate Insolvency and Governance",
+    "subfield": "Law",
+    "description": "This cluster of papers focuses on the global landscape of bankruptcy law, financial distress, and corporate governance. It explores topics such as debt enforcement, turnaround strategies, creditor protection, insolvency proceedings, and cross-border insolvency. The research delves into the implications of Chapter 11 bankruptcy, debtor-in-possession financing, and the legal and economic dimensions of financial distress.",
+    "keywords": [
+     "insolvency law",
+     "insolvency proceedings",
+     "bankruptcy",
+     "creditor protection",
+     "corporate insolvency",
+     "corporate restructuring",
+     "insolvency",
+     "insolvency law reform"
+    ],
+    "works": 146292
+   }
+  },
+  {
+   "id": "B",
+   "topic": {
+    "id": "T12986",
+    "name": "Administrative Law and Governance",
+    "subfield": "Law",
+    "description": "This cluster of papers covers a wide range of topics related to public administration, legal studies, and governance. It includes discussions on transparency, constitutional law, environmental law, citizen participation, judicial review, and measures for preventing corruption. The cluster also delves into the legal frameworks within the European Union and the impact of new technologies on government operations.",
+    "keywords": [
+     "administrative law",
+     "administrative procedure",
+     "administrative litigation",
+     "administrative courts",
+     "administrative liability",
+     "administrative sanctions",
+     "public law",
+     "administrative discretion"
+    ],
+    "works": 452103
+   }
+  },
+  {
+   "id": "C",
+   "topic": {
+    "id": "T13842",
+    "name": "Intellectual Property Law",
+    "subfield": "Law",
+    "description": "This cluster of papers covers a wide range of topics related to intellectual property law and policy analysis, including trademark law, copyright law, patents, fair use, design protection, international trade, consumer rights, and legal harmonization. The papers explore various legal mechanisms, case studies, and empirical analyses in the field of intellectual property law.",
+    "keywords": [
+     "intellectual property",
+     "copyright",
+     "patent law",
+     "copyright law",
+     "trademark law",
+     "intellectual property law",
+     "copyright infringement",
+     "trademark infringement"
+    ],
+    "works": 297757
+   }
+  }
+ ]
+}

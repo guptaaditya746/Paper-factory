@@ -329,6 +329,9 @@ def write_all(w: dict[str, Any], f: Field, g: Genre, out: Path,
             cp = plan_.make(w, f, g, pid, tmpl, seed)
             idea, log = materials_v3(w, f, g, pid, cards[pid], cp)
             (d / "content_plan.json").write_text(json.dumps(cp, indent=1, ensure_ascii=False), encoding="utf-8")
+            # the number rows with what each one is (world ids): the benchmark's gold rows; never given to a writer
+            rows = plan_.number_rows(w, f, g, pid, cp, _row_prefix(f, pid))[0]
+            (d / "numbers.json").write_text(json.dumps(rows, indent=1, ensure_ascii=False), encoding="utf-8")
         elif cards and g.raw.get("numeric_facts"):
             idea, log = materials_v2(w, f, g, pid, cards[pid])
         else:
