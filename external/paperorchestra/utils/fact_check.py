@@ -173,7 +173,8 @@ def count_places(md: str, value: str, unit: str) -> dict[str, int]:
     tables, prose = _blocks(md)
     in_table = 0
     for t in tables:
-        if unit and not re.search(_unit_re(unit), t):
+        # Table headers capitalise units ("Countries (n)"), so the unit match in a table ignores case.
+        if unit and not re.search(_unit_re(unit), t, re.IGNORECASE):
             continue
         in_table += len(re.findall(_value_re(value), t))
     with_unit = _value_re(value) + (r"[  ]?" + _unit_re(unit) if unit else "")
