@@ -107,7 +107,13 @@
      "hi": "p90",
      "round": 10,
      "unit": "n",
-     "label": "patients randomised"
+     "label": "patients randomised",
+     "labels": [
+      "patients randomised",
+      "randomised (n)",
+      "sample size",
+      "participants enrolled"
+     ]
     },
     "follow_up_weeks": {
      "choice": [
@@ -120,7 +126,12 @@
       156
      ],
      "unit": "weeks",
-     "label": "follow-up"
+     "label": "follow-up",
+     "labels": [
+      "follow-up",
+      "duration of follow-up",
+      "treatment period"
+     ]
     },
     "mean_age": {
      "float": [
@@ -129,7 +140,80 @@
      ],
      "decimals": 1,
      "unit": "years",
-     "label": "mean age"
+     "label": "mean age",
+     "labels": [
+      "mean age",
+      "age, mean",
+      "average age at entry"
+     ]
+    },
+    "female_pct": {
+     "float": [
+      24.0,
+      68.0
+     ],
+     "decimals": 1,
+     "unit": "%",
+     "label": "women",
+     "labels": [
+      "women",
+      "female participants",
+      "share of women"
+     ]
+    },
+    "sites": {
+     "int": [
+      6,
+      240
+     ],
+     "unit": "sites",
+     "label": "study sites",
+     "labels": [
+      "study sites",
+      "centres",
+      "recruiting centres"
+     ]
+    },
+    "countries": {
+     "int": [
+      1,
+      31
+     ],
+     "unit": "countries",
+     "label": "countries",
+     "labels": [
+      "countries",
+      "countries taking part"
+     ]
+    },
+    "discontinued_pct": {
+     "float": [
+      3.0,
+      24.0
+     ],
+     "decimals": 1,
+     "unit": "%",
+     "label": "discontinued treatment",
+     "labels": [
+      "discontinued treatment",
+      "withdrawals",
+      "did not complete"
+     ]
+    },
+    "run_in_weeks": {
+     "choice": [
+      2,
+      4,
+      4,
+      6,
+      8
+     ],
+     "unit": "weeks",
+     "label": "run-in period",
+     "labels": [
+      "run-in period",
+      "run-in"
+     ]
     }
    }
   }

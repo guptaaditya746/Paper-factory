@@ -117,7 +117,7 @@ def run(s: config.Settings, steps: list[str], use_cache: bool = True, allow_mixe
     if cards:
         files.write_json(out / "style_cards.json", cards)
     if "materials" in steps:
-        print("materials:", len(materials.write_all(w, f, g, out, cards)), "papers")
+        print("materials:", len(materials.write_all(w, f, g, out, cards, seed=s.seed)), "papers")
     if cards:
         tdirs = {pid: packs.render_paper_template(f, g, cards[pid], out / "templates" / pid) for pid in w["papers"]}
     else:

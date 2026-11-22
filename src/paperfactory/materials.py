@@ -6,6 +6,7 @@ Every field word comes from the field pack ("words"; Field.word), so the shared 
 """
 from __future__ import annotations
 
+import json
 import textwrap
 from pathlib import Path
 from typing import Any
@@ -228,14 +229,106 @@ def materials_v2(w: dict[str, Any], f: Field, g: Genre, pid: str, card: dict[str
     return idea, "\n".join(lines) + "\n"
 
 
+# ------------------------------------------------------------------ v3 (23 Nov 2026): content plan per paper
+APPROACH = ["{K} of the {SP} listed in the log.", "{K}. It reads the {SP} of the log side by side.",
+            "{K}, built on the {SP} that the log gives.", "{K}: what the {SP} of the log show, and where they part."]
+CONTRIB = ["An answer to the question: {Q}", "A reasoned position on this question: {Q}",
+           "The evidence on one question, weighed: {Q}", "{Q} The paper answers this from the {SP} it reads."]
+
+
+def materials_v3(w: dict[str, Any], f: Field, g: Genre, pid: str, card: dict[str, Any],
+                 cp: dict[str, Any]) -> tuple[str, str]:
+    """Notes from the paper's content plan (plan.py): only the numbers this paper reports, its own table designs,
+    the facts in the plan's order with the section that states each first, and an outline per section in place of
+    the genre's fixed plan lines. The row format is the one PaperOrchestra's fact_check reads (as in v2)."""
+    import random
+
+    from paperfactory import plan as plan_
+    p = w["papers"][pid]
+    fact, facts_w, action = f.word("fact"), f.word("facts"), f.word("action")
+    rng = random.Random(f"{cp['design_seed']}:notes:{pid}")
+    ents = sorted({x for s, _, o in cp["order"] for x in (s, o)})
+    rows, tables = plan_.number_rows(w, f, g, pid, cp, _row_prefix(f, pid))
+    kind_text = card["paper_kind"][:1].upper() + card["paper_kind"][1:]
+    fillw = {"K": kind_text, "SP": f.word("subject_plural"), "Q": p["issue"]}
+    idea = f"""# {p['title_hint']}
+
+## Problem Statement
+{p['issue']}
+
+## Core Thesis
+{p['thesis']}
+
+## Approach
+{rng.choice(APPROACH).format(**fillw)}
+
+## Expected Contribution
+{textwrap.fill(rng.choice(CONTRIB).format(**fillw), 100)}
+"""
+    lines = ["# Experimental Log", "", "## 1. Setting",
+             f"* **Paper type:** {card['paper_kind']}.",
+             f"* **Setting:** {f.raw['setting']}",
+             f"* **Question:** {p['issue']}", f"* **Main conclusion to support:** {p['thesis']}", "", "## 2. Sources"]
+    kinds = list(f.kinds)
+    rng.shuffle(kinds)
+    for kind in kinds:
+        ids = [e for e in ents if w["entities"][e]["kind"] == kind]
+        rng.shuffle(ids)
+        if ids:
+            lines += [f"### {kind.replace('_', ' ').capitalize()}", "| Name | Short names | Details |", "|---|---|---|"]
+            lines += [f"| {_name(w, e)} | {', '.join(w['entities'][e].get('alt', []))} | {_attrs(w, f, e)} |"
+                      for e in ids]
+            lines.append("")
+    where = {tuple(x["fact"]): x for x in cp["placement"]}
+    lines += [f"## 3. {facts_w.capitalize()} (data; state each in your own words)",
+              f"{action.capitalize()} meanings: " + "; ".join(f"{d['words']} = {d['meaning']}"
+                                                            for d in f.relations.values()) + ".",
+              "", f"| {f.word('subject_kind').capitalize()} | {action.capitalize()} | Source | State it first in | As |",
+              "|---|---|---|---|---|"]
+    lines += [f"| {_name(w, s)} | {f.rel_words(r)} | {_name(w, o)} | {where[(s, r, o)]['section']} | "
+              f"{where[(s, r, o)]['form']} |" for s, r, o in cp["order"]]
+    lines += ["", "## 4. Numbers (data; every value exactly as written, in its placement)",
+              "| Row id | Item | Value | Unit | Placement |", "|---|---|---|---|---|"]
+    lines += [f"| {r['id']} | {r['label']} | {r['value']} | {r['unit']} | table |" for r in rows]
+    lines += ["", f"## 5. Tables to build (exactly {len(tables)}; this paper's own designs)"]
+    lines += [f"* Table {i + 1}, in section \"{tb['section']}\": {tb['title']}. Layout: {tb['layout']}. Numbers rows "
+              f"ending in: {', '.join(x.rsplit('-', 1)[1] for x in tb['rows'])}."
+              for i, tb in enumerate(tables)]
+    lines += ["* Write your own column headers from the item names; put each unit in its header.",
+              "* Row ids are for you only: never print a row id in the paper."]
+    k = 6
+    if p.get("conflict"):
+        (s1, r1, o1), (s2, r2, _) = p["conflict"]
+        lines += ["", f"## {k}. Conflict", f"* {_name(w, s1)} ({f.rel_words(r1)}) and {_name(w, s2)} "
+                  f"({f.rel_words(r2)}) disagree about {_name(w, o1)}."]
+        k += 1
+    lines += ["", f"## {k}. Outline (what goes in each section of this paper)"]
+    lines += [f"* {x}" for x in plan_.outline(w, f, cp, tables, p["issue"], p["thesis"])]
+    lines += ["", f"## {k + 1}. Rules",
+              f"* Do not invent {f.word('source_kinds')}, {facts_w}, numbers, dates, designs or quotations.",
+              f"* Keep the meaning of every {action} exact, but phrase it in your own words and vary the wording.",
+              f"* State each {fact} first in the section its row names, in the form its row names. It may come up "
+              f"again elsewhere: at most {g.raw.get('max_mentions_per_fact', 3)} times in all.",
+              "* Copy every number exactly as the Numbers table gives it; pooled values are already computed.",
+              "* Report only the numbers of the Numbers table: this paper leaves the others out."]
+    return idea, "\n".join(lines) + "\n"
+
+
 def write_all(w: dict[str, Any], f: Field, g: Genre, out: Path,
-              cards: dict[str, dict[str, Any]] | None = None) -> list[str]:
-    """cards (style.cards): with a genre that has numbers, the v2 notes per paper; else the v1 notes."""
+              cards: dict[str, dict[str, Any]] | None = None, seed: Any = None) -> list[str]:
+    """cards (style.cards): with a genre that has numbers, the notes per paper from its content plan (v3, when the
+    genre says "content_plan": true; the plan is saved as content_plan.json) or the v2 notes; else the v1 notes."""
+    from paperfactory import plan as plan_
     done = []
     for pid in w["papers"]:
         d = out / "papers" / pid
         d.mkdir(parents=True, exist_ok=True)
-        if cards and g.raw.get("numeric_facts"):
+        if cards and g.raw.get("numeric_facts") and g.raw.get("content_plan"):
+            tmpl = (g.folder / "templates" / f"{cards[pid]['template']}.md").read_text(encoding="utf-8")
+            cp = plan_.make(w, f, g, pid, tmpl, seed)
+            idea, log = materials_v3(w, f, g, pid, cards[pid], cp)
+            (d / "content_plan.json").write_text(json.dumps(cp, indent=1, ensure_ascii=False), encoding="utf-8")
+        elif cards and g.raw.get("numeric_facts"):
             idea, log = materials_v2(w, f, g, pid, cards[pid])
         else:
             idea, log = materials(w, f, g, pid)

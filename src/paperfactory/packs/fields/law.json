@@ -169,7 +169,12 @@
       900
      ],
      "unit": "EUR thousand",
-     "label": "damages awarded"
+     "label": "damages awarded",
+     "labels": [
+      "damages awarded",
+      "award",
+      "sum awarded"
+     ]
     },
     "hearing_days": {
      "int": [
@@ -177,7 +182,79 @@
       9
      ],
      "unit": "days",
-     "label": "hearing days"
+     "label": "hearing days",
+     "labels": [
+      "hearing days",
+      "days of hearing",
+      "length of the hearing"
+     ]
+    },
+    "judges": {
+     "choice": [
+      1,
+      3,
+      3,
+      5,
+      7
+     ],
+     "unit": "judges",
+     "label": "judges",
+     "labels": [
+      "judges",
+      "size of the bench",
+      "judges sitting"
+     ]
+    },
+    "months_to_judgment": {
+     "int": [
+      3,
+      44
+     ],
+     "unit": "months",
+     "label": "time to judgment",
+     "labels": [
+      "time to judgment",
+      "duration of the proceedings",
+      "months from filing to judgment"
+     ]
+    },
+    "pages": {
+     "int": [
+      9,
+      160
+     ],
+     "unit": "pages",
+     "label": "length of the judgment",
+     "labels": [
+      "length of the judgment",
+      "pages",
+      "judgment length"
+     ]
+    },
+    "claimants": {
+     "int": [
+      1,
+      12
+     ],
+     "unit": "claimants",
+     "label": "claimants",
+     "labels": [
+      "claimants",
+      "number of claimants"
+     ]
+    },
+    "costs_eur_thousand": {
+     "int": [
+      0,
+      180
+     ],
+     "unit": "EUR thousand",
+     "label": "costs awarded",
+     "labels": [
+      "costs awarded",
+      "costs order",
+      "costs"
+     ]
     }
    }
   }

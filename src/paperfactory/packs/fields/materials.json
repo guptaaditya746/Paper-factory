@@ -116,7 +116,12 @@
       8
      ],
      "unit": "n",
-     "label": "samples tested"
+     "label": "samples tested",
+     "labels": [
+      "samples tested",
+      "specimens",
+      "specimens per condition"
+     ]
     },
     "test_temperature_C": {
      "choice": [
@@ -128,7 +133,84 @@
       800
      ],
      "unit": "°C",
-     "label": "test temperature"
+     "label": "test temperature",
+     "labels": [
+      "test temperature",
+      "temperature of the test",
+      "testing temperature"
+     ]
+    },
+    "hold_time_h": {
+     "choice": [
+      1,
+      2,
+      4,
+      8,
+      24,
+      100
+     ],
+     "unit": "h",
+     "label": "hold time",
+     "labels": [
+      "hold time",
+      "dwell time",
+      "time at temperature"
+     ]
+    },
+    "grain_size_um": {
+     "float": [
+      0.4,
+      85.0
+     ],
+     "decimals": 1,
+     "unit": "µm",
+     "label": "grain size",
+     "labels": [
+      "grain size",
+      "mean grain size",
+      "average grain diameter"
+     ]
+    },
+    "relative_density_pct": {
+     "float": [
+      91.5,
+      99.9
+     ],
+     "decimals": 1,
+     "unit": "%",
+     "label": "relative density",
+     "labels": [
+      "relative density",
+      "density (relative)"
+     ]
+    },
+    "gauge_length_mm": {
+     "choice": [
+      6,
+      10,
+      12.5,
+      25,
+      50
+     ],
+     "unit": "mm",
+     "label": "gauge length",
+     "labels": [
+      "gauge length",
+      "specimen gauge length"
+     ]
+    },
+    "batches": {
+     "int": [
+      1,
+      5
+     ],
+     "unit": "batches",
+     "label": "batches",
+     "labels": [
+      "batches",
+      "production batches",
+      "independent batches"
+     ]
     }
    }
   }

@@ -7,8 +7,14 @@
   450,
   550
  ],
- "claims_per_paper": 3,
- "decoys_per_paper": 3,
+ "claims_per_paper": [
+  2,
+  5
+ ],
+ "decoys_per_paper": [
+  1,
+  4
+ ],
  "max_mentions_per_fact": 3,
  "min_tables": 2,
  "templates": {
@@ -120,5 +126,6 @@
   "Describe how the {SUBJECT_PLURAL} were set up (the first table).",
   "Report the effects and the pooled values (the second table) and say what they show.",
   "Discuss the disagreements and how far the evidence goes, from the {FACTS}."
- ]
+ ],
+ "content_plan": true
 }

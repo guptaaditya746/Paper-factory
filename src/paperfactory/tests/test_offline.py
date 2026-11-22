@@ -42,7 +42,7 @@ def test_pilot_world_passes_the_checks() -> None:
     (lambda w: w["papers"]["L-01"]["claims"].__setitem__(0, ["K1", "distinguishes", "K5"]), "earlier one"),
     (lambda w: w["papers"]["L-02"]["decoys"].__setitem__(0, ["K5", "rejects", "S14"]), "relation relies_on in one paper"),
     (lambda w: w["entities"]["K2"]["alt"].append("Marrin"), "used by"),
-    (lambda w: w["papers"]["L-01"]["decoys"].pop(), "need 3"),
+    (lambda w: w["papers"]["L-01"]["decoys"].clear(), "need 1 to 4"),
 ])
 def test_world_check_catches_broken_worlds(change, message: str) -> None:
     w = copy.deepcopy(PILOT)

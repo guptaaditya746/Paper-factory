@@ -23,6 +23,7 @@ you are in a fresh clone and must fetch it again (see each entry).
 | `paperfactory/world.py` | invents the world: topic clusters, entities, claims, decoys, conflicts; `check` validates it |
 | `paperfactory/quant.py` | numbers per entity and per fact (effects with 95% CI, inverse-variance pooling, Q, I²) |
 | `paperfactory/style.py` | style cards per paper (template, tone, voice, opening, rhythm, pages); banned phrases |
+| `paperfactory/plan.py` | content plan per paper: which numbers it reports and under which headers, table designs, fact order, the section and form of each planted fact (`content_plan.json` beside the notes) |
 | `paperfactory/materials.py` | the brief each writer gets (sources, findings, number rows, tables to build) |
 | `paperfactory/write.py` | calls PaperOrchestra (`external/paperorchestra`, prompt set `v1nn`) |
 | `paperfactory/repair.py` | checker + repair loop; final gate (PaperOrchestra `fact_check`, ≥2 tables, no leaked row ids) |

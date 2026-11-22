@@ -6,8 +6,14 @@
   450,
   550
  ],
- "claims_per_paper": 3,
- "decoys_per_paper": 3,
+ "claims_per_paper": [
+  2,
+  5
+ ],
+ "decoys_per_paper": [
+  1,
+  4
+ ],
  "max_mentions_per_fact": 3,
  "log_sections": [
   "Setting",
@@ -95,5 +101,6 @@
   "paves the way",
   "a testament to",
   "in the realm of"
- ]
+ ],
+ "content_plan": true
 }

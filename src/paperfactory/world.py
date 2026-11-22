@@ -70,8 +70,11 @@ def check(w: dict[str, Any], f: Field, g: Genre, n_papers: int | None = None) ->
                 err.append(f"{pid}: missing {key}")
         facts = [tuple(x) for x in p.get("claims", []) + p.get("decoys", [])]
         for role, n in want.items():
-            if n is not None and len(p.get(role, [])) != n:
-                err.append(f"{pid}: {len(p.get(role, []))} {role}, need {n}")
+            if n is None:
+                continue
+            lo, hi = count_range(n)
+            if not lo <= len(p.get(role, [])) <= hi:
+                err.append(f"{pid}: {len(p.get(role, []))} {role}, need {n if lo == hi else f'{lo} to {hi}'}")
         if len(set(facts)) != len(facts):
             err.append(f"{pid}: the same fact twice")
         by_pair: dict[tuple[str, str], list[str]] = {}
@@ -363,6 +366,37 @@ def cluster_text(f: Field, cluster: dict[str, Any] | None) -> str:
             f"{f.raw.get('cluster_note', '')}\n\n")
 
 
+def count_range(n: Any) -> tuple[int, int]:
+    """A genre's claims_per_paper / decoys_per_paper: a number (every paper the same) or [lo, hi] (23 Nov 2026:
+    with one fixed number every paper had the same size and the same table lengths)."""
+    return (n[0], n[1]) if isinstance(n, (list, tuple)) else (n, n)
+
+
+def plan_counts(g: Genre, f: Field, seed: Any, tag: str, n: int) -> list[tuple[int, int]]:
+    """(claims, decoys) for n papers, drawn by code; sizes differ from paper to paper."""
+    rng = random.Random(f"{seed}:counts:{f.name}:{tag}")
+    c, d = count_range(g.raw["claims_per_paper"]), count_range(g.raw["decoys_per_paper"])
+    return [(rng.randint(*c), rng.randint(*d)) for _ in range(n)]
+
+
+def fit_counts(q: dict[str, Any], claims: int, decoys: int) -> None:
+    """Bring a planned paper to its drawn size in code, so a model that ignores the numbers costs no paper: extra
+    claims go (never a conflict fact, never a focus subject's only claim), extra decoys go, missing decoys become
+    empty slots that fix_decoys fills with near misses. Too few claims stay as they are (check decides)."""
+    keep = [tuple(x) for x in q.get("conflict") or [] if isinstance(x, list)]
+    cl = [x for x in q.get("claims", []) if isinstance(x, list) and len(x) == 3]
+    i = len(cl) - 1
+    while len(cl) > claims and i >= 0:
+        x = cl[i]
+        alone = x[0] in q.get("focus", []) and sum(1 for y in cl if y[0] == x[0]) == 1
+        if tuple(x) not in keep and not alone:
+            cl.pop(i)
+        i -= 1
+    q["claims"] = cl
+    de = [x for x in q.get("decoys", []) if isinstance(x, list) and len(x) == 3][:decoys]
+    q["decoys"] = de + [["", "", ""]] * (decoys - len(de))
+
+
 def plan_focus(w: dict[str, Any], f: Field, seed: Any, n: int, among: list[str] | None = None) -> list[list[str]]:
     """Two focus subjects per paper, chosen in code so no two papers lead with the same pair (at 20 papers Qwen
     copied earlier papers' claims). Every subject leads one paper before any leads a second; pairs never repeat.
@@ -503,6 +537,8 @@ def _plan_papers(s, f: Field, g: Genre, call, w: dict[str, Any], ents: dict[str,
     far in the world (ids continue across clusters)."""
     refill = max(2, round(REFILL * target / max(1, s.papers))) if cl else REFILL
     focus = plan_focus(w, f, s.seed, target + refill, sorted(ents) if cl else None)
+    varied = any(lo != hi for lo, hi in map(count_range, (g.raw["claims_per_paper"], g.raw["decoys_per_paper"])))
+    counts = plan_counts(g, f, s.seed, cl["id"] if cl else "", target + refill)
     have0 = len(w["papers"])
     ctext = cluster_text(f, cl)
     b = 0
@@ -515,15 +551,18 @@ def _plan_papers(s, f: Field, g: Genre, call, w: dict[str, Any], ents: dict[str,
         # FIXED: the facts the world already has for this paper's focus subjects (medicine 20-paper test, 22 Nov:
         # 7 of 10 drops gave a focus pair a second relation; the long FACTS ALREADY USED list was missed)
         fixed = lambda fo: [list(x) for x in sofar if x[0] in fo or x[2] in fo]  # noqa: E731
-        todo = "\n".join(f"{i + 1}. FOCUS {json.dumps(x)}" + (f"; FIXED {json.dumps(fixed(x))}" if fixed(x) else "")
-                         for i, x in enumerate(want))
+        sizes = counts[b:b + n]
+        size = (lambda i: f"; CLAIMS {sizes[i][0]}; DECOYS {sizes[i][1]}") if varied else (lambda i: "")  # noqa: E731
+        todo = "\n".join(f"{i + 1}. FOCUS {json.dumps(x)}{size(i)}"
+                         + (f"; FIXED {json.dumps(fixed(x))}" if fixed(x) else "") for i, x in enumerate(want))
         user = (f"FIELD PACK:\n{_pack_text(f)}\n\n{ctext}ENTITIES:\n{json.dumps(ents, indent=1)}\n\n"
                 f"FACTS ALREADY USED (keep their relations):\n{json.dumps(sofar)}\n\n"
                 f"PAPERS TO PLAN, in this order:\n{todo}\n"
                 "FIXED lists facts the world already has for a paper's FOCUS subjects: a pair in FIXED keeps exactly "
                 "that relation (or is not used).\n\n"
-                f"Plan {n} papers. Each has exactly {g.raw['claims_per_paper']} claims and "
-                f"{g.raw['decoys_per_paper']} decoys. "
+                f"Plan {n} papers. "
+                + ("Each has exactly the number of claims and decoys its line gives (CLAIMS, DECOYS). " if varied
+                   else f"Each has exactly {g.raw['claims_per_paper']} claims and {g.raw['decoys_per_paper']} decoys. ")
                 + ("Give a conflict in at least one of them." if n > 1 else "Give a conflict if two claims allow it."))
         step = f"world:papers:{cl['id'] if cl else ''}{b}"
         got = _top_up(_need(call("world", step, PAPER_SYS, user, PAPERS_SCHEMA), step), n, user, call, step)
@@ -540,8 +579,11 @@ def _plan_papers(s, f: Field, g: Genre, call, w: dict[str, Any], ents: dict[str,
                 for x in q.get("claims", []):
                     if isinstance(x, list) and len(x) == 3:
                         truth.setdefault((x[0], x[2]), x[1])
+                if varied:
+                    fit_counts(q, *sizes[i])
                 if notes := fix_decoys(q, truth, ents, f, rng):
                     trial["decoy_repairs"][pid] = notes
+                q["decoys"] = [x for x in q["decoys"] if x[0]]          # a slot no near miss could fill
                 if q.get("conflict") and conflict_errors(q, f):
                     # an optional extra: a wrong conflict goes, the paper stays (v2 pilot, 22 Nov 2026: with one paper
                     # per batch every law paper had to carry a conflict, and 6 of 9 were dropped for a wrong one)

@@ -169,7 +169,12 @@
       5
      ],
      "unit": "n",
-     "label": "seeds"
+     "label": "seeds",
+     "labels": [
+      "seeds",
+      "random seeds",
+      "runs per setting"
+     ]
     },
     "test_items": {
      "int": [
@@ -178,7 +183,79 @@
      ],
      "round": 50,
      "unit": "n",
-     "label": "test items"
+     "label": "test items",
+     "labels": [
+      "test items",
+      "evaluation examples",
+      "test set size"
+     ]
+    },
+    "tasks": {
+     "int": [
+      1,
+      14
+     ],
+     "unit": "tasks",
+     "label": "tasks",
+     "labels": [
+      "tasks",
+      "tasks evaluated",
+      "task count"
+     ]
+    },
+    "models_compared": {
+     "int": [
+      2,
+      9
+     ],
+     "unit": "models",
+     "label": "models compared",
+     "labels": [
+      "models compared",
+      "systems compared"
+     ]
+    },
+    "context_tokens": {
+     "choice": [
+      2048,
+      4096,
+      8192,
+      16384,
+      32768
+     ],
+     "unit": "tokens",
+     "label": "context length",
+     "labels": [
+      "context length",
+      "maximum context",
+      "context window used"
+     ]
+    },
+    "annotators": {
+     "int": [
+      2,
+      7
+     ],
+     "unit": "annotators",
+     "label": "annotators",
+     "labels": [
+      "annotators",
+      "human raters"
+     ]
+    },
+    "gpu_hours": {
+     "int": [
+      4,
+      900
+     ],
+     "round": 2,
+     "unit": "GPU-h",
+     "label": "compute",
+     "labels": [
+      "compute",
+      "compute budget",
+      "GPU time"
+     ]
     }
    }
   }
