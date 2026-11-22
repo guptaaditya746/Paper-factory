@@ -4,6 +4,8 @@ Synthetic research papers with planted facts, for evaluating question-answering 
 Code invents a world (entities, facts, numbers), PaperOrchestra writes the papers, and checks compare every
 paper with the world before evaluation. Used as a submodule of the thesis repo (`services/paper-factory`).
 
+**Code agents: read `AGENTS.md` first** (local data such as the 500 donor papers, APIs, pilot runs, rules).
+
 - `src/paperfactory/`: the pipeline (world → seed → materials → write → check → eval), packs (fields, genres,
   topics), configs, tests. Start with `src/paperfactory/README.md` and `RUNBOOK-qwen.md`.
 - `src/modelcall`, `src/jsonio`: the model-call layer (OpenAI-compatible gateway, cache, retries).
