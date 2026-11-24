@@ -27,7 +27,7 @@ from pathlib import Path
 from typing import Any, Iterator
 
 MAX_PARALLEL = 3
-HARD_CAP = 9                 # C12: the most a caller may ask for (Aditya, 22 Nov 2026: 9 calls on Qwen)
+HARD_CAP = 24                # C12: the most a caller may ask for (22 Nov 2026: 9 on Qwen, the role max_parallel; 24 Nov: 24 for Claude Haiku)
 DEFAULT_MODEL = "claude-haiku-5-5"
 
 
