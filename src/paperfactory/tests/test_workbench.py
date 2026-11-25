@@ -53,3 +53,22 @@ def test_never_overwrites_an_evqa_domain(tmp_path: Path) -> None:
     (tmp_path / "data" / "seed" / "materials").mkdir(parents=True)
     with pytest.raises(ValueError, match="not a paperfactory export"):
         workbench.export(_run(tmp_path), "materials", tmp_path / "data")
+
+
+def test_numbers_of_a_run_without_numbers_json(tmp_path: Path) -> None:
+    """25 Nov 2026: v2 runs wrote no numbers.json; their numbers are rebuilt by the code that wrote the brief and kept
+    only where id, label and value equal the brief's Numbers table."""
+    from paperfactory import materials, packs
+    run = _run(tmp_path)
+    w = json.loads((run / "world.json").read_text())
+    w["entities"] = {"D1": {"kind": "decision", "label": "Kor v. Bel"}, "D2": {"kind": "decision", "label": "Ab v. Cd"},
+                     "P1": {"kind": "provision", "label": "section 1"}}
+    w["numbers"] = {"entities": {"D1": {"pages": 40}, "D2": {"pages": 12}}, "facts": {}}
+    (run / "world.json").write_text(json.dumps(w))
+    rows = materials.number_rows(w, packs.field("law"), "P-01")[0]
+    assert {tuple(r["about"].items()) for r in rows} == {(("entity", "D1"), ("attr", "pages")),
+                                                         (("entity", "D2"), ("attr", "pages"))}
+    brief = "\n".join(f"| {r['id']} | {r['label']} | {r['value']} | {r['unit']} | table |" for r in rows)
+    (run / "papers" / "P-01" / "experimental_log.md").write_text(brief.replace("| 12 |", "| 13 |"))
+    got = workbench.number_rows(run, "P-01")
+    assert [(r["subject"], r["attr"], r["value"]) for r in got] == [("D1", "pages", "40")]   # 13 != 12: dropped

@@ -91,7 +91,7 @@ def join(a: dict[str, Any], b: dict[str, Any], f: Field, seed: Any, b_name: str 
     for eid, e in b["entities"].items():
         if eid in idmap:
             continue
-        for wd in _words(e):
+        for wd in sorted(_words(e)):    # sorted: set order changes per process, and so would the fresh names
             if wd in a_words and wd not in kept and wd not in pack_words and wd not in swap:
                 swap[wd] = _fresh(namer, a_words)
     rec["renamed_words"] |= {f"{b_name}:{k}": v for k, v in swap.items()}

@@ -103,11 +103,15 @@ def number_rows(w: dict[str, Any], f: Field, pid: str) -> tuple[list[dict[str, s
     pre, rows, n = _row_prefix(f, pid), [], 0
     setups, effects, by_attr = [], [], {}
 
-    def add(label: str, value: Any, unit: str, place: str, bucket: list[str], decimals: int | None = None) -> None:
+    def add(label: str, value: Any, unit: str, place: str, bucket: list[str], decimals: int | None = None,
+            about: dict[str, Any] | None = None) -> None:
         nonlocal n
         n += 1
         rid = f"{pre}-{n:02d}"
-        rows.append({"id": rid, "label": label, "value": _fmt(value, decimals), "unit": unit, "placement": place})
+        # about (world ids): what the number is, for the benchmark's fact rows (workbench.number_rows); the
+        # writer's brief prints only id, label, value, unit and placement
+        rows.append({"id": rid, "label": label, "value": _fmt(value, decimals), "unit": unit, "placement": place,
+                     "about": about or {}})
         bucket.append(rid)
     facts = p["claims"] + p["decoys"]
     ents = list(dict.fromkeys([x for s_, _, o in facts for x in (s_, o)]))
@@ -122,7 +126,7 @@ def number_rows(w: dict[str, Any], f: Field, pid: str) -> tuple[list[dict[str, s
             # MED-03: follow-up weeks of the other trials missing); every number now goes in a table
             place = "table"
             add(f"{_name(w, e)}: {sp.get('label', attr.replace('_', ' '))}", v, unit, place,
-                setups if place == "table" else [])
+                setups if place == "table" else [], about={"entity": e, "attr": attr})
             if place == "table":
                 by_attr.setdefault(attr, []).append(rows[-1]["id"])
     by_obj: dict[str, list[dict[str, Any]]] = {}
@@ -134,25 +138,28 @@ def number_rows(w: dict[str, Any], f: Field, pid: str) -> tuple[list[dict[str, s
             if x is None:
                 continue
             what = f"{_name(w, s_)} / {_name(w, o)}"
+            ab = lambda stat: {"fact": [s_, r, o], "stat": stat}  # noqa: E731
             if "baseline" in x:
-                add(f"{what}: baseline {eff['short']}", x["baseline"], unit, "table", effects, d)
-                add(f"{what}: {eff['short']} with the method", x["with"], unit, "table", effects, d)
+                add(f"{what}: baseline {eff['short']}", x["baseline"], unit, "table", effects, d, ab("baseline"))
+                add(f"{what}: {eff['short']} with the method", x["with"], unit, "table", effects, d, ab("with"))
             dunit = eff.get("delta_unit", unit)
             place = "table"     # MAT-04: the estimate column was dropped when the claims' estimates were text-only
             add(f"{what}: {eff['name']}", x["estimate"], dunit if place == "text" else unit, place,
-                effects if place == "table" else [], d)
-            add(f"{what}: 95% CI lower bound", x["ci_low"], unit, "table", effects, d)
-            add(f"{what}: 95% CI upper bound", x["ci_high"], unit, "table", effects, d)
-            by_obj.setdefault(o, []).append(x)
-        for o, xs in by_obj.items():
-            if len(xs) < 2:
+                effects if place == "table" else [], d, ab("estimate"))
+            add(f"{what}: 95% CI lower bound", x["ci_low"], unit, "table", effects, d, ab("ci_low"))
+            add(f"{what}: 95% CI upper bound", x["ci_high"], unit, "table", effects, d, ab("ci_high"))
+            by_obj.setdefault(o, []).append((s_, x))
+        for o, sx in by_obj.items():
+            if len(sx) < 2:
                 continue
-            pool = quant.pooled(xs, eff)
+            pool = quant.pooled([x for _, x in sx], eff)
+            studies = [s_ for s_, _ in sx]
+            pa = lambda stat: {"pool": o, "stat": stat, "studies": studies}  # noqa: B023, E731
             lab = f"{eff.get('pool_label', 'pooled estimate')} for {_name(w, o)} ({pool['studies']} {f.word('subject_plural')})"
-            add(f"{lab}: estimate", pool["estimate"], unit, "table", effects, d)
-            add(f"{lab}: 95% CI lower bound", pool["ci_low"], unit, "table", effects, d)
-            add(f"{lab}: 95% CI upper bound", pool["ci_high"], unit, "table", effects, d)
-            add(f"{lab}: heterogeneity I²", pool["i2"], "%", "table", effects, 1)
+            add(f"{lab}: estimate", pool["estimate"], unit, "table", effects, d, pa("estimate"))
+            add(f"{lab}: 95% CI lower bound", pool["ci_low"], unit, "table", effects, d, pa("ci_low"))
+            add(f"{lab}: 95% CI upper bound", pool["ci_high"], unit, "table", effects, d, pa("ci_high"))
+            add(f"{lab}: heterogeneity I²", pool["i2"], "%", "table", effects, 1, pa("i2"))
     tables = []
     if setups:
         tables.append([f"Setup of each {f.word('subject_kind')} (one row per {f.word('subject_kind')})", setups])

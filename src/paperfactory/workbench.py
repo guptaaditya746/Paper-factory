@@ -49,14 +49,48 @@ def vocab(field: str) -> dict[str, Any]:
                       for k, d in f.kinds.items()}}
 
 
-def number_rows(run: Path, pid: str) -> list[dict[str, Any]]:
-    """A paper's number rows (materials step: papers/<pid>/numbers.json) as shared fact rows. The paper passed the
-    number check, so each value is in it as written. Runs made before numbers.json existed give none."""
-    path = run / "papers" / pid / "numbers.json"
+def _brief_rows(run: Path, pid: str) -> dict[str, tuple[str, str]]:
+    """Row id -> (label, value) of the Numbers table in the writer's brief (experimental_log.md)."""
+    path = run / "papers" / pid / "experimental_log.md"
     if not path.is_file():
+        return {}
+    out = {}
+    for line in path.read_text(encoding="utf-8").splitlines():
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        if len(cells) >= 4 and cells[0].startswith("R-"):
+            out[cells[0]] = (cells[1], cells[2])
+    return out
+
+
+def planned_rows(run: Path, pid: str) -> list[dict[str, Any]]:
+    """The number rows the paper's writer was given, with what each one is (world ids). From numbers.json when the
+    run wrote one; else rebuilt by the same code that wrote the brief (v3: plan.number_rows from the saved
+    content_plan.json; v2: materials.number_rows), kept only where the rebuilt id, label and value equal the brief's
+    Numbers table (runs before 25 Nov 2026 wrote no numbers.json, so their numbers never reached the benchmark)."""
+    path = run / "papers" / pid / "numbers.json"
+    if path.is_file():
+        return json.loads(path.read_text(encoding="utf-8"))
+    w = json.loads((run / "world.json").read_text(encoding="utf-8"))
+    if not w.get("numbers") or pid not in w["papers"]:
         return []
+    from paperfactory import materials, packs
+    from paperfactory import plan as plan_
+    f = packs.field(w["field"])
+    cp_path = run / "papers" / pid / "content_plan.json"
+    if cp_path.is_file():
+        cp = json.loads(cp_path.read_text(encoding="utf-8"))
+        rows = plan_.number_rows(w, f, packs.genre(w["genre"]), pid, cp, materials._row_prefix(f, pid))[0]
+    else:
+        rows = materials.number_rows(w, f, pid)[0]
+    brief = _brief_rows(run, pid)
+    return [r for r in rows if brief.get(r["id"]) == (r["label"], r["value"]) and r.get("about")]
+
+
+def number_rows(run: Path, pid: str) -> list[dict[str, Any]]:
+    """A paper's number rows (planned_rows) as shared fact rows. The paper passed the number check, so each value
+    is in it as written."""
     out = []
-    for r in json.loads(path.read_text(encoding="utf-8")):
+    for r in planned_rows(run, pid):
         a = r.get("about") or {}
         base = {"id": r["id"], "paper": pid, "value": r["value"], "unit": r["unit"], "label": r["label"]}
         if "entity" in a:
