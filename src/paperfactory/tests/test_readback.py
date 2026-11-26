@@ -213,7 +213,7 @@ def test_run_sorts_repairs_judges_and_caches(tmp_path):
     assert s["claims"] == {"planned": 7, "possible_invented": 3, "background": 1}
     assert s["writer_precision"]["k"] == 7 and s["writer_precision"]["n"] == 10
     assert s["wrong_relation"] == 1 and s["background"] == 1
-    assert s["reader_recall"] == {"k": 3, "n": 3, "rate": 1.0, "ci95_exact": [0.2924, 1.0]}
+    assert s["reader_recall"] == {"k": 3, "n": 3, "rate": 1.0, "ci95_exact": [0.2924, 1.0], "judge": out["reader_model"]}
     assert s["add_custom_share"]["k"] == 3
     assert out["by_writer"]["claude-haiku-5-5"]["writer_precision"]["n"] == 10
     assert {x["flags"][0] if x.get("flags") else "" for x in out["possible_invented"]} == {"wrong_relation", ""}
@@ -250,14 +250,6 @@ def test_export_invented(tmp_path):
     assert sorted(v["kind"] for v in key.values()) == ["planned_control", "possible_invented", "possible_invented"]
     assert "kind" not in rows[0] and all(r["sentence"] and r["relation"] for r in rows)
     assert "statement: None" not in "".join(r["relation"] for r in rows)
-
-
-def test_exact_ci_large_n():
-    from paperfactory.numspans import clopper_pearson
-    assert rb.exact_ci(37, 400) == clopper_pearson(37, 400)
-    lo, hi = rb.exact_ci(2900, 3000)                 # numspans.clopper_pearson overflows here
-    assert 0.957 < lo < 0.967 < hi < 0.973
-    assert rb.exact_ci(3000, 3000)[1] == 1.0 and rb.exact_ci(0, 3000)[0] == 0.0
 
 
 def test_words_match_and_paper_names():

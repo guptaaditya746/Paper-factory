@@ -27,7 +27,6 @@ ops/merge_bench.py) never calls a model: an uncached item stays unresolved and i
 from __future__ import annotations
 
 import json
-import math
 from collections import Counter
 import random
 import re
@@ -39,6 +38,8 @@ from typing import Any
 
 from pydantic import BaseModel
 
+from thesis_scorer.stats import clopper_pearson  # noqa: F401  (one shared version; readback imports it from here)
+
 from paperfactory import packs
 from paperfactory.llm import json_schema, pmap
 from paperfactory.text import (AliasTable, SplitRules, _split_unit, alias_table, defined_terms, find_mentions,
@@ -48,6 +49,34 @@ VERIFIER_MODEL = "claude-haiku-5-5"    # Aditya's choice (26 Nov 2026): the SAME
 # writer of each source run (configs/haiku/bench20-*.json: Claude Haiku; the others: Qwen behind the gateway)
 WRITERS = (("bench20h-", "claude-haiku-5-5"), ("qwen40-", "qwen (orch-model)"), ("v2p3-", "qwen (orch-model)"))
 BATCH = 25
+# Aditya (26 Nov 2026): no Sonnet from now; every number a Haiku judge made carries this mark in the outputs
+SAME_MODEL_NOTE = "same model as writer"
+JUDGED_KEYS = ("controls", "controls_by_writer", "hard_controls", "hard_controls_v1", "error_rates", "code_audit",
+               "audit_before_after", "verifier_error_quote", "code_error_rate_quote")
+
+
+def mark_judged(obj: Any, model: str) -> Any:
+    """Tag every rate (a dict with "rate" or "ci95_exact") inside obj with the judge model and, when the judge is a
+    writer model (Haiku), SAME_MODEL_NOTE. Changes obj in place and returns it."""
+    if isinstance(obj, dict):
+        if "rate" in obj or "ci95_exact" in obj:
+            obj["judge"] = model
+            if model in {m for _, m in WRITERS}:
+                obj["judge_note"] = SAME_MODEL_NOTE
+        for v in obj.values():
+            mark_judged(v, model)
+    elif isinstance(obj, list):
+        for v in obj:
+            mark_judged(v, model)
+    return obj
+
+
+def mark_report(rep: dict[str, Any]) -> dict[str, Any]:
+    """mark_judged on the verifier-made parts of a numspans.json report (JUDGED_KEYS); code-only parts stay as they are."""
+    for k in JUDGED_KEYS:
+        if k in rep:
+            mark_judged(rep[k], rep.get("verifier_model") or VERIFIER_MODEL)
+    return rep
 PARALLEL = 24                          # papers at once (Aditya, 26 Nov 2026); the role's max_parallel caps calls
 MAX_PLACES = 8                         # places per fact sent to the verifier
 HARD_MAX, HARD_SEED = 100, 26          # hard controls per domain (right value, wrong thing)
@@ -743,6 +772,7 @@ def run(seed_dir: Path, ds_dir: Path, caller, cache_only: bool = False) -> dict[
     rep["verifier_error_quote"] = VERIFIER_ERROR_QUOTE
     rep["value_collisions"] = collisions | {"note": "pairs of different number facts in one paper with the same "
                                                     "value (after canon); a value matched by code can be the wrong one"}
+    mark_report(rep)
     man["number_spans"] = {k: rep[k] for k in ("verifier_model", "independence")}
     (seed_dir / "paperfactory.json").write_text(json.dumps(man, indent=1, ensure_ascii=False), encoding="utf-8")
     (seed_dir / "numspans.json").write_text(json.dumps(rep, indent=1, ensure_ascii=False), encoding="utf-8")
@@ -752,24 +782,6 @@ def run(seed_dir: Path, ds_dir: Path, caller, cache_only: bool = False) -> dict[
 def rate(k: int, n: int) -> dict[str, Any]:
     """k errors of n: share with an exact (Clopper-Pearson) 95% interval."""
     return {"errors": k, "n": n, "rate": round(k / n, 4) if n else None, "ci95_exact": clopper_pearson(k, n)}
-
-
-def clopper_pearson(k: int, n: int, alpha: float = 0.05) -> list[float] | None:
-    if n == 0:
-        return None
-
-    def cdf(x: int, p: float) -> float:          # P(X <= x), X ~ Binomial(n, p)
-        return sum(math.comb(n, i) * p ** i * (1 - p) ** (n - i) for i in range(x + 1))
-
-    def solve(f, target: float) -> float:        # f falls as p rises; bisection on [0, 1]
-        lo, hi = 0.0, 1.0
-        for _ in range(60):
-            mid = (lo + hi) / 2
-            lo, hi = (mid, hi) if f(mid) > target else (lo, mid)
-        return (lo + hi) / 2
-    low = 0.0 if k == 0 else solve(lambda p: cdf(k - 1, p), 1 - alpha / 2)
-    high = 1.0 if k == n else solve(lambda p: cdf(k, p), alpha / 2)
-    return [round(low, 4), round(high, 4)]
 
 
 def colliding(rows: list[dict[str, Any]]) -> dict[str, list[str]]:

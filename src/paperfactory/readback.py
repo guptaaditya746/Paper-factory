@@ -46,10 +46,11 @@ from thesis_scorer import facttools as ft
 
 from paperfactory import packs
 from paperfactory.llm import json_schema, pmap
-from paperfactory.numspans import clopper_pearson, writer_of
+from paperfactory.numspans import clopper_pearson, mark_judged, writer_of
 from paperfactory.text import AliasTable, _key, alias_table, defined_terms, find_mentions, norm, normalize_paper
 
-READER_MODEL = "claude-sonnet-5-5"     # Aditya (26 Nov 2026): differs from both writers (Qwen, Haiku)
+READER_MODEL = "claude-haiku-5-5"      # Aditya (26 Nov 2026, later): no Sonnet; Haiku-judged rates are marked
+# "same model as writer" (numspans.mark_judged). readback.json of 26 Nov was read by claude-sonnet-5-5 (v1 run).
 READER_ROLE, JUDGE_ROLE = "tagger", "verifier"
 PROMPT_VERSION = "readback_v1"
 SAMPLE, SEED = 50, 2026
@@ -557,36 +558,8 @@ def sample_papers(papers: list[dict[str, Any]], n: int = SAMPLE, seed: int = SEE
     return [p for p in papers if p["id"] in keep]
 
 
-def exact_ci(k: int, n: int, alpha: float = 0.05) -> list[float] | None:
-    """numspans.clopper_pearson for n <= 1000; above that its float binomial terms overflow, so the same bisection
-    runs on the binomial CDF summed in log space."""
-    if n <= 1000:
-        return clopper_pearson(k, n, alpha)
-
-    def cdf(x: int, p: float) -> float:
-        if p <= 0.0:
-            return 1.0
-        if p >= 1.0:
-            return 0.0 if x < n else 1.0
-        lp, lq = math.log(p), math.log1p(-p)
-        terms = [math.lgamma(n + 1) - math.lgamma(i + 1) - math.lgamma(n - i + 1) + i * lp + (n - i) * lq
-                 for i in range(x + 1)]
-        top = max(terms)
-        return math.exp(top) * sum(math.exp(t - top) for t in terms)
-
-    def solve(f, target: float) -> float:
-        lo, hi = 0.0, 1.0
-        for _ in range(60):
-            mid = (lo + hi) / 2
-            lo, hi = (mid, hi) if f(mid) > target else (lo, mid)
-        return (lo + hi) / 2
-    low = 0.0 if k == 0 else solve(lambda p: cdf(k - 1, p), 1 - alpha / 2)
-    high = 1.0 if k == n else solve(lambda p: cdf(k, p), alpha / 2)
-    return [round(low, 4), round(high, 4)]
-
-
 def rate(k: int, n: int) -> dict[str, Any]:
-    return {"k": k, "n": n, "rate": round(k / n, 4) if n else None, "ci95_exact": exact_ci(k, n)}
+    return {"k": k, "n": n, "rate": round(k / n, 4) if n else None, "ci95_exact": clopper_pearson(k, n)}
 
 
 def summarize(results: list[dict[str, Any]], rec: list[dict[str, Any]]) -> dict[str, Any]:
@@ -661,6 +634,8 @@ def run(seed_dir: Path, ds_dir: Path, caller, cache_only: bool = False, max_sect
            "possible_invented": [_brief(c) for r in results for c in r["claims"] if c["sort"] == "possible_invented"],
            "recall_misses": [x for x in rec if not x["found"]],
            "papers": results}
+    mark_judged(out["summary"], out["reader_model"])
+    mark_judged(out["by_writer"], out["reader_model"])
     return out
 
 

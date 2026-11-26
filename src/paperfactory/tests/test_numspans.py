@@ -191,6 +191,9 @@ def test_clopper_pearson_and_collisions() -> None:
     assert numspans.clopper_pearson(0, 100) == [0.0, 0.0362]
     assert numspans.clopper_pearson(1, 400) == [0.0001, 0.0138]
     assert numspans.clopper_pearson(5, 5)[1] == 1.0
+    lo, hi = numspans.clopper_pearson(2900, 3000)    # plain float terms overflowed above n ~ 1000
+    assert 0.957 < lo < 0.967 < hi < 0.973
+    assert numspans.clopper_pearson(3000, 3000)[1] == 1.0 and numspans.clopper_pearson(0, 3000)[0] == 0.0
     c = numspans.value_collisions([row("a", "attr", "3", subject="S1"), row("b", "attr", "3.0", subject="S2"),
                                    row("c", "attr", "3", subject="S1"), row("d", "attr", "4", subject="S1")])
     assert c == {"values": 1, "facts": 3, "pairs": 3, "different_subject_pairs": 2}
@@ -338,3 +341,14 @@ class _NoVerifier:
     """No model: every verifier answer is missing (only code rules place spans)."""
     def ask3(self, items, step):
         return [None] * len(items)
+
+
+def test_mark_report_tags_only_judged_rates() -> None:
+    rep = {"verifier_model": "claude-haiku-5-5", "error_rates": {"v2": {"errors": 1, "n": 9, "rate": 0.11}},
+           "code_error_rate_quote": {"rate": "3.9%", "n": 306}, "fact_recall": {"x": {"recall": 0.9}},
+           "coverage": {"rate": 0.5}}
+    numspans.mark_report(rep)
+    assert rep["error_rates"]["v2"]["judge_note"] == numspans.SAME_MODEL_NOTE == "same model as writer"
+    assert rep["code_error_rate_quote"]["judge"] == "claude-haiku-5-5"
+    assert "judge" not in rep["coverage"] and "judge" not in rep["fact_recall"]["x"]
+    assert "judge_note" not in numspans.mark_judged({"rate": 1}, "claude-sonnet-5-5")
