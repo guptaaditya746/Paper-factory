@@ -1,0 +1,128 @@
+{
+ "what": "writer targets from real open-licence review papers (Part E, 26 Nov 2026); means per body paragraph after masking as in realism.py",
+ "props": {
+  "sent_len": "words per sentence",
+  "cites": "citations per 100 words",
+  "numbers": "numbers per 100 words"
+ },
+ "source": "data/seed/bench_<field>/realism_real.json",
+ "method": "body paragraphs only (>= 30 words, <= 40 per paper, evenly spaced); headings, lists, tables, captions and front/back matter removed; invented-world sentences dropped; citations, names and numbers masked as one-word placeholders. Mean intervals: percentile bootstrap over papers (2000 resamples, seed 0, 95%).",
+ "fields": {
+  "medicine": {
+   "n_papers": 49,
+   "n_paragraphs": 1682,
+   "small_sample": false,
+   "sent_len": {
+    "mean": 25.753,
+    "ci95": [
+     24.5805,
+     27.1643
+    ],
+    "median": 23.5
+   },
+   "cites": {
+    "mean": 1.159,
+    "ci95": [
+     0.9465,
+     1.3557
+    ],
+    "median": 0.0
+   },
+   "numbers": {
+    "mean": 5.477,
+    "ci95": [
+     4.6559,
+     6.3666
+    ],
+    "median": 2.439
+   }
+  },
+  "law": {
+   "n_papers": 24,
+   "n_paragraphs": 924,
+   "small_sample": true,
+   "sent_len": {
+    "mean": 28.659,
+    "ci95": [
+     26.8209,
+     30.6985
+    ],
+    "median": 26.5
+   },
+   "cites": {
+    "mean": 1.229,
+    "ci95": [
+     1.0618,
+     1.4012
+    ],
+    "median": 1.031
+   },
+   "numbers": {
+    "mean": 0.803,
+    "ci95": [
+     0.6056,
+     1.023
+    ],
+    "median": 0.0
+   }
+  },
+  "materials": {
+   "n_papers": 35,
+   "n_paragraphs": 1302,
+   "small_sample": false,
+   "sent_len": {
+    "mean": 24.983,
+    "ci95": [
+     24.1743,
+     25.8089
+    ],
+    "median": 24.0
+   },
+   "cites": {
+    "mean": 1.813,
+    "ci95": [
+     1.6264,
+     2.0417
+    ],
+    "median": 1.585
+   },
+   "numbers": {
+    "mean": 2.128,
+    "ci95": [
+     1.7988,
+     2.507
+    ],
+    "median": 1.196
+   }
+  },
+  "llm": {
+   "n_papers": 45,
+   "n_paragraphs": 1736,
+   "small_sample": false,
+   "sent_len": {
+    "mean": 21.74,
+    "ci95": [
+     21.1938,
+     22.352
+    ],
+    "median": 20.857
+   },
+   "cites": {
+    "mean": 2.148,
+    "ci95": [
+     1.886,
+     2.4243
+    ],
+    "median": 1.613
+   },
+   "numbers": {
+    "mean": 0.822,
+    "ci95": [
+     0.6371,
+     1.0226
+    ],
+    "median": 0.0
+   }
+  }
+ }
+}

@@ -31,7 +31,8 @@ Real papers (Part E): open-licence review papers downloaded to data/cache/realis
 manifest.jsonl (selection: data/seed/realism_selection.json, law licences: realism_law_licences.json). `real`
 measures them the same way (generic name masking), compares per field with seed/bench_<field>/realism_synth.json
 (plus realism_kinds.json when complete) and writes seed/bench_<field>/realism_real.json, realism_compare.json and
-seed/realism_report.md. A field with fewer than MIN_REAL real papers is marked pending.
+seed/realism_report.md and the writer targets (TARGETS_FILE). A field with fewer than MIN_REAL real papers is
+reported with its n and marked "small sample" (Aditya, 26 Nov 2026: law, n = 24).
 
     python -m paperfactory.realism real --data ../../data --realism-dir ../../data/cache/realism
 
@@ -576,7 +577,10 @@ def run_synth(seed_dir: Path, ds_dir: Path, max_paras: int = MAX_PARAS) -> tuple
 
 
 # ------------------------------------------------------------------ real papers (Part E)
-MIN_REAL = 25                       # fewer kept real papers in a domain -> its comparison is marked pending
+MIN_REAL = 25                       # fewer kept real papers in a domain -> reported, marked "small sample"
+REAL_KINDS_NOTE = "Haiku-judged, no seed to check"   # real papers have no seed, so the reader cannot be checked
+TARGET_PROPS = ("sent_len", "cites", "numbers")   # writer targets for the next build (real-paper means)
+TARGETS_FILE = Path(__file__).parent / "packs" / "targets" / "realism.json"
 JUDGE = "claude-haiku-5-5"          # the only reader allowed for fact kinds (Aditya, 26 Nov 2026: no Sonnet)
 KIND_SAMPLE, KIND_SEED = 15, 2026   # papers per side per domain read for fact kinds
 
@@ -636,7 +640,7 @@ def compare_domain(field_name: str, real_rows: list[dict[str, Any]], n_real: int
                    real_invented: int = 0) -> dict[str, Any]:
     """realism_compare.json of one domain: the main test table (real generic masking vs synthetic world masking, as
     stored in realism_synth.json), the same with generic masking on both sides, and summaries. A domain with fewer
-    than MIN_REAL real papers is marked pending (numbers still given). Fact kinds join the table (5 tests under
+    than MIN_REAL real papers is marked "small sample" (numbers given with n). Fact kinds join the table (5 tests under
     Holm) only when a complete realism_kinds.json is given."""
     kt = kinds_tables(kinds or {})
     table = compare(real_rows, synth["rows"], *(kt or (None, None)))
@@ -644,9 +648,10 @@ def compare_domain(field_name: str, real_rows: list[dict[str, Any]], n_real: int
         if r["property"] == "fact_kind_share":
             r["judge"] = JUDGE
             r["note"] = kinds["synthetic"].get("note", "")
+            r["real_note"] = REAL_KINDS_NOTE
     out: dict[str, Any] = {
         "domain": synth["domain"], "field": field_name,
-        "status": "ok" if n_real >= MIN_REAL else f"pending: only {n_real} real papers (< {MIN_REAL})",
+        "status": "ok" if n_real >= MIN_REAL else f"small sample: n = {n_real} real papers (< {MIN_REAL})",
         "method": METHOD, "real_masking": "generic_names", "synth_masking": "world (realism_synth.json rows)",
         "note": "Paragraph-level KS tests treat paragraphs as independent; paragraphs of one paper are not, so raw "
                 "p-values are optimistic. Effect sizes first.",
@@ -659,7 +664,8 @@ def compare_domain(field_name: str, real_rows: list[dict[str, Any]], n_real: int
         out["synth_summary_generic"] = summarize(synth_generic)
     if kinds:
         out["fact_kinds"] = {k: kinds[k] for k in ("judge", "complete", "cost", "sample") if k in kinds} | {
-            "real": kind_counts(kinds["real"]["papers"]), "synthetic": kind_counts(kinds["synthetic"]["papers"]),
+            "real": kind_counts(kinds["real"]["papers"]), "real_note": REAL_KINDS_NOTE,
+            "synthetic": kind_counts(kinds["synthetic"]["papers"]),
             "synthetic_by_writer": kinds["synthetic"].get("by_writer", {})}
     return out
 
@@ -738,8 +744,8 @@ def kinds_result(field_name: str, plan: Mapping[str, Any], counts: Mapping[str, 
         if w == JUDGE:
             row["note"] = SAME_MODEL_NOTE
         syn.append(row)
-    real = [{"paper": pid, "kinds": dict(sorted(counts.get(f"real:{pid}", {}).items())), "judge": JUDGE}
-            for pid in plan["real"]]
+    real = [{"paper": pid, "kinds": dict(sorted(counts.get(f"real:{pid}", {}).items())), "judge": JUDGE,
+             "note": REAL_KINDS_NOTE} for pid in plan["real"]]
     by_writer: dict[str, Any] = {}
     for w in sorted({r["writer"] for r in syn}):
         rows = [r for r in syn if r["writer"] == w]
@@ -752,7 +758,7 @@ def kinds_result(field_name: str, plan: Mapping[str, Any], counts: Mapping[str, 
                        "writer)", "real": "random.sample of the downloaded real papers"},
             "kinds_are": "valid reader tool calls (thesis_scorer.facttools) per section, readback.Reader, prompt "
                          "readback_v1; sections from readback.sections on both sides",
-            "real": {"papers": real, "kinds": kind_counts(real), "judge": JUDGE},
+            "real": {"papers": real, "kinds": kind_counts(real), "judge": JUDGE, "note": REAL_KINDS_NOTE},
             "synthetic": {"papers": syn, "kinds": kind_counts(syn), "judge": JUDGE, "by_writer": by_writer,
                           "note": f"{n_same} of {len(syn)} synthetic papers written by {JUDGE}: {SAME_MODEL_NOTE}"
                           if n_same else ""}}
@@ -801,45 +807,82 @@ def run_kinds(field_name: str, seed_dir: Path, ds_dir: Path, realism_dir: Path, 
     return out
 
 
-def report_md(compares: list[dict[str, Any]], pending: Mapping[str, str]) -> str:
-    """Short Markdown report: per domain, effect size first, then means, raw p and Holm p."""
+HEAD = ("| property | real mean | synthetic mean | KS D / Cramér's V | p (Holm) | p raw | n papers real / synth "
+        "| n real / synth |", "|---|---|---|---|---|---|---|---|")
+
+
+def _row(t: dict[str, Any], papers: str) -> str:
+    """One table row: means, then the effect size and Holm p next to them, raw p, n papers, n paragraphs or facts."""
+    if t["property"] == "fact_kind_share":
+        rm = ", ".join(f"{k} {v:.2f}" for k, v in t["real_mean"].items())
+        sm = ", ".join(f"{k} {v:.2f}" for k, v in t["synth_mean"].items())
+        return (f"| fact kinds (real: {t.get('real_note', REAL_KINDS_NOTE)}) | {rm} | {sm} | "
+                f"V = {t['effect_size']:.3f} | {t['p_holm']:.2g} | {t['p']:.2g} | {papers} | "
+                f"{t['n_real']} / {t['n_synth']} facts |")
+    return (f"| {t['property']} | {t['real_mean']:.2f} | {t['synth_mean']:.2f} | D = {t['effect_size']:.3f} | "
+            f"{t['p_holm']:.2g} | {t['p']:.2g} | {papers} | {t['n_real']} / {t['n_synth']} paragraphs |")
+
+
+def report_md(compares: list[dict[str, Any]], pending: Mapping[str, str],
+              targets: Mapping[str, Any] | None = None) -> str:
+    """Markdown report: per domain one table (n papers in every row and heading), means first with KS D or
+    Cramer's V and the Holm-corrected p beside them; the generic-masking table; the writer targets."""
     lines = ["# Realism check: real vs synthetic review papers", "",
-             "Made by `python -m paperfactory.realism real`. Per body paragraph; effect size first (KS D; Cramer's V "
-             "for fact kinds), then the means, raw p and Holm-corrected p. Real side: generic name masking; synthetic "
-             "side: world masking (as in realism_synth.json). Paragraph-level p-values are optimistic (paragraphs of "
-             "one paper are not independent).", ""]
+             "Made by `python -m paperfactory.realism real`. Per body paragraph. Each row: the means, then the effect "
+             "size (KS D; Cramér's V for fact kinds) and the Holm-corrected p beside them, the raw p and n. Real side: "
+             "generic name masking; synthetic side: world masking (as in realism_synth.json). Paragraph-level "
+             "p-values are optimistic (paragraphs of one paper are not independent). Real-paper fact-kind shares are "
+             f"{REAL_KINDS_NOTE}.", ""]
     for c in compares:
-        lines += [f"## {c['field']} ({c['domain']}): {c['real_papers']} real, {c['synth_papers']} synthetic papers"
-                  + ("" if c["status"] == "ok" else f" — {c['status']}"), "",
-                  "| property | effect | real mean | synthetic mean | p | p (Holm) | n paragraphs real / synth |",
-                  "|---|---|---|---|---|---|---|"]
-        for t in c["tests"]:
-            if t["property"] == "fact_kind_share":
-                rm = ", ".join(f"{k} {v:.2f}" for k, v in t["real_mean"].items())
-                sm = ", ".join(f"{k} {v:.2f}" for k, v in t["synth_mean"].items())
-                lines.append(f"| fact kinds (judge {t['judge']}) | V={t['effect_size']:.3f} | {rm} | {sm} | "
-                             f"{t['p']:.2g} | {t['p_holm']:.2g} | {t['n_real']} / {t['n_synth']} facts |")
-            else:
-                lines.append(f"| {t['property']} | D={t['effect_size']:.3f} | {t['real_mean']:.2f} | "
-                             f"{t['synth_mean']:.2f} | {t['p']:.2g} | {t['p_holm']:.2g} | {t['n_real']} / {t['n_synth']} |")
+        papers = f"{c['real_papers']} / {c['synth_papers']}"
+        small = "" if c["status"] == "ok" else " — small sample"
+        lines += [f"## {c['field']} ({c['domain']}): n = {c['real_papers']} real, {c['synth_papers']} synthetic "
+                  f"papers{small}", "", *HEAD]
+        lines += [_row(t, papers) for t in c["tests"]]
         if c.get("fact_kinds") and not any(t["property"] == "fact_kind_share" for t in c["tests"]):
             lines.append(f"\nFact kinds: incomplete read, not tested ({c['fact_kinds'].get('cost')}).")
         if (n := c.get("fact_kinds", {}).get("synthetic_by_writer")):
             notes = [f"{w}: {v['papers']} papers" + (f" ({v['note']})" if v.get("note") else "") for w, v in n.items()]
-            lines.append("\nFact-kind sample by writer: " + "; ".join(notes) + ".")
+            lines.append("\nFact-kind sample (Haiku-judged), synthetic side by writer: " + "; ".join(notes) + ".")
         g = c.get("tests_generic_both")
         if g:
-            lines.append("\nSame with generic masking on both sides: " + "; ".join(
-                f"{t['property']} D={t['effect_size']:.3f} (Holm p {t['p_holm']:.2g})" for t in g) + ".")
+            gp = f"{c['real_papers']} / {c.get('synth_summary_generic', {}).get('papers', c['synth_papers'])}"
+            lines += ["", f"Same with generic masking on both sides (n = {c['real_papers']} real papers{small}):", "",
+                      *HEAD, *[_row(t, gp) for t in g]]
         iv = c["invented_world_sentences"]
         lines += [f"\nInvented-world sentences (detector hits): real {iv['real']}, synthetic {iv['synthetic']}.", ""]
     for d, why in pending.items():
         lines += [f"## {d}: {why}", ""]
+    if targets:
+        lines += ["## Writer targets for the next build (real-paper means)", "",
+                  f"Saved in `{targets['file']}`. Mean per body paragraph with a paper-bootstrap 95% interval.", "",
+                  "| field | n real papers | sentence length (words) | citations / 100 words | numbers / 100 words |",
+                  "|---|---|---|---|---|"]
+        for fld, t in targets["fields"].items():
+            cells = [f"{t[k]['mean']:.2f} [{t[k]['ci95'][0]:.2f}, {t[k]['ci95'][1]:.2f}]" for k in TARGET_PROPS]
+            lines.append(f"| {fld}{' (small sample)' if t['small_sample'] else ''} | {t['n_papers']} | "
+                         + " | ".join(cells) + " |")
+        lines.append("")
     return "\n".join(lines).rstrip() + "\n"
 
 
+def writer_targets(compares: list[dict[str, Any]]) -> dict[str, Any]:
+    """Real-paper means per field (TARGET_PROPS) as writer targets for the next build, with n and intervals."""
+    out: dict[str, Any] = {"what": "writer targets from real open-licence review papers (Part E, 26 Nov 2026); "
+                                   "means per body paragraph after masking as in realism.py",
+                           "props": {"sent_len": "words per sentence", "cites": "citations per 100 words",
+                                     "numbers": "numbers per 100 words"},
+                           "source": "data/seed/bench_<field>/realism_real.json", "method": METHOD, "fields": {}}
+    for c in compares:
+        s = c["real_summary"]
+        out["fields"][c["field"]] = {"n_papers": c["real_papers"], "n_paragraphs": s["paragraphs"],
+                                     "small_sample": c["status"] != "ok"} | {
+            k: {"mean": s[k]["mean"], "ci95": s[k]["mean_ci"], "median": s[k]["median"]} for k in TARGET_PROPS}
+    return out
+
+
 def run_real(data: Path, realism_dir: Path, fields: Sequence[str], max_paras: int = MAX_PARAS,
-             write: bool = True) -> list[dict[str, Any]]:
+             write: bool = True, targets_file: Path = TARGETS_FILE) -> list[dict[str, Any]]:
     """`real` command: measure the real papers per field, compare with seed/bench_<field>/realism_synth.json (and
     realism_kinds.json when present), write seed/bench_<field>/realism_real.json, realism_compare.json and
     seed/realism_report.md."""
@@ -862,7 +905,12 @@ def run_real(data: Path, realism_dir: Path, fields: Sequence[str], max_paras: in
             for name, obj in (("realism_real.json", real), ("realism_compare.json", cmp_)):
                 (seed_dir / name).write_text(json.dumps(obj, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     if write:
-        (data / "seed" / "realism_report.md").write_text(report_md(compares, pending), encoding="utf-8")
+        tg = writer_targets(compares)
+        targets_file.parent.mkdir(parents=True, exist_ok=True)
+        targets_file.write_text(json.dumps(tg, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        tg_view = tg | {"file": "services/paper-factory/src/paperfactory/packs/targets/realism.json"
+                        if targets_file == TARGETS_FILE else str(targets_file)}
+        (data / "seed" / "realism_report.md").write_text(report_md(compares, pending, tg_view), encoding="utf-8")
     return compares
 
 

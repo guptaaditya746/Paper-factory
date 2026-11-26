@@ -314,13 +314,13 @@ def test_kinds_result_marks_judge_and_same_model_note() -> None:
     assert out["real"]["kinds"] == {"add_attr": 3} and out["synthetic"]["kinds"] == {"add_effect": 2, "add_relation": 1}
 
 
-def test_compare_domain_pending_and_kinds_join_holm(tmp_path) -> None:
+def test_compare_domain_small_sample_and_kinds_join_holm(tmp_path) -> None:
     rd = _real_dir(tmp_path, 3)
     rows, _, n = realism.measure_real(rd, "law")
     data, seed, ds = _synth_data(tmp_path)
     synth = json.loads((seed / "realism_synth.json").read_text())
     c = realism.compare_domain("law", rows, n, synth)
-    assert c["status"].startswith("pending") and len(c["tests"]) == 4
+    assert c["status"] == "small sample: n = 3 real papers (< 25)" and len(c["tests"]) == 4
     plan = {"synthetic": ["X-0"], "real": ["R0"], "writers": {"X-0": "claude-haiku-5-5"}}
     kinds = realism.kinds_result("law", plan, {"synthetic:X-0": {"add_effect": 5, "add_relation": 1},
                                                "real:R0": {"add_effect": 1, "add_relation": 5}}, {}, True, {})
@@ -328,6 +328,9 @@ def test_compare_domain_pending_and_kinds_join_holm(tmp_path) -> None:
     assert c5["status"] == "ok" and [t["holm_over"] for t in c5["tests"]] == [5] * 5
     fk = c5["tests"][-1]
     assert fk["judge"] == "claude-haiku-5-5" and "same model as writer" in fk["note"]
+    assert fk["real_note"] == "Haiku-judged, no seed to check"
+    assert c5["fact_kinds"]["real_note"] == "Haiku-judged, no seed to check"
+    assert kinds["real"]["note"] == "Haiku-judged, no seed to check"
     kinds["complete"] = False
     assert len(realism.compare_domain("law", rows, n, synth, None, kinds)["tests"]) == 4
 
@@ -335,11 +338,18 @@ def test_compare_domain_pending_and_kinds_join_holm(tmp_path) -> None:
 def test_run_real_writes_compare_and_report(tmp_path) -> None:
     rd = _real_dir(tmp_path, 2)
     data, seed, _ = _synth_data(tmp_path)
-    out = realism.run_real(data, rd, ["law", "llm"])
+    tf = tmp_path / "targets.json"
+    out = realism.run_real(data, rd, ["law", "llm"], targets_file=tf)
     assert len(out) == 1 and (seed / "realism_compare.json").is_file() and (seed / "realism_real.json").is_file()
     c = json.loads((seed / "realism_compare.json").read_text())
     assert c["real_papers"] == 2 and {t["property"] for t in c["tests"]} == set(realism.PROPS)
     assert {t["property"] for t in c["tests_generic_both"]} == set(realism.PROPS)
     rep = (data / "seed" / "realism_report.md").read_text()
-    assert "| property | effect | real mean | synthetic mean | p | p (Holm) |" in rep
-    assert "llm: pending: no real papers downloaded" in rep and "pending: only 2 real papers" in rep
+    assert "| property | real mean | synthetic mean | KS D / Cramér's V | p (Holm) | p raw | n papers real / synth" in rep
+    assert rep.count("| property | real mean") == 2 and "| 2 / " in rep         # n papers in every row of both tables
+    assert "n = 2 real" in rep and "small sample" in rep and "pending: only" not in rep
+    assert "llm: pending: no real papers downloaded" in rep
+    tg = json.loads(tf.read_text())["fields"]["law"]
+    assert tg["n_papers"] == 2 and tg["small_sample"] and set(tg) >= {"sent_len", "cites", "numbers"}
+    assert tg["cites"]["mean"] == c["real_summary"]["cites"]["mean"] and len(tg["cites"]["ci95"]) == 2
+    assert "Writer targets for the next build" in rep
