@@ -262,3 +262,27 @@ def test_words_match_and_paper_names():
             "P9": {"label": "section 12 of the Tetre Data Privacy Act", "alt": []}}
     assert rb.paper_prefix("Section 1", ["P1", "P9"], ents) == ("P1", "paper_prefix")
     assert rb.paper_prefix("section", ["P1", "P9"], ents) == (None, "no_match")
+
+
+def test_partial_match_and_matching_misses():
+    ents = {"S1": {"kind": "study"}, "M1": {"kind": "material"}, "M2": {"kind": "material"}, "C1": {"kind": "court"},
+            "X": {"kind": "property"}}
+    own = [{"id": "P:S1-imp-M1", "paper": "P", "what": "relation", "subject": "S1", "relation": "imp",
+            "object": "M1", "role": "decoy"}]
+    c = lambda s, o, rel="imp": {"kind": "relation", "relation": rel, "ids": {"subject": [s], "object": [o]}}  # noqa: E731
+    assert rb.partial_match(c("S1", None), own, ents)["id"] == "P:S1-imp-M1"        # object unresolved
+    assert rb.partial_match(c("S1", "X"), own, ents)["id"] == "P:S1-imp-M1"         # object of another kind
+    assert rb.partial_match(c("C1", "M1"), own, ents)["id"] == "P:S1-imp-M1"        # subject of another kind
+    assert rb.partial_match(c("S1", "M2"), own, ents) is None                       # another material: not a miss
+    assert rb.partial_match(c("S1", None, "drop"), own, ents) is None               # other relation
+    rbj = {"reader_model": "claude-haiku-5-5",
+           "summary": {"writer_precision": {"k": 8, "n": 10, "rate": 0.8, "ci95_exact": [0.4, 0.97]}},
+           "by_writer": {"w": {"writer_precision": {"k": 8, "n": 10, "rate": 0.8, "ci95_exact": [0.4, 0.97]}}},
+           "papers": [{"paper": "P", "writer": "w", "claims": [
+               c("S1", None) | {"sort": "possible_invented", "quote": "q", "subject": "S1", "object": "x"},
+               c("S1", "M2") | {"sort": "possible_invented"}, c("S1", None) | {"sort": "planned"}]}]}
+    mm = rb.matching_misses(rbj, own, ents)
+    assert mm["count"] == 1 and mm["by_role"] == {"distractor (true near-miss fact)": 1}
+    assert mm["writer_precision"]["as_reported"]["rate"] == 0.8
+    assert mm["writer_precision"]["with_misses_planned"]["k"] == 9
+    assert mm["writer_precision"]["with_misses_planned"]["judge_note"] == "same model as writer"

@@ -23,6 +23,17 @@ Defaults for open questions (plan, 26 Nov 2026): a claim matching another paper'
 other_paper_fact); a planted pair with the wrong relation is possible invented (flag wrong_relation, also counted
 apart); the reader sees the field's relation list.
 
+Terms: a "decoy" in the data (role "decoy" in facts.jsonl) is reported as a distractor (true near-miss fact): a true
+fact of the world that the paper states beside a claim, the same relation with one entity different. Stating it is
+planned.
+
+Matching misses (Aditya's hand check, 26 Nov 2026: 6 of 40 possible invented facts were planted facts of the paper
+that matching missed): `partial_match` finds a possible invented relation claim with the relation of a planted relation
+of this paper, one end resolved to that fact's entity and the other end unresolved or resolved to an entity of another
+kind ("Satho Lab 2018 study reports_improvement thermal conductivity" for the distractor "Satho Lab 2018 study
+reports_improvement coating Kogal-8"). `matching_misses` adds these to readback.json; writer precision is then given
+as reported and with them counted as planned. Free-text (add_custom) misses are found only by hand.
+
 Sample: SAMPLE papers per domain, seed SEED, stratified by writer model (all papers if fewer). Every reply is cached by
 input hash under runs/paperfactory/readback/<domain>/cache (llm.Caller) and reused.
 
@@ -639,6 +650,55 @@ def run(seed_dir: Path, ds_dir: Path, caller, cache_only: bool = False, max_sect
     return out
 
 
+# ------------------------------------------------------------------ matching misses
+TERMS = {"decoy": "distractor (true near-miss fact)"}
+
+
+def partial_match(c: dict[str, Any], own: list[dict[str, Any]], ents: dict[str, Any]) -> dict[str, Any] | None:
+    """The planted relation of this paper that a possible invented relation claim half-matches: same relation, one end
+    the fact's entity, the other end unresolved or of another kind than the fact's entity. Distractors are tried
+    first, then claims. None when no such fact."""
+    if c.get("kind") != "relation":
+        return None
+    sid = (c.get("ids", {}).get("subject") or [None])[0]
+    oid = (c.get("ids", {}).get("object") or [None])[0]
+    kind = lambda i: ents.get(i, {}).get("kind") if i else None                  # noqa: E731
+    rel = sorted((r for r in own if r["what"] == "relation" and r["relation"] == c.get("relation")),
+                 key=lambda r: (r.get("role") != "decoy", r["id"]))
+    for r in rel:
+        if sid == r["subject"] and (oid is None or kind(oid) != kind(r["object"])):
+            return r
+        if oid == r["object"] and (sid is None or kind(sid) != kind(r["subject"])):
+            return r
+    return None
+
+
+def matching_misses(rb: dict[str, Any], rows: list[dict[str, Any]], ents: dict[str, Any]) -> dict[str, Any]:
+    """Possible invented claims that half-match a planted fact of their paper (partial_match), and writer precision as
+    reported and with them counted as planned (overall and per writer). No model calls."""
+    items = []
+    for p in rb["papers"]:
+        own = [r for r in rows if r["paper"] == p["paper"]]
+        for c in p["claims"]:
+            if c["sort"] == "possible_invented" and (r := partial_match(c, own, ents)):
+                items.append({"paper": p["paper"], "writer": p["writer"], "quote": c.get("quote"),
+                              "claim": {k: c.get(k) for k in ("subject", "relation", "object")}, "fact": r["id"],
+                              "role": TERMS["decoy"] if r.get("role") == "decoy" else "claim"})
+
+    def both(pr: dict[str, Any], m: int) -> dict[str, Any]:
+        return {"as_reported": pr, "with_misses_planned": rate(pr["k"] + m, pr["n"]), "misses": m}
+    out = {"rule": "partial_match: same relation, one end the planted fact's entity, other end unresolved or of "
+                   "another kind; free-text misses are not found by code",
+           "count": len(items), "by_role": dict(Counter(x["role"] for x in items)),
+           "writer_precision": both(rb["summary"]["writer_precision"], len(items)),
+           "by_writer": {w: both(v["writer_precision"], sum(x["writer"] == w for x in items))
+                         for w, v in rb["by_writer"].items()},
+           "items": items}
+    mark_judged(out["writer_precision"], rb["reader_model"])
+    mark_judged(out["by_writer"], rb["reader_model"])
+    return out
+
+
 def pooled(readbacks: list[dict[str, Any]]) -> dict[str, Any]:
     """Writer precision and reader recall summed over domains (and per writer), exact 95% intervals."""
     def add(get) -> dict[str, Any]:
@@ -649,6 +709,9 @@ def pooled(readbacks: list[dict[str, Any]]) -> dict[str, Any]:
     calls = sum(rb["summary"]["calls"] for rb in readbacks)
     return {"domains": [rb["domain"] for rb in readbacks],
             "writer_precision": add(lambda rb: rb["summary"]["writer_precision"]),
+            "writer_precision_with_misses_planned": add(
+                lambda rb: (rb.get("matching_misses") or {}).get("writer_precision", {}).get("with_misses_planned")),
+            "matching_misses": sum((rb.get("matching_misses") or {}).get("count", 0) for rb in readbacks),
             "reader_recall": add(lambda rb: rb["summary"]["reader_recall"]),
             "by_writer": {w: {"writer_precision": add(lambda rb: rb["by_writer"].get(w, {}).get("writer_precision")),
                               "reader_recall": add(lambda rb: rb["by_writer"].get(w, {}).get("reader_recall"))}
@@ -686,8 +749,25 @@ def main(argv: list[str] | None = None) -> None:
     ap.add_argument("--sections", type=int, default=None, help="cost probe: read only the first N sections")
     ap.add_argument("--cache-only", action="store_true")
     ap.add_argument("--no-write", action="store_true")
+    ap.add_argument("--misses", nargs="+", metavar="DOMAIN", help="add matching misses to these domains' "
+                    "readback.json (no model calls)")
     a = ap.parse_args(argv)
     data = Path(a.data_dir)
+    if a.misses:
+        for d in a.misses:
+            seed_dir = data / "seed" / d
+            rb = json.loads((seed_dir / "readback.json").read_text(encoding="utf-8"))
+            rows = [json.loads(x) for x in (seed_dir / "facts.jsonl").read_text(encoding="utf-8").splitlines()
+                    if x.strip()]
+            rb["terms"] = TERMS
+            rb["matching_misses"] = matching_misses(rb, rows,
+                                                    json.loads((seed_dir / "entities.json").read_text(encoding="utf-8")))
+            mm = rb["matching_misses"]
+            print(d, mm["count"], mm["by_role"], mm["writer_precision"]["as_reported"]["rate"], "->",
+                  mm["writer_precision"]["with_misses_planned"]["rate"])
+            if not a.no_write:
+                (seed_dir / "readback.json").write_text(json.dumps(rb, indent=1, ensure_ascii=False), encoding="utf-8")
+        return
     if a.pool:
         rbs = [json.loads((data / "seed" / d / "readback.json").read_text(encoding="utf-8")) for d in a.pool]
         print(json.dumps(pooled(rbs), indent=1))
