@@ -38,6 +38,7 @@ ROWS = [row("A1", "attr", "3", "models", subject="S1", attr="models_compared"),
         row("A2", "attr", "3050", "n", subject="S1", attr="examples"),
         row("P1", "pool", "1.2", subject="M1", stat="estimate", studies=["S1", "S2"]),
         row("E1", "effect", "65.2", subject="S1", relation="reports_gain", object="M1", stat="baseline"),
+        row("E1b", "effect", "65.2", subject="S2", relation="reports_drop", object="M1", stat="baseline"),
         row("E2", "effect", "-1.9", subject="S2", relation="reports_drop", object="M1", stat="estimate"),
         row("E2l", "effect", "-3.7", subject="S2", relation="reports_drop", object="M1", stat="ci_low"),
         row("E2h", "effect", "-0.5", subject="S2", relation="reports_drop", object="M1", stat="ci_high"),
@@ -121,10 +122,10 @@ def test_code_rules_verifier_and_controls(tmp_path: Path) -> None:
     assert man["papers"][0]["writer"] == "claude-haiku-5-5" and man["number_spans"]["verifier_model"] == "v"
     assert man["number_spans"]["independence"]["same_model_as_a_writer"] is False
     # Lof 2020: three cells of one row = shared; the pool's estimate (P1) and upper bound (P2) are in two sentences
-    assert [m["ids"] for m in rep["ci_mismatch"]] == [{"estimate": "P1", "ci_high": "P2"}] and len(b.seen) == 1
+    assert [m["ids"] for m in rep["ci_mismatch"]] == [{"estimate": "P1", "ci_high": "P2"}] and len(b.seen) == 2   # spans + hard controls
     assert [x["id"] for x in rep["no_span"]] == ["A4"]
-    assert rep["coverage"]["effect"] == {"facts": 8, "with_span": 8, "once+name": 7, "once+unit": 0,
-                                         "several+name": 1, "verifier": 0, "share": 1.0}
+    assert rep["coverage"]["effect"] == {"facts": 9, "with_span": 9, "once+name": 7, "once+unit": 0,
+                                         "several+name": 2, "verifier": 0, "share": 1.0}
 
 
 def test_cache_only_reuses_answers_and_never_calls(tmp_path: Path) -> None:
@@ -158,3 +159,12 @@ def test_same_model_recorded(tmp_path: Path) -> None:
     ind = rep["independence"]
     assert ind["same_model_as_a_writer"] and ind["papers_same_model"] == 1 and ind["verifier_spans_same_model"] == 1
     assert rep["controls_by_writer"]["same_model"] == {"items": 1, "no": 1, "yes": 0, "no_answer": 0}
+
+
+def test_hard_control_right_value_wrong_subject(tmp_path: Path) -> None:
+    """Kor 2021 and Bel 2019 share 65.2: each one's row is a hard control for the other's fact."""
+    seed, ds = domain(tmp_path)
+    rep = numspans.run(seed, ds, llm.Caller(settings(tmp_path, verifier="v"), backend=honest()))
+    h = rep["hard_controls"]
+    assert h["candidates"] >= 1 and h["items"] == h["candidates"]
+    assert h["yes"] == h["items"] and len(h["accepted"]) == h["items"]   # the value-only fake verifier fails them

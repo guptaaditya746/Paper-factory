@@ -15,6 +15,8 @@ Per fact, by code first:
               its row has the same value
   verifier    every other case: each place with the value goes to a separate yes/no model call. Each item has a
               code-made control: the same passage with a wrong value in the fact, which must get "no".
+Hard control: the right value in a place about another subject's fact (e.g. another study's row with the same
+value) must get "no" (up to HARD_MAX per domain, step "numhard:<pid>").
 Checked after: the estimate and both CI bounds of one effect or pool should share a place (report "ci_mismatch").
 
 Verifier answers are cached under runs/paperfactory/numspans/<domain>/cache (llm.Caller). cache_only=True (used by
@@ -25,6 +27,7 @@ ops/merge_bench.py) never calls a model: an uncached item stays unresolved and i
 from __future__ import annotations
 
 import json
+import random
 import re
 from dataclasses import dataclass, field
 from decimal import Decimal, InvalidOperation
@@ -43,6 +46,7 @@ VERIFIER_MODEL = "claude-haiku-5-5"    # Aditya's choice (26 Nov 2026): the SAME
 WRITERS = (("bench20h-", "claude-haiku-5-5"), ("qwen40-", "qwen (orch-model)"), ("v2p3-", "qwen (orch-model)"))
 BATCH = 25
 MAX_PLACES = 8                         # places per fact sent to the verifier
+HARD_MAX, HARD_SEED = 100, 26          # hard controls per domain (right value, wrong thing)
 CI = ("estimate", "ci_low", "ci_high")
 NO_UNIT = {"n", "h", ""}               # too short or too common to count as unit evidence
 
@@ -300,7 +304,32 @@ def span_paper(md: str, rows: list[dict[str, Any]], table: AliasTable, rules: Sp
         rec["places"] = rec.pop("spans")
         rec["spans"] = [[P[i].start, P[i].end] for i in rec["places"]]
         rec["groups"] = [list(P[i].group) for i in rec["places"]]
-    return res
+    # hard controls: names anywhere in what the verifier sees (a sideways table names subjects in its headers)
+    seen_names = [{m.eid for m in find_mentions(p.context + " " + p.passage, table)} for p in P]
+    return res, hard_candidates(res, rows, P, seen_names)
+
+
+def hard_candidates(res: list[dict[str, Any]], rows: list[dict[str, Any]], P: list[Place],
+                    ments: list[set[str]]) -> list[dict[str, Any]]:
+    """Hard controls: fact F with a place of another fact G that has the SAME value but another subject, where the
+    place (passage or context, as the verifier sees it) does not name F's subject (e.g. another study's row). The
+    right answer is "no"."""
+    by = {r["id"]: r for r in rows}
+    out, seen = [], set()
+    for F in res:
+        rf = by[F["id"]]
+        v = canon(rf.get("value"))
+        for G in res:
+            rg = by[G["id"]]
+            if G is F or v is None or canon(rg.get("value")) != v or rg.get("subject") == rf.get("subject"):
+                continue
+            for i in G["places"]:
+                if i in F["places"] or rf.get("subject") in ments[i] or (F["id"], i) in seen:
+                    continue
+                seen.add((F["id"], i))
+                out.append({"fact": F["id"], "other": G["id"], "context": P[i].context, "passage": P[i].passage,
+                            "text": fact_text(rf, rf["value"])})
+    return out
 
 
 # ------------------------------------------------------------------ one domain
@@ -341,12 +370,14 @@ def run(seed_dir: Path, ds_dir: Path, caller, cache_only: bool = False) -> dict[
     verifier = Verifier(caller, cache_only)
     by_id: dict[str, dict[str, Any]] = {}
     vm = caller.s.model("verifier")
+    hard_all: list[dict[str, Any]] = []
     for p in man["papers"]:
         md = (ds_dir / p["id"] / "paper.md").read_text(encoding="utf-8")
         norm = normalize_paper(md)
         table = alias_table(w, f, defined_terms(norm.text, base, f))
         mine = [r for r in rows if r["paper"] == p["id"]]
-        recs = span_paper(md, mine, table, rules, verifier, p["id"], {k: e["kind"] for k, e in ents.items()})
+        recs, hard = span_paper(md, mine, table, rules, verifier, p["id"], {k: e["kind"] for k, e in ents.items()})
+        hard_all += [h | {"paper": p["id"], "same_model": writer_of(p) == vm} for h in hard]
         meta = {r["id"]: r for r in mine}
         p["numbers"] = []
         for rec in recs:
@@ -359,10 +390,33 @@ def run(seed_dir: Path, ds_dir: Path, caller, cache_only: bool = False) -> dict[
                                      "groups": rec["groups"], "same_model": writer_of(p) == vm}
         p["writer"] = writer_of(p)
     rep = report(rows, by_id, verifier)
+    rep["hard_controls"] = hard_controls(hard_all, verifier)
     man["number_spans"] = {k: rep[k] for k in ("verifier_model", "independence")}
     (seed_dir / "paperfactory.json").write_text(json.dumps(man, indent=1, ensure_ascii=False), encoding="utf-8")
     (seed_dir / "numspans.json").write_text(json.dumps(rep, indent=1, ensure_ascii=False), encoding="utf-8")
     return rep
+
+
+def hard_controls(cands: list[dict[str, Any]], verifier: Verifier) -> dict[str, Any]:
+    """Up to HARD_MAX hard controls (fixed seed), asked per paper; every right answer is "no"."""
+    pick = sorted(random.Random(HARD_SEED).sample(cands, min(HARD_MAX, len(cands))),
+                  key=lambda h: (h["paper"], h["fact"], h["passage"]))
+    for pid in dict.fromkeys(h["paper"] for h in pick):
+        mine = [h for h in pick if h["paper"] == pid]
+        for h, g in zip(mine, verifier.ask([(h["context"], h["passage"], h["text"]) for h in mine],
+                                           f"numhard:{pid}")):
+            h["answer"] = g
+
+    def count(xs: list[dict[str, Any]]) -> dict[str, int]:
+        return {"items": len(xs), "no": sum(h["answer"] is False for h in xs),
+                "yes": sum(h["answer"] is True for h in xs), "no_answer": sum(h["answer"] is None for h in xs)}
+    return {"candidates": len(cands), **count(pick),
+            "by_writer": {"same_model": count([h for h in pick if h["same_model"]]),
+                          "other_model": count([h for h in pick if not h["same_model"]])},
+            "note": "right value, wrong thing (another subject's place with the same value); 'yes' is a verifier "
+                    "error. Tests the verifier only: code-made spans never see it",
+            "accepted": [{k: h[k] for k in ("paper", "fact", "other", "text", "passage")} for h in pick
+                         if h["answer"]]}
 
 
 def report(rows: list[dict[str, Any]], by_id: dict[str, dict[str, Any]], verifier: Verifier) -> dict[str, Any]:
