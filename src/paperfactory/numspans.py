@@ -27,6 +27,7 @@ ops/merge_bench.py) never calls a model: an uncached item stays unresolved and i
 from __future__ import annotations
 
 import json
+import math
 import random
 import re
 from dataclasses import dataclass, field
@@ -47,6 +48,19 @@ WRITERS = (("bench20h-", "claude-haiku-5-5"), ("qwen40-", "qwen (orch-model)"), 
 BATCH = 25
 MAX_PLACES = 8                         # places per fact sent to the verifier
 HARD_MAX, HARD_SEED = 100, 26          # hard controls per domain (right value, wrong thing)
+AUDIT_RANDOM, AUDIT_SEED = 100, 27     # other several+name spans checked per domain
+# the verifier's error rate as quoted (Aditya, 26 Nov 2026): first hard-control run, 13 'yes' of 400 classified by
+# hand: 8 false controls (subject named in a column header), 5 real errors (LLM-06, MED-08, MED-31 x2, MED-44)
+VERIFIER_ERROR_QUOTE = {"rate": "1.3% [0.4%, 2.9%]", "errors": 5, "n": 400, "interval": "exact (Clopper-Pearson) 95%",
+                        "source": "hard_controls_v1, 13 accepted of 400, 8 judged false controls by hand"}
+HARD_RULES = {
+    "v1_row": "first run (26 Nov 2026): dropped a place when the fact's subject is named in its sentence or in the "
+              "cells of its table row",
+    "v2_seen": "current (26 Nov 2026): dropped a place when the fact's subject is named anywhere the verifier sees "
+               "it (passage with column headers, and context)"}
+HARD_WHY = ("v1 made false controls: in sideways tables (one column per case or study) the subject is named in the "
+            "column header, so the passage did state the fact and 'yes' was right. v1 counted 13 'yes' of 400; most "
+            "were such false controls; v2 dropped them")
 CI = ("estimate", "ci_low", "ci_high")
 NO_UNIT = {"n", "h", ""}               # too short or too common to count as unit evidence
 
@@ -119,6 +133,7 @@ class Place:
     passage: str               # for the verifier: the sentence, or "header: cell; ..." for the row
     row: list[str] = field(default_factory=list)   # cells of the row (table cells only)
     group: tuple[int, int] = (0, 0)                 # same group = same place for the CI check: the sentence, or the row
+    marked: str | None = None                       # a cell as "header: cell" (the code audit asks about this cell)
 
 
 def places(md: str, rules: SplitRules) -> list[Place]:
@@ -150,7 +165,8 @@ def places(md: str, rules: SplitRules) -> list[Place]:
             pairs = "; ".join(f"{a}: {b}" for a, b in zip(head, texts)) if head and len(head) == len(row) \
                 else " | ".join(texts)
             out.append(Place(u.start, u.end, texts[col], " | ".join(texts), f"{h} {texts[col]}",
-                             "columns: " + " | ".join(head or []), pairs, texts, (row[0].start, row[-1].end)))
+                             "columns: " + " | ".join(head or []), pairs, texts, (row[0].start, row[-1].end),
+                             f"{h}: {texts[col]}" if h else texts[col]))
             continue
         t = p.text[u.start:u.end]
         for a, b in _split_unit(t, rules):
@@ -186,6 +202,14 @@ passage "columns: Study | Estimate | Patients ... Study: Bel 2019; Estimate: 0.8
 estimate = 0.81 HR" -> no (the row is about Bel 2019)"""
 
 
+AUDIT_SYS = VER_SYS + """
+
+Some items also have "marked": one cell of the table row. Then judge only that cell: "yes" only if the marked cell
+holds this value for exactly this thing. The right value in another cell of the row is "no".
+passage "Study: Kor 2021; Models: 3; Seeds: 3"; marked "Seeds: 3"; fact "Kor 2021: models compared = 3 models" -> no
+(the marked cell is the seeds)"""
+
+
 def ids_check(ids: list[str]):
     def check(out: dict[str, Any]) -> str | None:
         got = [a["id"] for a in out["answers"]]
@@ -205,24 +229,27 @@ class Verifier:
         self.not_cached = 0
         self.calls = 0
 
-    def ask(self, items: list[tuple[str, str, str]], step: str) -> list[bool | None]:
+    def ask(self, items: list[tuple], step: str, system: str = "") -> list[bool | None]:
+        """items: (context, passage, fact) or, for the code audit, (context, passage, fact, marked cell or None)."""
+        system = system or VER_SYS
         out: list[bool | None] = []
         for i in range(0, len(items), BATCH):
             chunk = items[i:i + BATCH]
             ids = [f"V{j + 1}" for j in range(len(chunk))]
-            user = json.dumps([{"id": k, "context": c, "passage": p, "fact": f} for k, (c, p, f) in zip(ids, chunk)],
+            user = json.dumps([{"id": k, "context": it[0], "passage": it[1], "fact": it[2]}
+                               | ({"marked": it[3]} if len(it) > 3 and it[3] else {}) for k, it in zip(ids, chunk)],
                               indent=1, ensure_ascii=False)
-            got = self._one(step, user, ids_check(ids))
+            got = self._one(step, user, ids_check(ids), system)
             by = {a["id"]: a["verdict"] == "yes" for a in got["answers"]} if got else {}
             out += [by.get(k) for k in ids]
         return out
 
-    def _one(self, step: str, user: str, check) -> dict[str, Any] | None:
+    def _one(self, step: str, user: str, check, system: str) -> dict[str, Any] | None:
         self.calls += 1
         if not self.cache_only:
-            return self.call("verifier", step, VER_SYS, user, VerOut, check)
+            return self.call("verifier", step, system, user, VerOut, check)
         rm = self.call.s.role("verifier")
-        path = self.call.cache / f"{self.call.key(rm, VER_SYS, user, json_schema(VerOut))}.json"
+        path = self.call.cache / f"{self.call.key(rm, system, user, json_schema(VerOut))}.json"
         got = self.call.cached(path, VerOut, check)
         if got is None:
             self.not_cached += 1
@@ -305,8 +332,14 @@ def span_paper(md: str, rows: list[dict[str, Any]], table: AliasTable, rules: Sp
         rec["spans"] = [[P[i].start, P[i].end] for i in rec["places"]]
         rec["groups"] = [list(P[i].group) for i in rec["places"]]
     # hard controls: names anywhere in what the verifier sees (a sideways table names subjects in its headers)
+    by_row = {r["id"]: r for r in rows}
     seen_names = [{m.eid for m in find_mentions(p.context + " " + p.passage, table)} for p in P]
-    return res, hard_candidates(res, rows, P, seen_names)
+    audit = [{"fact": rec["id"], "found_by": how, "context": P[i].context, "passage": P[i].passage,
+              "marked": P[i].marked, "text": fact_text(by_row[rec["id"]], by_row[rec["id"]]["value"]),
+              "span_text": P[i].marked or P[i].text}
+             for rec in res for i, how in zip(rec["places"], rec["found_by"]) if how != "verifier"]
+    return res, {"v2_seen": hard_candidates(res, rows, P, seen_names), "v1_row": hard_candidates(res, rows, P, ments),
+                 "audit": audit}
 
 
 def hard_candidates(res: list[dict[str, Any]], rows: list[dict[str, Any]], P: list[Place],
@@ -370,14 +403,21 @@ def run(seed_dir: Path, ds_dir: Path, caller, cache_only: bool = False) -> dict[
     verifier = Verifier(caller, cache_only)
     by_id: dict[str, dict[str, Any]] = {}
     vm = caller.s.model("verifier")
-    hard_all: list[dict[str, Any]] = []
+    hard_all: dict[str, list[dict[str, Any]]] = {k: [] for k in HARD_RULES}
+    collisions = {"values": 0, "facts": 0, "pairs": 0, "different_subject_pairs": 0}
+    audit_all: list[dict[str, Any]] = []
     for p in man["papers"]:
         md = (ds_dir / p["id"] / "paper.md").read_text(encoding="utf-8")
         norm = normalize_paper(md)
         table = alias_table(w, f, defined_terms(norm.text, base, f))
         mine = [r for r in rows if r["paper"] == p["id"]]
         recs, hard = span_paper(md, mine, table, rules, verifier, p["id"], {k: e["kind"] for k, e in ents.items()})
-        hard_all += [h | {"paper": p["id"], "same_model": writer_of(p) == vm} for h in hard]
+        for k in HARD_RULES:
+            hard_all[k] += [h | {"paper": p["id"], "same_model": writer_of(p) == vm} for h in hard[k]]
+        for a, b in value_collisions(mine).items():
+            collisions[a] += b
+        coll = colliding(mine)
+        audit_all += [h | {"paper": p["id"], "collision": coll.get(h["fact"])} for h in hard["audit"]]
         meta = {r["id"]: r for r in mine}
         p["numbers"] = []
         for rec in recs:
@@ -390,11 +430,101 @@ def run(seed_dir: Path, ds_dir: Path, caller, cache_only: bool = False) -> dict[
                                      "groups": rec["groups"], "same_model": writer_of(p) == vm}
         p["writer"] = writer_of(p)
     rep = report(rows, by_id, verifier)
-    rep["hard_controls"] = hard_controls(hard_all, verifier)
+    rep["hard_controls"] = hard_controls(hard_all["v2_seen"], verifier) | {"rule": HARD_RULES["v2_seen"]}
+    # the first run's rule, answers from the cache only (never new calls), kept to show why the rule changed
+    rep["hard_controls_v1"] = hard_controls(hard_all["v1_row"], Verifier(caller, cache_only=True)) | {
+        "rule": HARD_RULES["v1_row"], "why_replaced": HARD_WHY}
+    rep["error_rates"] = {name: rate(c["yes"], c["items"] - c["no_answer"])
+                          for name, c in (("wrong_number_control", rep["controls"]),
+                                          ("hard_control", rep["hard_controls"]),
+                                          ("hard_control_v1", rep["hard_controls_v1"]))}
+    rep["code_audit"] = code_audit(audit_all, verifier)
+    rep["verifier_error_quote"] = VERIFIER_ERROR_QUOTE
+    rep["value_collisions"] = collisions | {"note": "pairs of different number facts in one paper with the same "
+                                                    "value (after canon); a value matched by code can be the wrong one"}
     man["number_spans"] = {k: rep[k] for k in ("verifier_model", "independence")}
     (seed_dir / "paperfactory.json").write_text(json.dumps(man, indent=1, ensure_ascii=False), encoding="utf-8")
     (seed_dir / "numspans.json").write_text(json.dumps(rep, indent=1, ensure_ascii=False), encoding="utf-8")
     return rep
+
+
+def rate(k: int, n: int) -> dict[str, Any]:
+    """k errors of n: share with an exact (Clopper-Pearson) 95% interval."""
+    return {"errors": k, "n": n, "rate": round(k / n, 4) if n else None, "ci95_exact": clopper_pearson(k, n)}
+
+
+def clopper_pearson(k: int, n: int, alpha: float = 0.05) -> list[float] | None:
+    if n == 0:
+        return None
+
+    def cdf(x: int, p: float) -> float:          # P(X <= x), X ~ Binomial(n, p)
+        return sum(math.comb(n, i) * p ** i * (1 - p) ** (n - i) for i in range(x + 1))
+
+    def solve(f, target: float) -> float:        # f falls as p rises; bisection on [0, 1]
+        lo, hi = 0.0, 1.0
+        for _ in range(60):
+            mid = (lo + hi) / 2
+            lo, hi = (mid, hi) if f(mid) > target else (lo, mid)
+        return (lo + hi) / 2
+    low = 0.0 if k == 0 else solve(lambda p: cdf(k - 1, p), 1 - alpha / 2)
+    high = 1.0 if k == n else solve(lambda p: cdf(k, p), alpha / 2)
+    return [round(low, 4), round(high, 4)]
+
+
+def colliding(rows: list[dict[str, Any]]) -> dict[str, list[str]]:
+    """Fact id -> the other facts of the same paper with the same canonical value (only facts in such a pair)."""
+    by: dict[str, list[str]] = {}
+    for r in rows:
+        if (v := canon(r.get("value"))) is not None:
+            by.setdefault(v, []).append(r["id"])
+    return {i: [j for j in g if j != i] for g in by.values() if len(g) > 1 for i in g}
+
+
+def code_audit(items: list[dict[str, Any]], verifier: Verifier) -> dict[str, Any]:
+    """The verifier as a yes/no check on code-made spans: every span of a fact in a same-value pair ("collision"),
+    plus AUDIT_RANDOM other several+name spans (fixed seed). A "no" counts as a code-rule error."""
+    coll = [h for h in items if h["collision"]]
+    rest = [h for h in items if not h["collision"] and h["found_by"] == "several+name"]
+    pick = coll + random.Random(AUDIT_SEED).sample(rest, min(AUDIT_RANDOM, len(rest)))
+    pick.sort(key=lambda h: (h["paper"], h["fact"], h["passage"]))
+    for pid in dict.fromkeys(h["paper"] for h in pick):
+        mine = [h for h in pick if h["paper"] == pid]
+        got = verifier.ask([(h["context"], h["passage"], h["text"], h["marked"]) for h in mine], f"numaudit:{pid}",
+                           AUDIT_SYS)
+        for h, g in zip(mine, got):
+            h["answer"] = g
+
+    def rate_of(xs: list[dict[str, Any]]) -> dict[str, Any]:
+        done = [h for h in xs if h["answer"] is not None]
+        return rate(sum(h["answer"] is False for h in done), len(done)) | {"no_answer": len(xs) - len(done)}
+    methods = sorted({h["found_by"] for h in pick})
+    return {"note": "judge = the verifier (its own error on hard controls: see verifier_error_quote); a table cell is "
+                    "judged as the marked cell, not the whole row",
+            "collision": rate_of(coll) | {"by_method": {m: rate_of([h for h in coll if h["found_by"] == m])
+                                                        for m in methods}},
+            "several_name_random": rate_of([h for h in pick if not h["collision"]]) | {
+                "of": len(rest)},
+            "collision_spans": [{k: h[k] for k in ("paper", "fact", "found_by", "span_text", "answer")}
+                                | {"collides_with": h["collision"]} for h in coll],
+            "rejected": [{k: h[k] for k in ("paper", "fact", "found_by", "collision", "text", "span_text", "passage")}
+                         for h in pick if h["answer"] is False]}
+
+
+def value_collisions(rows: list[dict[str, Any]]) -> dict[str, int]:
+    """One paper's number facts grouped by canonical value: groups with 2+ facts, facts in them, pairs."""
+    by: dict[str, list[dict[str, Any]]] = {}
+    for r in rows:
+        if (v := canon(r.get("value"))) is not None:
+            by.setdefault(v, []).append(r)
+    out = {"values": 0, "facts": 0, "pairs": 0, "different_subject_pairs": 0}
+    for g in by.values():
+        if len(g) > 1:
+            out["values"] += 1
+            out["facts"] += len(g)
+            out["pairs"] += len(g) * (len(g) - 1) // 2
+            out["different_subject_pairs"] += sum(a.get("subject") != b.get("subject")
+                                                  for j, a in enumerate(g) for b in g[j + 1:])
+    return out
 
 
 def hard_controls(cands: list[dict[str, Any]], verifier: Verifier) -> dict[str, Any]:

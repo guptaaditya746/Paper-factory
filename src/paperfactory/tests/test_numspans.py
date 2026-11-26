@@ -74,7 +74,7 @@ def honest():
         items = json.loads(user)
         seen.append(items)
         ans = [{"id": it["id"], "verdict": "yes" if canon(it["fact"].split(" = ")[1].split()[0])
-                in {v for _, _, v in numbers_in(it["passage"])} else "no"} for it in items]
+                in {v for _, _, v in numbers_in(it.get("marked") or it["passage"])} else "no"} for it in items]
         return {"raw": {"answers": ans}, "cost_usd": 0.0, "served_model": rm.model, "input_tokens": 1,
                 "output_tokens": 1}
     backend.seen = seen
@@ -122,7 +122,7 @@ def test_code_rules_verifier_and_controls(tmp_path: Path) -> None:
     assert man["papers"][0]["writer"] == "claude-haiku-5-5" and man["number_spans"]["verifier_model"] == "v"
     assert man["number_spans"]["independence"]["same_model_as_a_writer"] is False
     # Lof 2020: three cells of one row = shared; the pool's estimate (P1) and upper bound (P2) are in two sentences
-    assert [m["ids"] for m in rep["ci_mismatch"]] == [{"estimate": "P1", "ci_high": "P2"}] and len(b.seen) == 2   # spans + hard controls
+    assert [m["ids"] for m in rep["ci_mismatch"]] == [{"estimate": "P1", "ci_high": "P2"}] and len(b.seen) == 3   # spans, hard controls, code audit
     assert [x["id"] for x in rep["no_span"]] == ["A4"]
     assert rep["coverage"]["effect"] == {"facts": 9, "with_span": 9, "once+name": 7, "once+unit": 0,
                                          "several+name": 2, "verifier": 0, "share": 1.0}
@@ -168,3 +168,34 @@ def test_hard_control_right_value_wrong_subject(tmp_path: Path) -> None:
     h = rep["hard_controls"]
     assert h["candidates"] >= 1 and h["items"] == h["candidates"]
     assert h["yes"] == h["items"] and len(h["accepted"]) == h["items"]   # the value-only fake verifier fails them
+
+
+def test_clopper_pearson_and_collisions() -> None:
+    assert numspans.clopper_pearson(0, 100) == [0.0, 0.0362]
+    assert numspans.clopper_pearson(1, 400) == [0.0001, 0.0138]
+    assert numspans.clopper_pearson(5, 5)[1] == 1.0
+    c = numspans.value_collisions([row("a", "attr", "3", subject="S1"), row("b", "attr", "3.0", subject="S2"),
+                                   row("c", "attr", "3", subject="S1"), row("d", "attr", "4", subject="S1")])
+    assert c == {"values": 1, "facts": 3, "pairs": 3, "different_subject_pairs": 2}
+
+
+def test_report_keeps_both_hard_rules(tmp_path: Path) -> None:
+    seed, ds = domain(tmp_path)
+    rep = numspans.run(seed, ds, llm.Caller(settings(tmp_path, verifier="v"), backend=honest()))
+    assert rep["hard_controls_v1"]["why_replaced"] and rep["hard_controls"]["rule"].startswith("current")
+    assert rep["error_rates"]["hard_control"]["n"] == rep["hard_controls"]["items"]
+    assert rep["value_collisions"]["pairs"] >= 1                          # 65.2 twice in P-01
+
+
+def test_code_audit_flags_collisions(tmp_path: Path) -> None:
+    """65.2 is both Kor 2021's and Bel 2019's baseline: both spans are collisions and are checked on the marked cell."""
+    seed, ds = domain(tmp_path)
+    b = honest()
+    rep = numspans.run(seed, ds, llm.Caller(settings(tmp_path, verifier="v"), backend=b))
+    a = rep["code_audit"]
+    flagged = {x["fact"]: x for x in a["collision_spans"]}
+    assert flagged["E1"]["collides_with"] == ["E1b"] and flagged["E1"]["span_text"].endswith(": 65.2")
+    assert a["collision"]["n"] == len(a["collision_spans"]) and a["collision"]["errors"] == 0
+    assert a["several_name_random"]["n"] == a["several_name_random"]["of"]   # fewer than 100: all of them
+    audit_call = [it for call in b.seen for it in call if "marked" in it]
+    assert audit_call and rep["verifier_error_quote"]["rate"] == "1.3% [0.4%, 2.9%]"
