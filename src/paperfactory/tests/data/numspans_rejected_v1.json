@@ -1,0 +1,1726 @@
+{
+ "source": "code_audit.rejected in data commit dda054b (verifier v1 said no to a code-made span)",
+ "items": [
+  {
+   "domain": "bench_law",
+   "paper": "LAW-07",
+   "fact": "R-law-07-01",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Thalul v. Loritom Systems: size of the bench = 3 judges",
+   "span_text": "Number of claimants (claimants): 3",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-07",
+   "fact": "R-law-07-03",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Thalul v. Loritom Systems: number of claimants = 3 claimants",
+   "span_text": "Size of the bench (judges): 3",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-07",
+   "fact": "R-law-07-06",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Sadepo v. Rubrothes Bank: size of the bench = 7 judges",
+   "span_text": "Number of claimants (claimants): 7",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-07",
+   "fact": "R-law-07-08",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Sadepo v. Rubrothes Bank: number of claimants = 7 claimants",
+   "span_text": "Size of the bench (judges): 7",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-07",
+   "fact": "R-law-07-26",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Lolahan v. Rikroben Health: size of the bench = 1 judges",
+   "span_text": "Days of hearing (days): 1",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-07",
+   "fact": "R-law-07-29",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Lolahan v. Rikroben Health: days of hearing = 1 days",
+   "span_text": "Size of the bench (judges): 1",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-10",
+   "fact": "R-law-10-02",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Trumadu v. Zetruhal Health: length of the hearing = 2 days",
+   "span_text": "So is a reading that ties section 2 to the kind of processing, because the processing in Trumadu is clinical.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-10",
+   "fact": "R-law-10-02",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Trumadu v. Zetruhal Health: length of the hearing = 2 days",
+   "span_text": "The Court of Appeal in Trumadu uses section 2 as a basis for its ruling on the lawful-basis question.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-10",
+   "fact": "R-law-10-02",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Trumadu v. Zetruhal Health: length of the hearing = 2 days",
+   "span_text": "Trumadu draws on section 2 as well.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-10",
+   "fact": "R-law-10-08",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Retron v. Nosor Media: length of the hearing = 1 days",
+   "span_text": "In Retron v. Nosor Media (Tetre Supreme Court, 2023), the Supreme Court uses the section 1 definition of personal data as a basis for its ruling on voice data used for content moderation.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-10",
+   "fact": "R-law-10-08",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Retron v. Nosor Media: length of the hearing = 1 days",
+   "span_text": "Retron concerns voice data used for content moderation by a state broadcaster, and the court there relied on section 1 of the Tetre Data Privacy Act.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-10",
+   "fact": "R-law-10-08",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Retron v. Nosor Media: length of the hearing = 1 days",
+   "span_text": "Taken together, the Supreme Court decisions in the set are Retron, Hapar, Pedim and Trabror, and in the last of these the court relies on section 1 for a national insurer's use of travel data in risk assessment.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-10",
+   "fact": "R-law-10-08",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Retron v. Nosor Media: length of the hearing = 1 days",
+   "span_text": "The Supreme Court in Retron uses section 1 for voice data, and the two Court of Appeal decisions use section 2.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-10",
+   "fact": "R-law-10-08",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Retron v. Nosor Media: length of the hearing = 1 days",
+   "span_text": "The Supreme Court in Retron, which concerned a state broadcaster's use of voice data for content moderation, uses section 1 as a basis for its ruling.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-11",
+   "fact": "R-law-11-02",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Stegrepor v. Hakruze Bank: costs order = 1 EUR thousand",
+   "span_text": "Stegrepor (Tetre District Court, 2025) takes section 1 as the basis for its ruling on a bank's use of biometric data for transaction verification.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-11",
+   "fact": "R-law-11-02",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Stegrepor v. Hakruze Bank: costs order = 1 EUR thousand",
+   "span_text": "Stegrepor v. Hakruze Bank (Tetre District Court, 2025) relied on section 1 as the basis for its ruling on a bank's use of biometric data for transaction verification.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-11",
+   "fact": "R-law-11-02",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Stegrepor v. Hakruze Bank: costs order = 1 EUR thousand",
+   "span_text": "Taken together with Stegrepor, Trostotham and Trabror, it shows how section 1 is used across the wider set.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-11",
+   "fact": "R-law-11-02",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Stegrepor v. Hakruze Bank: costs order = 1 EUR thousand",
+   "span_text": "The flexible label describes how Stegrepor acted toward section 1, not a stated test.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-11",
+   "fact": "R-law-11-19",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Mizun v. Manostal Health: time to judgment = 5 months",
+   "span_text": "Days of hearing (days): 5",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-11",
+   "fact": "R-law-11-20",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Mizun v. Manostal Health: days of hearing = 5 days",
+   "span_text": "Time to judgment (months): 5",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-17",
+   "fact": "R-law-17-06",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "Pedim v. Detam Media: hearing days = 3 days",
+   "span_text": "Table 3 is read here together with the facts of each decision, because the facts are the feature on which the Pedim decision's treatment of Krodos turns, and the comparison of facts is the starting point for the analysis of the Krodos line.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-17",
+   "fact": "R-law-17-12",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "Dogekrem v. Gikriso Media: hearing days = 2 days",
+   "span_text": "Section 2 enters the analysis through Dogekrem v. Gikriso Media (Tetre Court of Appeal, 2017).",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-18",
+   "fact": "R-law-18-02",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Gathana v. Kristur Media: claimants = 1 claimants",
+   "span_text": "Gathana v. Kristur Media (Tetre Court of Appeal, 2022), which concerns a podcast network's use of listener data, invokes section 1 of the Tetre Data Privacy Act as one of the grounds of its ruling.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-18",
+   "fact": "R-law-18-02",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Gathana v. Kristur Media: claimants = 1 claimants",
+   "span_text": "Gathana v. Kristur Media applies section 2 as one ground of its decision, and Medar v. Truvin Bank treats section 1 as a basis for its reasoning.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-18",
+   "fact": "R-law-18-05",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Medar v. Truvin Bank: length of the hearing = 1 days",
+   "span_text": "Gathana v. Kristur Media applies section 2 as one ground of its decision, and Medar v. Truvin Bank treats section 1 as a basis for its reasoning.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-18",
+   "fact": "R-law-18-05",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Medar v. Truvin Bank: length of the hearing = 1 days",
+   "span_text": "Medar bases part of its reasoning on the definition of personal data in section 1.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-23",
+   "fact": "R-law-23-03",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Gothukur v. Didota Insurance: number of claimants = 1 claimants",
+   "span_text": "Brufegro v. Zogrus Media relied on section 2 of the Tetre Data Privacy Act to permit personalized ads, and Gothukur v. Didota Insurance relied on section 1 of that Act to measure how far social media monitoring extends.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-23",
+   "fact": "R-law-23-03",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Gothukur v. Didota Insurance: number of claimants = 1 claimants",
+   "span_text": "Each decision also engages the other provision: Brufegro draws on section 1 and Gothukur on section 2.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-23",
+   "fact": "R-law-23-03",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Gothukur v. Didota Insurance: number of claimants = 1 claimants",
+   "span_text": "In Gothukur v. Didota Insurance (Tetre District Court, 2018), an insurer accessed social media posts to assess claims, and the court relied on section 1 of the Tetre Data Privacy Act, the definition of personal data, to assess the scope of social media monitoring.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-23",
+   "fact": "R-law-23-03",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Gothukur v. Didota Insurance: number of claimants = 1 claimants",
+   "span_text": "Its central comparison pairs Gothukur v. Didota Insurance (Tetre District Court, 2018), which relied on section 1 to assess the scope of social media monitoring, with Brufegro v. Zogrus Media (Tetre District Court, 2012), which relied on section 2 to permit personalized ads.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-27",
+   "fact": "R-law-27-14",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Brufegro v. Zogrus Media: size of the bench = 1 judges",
+   "span_text": "Brufegro v. Zogrus Media (Tetre District Court, 2012) relied on section 1 for a news site's use of reader data for personalised advertising, a use outside both sectors and therefore a contrast with the health and credit findings.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-27",
+   "fact": "R-law-27-18",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Lolahan v. Rikroben Health: hearing days = 1 days",
+   "span_text": "Lolahan v. Rikroben Health (Tetre District Court, 2011) relied on section 1 in a dispute over a hospital's use of patient data for internal research.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-27",
+   "fact": "R-law-27-19",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Lolahan v. Rikroben Health: size of the bench = 1 judges",
+   "span_text": "Lolahan v. Rikroben Health (Tetre District Court, 2011) relied on section 1 in a dispute over a hospital's use of patient data for internal research.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-35",
+   "fact": "R-law-35-11",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "Sunen v. Thegom Health: hearing days = 2 days",
+   "span_text": "The following parts examine the evidence on section 2 through the pairing of Sunen v. Thegom Health and Drabren v. Borel Bank, then the decisions that rely on section 1, then Sadepo v. Rubrothes Bank and the decisions that rely on it.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-35",
+   "fact": "R-law-35-13",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Sunen v. Thegom Health: number of claimants = 1 claimants",
+   "span_text": "Sunen v. Thegom Health (Tetre Court of Appeal, 2011) relies on section 1 of the Tetre Data Privacy Act, and that reliance is the point on which the health line turns.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-35",
+   "fact": "R-law-35-13",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Sunen v. Thegom Health: number of claimants = 1 claimants",
+   "span_text": "Sunen v. Thegom Health (Tetre Court of Appeal, 2011) relies on section 1, the provision that defines personal data.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-35",
+   "fact": "R-law-35-13",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Sunen v. Thegom Health: number of claimants = 1 claimants",
+   "span_text": "The following parts examine the evidence on section 2 through the pairing of Sunen v. Thegom Health and Drabren v. Borel Bank, then the decisions that rely on section 1, then Sadepo v. Rubrothes Bank and the decisions that rely on it.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-35",
+   "fact": "R-law-35-13",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Sunen v. Thegom Health: number of claimants = 1 claimants",
+   "span_text": "The point on which Sunen v. Thegom Health bears on section 1 is taken up in the Sadepo part, where it is set beside the banking rulings.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-35",
+   "fact": "R-law-35-14",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Sunen v. Thegom Health: judges = 3 judges",
+   "span_text": "Sadepo v. Rubrothes Bank (Tetre District Court, 2010) concerns a bank that retained customer data after account closure, a case with 3 hearing days, 32 months, 7 claimants, 7 judges and 640 EUR thousand in damages, which the appellate court in Sunen v. Thegom Health distinguishes on the ground that its facts differ, so the distinction is open to the same test as the one applied to Drabren.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-35",
+   "fact": "R-law-35-16",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Drabren v. Borel Bank: hearing days = 1 days",
+   "span_text": "The following parts examine the evidence on section 2 through the pairing of Sunen v. Thegom Health and Drabren v. Borel Bank, then the decisions that rely on section 1, then Sadepo v. Rubrothes Bank and the decisions that rely on it.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-35",
+   "fact": "R-law-35-19",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Drabren v. Borel Bank: judges = 7 judges",
+   "span_text": "Fogol v. Kufen Health and Lofilom v. Rizal Media each had 7 hearing days, while Drabren v. Borel Bank and Drudetos v. Grostum Bank each had 1.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-35",
+   "fact": "R-law-35-19",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Drabren v. Borel Bank: judges = 7 judges",
+   "span_text": "Sadepo v. Rubrothes Bank (Tetre District Court, 2010) concerns a bank that retained customer data after account closure, a case with 3 hearing days, 32 months, 7 claimants, 7 judges and 640 EUR thousand in damages, which the appellate court in Sunen v. Thegom Health distinguishes on the ground that its facts differ, so the distinction is open to the same test as the one applied to Drabren.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-36",
+   "fact": "R-law-36-01",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "Dibres v. Hastas Bank: days of hearing = 1 days",
+   "span_text": "Dibres (Tetre Court of Appeal, 2025) drew on section 1 of the Tetre Data Privacy Act in a geolocation fraud-detection setting.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-38",
+   "fact": "R-law-38-02",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Hapar v. Brapil Insurance: judges sitting = 1 judges",
+   "span_text": "Hapar therefore draws on all three provisions read here: section 1 for scope, section 2 for the lawful basis and section 3 for erasure.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-38",
+   "fact": "R-law-38-02",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Hapar v. Brapil Insurance: judges sitting = 1 judges",
+   "span_text": "In the 2019 Tetre Supreme Court decision in Hapar v. Brapil Insurance, which concerned an insurer's use of tax data for premium calculation, the court's ruling draws on section 1 as one of its grounds.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-38",
+   "fact": "R-law-38-04",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Budrem v. Gokraka Media: judges sitting = 1 judges",
+   "span_text": "Budrem draws on section 1 as one of its grounds, and the comment places that reliance beside the tax-data decision.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-38",
+   "fact": "R-law-38-04",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Budrem v. Gokraka Media: judges sitting = 1 judges",
+   "span_text": "The Court of Appeal decision in Budrem sits below the two Tetre Supreme Court decisions, so it does not bind either of them, and the comment reads its reliance on section 1 with that position in mind.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-44",
+   "fact": "R-law-44-07",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Drusethis v. Thuthiki Insurance: judges sitting = 7 judges",
+   "span_text": "Among the four Court of Appeal decisions, the Lofilom hearing runs 7 days, against 3 days in Zothopar, 4 days in Drusethis and 4 days in Setrisas.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-44",
+   "fact": "R-law-44-27",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Setrisas v. Tribrim Systems: judges sitting = 3 judges",
+   "span_text": "Among the four Court of Appeal decisions, the Lofilom hearing runs 7 days, against 3 days in Zothopar, 4 days in Drusethis and 4 days in Setrisas.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-48",
+   "fact": "R-law-48-05",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "Thome v. Stako Bank: size of the bench = 1 judges",
+   "span_text": "Table 1 shows that the Thome decision differs from the other two in bench composition.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "LAW-49",
+   "fact": "R-law-49-08",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "Krerer v. Beketrel Health: number of claimants = 4 claimants",
+   "span_text": "The analysis draws on sections 4, 21 and 35 of the Tetre Administrative Procedure Act and on four decisions dated 2012 to 2022: Bragres v. Dagize Bank, Stogro v. Fopemar Insurance, Krerer v. Beketrel Health and Thohim v. Tupem Systems.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "v2-LAW-49",
+   "fact": "v2-R-law-05-02",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "Thohim v. Tupem Systems: hearing days = 7 days",
+   "span_text": "Hearing days varied from 2 to 7, with Thohim v. Tupem Systems requiring the most time for hearings, likely due to its status as a Court of Appeal case.",
+   "fixed_judge_wrong": false
+  },
+  {
+   "domain": "bench_law",
+   "paper": "v3-LAW-52",
+   "fact": "v3-R-law-02-11",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "Grogukram v. Gigrizam Planning: number of claimants = 4 claimants",
+   "span_text": "The holding in Grogukram v. Gigrizam Planning (Tetre District Court, 2012) relied on section 4 of the Tetre Administrative Tokraza Act, finding the written notice sufficient despite the challenge to the zoning decision.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_law",
+   "paper": "v3-LAW-52",
+   "fact": "v3-R-law-02-11",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "Grogukram v. Gigrizam Planning: number of claimants = 4 claimants",
+   "span_text": "While Grogukram v. Gigrizam Planning relied on section 4 of the Tetre Administrative Tokraza Act, finding the written notice sufficient, Grimem v. Manam Health rejected the reliance on section 4, prioritizing the substantive fairness of the penalty under section 21.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-01",
+   "fact": "R-llm-01-23",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "the Braliram 2023 study / Ragrer decoding: accuracy = 9.0 %",
+   "span_text": "The Braliram 2023 study reported a gain from Ragrer decoding on Thipom-7B with the Mupadem-QA benchmark under zero-shot evaluation, with a difference of 9.0 % (95% CI 7.3 to 10.8).",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-01",
+   "fact": "R-llm-01-28",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Braliram 2023 study / Kabaso prompting: accuracy = -0.1 %",
+   "span_text": "Accuracy difference (%), estimate (lower to upper): -0.1 (-1.9 to 1.6)",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-02",
+   "fact": "R-llm-02-14",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Rakes 2023 study: human raters = 2 annotators",
+   "span_text": "The Thetran rows of the Rakes 2023 study also appear in Table 2, and their interpretation is taken up in the Conclusion.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-02",
+   "fact": "R-llm-02-14",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Rakes 2023 study: human raters = 2 annotators",
+   "span_text": "The Thoradram rows of the Rakes 2023 study appear in Table 2 and enter the pooled estimate below.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-02",
+   "fact": "R-llm-02-67",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "mean gain (inverse-variance) for Thetran prompting (2 studies): heterogeneity I² = 0.0 %",
+   "span_text": "Thetran prompting has a pooled estimate of -0.0%, which shows no pooled difference from baseline.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-08",
+   "fact": "R-llm-08-06",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Kretather 2023 study: runs per setting = 3 n",
+   "span_text": "The Kretather 2023 study appears in two rows of Table 3, one for the Ragrer decoding method and one for Kabaso prompting, and the baseline accuracies in those rows differ.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-08",
+   "fact": "R-llm-08-25",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Dedrola 2021 study: annotators = 3 annotators",
+   "span_text": "The Lomakra 2023 study reports 5 runs per setting, the Kretather 2023 study and the Dedrola 2021 study each report 3, and the Brastom 2021 and Stosa 2022 studies each report 1.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-08",
+   "fact": "R-llm-08-33",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Kretather 2023 study / Ragrer decoding: accuracy = 5.9 %",
+   "span_text": "Accuracy difference (%): estimate (lower to upper): 5.9 (4.4 to 7.5)",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-10",
+   "fact": "R-llm-10-62",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "mean gain (inverse-variance) for Thetran prompting (2 studies): 95% CI upper bound = 0.7 %",
+   "span_text": "That study reported no gain from Thetran prompting, with an accuracy difference of -0.3% and a 95% CI of -1.3 to 0.7.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-11",
+   "fact": "R-llm-11-20",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Rokrar 2025 study: random seeds = 3 n",
+   "span_text": "The Rokrar 2025 study reports a gain from Kabaso prompting on Vofal-Math, shown in Table 3, against a baseline given in the same table.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-11",
+   "fact": "R-llm-11-33",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Tilutron 2020 study / Kabaso prompting: accuracy = 6.6 %",
+   "span_text": "Accuracy gain, estimate (95% CI) (%): 6.6 (4.9 to 8.3)",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-11",
+   "fact": "R-llm-11-33",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Tilutron 2020 study / Kabaso prompting: accuracy = 6.6 %",
+   "span_text": "The Tilutron 2020 study reported a gain for Kabaso prompting on Mupadem-QA with Nimel-13B, from 48.5% to 55.1% accuracy, 6.6% (4.9 to 8.3).",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-11",
+   "fact": "R-llm-11-43",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "the Tilutron 2020 study / Thetran prompting: accuracy = 0.2 %",
+   "span_text": "Accuracy gain, estimate (95% CI) (%): 0.2 (-1.5 to 1.9)",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-12",
+   "fact": "R-llm-12-16",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Totin 2025 study / Thoradram retrieval: baseline accuracy = 38.4 %",
+   "span_text": "38.4",
+   "fixed_judge_wrong": false
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-12",
+   "fact": "R-llm-12-17",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Totin 2025 study / Thoradram retrieval: accuracy with the method = 38.4 %",
+   "span_text": "38.4",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-12",
+   "fact": "R-llm-12-18",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Totin 2025 study / Thoradram retrieval: accuracy = 0.0 %",
+   "span_text": "Value (%): 0.0",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-12",
+   "fact": "R-llm-12-33",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "the Mopel 2025 study / Ragrer decoding: accuracy = 7.9 %",
+   "span_text": "Value (%): 7.9",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-12",
+   "fact": "R-llm-12-38",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Grugofel 2025 study / Thoradram retrieval: accuracy = 0.3 %",
+   "span_text": "Value (%): 0.3",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-13",
+   "fact": "R-llm-13-03",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Bramos 2024 study: runs per setting = 1 n",
+   "span_text": "It is one of the three Kabaso reports in Table 1, and it enters the Kabaso pool together with the Bramos 2024 and Brastom 2021 studies.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-13",
+   "fact": "R-llm-13-03",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Bramos 2024 study: runs per setting = 1 n",
+   "span_text": "Two Thetran rows on Mupadem-QA appear in Table 1: the Mitra 2023 study and the Bramos 2024 study.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-13",
+   "fact": "R-llm-13-09",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Brastom 2021 study: runs per setting = 1 n",
+   "span_text": "It is one of the three Kabaso reports in Table 1, and it enters the Kabaso pool together with the Bramos 2024 and Brastom 2021 studies.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-13",
+   "fact": "R-llm-13-38",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "the Brastom 2021 study / Kabaso prompting: accuracy = 9.0 %",
+   "span_text": "Set against the Kabaso changes of the Dedrola 2021 study (6.7%) and the Brastom 2021 study (9.0%), this change lies below both.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-15",
+   "fact": "R-llm-15-11",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Putrus 2022 study: tasks = 3 tasks",
+   "span_text": "The Putrus 2022 study's per-study values are also given in Table 3.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-19",
+   "fact": "R-llm-19-18",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Fastum 2022 study / Kabaso prompting: accuracy = 0.1 %",
+   "span_text": "Accuracy difference (%), estimate (95% CI lower to upper): 0.1 (-1.2 to 1.5)",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-19",
+   "fact": "R-llm-19-23",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Fastum 2022 study / Gofabran decoding: accuracy = 0.2 %",
+   "span_text": "Accuracy difference (%), estimate (95% CI lower to upper): 0.2 (-1.1 to 1.6)",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-19",
+   "fact": "R-llm-19-33",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Putrus 2022 study / Gofabran decoding: accuracy = 0.2 %",
+   "span_text": "For the Putrus 2022 study, baseline accuracy was 39.0 % and accuracy with Gofabran decoding was 39.2 %, giving an accuracy difference of 0.2 % with a 95% confidence interval of -1.1 to 1.6 %.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-19",
+   "fact": "R-llm-19-33",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Putrus 2022 study / Gofabran decoding: accuracy = 0.2 %",
+   "span_text": "Accuracy difference (%), estimate (95% CI lower to upper): 0.2 (-1.1 to 1.6)",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-19",
+   "fact": "R-llm-19-38",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Logrim 2022 study / Gofabran decoding: accuracy = 0.1 %",
+   "span_text": "Accuracy difference (%), estimate (95% CI lower to upper): 0.1 (-1.3 to 1.5)",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-20",
+   "fact": "R-llm-20-10",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Grodrokris 2021 study / Thetran prompting: accuracy with the method = 52.6 %",
+   "span_text": "The Stutohas 2023 study on Vofal-Math has a baseline of 32.2 in its Kabaso row and 58.6 in its Thetran row, and the Grodrokris 2021 study on Mupadem-QA has a baseline of 52.6 in its Thetran row and 55.3 in its Kabaso row.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-20",
+   "fact": "R-llm-20-11",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Grodrokris 2021 study / Thetran prompting: accuracy = 0.0 %",
+   "span_text": "Accuracy difference or pooled estimate (%): 0.0",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-20",
+   "fact": "R-llm-20-11",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Grodrokris 2021 study / Thetran prompting: accuracy = 0.0 %",
+   "span_text": "The Thetran differences are 0.0% for the Grodrokris 2021 study, 0.4% for the Mitra 2023 study and -0.4% for the Stutohas 2023 study, and all three intervals include zero.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-20",
+   "fact": "R-llm-20-16",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Stutohas 2023 study / Kabaso prompting: accuracy = 0.3 %",
+   "span_text": "Accuracy difference or pooled estimate (%): 0.3",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-20",
+   "fact": "R-llm-20-26",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "the Stutohas 2023 study / Thetran prompting: accuracy = -0.4 %",
+   "span_text": "Accuracy difference or pooled estimate (%): -0.4",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-20",
+   "fact": "R-llm-20-36",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Rokrar 2025 study / Kabaso prompting: accuracy = 3.6 %",
+   "span_text": "Accuracy difference or pooled estimate (%): 3.6",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-20",
+   "fact": "R-llm-20-42",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "mean gain (inverse-variance) for Thetran prompting (3 studies): heterogeneity I² = 0.0 %",
+   "span_text": "For Thetran prompting, the reports are mixed in sign, with accuracy differences of 0.0%, 0.4% and -0.4%, and every interval includes zero.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-20",
+   "fact": "R-llm-20-42",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "mean gain (inverse-variance) for Thetran prompting (3 studies): heterogeneity I² = 0.0 %",
+   "span_text": "For Thetran prompting, the three study differences are 0.0%, 0.4% and -0.4%, and each interval includes zero.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-20",
+   "fact": "R-llm-20-42",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "mean gain (inverse-variance) for Thetran prompting (3 studies): heterogeneity I² = 0.0 %",
+   "span_text": "The Thetran differences are 0.0% for the Grodrokris 2021 study, 0.4% for the Mitra 2023 study and -0.4% for the Stutohas 2023 study, and all three intervals include zero.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-28",
+   "fact": "R-llm-28-25",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "the Vomobral 2025 study / Kabaso prompting: accuracy = 4.8 %",
+   "span_text": "Accuracy change over baseline (%): 4.8",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-31",
+   "fact": "R-llm-31-07",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Nodabril 2023 study: seeds = 1 n",
+   "span_text": "95% CI upper bound (%): 1.0",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-40",
+   "fact": "R-llm-40-24",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "the Grudes 2022 study / Ragrer decoding: accuracy = 2.7 %",
+   "span_text": "The Grudes 2022 study reported a gain from Ragrer decoding, with accuracy rising from 57.4% to 60.1%, a change of 2.7% (95% CI 1.2 to 4.1).",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-41",
+   "fact": "R-llm-41-33",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "mean gain (inverse-variance) for Krekrilo prompting (2 studies): estimate = 2.0 %",
+   "span_text": "Table 2: Accuracy (%) with and without the method, change with 95% confidence interval (lower to upper), and the inverse-variance pooled mean gain for Krekrilo prompting with heterogeneity",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-42",
+   "fact": "R-llm-42-09",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Grokre 2021 study / Rothetro prompting: accuracy = 2.7 %",
+   "span_text": "Even so, the Grokre 2021 study gives 2.7 (1.6 to 3.9) % for Rothetro prompting, while the Fatha 2023 study gives -0.4 (-2.3 to 1.5) %.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-42",
+   "fact": "R-llm-42-09",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Grokre 2021 study / Rothetro prompting: accuracy = 2.7 %",
+   "span_text": "Accuracy difference, estimate (95% CI) (%): 2.7 (1.6 to 3.9)",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-42",
+   "fact": "R-llm-42-34",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "mean gain (inverse-variance) for Rothetro prompting (3 studies): 95% CI upper bound = 2.7 %",
+   "span_text": "Even so, the Grokre 2021 study gives 2.7 (1.6 to 3.9) % for Rothetro prompting, while the Fatha 2023 study gives -0.4 (-2.3 to 1.5) %.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-43",
+   "fact": "R-llm-43-01",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Litros 2026 study: human raters = 6 annotators",
+   "span_text": "Systems compared (models): 6",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-43",
+   "fact": "R-llm-43-03",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Litros 2026 study: systems compared = 6 models",
+   "span_text": "Human raters (annotators): 6",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "LLM-43",
+   "fact": "R-llm-43-13",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "the Vapadre 2022 study: human raters = 5 annotators",
+   "span_text": "Study and method: Vapadre 2022 study, Trikrirol extraction (few-shot, 5 examples)",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v2-LLM-41",
+   "fact": "v2-R-llm-01-01",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Bresa 2024 study: seeds = 5 n",
+   "span_text": "5.0",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v2-LLM-41",
+   "fact": "v2-R-llm-01-01",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Bresa 2024 study: seeds = 5 n",
+   "span_text": "The Bresa 2024 study reported a gain in tagging accuracy with the Krekrilo prompting method, with baseline accuracy of 62.1% and accuracy with the method of 67.1%, resulting in a gain of 5.0% (95% CI: 4.1 to 6.0).",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v2-LLM-41",
+   "fact": "v2-R-llm-01-01",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Bresa 2024 study: seeds = 5 n",
+   "span_text": "The evaluation setting was zero-shot for the Kopoge 2021 and Bresa 2024 studies, and few-shot with 5 examples for the Brilem 2022 and Sogor 2025 studies.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v2-LLM-41",
+   "fact": "v2-R-llm-01-05",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Brilem 2022 study: seeds = 5 n",
+   "span_text": "The Brilem 2022 study tests whether prompting the model to output part-of-speech tags before translation improves BLEU scores on the same benchmark, using a few-shot setting with 5 examples.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v2-LLM-41",
+   "fact": "v2-R-llm-01-05",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Brilem 2022 study: seeds = 5 n",
+   "span_text": "The Sogor 2025 study re-runs the setup from the Brilem 2022 study to check if the part-of-speech prompting method still yields a gain on the same model and benchmark, also using a few-shot setting with 5 examples.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v2-LLM-41",
+   "fact": "v2-R-llm-01-05",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Brilem 2022 study: seeds = 5 n",
+   "span_text": "The evaluation setting was zero-shot for the Kopoge 2021 and Bresa 2024 studies, and few-shot with 5 examples for the Brilem 2022 and Sogor 2025 studies.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v2-LLM-41",
+   "fact": "v2-R-llm-01-11",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Bresa 2024 study / Krekrilo prompting: accuracy = 5.0 %",
+   "span_text": "5.0",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v2-LLM-41",
+   "fact": "v2-R-llm-01-11",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Bresa 2024 study / Krekrilo prompting: accuracy = 5.0 %",
+   "span_text": "The Bresa 2024 study reported a gain in tagging accuracy with the Krekrilo prompting method, with baseline accuracy of 62.1% and accuracy with the method of 67.1%, resulting in a gain of 5.0% (95% CI: 4.1 to 6.0).",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v2-LLM-41",
+   "fact": "v2-R-llm-01-21",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Bresa 2024 study / Mugres decoding: accuracy = 4.1 %",
+   "span_text": "4.1",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v2-LLM-41",
+   "fact": "v2-R-llm-01-32",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "mean gain (inverse-variance) for Krekrilo prompting (2 studies): heterogeneity I² = 97.9 %",
+   "span_text": "97.9",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v2-LLM-42",
+   "fact": "v2-R-llm-02-24",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Fatha 2023 study / Thezestel decoding: accuracy = -0.1 %",
+   "span_text": "The Fatha 2023 study reported no gain from Thezestel decoding, with an accuracy change of -0.1%.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v2-LLM-42",
+   "fact": "v2-R-llm-02-24",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Fatha 2023 study / Thezestel decoding: accuracy = -0.1 %",
+   "span_text": "-0.1",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v2-LLM-42",
+   "fact": "v2-R-llm-02-29",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Fohor 2026 study / Rothetro prompting: accuracy = -0.1 %",
+   "span_text": "The Fohor 2026 study reported no gain from Rothetro prompting, with an accuracy change of -0.1%.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v2-LLM-42",
+   "fact": "v2-R-llm-02-29",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Fohor 2026 study / Rothetro prompting: accuracy = -0.1 %",
+   "span_text": "-0.1",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v3-LLM-44",
+   "fact": "v3-R-llm-01-02",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Fesam 2025 study: seeds = 5 n",
+   "span_text": "The Fesam 2025 study evaluated Tustu decoding using the Razer-7B model on the Thahem-FENAL benchmark in a few-shot setting with 5 examples; it reported a drop in accuracy with the method compared to the baseline.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v3-LLM-44",
+   "fact": "v3-R-llm-01-02",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Fesam 2025 study: seeds = 5 n",
+   "span_text": "The Fesam 2025 study is a direct replication attempt of the Brabebrol 2022 study, using the same model (Razer-7B) and the same few-shot setting (5 examples).",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v3-LLM-45",
+   "fact": "v3-R-llm-02-09",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Stebroko 2024 study: human raters = 5 annotators",
+   "span_text": "In contrast, the Stebroko 2024 study evaluated the fewest tasks (5) and had a smaller test set (2450 n).",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v3-LLM-45",
+   "fact": "v3-R-llm-02-19",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Rotes 2022 study: human raters = 5 annotators",
+   "span_text": "Systems compared (models): 5",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v3-LLM-45",
+   "fact": "v3-R-llm-02-20",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Rotes 2022 study: systems compared = 5 models",
+   "span_text": "Human raters (annotators): 5",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v3-LLM-45",
+   "fact": "v3-R-llm-02-28",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "the Stebroko 2024 study / Brugretol retrieval: accuracy = 8.2 %",
+   "span_text": "8.2",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v3-LLM-45",
+   "fact": "v3-R-llm-02-28",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "the Stebroko 2024 study / Brugretol retrieval: accuracy = 8.2 %",
+   "span_text": "The Stebroko 2024 study reported a larger gain for Brugretol retrieval (8.2%) than the Neden 2023 study (2.5%), but the Stebroko 2024 study had a lower baseline accuracy (46.2% vs. 81.4%).",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v3-LLM-45",
+   "fact": "v3-R-llm-02-38",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "the Rotes 2022 study / Fehola prompting: accuracy = -0.5 %",
+   "span_text": "-0.5",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v3-LLM-45",
+   "fact": "v3-R-llm-02-43",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Neden 2023 study / Fehola prompting: accuracy = 3.1 %",
+   "span_text": "3.1",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v3-LLM-46",
+   "fact": "v3-R-llm-03-05",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Krasti 2022 study: annotators = 5 annotators",
+   "span_text": "In contrast, the Krasti 2022 study, conducted in a fine-tuned setting, reported a gain from Rohir grikrapon, raising accuracy by 5.0% (95% CI: 3.8 to 6.3).",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v3-LLM-46",
+   "fact": "v3-R-llm-03-05",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Krasti 2022 study: annotators = 5 annotators",
+   "span_text": "Accuracy gain (%) (95% CI): 5.0 (3.8 to 6.3)",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v3-LLM-46",
+   "fact": "v3-R-llm-03-05",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Krasti 2022 study: annotators = 5 annotators",
+   "span_text": "The Krasti 2022 study also reported a gain from Rohir grikrapon in a fine-tuned setting, with an accuracy gain of 5.0% (95% CI: 3.8 to 6.3).",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v3-LLM-46",
+   "fact": "v3-R-llm-03-15",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Sedrin 2021 study: annotators = 6 annotators",
+   "span_text": "Accuracy gain (%) (95% CI): 6.0 (4.7 to 7.3)",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v3-LLM-46",
+   "fact": "v3-R-llm-03-15",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Sedrin 2021 study: annotators = 6 annotators",
+   "span_text": "The Sedrin 2021 study reported a gain from Movis vubiren in a zero-shot setting, with an accuracy gain of 6.0% (95% CI: 4.7 to 7.3), as part of a list of studies showing initial gains.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_llm",
+   "paper": "v3-LLM-46",
+   "fact": "v3-R-llm-03-15",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Sedrin 2021 study: annotators = 6 annotators",
+   "span_text": "The Sedrin 2021 study, in contrast, reported a gain from Movis vubiren in a zero-shot setting, with an accuracy gain of 6.0% (95% CI: 4.7 to 7.3).",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "MAT-01",
+   "fact": "R-mat-01-07",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Megrekron Lab 2021 study: production batches = 4 batches",
+   "span_text": "95% CI upper bound (%): 4.0",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "MAT-01",
+   "fact": "R-mat-01-42",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "pooled change (inverse-variance) for coating Bumom-7 (3 studies): heterogeneity I² = 0.0 %",
+   "span_text": "Estimate (%): -0.0",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "MAT-04",
+   "fact": "R-mat-04-30",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "pooled change (inverse-variance) for alloy Stetrugel-6 (4 studies): heterogeneity I² = 98.9 %",
+   "span_text": "Heterogeneity I² (%): 98.9",
+   "fixed_judge_wrong": false
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "MAT-08",
+   "fact": "R-mat-08-01",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Ratrol Lab 2015 study: average grain diameter = 18.4 µm",
+   "span_text": "Change estimate (%): 18.4",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "MAT-08",
+   "fact": "R-mat-08-01",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Ratrol Lab 2015 study: average grain diameter = 18.4 µm",
+   "span_text": "The Ratrol Lab 2015 study reported an improvement in corrosion resistance for alloy Stetrugel-6 under the salt spray test, with a change estimate of 18.4% (95% CI 9.5 to 27.4).",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "MAT-09",
+   "fact": "R-mat-09-19",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "pooled change (inverse-variance) for coating Bumom-7 (2 studies): estimate = 8.2 %",
+   "span_text": "Change estimate (%): 8.2",
+   "fixed_judge_wrong": false
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "MAT-14",
+   "fact": "R-mat-14-02",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Stomestim Lab 2023 study: density (relative) = 95 %",
+   "span_text": "The Stomestim Lab 2023 study reported no clear change in oxidation resistance for this alloy, with an oxidation estimate of 0.9% (95% CI -6.4 to 8.3).",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "MAT-18",
+   "fact": "R-mat-18-01",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Stomestim Lab 2023 study: independent batches = 2 batches",
+   "span_text": "Test durations range from 2 h in the Brudes Lab 2024 study to 100 h in the Kronor Lab 2013 and Grebrom Lab 2015 studies, and the Stomestim Lab 2023 study used 4 h.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "MAT-18",
+   "fact": "R-mat-18-02",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Stomestim Lab 2023 study: specimens per condition = 4 n",
+   "span_text": "Test durations range from 2 h in the Brudes Lab 2024 study to 100 h in the Kronor Lab 2013 and Grebrom Lab 2015 studies, and the Stomestim Lab 2023 study used 4 h.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "MAT-18",
+   "fact": "R-mat-18-13",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Kronor Lab 2013 study: independent batches = 2 batches",
+   "span_text": "Test durations range from 2 h in the Brudes Lab 2024 study to 100 h in the Kronor Lab 2013 and Grebrom Lab 2015 studies, and the Stomestim Lab 2023 study used 4 h.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "MAT-18",
+   "fact": "R-mat-18-37",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "pooled change (inverse-variance) for coating Bumom-7 (4 studies): 95% CI upper bound = 2.0 %",
+   "span_text": "Table 2: Pooled change (inverse-variance) in the tested property for coating Bumom-7 (4 studies) and coating Kogal-8 (2 studies), with 95% confidence interval and heterogeneity",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "MAT-20",
+   "fact": "R-mat-20-01",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Hozus Lab 2013 study: specimens per condition = 6 n",
+   "span_text": "95% CI upper bound (%): 6.0",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "MAT-20",
+   "fact": "R-mat-20-02",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Hozus Lab 2013 study: gauge length = 6 mm",
+   "span_text": "95% CI upper bound (%): 6.0",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "MAT-23",
+   "fact": "R-mat-23-06",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Bropulon Lab 2018 study: gauge length = 25 mm",
+   "span_text": "95% CI upper bound (%): 25.0",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "MAT-24",
+   "fact": "R-mat-24-03",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Gilor Lab 2022 study: dwell time = 8 h",
+   "span_text": "The Kudram Lab 2023 study used 4 specimens and the Gilor Lab 2022 study used 8.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "MAT-25",
+   "fact": "R-mat-25-11",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "the Vogem Lab 2013 study / coating Kogal-8: 95% CI lower bound = -7.9 %",
+   "span_text": "For coating Kogal-8, the Vogem Lab 2013 study gives -1.3 (-7.9 to 5.3).",
+   "fixed_judge_wrong": false
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "MAT-25",
+   "fact": "R-mat-25-12",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "the Vogem Lab 2013 study / coating Kogal-8: 95% CI upper bound = 5.3 %",
+   "span_text": "Change vs reference (%): estimate (lower to upper): -1.3 (-7.9 to 5.3)",
+   "fixed_judge_wrong": false
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "MAT-25",
+   "fact": "R-mat-25-21",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Brusizal Lab 2014 study / coating Kogal-8: 95% CI upper bound = 22.8 %",
+   "span_text": "Change vs reference (%): estimate (lower to upper): 17.7 (12.6 to 22.8)",
+   "fixed_judge_wrong": false
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "MAT-43",
+   "fact": "R-mat-43-32",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "pooled change (inverse-variance) for alloy Bimeke-2 (2 studies): 95% CI lower bound = 3.6 %",
+   "span_text": "95% CI lower bound (%): 3.6",
+   "fixed_judge_wrong": false
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "MAT-45",
+   "fact": "R-mat-45-25",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "pooled change (inverse-variance) for polymer Krulo-9 (2 studies): estimate = 14.0 %",
+   "span_text": "The pooled Krulo-9 change of 14.0 (11.0 to 17.0) %, with an I² of 99.3 %, is reported as given.",
+   "fixed_judge_wrong": false
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "v2-MAT-44",
+   "fact": "v2-R-mat-02-04",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Stosimam Lab 2022 study: test temperature = 25 °C",
+   "span_text": "For the Thipenus Lab 2014 study, the 25°C value refers to the thermal conductivity measurement condition, while the Stosimam Lab 2022 study's 25°C value in the table is a placeholder for the study's baseline condition, but the actual oxidation test was conducted at high temperature as described in the study summary.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "v2-MAT-44",
+   "fact": "v2-R-mat-02-04",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Stosimam Lab 2022 study: test temperature = 25 °C",
+   "span_text": "The difference in test conditions, with the Thipenus Lab 2014 study reporting data at 25°C for thermal conductivity and the Stosimam Lab 2022 study conducting oxidation tests at high temperature, may be a contributing factor.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "v3-MAT-46",
+   "fact": "v3-R-mat-01-03",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Pehum Lab 2018 study: gauge length = 6 mm",
+   "span_text": "The number of specimens tested ranges from 4 to 6, with the Pehum Lab 2018 study using the fewest and the Theman Lab 2020 study using the most.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "v3-MAT-46",
+   "fact": "v3-R-mat-01-12",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Theman Lab 2020 study: specimens = 6 n",
+   "span_text": "The gauge length varies from 6 mm to 25 mm, with the Theman Lab 2020 study using the longest gauge.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "v3-MAT-46",
+   "fact": "v3-R-mat-01-45",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "pooled change (inverse-variance) for sikathem Tromi-8 (3 studies): estimate = -3.7 %",
+   "span_text": "For sikathem Tromi-8, the study reported a change of -1.5%, with a confidence interval from -3.7% to 0.7%.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "v3-MAT-47",
+   "fact": "v3-R-mat-02-10",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the Tariges Lab 2014 study: samples tested = 4 n",
+   "span_text": "95% CI lower bound (%): 4.0",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_materials",
+   "paper": "v3-MAT-48",
+   "fact": "v3-R-mat-03-29",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "pooled change (inverse-variance) for polymer Grostotem-9 (3 studies): 95% CI lower bound = 2.2 %",
+   "span_text": "The study reported no change in the wicking rate for Grostotem-9, with a change relative to the reference of -1.5% (95% CI: -5.2 to 2.2).",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_medicine",
+   "paper": "MED-03",
+   "fact": "R-med-03-33",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "pooled hazard ratio for tukrapurtinib (2 trials): estimate = 1.05 HR",
+   "span_text": "For drebrabestinib the hazard ratios in Table 2 are 1.01 and 1.02, and for tukrapurtinib they are 1.04 and 1.05.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_medicine",
+   "paper": "MED-03",
+   "fact": "R-med-03-37",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "pooled hazard ratio for drebrabestinib (2 trials): estimate = 1.02 HR",
+   "span_text": "For drebrabestinib the hazard ratios in Table 2 are 1.01 and 1.02, and for tukrapurtinib they are 1.04 and 1.05.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_medicine",
+   "paper": "MED-05",
+   "fact": "R-med-05-06",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the NESENAM-7 trial: countries = 1 countries",
+   "span_text": "Across the trials that evaluate drebrabestinib, the NESENAM-7 trial found a benefit of that drug, while the FUKRON-6 trial, with a hazard ratio of 1.00, found no clear difference on the main outcome.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_medicine",
+   "paper": "MED-05",
+   "fact": "R-med-05-06",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the NESENAM-7 trial: countries = 1 countries",
+   "span_text": "The FUKRON-6 interval includes 1.00, and the NESENAM-7 interval lies entirely below 1.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_medicine",
+   "paper": "MED-05",
+   "fact": "R-med-05-06",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the NESENAM-7 trial: countries = 1 countries",
+   "span_text": "The FUKRON-6 interval is considerably wider than the NESENAM-7 interval, which may reflect the difference in sample size listed in Table 1 (140 and 940 participants, respectively).",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_medicine",
+   "paper": "MED-05",
+   "fact": "R-med-05-06",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the NESENAM-7 trial: countries = 1 countries",
+   "span_text": "The NESENAM-7 interval lies below 1, whereas the FUKRON-6 interval spans 1.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_medicine",
+   "paper": "MED-07",
+   "fact": "R-med-07-08",
+   "found_by": "several+name",
+   "collision": false,
+   "text": "the PEGROSTOL-7 trial: run-in = 2 weeks",
+   "span_text": "Separately, the PEGROSTOL-7 trial reported no clear difference on the main outcome for drebrabestinib and tukrapurtinib in type 2 diabetes.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_medicine",
+   "paper": "MED-28",
+   "fact": "R-med-28-37",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "pooled hazard ratio for drebrabestinib (3 trials): heterogeneity I² = 0.0 %",
+   "span_text": "Drebrabestinib is pooled across three trials and tukrapurtinib across two, so the I² value of 0.0% reflects a very small number of trials and cannot establish that the trials agree.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_medicine",
+   "paper": "MED-28",
+   "fact": "R-med-28-41",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "pooled hazard ratio for tukrapurtinib (2 trials): heterogeneity I² = 0.0 %",
+   "span_text": "Drebrabestinib is pooled across three trials and tukrapurtinib across two, so the I² value of 0.0% reflects a very small number of trials and cannot establish that the trials agree.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_medicine",
+   "paper": "MED-30",
+   "fact": "R-med-30-11",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the SEGER-8 trial: run-in = 2 weeks",
+   "span_text": "SEGER-8 (2014), a randomised, double-blind trial in type 2 diabetes, also tests tukrapurtinib, which adds a further trial of one of the two agents.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_medicine",
+   "paper": "v2-MED-44",
+   "fact": "v2-R-med-01-30",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "pooled hazard ratio for katrogrestinib (3 trials): 95% CI lower bound = 0.77 HR",
+   "span_text": "The same trial also found a benefit of katrogrestinib, with a hazard ratio of 0.77 (95% CI 0.63 to 0.93).",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_medicine",
+   "paper": "v2-MED-46",
+   "fact": "v2-R-med-03-15",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the SIPEM-7 trial / lifostinib: 95% CI upper bound = 0.83 HR",
+   "span_text": "The pooled analysis for lifostinib, which was tested in both the SIPEM-7 and BRAZU-5 trials, yields a hazard ratio of 0.70 (95% CI 0.59-0.83).",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_medicine",
+   "paper": "v2-MED-46",
+   "fact": "v2-R-med-03-23",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the BRAZU-5 trial / lifostinib: 95% CI lower bound = 0.59 HR",
+   "span_text": "The pooled analysis for lifostinib, which was tested in both the SIPEM-7 and BRAZU-5 trials, yields a hazard ratio of 0.70 (95% CI 0.59-0.83).",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_medicine",
+   "paper": "v3-MED-49",
+   "fact": "v3-R-med-03-03",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the HAZEFIL-7 trial: countries taking part = 4 countries",
+   "span_text": "The HAZEFIL-7 trial had a run-in period of 4 weeks, whereas the DOTRO-5 trial utilized a longer run-in period of 8 weeks.",
+   "fixed_judge_wrong": true
+  },
+  {
+   "domain": "bench_medicine",
+   "paper": "v3-MED-49",
+   "fact": "v3-R-med-03-08",
+   "found_by": "several+name",
+   "collision": true,
+   "text": "the DOTRO-5 trial: countries taking part = 4 countries",
+   "span_text": "The HAZEFIL-7 trial had a run-in period of 4 weeks, whereas the DOTRO-5 trial utilized a longer run-in period of 8 weeks.",
+   "fixed_judge_wrong": true
+  }
+ ],
+ "note": "fixed_judge_wrong: the fixed judge (gate + three-field verifier, 26 Nov 2026) also calls the span wrong; the regression test uses only these"
+}
