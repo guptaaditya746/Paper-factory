@@ -26,7 +26,7 @@ import tempfile
 from pathlib import Path
 from typing import Any, Callable
 
-from paperfactory import join, packs, workbench
+from paperfactory import join, numspans, packs, workbench
 
 PF = Path(__file__).resolve().parents[1]
 RUNS = {"v1": PF / "../../runs/paperfactory/qwen40-{f}", "v2": PF / "../../runs/paperfactory/v2p3-{f}",
@@ -150,7 +150,10 @@ def merge(field: str, data: Path, domain: str) -> dict[str, Any]:
     manifest = {"source": "paperfactory", "run": "merged (ops/merge_bench.py)", "field": field,
                 "genre": bench.get("genre", ""), "planned": len(papers), "sources": counts, "papers": papers}
     (seed_dir / "paperfactory.json").write_text(json.dumps(manifest, indent=1, ensure_ascii=False), encoding="utf-8")
-    return {"domain": domain, "papers": len(papers), "fact_rows": len(rows), "by_source": counts}
+    # number spans from cached verifier answers only: a re-merge makes no model calls (numspans.py)
+    nums = numspans.run(seed_dir, ds_dir, numspans.caller_for(domain, field, manifest["genre"]), cache_only=True)
+    return {"domain": domain, "papers": len(papers), "fact_rows": len(rows), "by_source": counts,
+            "number_spans": {k: c["share"] for k, c in nums["coverage"].items()}, "not_cached": nums["not_cached"]}
 
 
 def ttl(rows: list[dict[str, Any]], ents: dict[str, Any]) -> str:

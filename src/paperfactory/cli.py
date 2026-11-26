@@ -20,7 +20,7 @@ from typing import Any
 from repo_paths import REPO
 
 from paperfactory import SCORING_VERSION, config, cost, files, forms, labels, materials, meta, packs, repair, seed, style, topics, workbench, world, write
-from paperfactory import quant
+from paperfactory import numspans, quant
 from paperfactory.evaluate import Eval
 from paperfactory.llm import Caller, GatewayDown
 
@@ -277,7 +277,20 @@ def main(argv: list[str] | None = None) -> None:
                    help="make the answers file with the verifier first (model calls; needs --config)")
     m.add_argument("--config")
     m.add_argument("--adjudicated", help="CSV with the labels both labelers agreed on after discussing disagreements")
+    ns = sub.add_parser("number-spans", help="positions of number facts in a merged domain (numspans.py)")
+    ns.add_argument("--domain", required=True, help="e.g. bench_llm")
+    ns.add_argument("--data-dir", required=True, help="the Workbench's data folder, e.g. ../../data")
+    ns.add_argument("--cache-only", action="store_true", help="no model calls: cached verifier answers only")
     a = ap.parse_args(argv)
+    if a.cmd == "number-spans":
+        data = Path(a.data_dir).resolve()
+        seed_dir, ds_dir = data / "seed" / a.domain, data / "dataset" / a.domain
+        man = json.loads((seed_dir / "paperfactory.json").read_text(encoding="utf-8"))
+        rep = numspans.run(seed_dir, ds_dir, numspans.caller_for(a.domain, man["field"], man.get("genre", "")),
+                           cache_only=a.cache_only)
+        print(json.dumps({k: v for k, v in rep.items() if k != "no_span"} | {"no_span": len(rep["no_span"])},
+                         indent=1)[:4000])
+        return
     if a.cmd == "relation-table":
         print("\n".join(packs.relation_table(packs.field(x)) for x in a.field))
         return
