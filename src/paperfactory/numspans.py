@@ -605,6 +605,31 @@ def hard_candidates(res: list[dict[str, Any]], rows: list[dict[str, Any]], P: li
     return out
 
 
+def frozen_cell(h: dict[str, Any], rule: str, P: list[Place], by: dict[str, dict[str, Any]], table: AliasTable,
+                used: dict[tuple, int]) -> tuple[int | None, str | None]:
+    """The place of a frozen hard-control item. A sentence is found by (context, passage). Every cell of a table row
+    has the same pair, so in a row pick the cell that holds the value and is the other fact's (G's): the cell whose
+    header names G's subject, else a value cell whose header does not name F's subject. A repeated item (same row,
+    another cell of G) takes the next such cell. Returns (place index, how the cell was picked)."""
+    key = (h["context"], h["passage"])
+    idx = [i for i, q in enumerate(P) if (q.context, q.passage) == key]
+    if not idx:
+        return None, None
+    if not P[idx[0]].row:
+        return idx[-1], None
+    r, g = by[h["fact"]], by.get(h.get("other", ""), {})
+    v = canon(r.get("value")) or ""
+    hdr = lambda j: {m.eid for m in find_mentions(P[j].header, table)}       # noqa: E731
+    vc = [j for j in idx if value_hits(P[j].text, v, r)]
+    pick = [j for j in vc if g.get("subject") in hdr(j)] or [j for j in vc if r.get("subject") not in hdr(j)]
+    if not pick:
+        return idx[-1], "no value cell: last cell kept"
+    n = used.get((rule, h["fact"], h.get("other")) + key, 0)
+    used[(rule, h["fact"], h.get("other")) + key] = n + 1
+    i = pick[min(n, len(pick) - 1)]
+    return i, "value cell of G" if g.get("subject") in hdr(i) else "value cell"
+
+
 # ------------------------------------------------------------------ one domain
 def writer_of(p: dict[str, Any]) -> str:
     run = str((p.get("source") or {}).get("run", ""))
@@ -660,8 +685,8 @@ def run(seed_dir: Path, ds_dir: Path, caller, cache_only: bool = False) -> dict[
         table = alias_table(w, f, defined_terms(norm.text, base, f))
         mine = [r for r in rows if r["paper"] == p["id"]]
         recs, hard = span_paper(md, mine, table, rules, verifier, p["id"], ekinds)
-        return p, md, norm, mine, recs, hard
-    for p, md, norm, mine, recs, hard in pmap(one, man["papers"], PARALLEL):     # merged in paper order
+        return p, md, norm, mine, recs, hard, table
+    for p, md, norm, mine, recs, hard, table in pmap(one, man["papers"], PARALLEL):     # merged in paper order
         for k in HARD_RULES:
             hard_all[k] += [h | {"paper": p["id"], "same_model": writer_of(p) == vm} for h in hard[k]]
         for a, b in value_collisions(mine).items():
@@ -669,10 +694,12 @@ def run(seed_dir: Path, ds_dir: Path, caller, cache_only: bool = False) -> dict[
         coll = colliding(mine)
         audit_all += [h | {"paper": p["id"], "collision": coll.get(h["fact"])} for h in hard["audit"]]
         at = {(q.context, q.passage): i for i, q in enumerate(hard["P"])}
+        used: dict[tuple, int] = {}
         for k in frozen:                 # the frozen hard-control items of this paper: gate and fields from today's code
             for h in frozen[k]:
                 if h["paper"] == p["id"]:
-                    i, r = at.get((h["context"], h["passage"])), meta_all[h["fact"]]
+                    i, h["cell_pick"] = frozen_cell(h, k, hard["P"], meta_all, table, used)
+                    r = meta_all[h["fact"]]
                     h["fields"], h["gate"] = fact_fields(r, r["value"]), "place not found" if i is None else \
                         gate(r, hard["P"][i], hard["seen"][i])
                     h["marked"] = None if i is None else hard["P"][i].marked

@@ -669,7 +669,8 @@
    "collision": false,
    "text": "the Tilutron 2020 study / Thetran prompting: accuracy = 0.2 %",
    "span_text": "Accuracy gain, estimate (95% CI) (%): 0.2 (-1.5 to 1.9)",
-   "fixed_judge_wrong": true
+   "fixed_judge_wrong": false,
+   "rejudged": "26 Nov 2026: label fixed to '...: accuracy difference'; the fixed judge now says subject, stat and value yes"
   },
   {
    "domain": "bench_llm",
@@ -919,7 +920,8 @@
    "collision": false,
    "text": "the Vomobral 2025 study / Kabaso prompting: accuracy = 4.8 %",
    "span_text": "Accuracy change over baseline (%): 4.8",
-   "fixed_judge_wrong": true
+   "fixed_judge_wrong": false,
+   "rejudged": "26 Nov 2026: label fixed to '...: accuracy difference'; the fixed judge now says subject, stat and value yes"
   },
   {
    "domain": "bench_llm",
@@ -1209,7 +1211,8 @@
    "collision": false,
    "text": "the Stebroko 2024 study / Brugretol retrieval: accuracy = 8.2 %",
    "span_text": "8.2",
-   "fixed_judge_wrong": true
+   "fixed_judge_wrong": false,
+   "rejudged": "26 Nov 2026: label fixed to '...: accuracy difference'; the fixed judge now says subject, stat and value yes"
   },
   {
    "domain": "bench_llm",
@@ -1219,7 +1222,8 @@
    "collision": false,
    "text": "the Stebroko 2024 study / Brugretol retrieval: accuracy = 8.2 %",
    "span_text": "The Stebroko 2024 study reported a larger gain for Brugretol retrieval (8.2%) than the Neden 2023 study (2.5%), but the Stebroko 2024 study had a lower baseline accuracy (46.2% vs. 81.4%).",
-   "fixed_judge_wrong": true
+   "fixed_judge_wrong": false,
+   "rejudged": "26 Nov 2026: label fixed to '...: accuracy difference'; the fixed judge now says subject, stat and value yes"
   },
   {
    "domain": "bench_llm",
@@ -1722,5 +1726,5 @@
    "fixed_judge_wrong": true
   }
  ],
- "note": "fixed_judge_wrong: the fixed judge (gate + three-field verifier, 26 Nov 2026) also calls the span wrong; the regression test uses only these"
+ "note": "fixed_judge_wrong: the fixed judge (gate + three-field verifier, 26 Nov 2026) also calls the span wrong; the regression test uses only these; 4 llm items (3 facts) re-judged after the label fix (26 Nov 2026): right, so fixed_judge_wrong false"
 }

@@ -389,7 +389,7 @@
  },
  "cluster_note": "All methods, models, benchmarks and studies of this cluster belong to ONE research area within the cluster topic: make the benchmarks' tasks and the methods' families fit that area.",
  "effect": {
-  "name": "accuracy",
+  "name": "accuracy difference",
   "short": "accuracy",
   "unit": "%",
   "scale": "difference",

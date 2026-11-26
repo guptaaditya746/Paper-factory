@@ -253,6 +253,20 @@ def test_hard_controls_use_frozen_items(tmp_path: Path) -> None:
     assert (seed / "numspans_audit_frozen.json").is_file()
 
 
+def test_frozen_cell_picks_the_cell_with_the_number() -> None:
+    """Every cell of a table row shares (context, passage); the frozen item must get the cell that holds the value."""
+    from paperfactory import packs
+    from paperfactory.text import alias_table, split_rules
+    f, w = packs.field("llm"), {"entities": ENTS}
+    P = numspans.places(MD, split_rules(f, w))
+    by = {r["id"]: r for r in ROWS}
+    row_bel = next(q for q in P if q.row and "Bel 2019" in q.passage)
+    h = {"fact": "E1", "other": "E1b", "context": row_bel.context, "passage": row_bel.passage}
+    i, how = numspans.frozen_cell(h, "v2_seen", P, by, alias_table(w, f), {})
+    assert "65.2" in P[i].marked and how == "value cell"                # not the row's last cell (-1.9 ...)
+    assert numspans.frozen_cell(h | {"passage": "nowhere"}, "v2_seen", P, by, alias_table(w, f), {}) == (None, None)
+
+
 def test_rules_v2_labels_years_counts_pools() -> None:
     r = row("c", "attr", "2", "annotators", subject="S1", attr="human_raters")
     assert numspans.value_hits("Table 2 lists 2 raters.", "2", r) == [(14, 15)]            # not "Table 2"
@@ -285,17 +299,15 @@ def test_cell_check_both_orientations() -> None:
     assert numspans.cell_check(r, side, {"S1"}, tab) is None                                # sideways table
 
 
-# rejected because of the fact's label, not the span (26 Nov 2026): llm effect estimates are labelled "...: accuracy"
-# but the value is the accuracy change; both judges answered "stat: no" for a right span. Fix the label, then drop these.
-LABEL_PROBLEM = {"R-llm-11-43", "R-llm-28-25", "v3-R-llm-02-28"}
 REJECTED = Path(__file__).parent / "data" / "numspans_rejected_v1.json"
 DATA = Path(__file__).resolve().parents[5] / "data"
 
 
 @pytest.mark.skipif(not (DATA / "seed" / "bench_law").is_dir(), reason="needs the parent repo's data/")
 def test_regression_172_rejected_spans_not_placed_by_code() -> None:
-    """The 172 code-made spans the first audit rejected, of which the fixed judge also calls 163 wrong: today's code
-    rules must not place any of those 163 by code (the verifier may still, after its gate)."""
+    """The 172 code-made spans the first audit rejected, of which the fixed judge also calls 159 wrong: today's code
+    rules must not place any of those 159 by code (the verifier may still, after its gate). 4 llm spans were judged
+    wrong only for the old label "...: accuracy" (the value is the change); after the label fix they are right."""
     from paperfactory import packs
     from paperfactory.text import alias_table, defined_terms, normalize_paper, split_rules
     items = [x for x in json.loads(REJECTED.read_text())["items"] if x["fixed_judge_wrong"]]
@@ -319,7 +331,6 @@ def test_regression_172_rejected_spans_not_placed_by_code() -> None:
                       for i, how in zip(rec["places"], rec["found_by"]) if how != "verifier"}
             left += [x for x in items if x["domain"] == dom and x["paper"] == pid
                      and (x["fact"], x["span_text"]) in placed]
-    left = [x for x in left if x["fact"] not in LABEL_PROBLEM]
     assert left == [], f"{len(left)} of {len(items)} still placed by code, e.g. {left[:3]}"
 
 
