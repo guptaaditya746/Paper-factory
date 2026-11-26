@@ -26,6 +26,22 @@ Run on the synthetic papers of a data folder (writes seed/<domain>/realism_synth
 invented_world_sentences.json):
 
     python -m paperfactory.realism synth --data ../../data --domains bench_law bench_llm bench_materials bench_medicine
+
+Real papers (Part E): open-licence review papers downloaded to data/cache/realism/<field>/<id>.md with
+manifest.jsonl (selection: data/seed/realism_selection.json, law licences: realism_law_licences.json). `real`
+measures them the same way (generic name masking), compares per field with seed/bench_<field>/realism_synth.json
+(plus realism_kinds.json when complete) and writes seed/bench_<field>/realism_real.json, realism_compare.json and
+seed/realism_report.md. A field with fewer than MIN_REAL real papers is marked pending.
+
+    python -m paperfactory.realism real --data ../../data --realism-dir ../../data/cache/realism
+
+`kinds` (model calls): fact kinds of KIND_SAMPLE real and KIND_SAMPLE synthetic papers per field (synthetic sample
+stratified by writer, readback.sample_papers), read section by section by readback.Reader with Haiku only (JUDGE);
+cached under data/cache/realism/haiku/<domain>; no new section is started once all Haiku calls there cost --budget.
+Every count carries "judge"; synthetic papers written by Haiku carry "same model as writer".
+
+    python -m paperfactory.realism kinds --data ../../data --realism-dir ../../data/cache/realism \
+        --fields medicine law materials llm --budget 14.5 [--max-sections 10] [--plan-only]
 """
 from __future__ import annotations
 
@@ -559,6 +575,297 @@ def run_synth(seed_dir: Path, ds_dir: Path, max_paras: int = MAX_PARAS) -> tuple
     return out, inv_out
 
 
+# ------------------------------------------------------------------ real papers (Part E)
+MIN_REAL = 25                       # fewer kept real papers in a domain -> its comparison is marked pending
+JUDGE = "claude-haiku-5-5"          # the only reader allowed for fact kinds (Aditya, 26 Nov 2026: no Sonnet)
+KIND_SAMPLE, KIND_SEED = 15, 2026   # papers per side per domain read for fact kinds
+
+
+def real_papers(realism_dir: Path, field_name: str) -> list[dict[str, Any]]:
+    """Manifest rows of the downloaded real papers of one field (realism_dir/manifest.jsonl, Markdown in
+    realism_dir/<field>/<id>.md), in manifest order."""
+    man = realism_dir / "manifest.jsonl"
+    rows = [json.loads(x) for x in man.read_text(encoding="utf-8").splitlines() if x.strip()]
+    return [r for r in rows if r["domain"] == field_name]
+
+
+def measure_real(realism_dir: Path, field_name: str, max_paras: int = MAX_PARAS
+                 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]], int]:
+    """(paragraph rows, invented-world sentences, papers) of the real papers of one field: the same preparation as
+    the synthetic side, with generic name masking (a real paper has no world)."""
+    f = packs.field(field_name)
+    rules = split_rules(f, {"entities": {}})
+    rows, inv = [], []
+    papers = real_papers(realism_dir, field_name)
+    for p in papers:
+        md = (realism_dir / field_name / f"{p['id']}.md").read_text(encoding="utf-8")
+        rows += measure_paper(md, rules, generic_names, p["id"], max_paras)
+        inv += invented_sentences(md, rules, p["id"])
+    return rows, inv, len(papers)
+
+
+def synth_generic_rows(seed_dir: Path, ds_dir: Path, max_paras: int = MAX_PARAS) -> list[dict[str, Any]]:
+    """Synthetic paragraph rows under generic masking (the masking the real side gets), for the second comparison."""
+    man = json.loads((seed_dir / "paperfactory.json").read_text(encoding="utf-8"))
+    rules = split_rules(packs.field(man["field"]), {"entities": {}})
+    rows = []
+    for p in man["papers"]:
+        md = (ds_dir / p["id"] / "paper.md").read_text(encoding="utf-8")
+        rows += measure_paper(md, rules, generic_names, p["id"], max_paras)
+    return rows
+
+
+def kind_counts(papers: list[dict[str, Any]]) -> dict[str, int]:
+    """Fact-kind counts (reader tool names) summed over the papers of a realism_kinds.json side."""
+    out: dict[str, int] = {}
+    for p in papers:
+        for k, v in p["kinds"].items():
+            out[k] = out.get(k, 0) + v
+    return dict(sorted(out.items()))
+
+
+def kinds_tables(kinds: Mapping[str, Any]) -> tuple[dict[str, int], dict[str, int]] | None:
+    """(real counts, synthetic counts) from a complete realism_kinds.json, else None."""
+    if not kinds or not kinds.get("complete"):
+        return None
+    return kind_counts(kinds["real"]["papers"]), kind_counts(kinds["synthetic"]["papers"])
+
+
+def compare_domain(field_name: str, real_rows: list[dict[str, Any]], n_real: int, synth: Mapping[str, Any],
+                   synth_generic: list[dict[str, Any]] | None = None, kinds: Mapping[str, Any] | None = None,
+                   real_invented: int = 0) -> dict[str, Any]:
+    """realism_compare.json of one domain: the main test table (real generic masking vs synthetic world masking, as
+    stored in realism_synth.json), the same with generic masking on both sides, and summaries. A domain with fewer
+    than MIN_REAL real papers is marked pending (numbers still given). Fact kinds join the table (5 tests under
+    Holm) only when a complete realism_kinds.json is given."""
+    kt = kinds_tables(kinds or {})
+    table = compare(real_rows, synth["rows"], *(kt or (None, None)))
+    for r in table:
+        if r["property"] == "fact_kind_share":
+            r["judge"] = JUDGE
+            r["note"] = kinds["synthetic"].get("note", "")
+    out: dict[str, Any] = {
+        "domain": synth["domain"], "field": field_name,
+        "status": "ok" if n_real >= MIN_REAL else f"pending: only {n_real} real papers (< {MIN_REAL})",
+        "method": METHOD, "real_masking": "generic_names", "synth_masking": "world (realism_synth.json rows)",
+        "note": "Paragraph-level KS tests treat paragraphs as independent; paragraphs of one paper are not, so raw "
+                "p-values are optimistic. Effect sizes first.",
+        "real_papers": n_real, "synth_papers": synth["summary"]["papers"],
+        "tests": table,
+        "real_summary": summarize(real_rows), "synth_summary": synth["summary"],
+        "invented_world_sentences": {"real": real_invented, "synthetic": synth.get("invented_world_sentences")}}
+    if synth_generic:
+        out["tests_generic_both"] = compare(real_rows, synth_generic)
+        out["synth_summary_generic"] = summarize(synth_generic)
+    if kinds:
+        out["fact_kinds"] = {k: kinds[k] for k in ("judge", "complete", "cost", "sample") if k in kinds} | {
+            "real": kind_counts(kinds["real"]["papers"]), "synthetic": kind_counts(kinds["synthetic"]["papers"]),
+            "synthetic_by_writer": kinds["synthetic"].get("by_writer", {})}
+    return out
+
+
+# ------------------------------------------------------------------ fact kinds with the blind reader (Haiku)
+def sample_real(papers: list[dict[str, Any]], n: int = KIND_SAMPLE, seed: int = KIND_SEED) -> list[dict[str, Any]]:
+    """n real papers, fixed seed, in input order; all if there are n or fewer."""
+    if len(papers) <= n:
+        return list(papers)
+    keep = {p["id"] for p in random.Random(seed).sample(papers, n)}
+    return [p for p in papers if p["id"] in keep]
+
+
+def read_kinds(reader, items: list[tuple[str, str, str, str]], spent: Callable[[], float], budget: float,
+               workers: int = 8) -> tuple[dict[str, dict[str, int]], dict[str, int], bool]:
+    """Read (side, paper id, section key, section text) items with readback.Reader-like `reader.read(pid, sec, md)`
+    and count valid calls per tool. Stops starting new sections once spent() >= budget. Returns ({paper: {tool:
+    count}}, {"sections", "read", "skipped_budget", "rejected", "repaired"}, complete)."""
+    from concurrent.futures import ThreadPoolExecutor
+
+    from paperfactory.readback import Section
+    counts: dict[str, dict[str, int]] = {}
+    stats = {"sections": len(items), "read": 0, "unread": 0, "skipped_budget": 0, "rejected": 0, "repaired": 0}
+
+    def one(it: tuple[str, str, str, str]) -> tuple[str, dict[str, Any] | None]:
+        side, pid, key, text = it
+        if spent() >= budget:
+            return f"{side}:{pid}", None
+        res = reader.read(pid, Section(0, len(text), key), text)
+        return f"{side}:{pid}", res
+    with ThreadPoolExecutor(max(1, workers)) as ex:
+        for pid, res in ex.map(one, items):
+            c = counts.setdefault(pid, {})
+            if res is None:
+                stats["skipped_budget"] += 1
+                continue
+            stats["read" if res["read"] else "unread"] += 1
+            stats["rejected"] += res.get("dropped", 0)
+            stats["repaired"] += res.get("repaired", 0)
+            for call in res["calls"]:
+                c[call["tool"]] = c.get(call["tool"], 0) + 1
+    return counts, stats, stats["skipped_budget"] == 0 and stats["unread"] == 0
+
+
+def kinds_plan(field_name: str, seed_dir: Path, ds_dir: Path, realism_dir: Path, n: int = KIND_SAMPLE
+               ) -> dict[str, Any]:
+    """The fixed-seed sample of both sides and their sections (readback.sections), no model calls."""
+    from paperfactory.numspans import writer_of
+    from paperfactory.readback import sample_papers, sections
+    man = json.loads((seed_dir / "paperfactory.json").read_text(encoding="utf-8"))
+    syn = sample_papers(man["papers"], n, KIND_SEED)
+    real = sample_real(real_papers(realism_dir, field_name), n, KIND_SEED)
+    items: list[tuple[str, str, str, str]] = []
+    writers = {}
+    for p in syn:
+        md = (ds_dir / p["id"] / "paper.md").read_text(encoding="utf-8")
+        writers[p["id"]] = p.get("writer") or writer_of(p)
+        items += [("synthetic", p["id"], f"s{i}", s.text(md)) for i, s in enumerate(sections(md))]
+    for p in real:
+        md = (realism_dir / field_name / f"{p['id']}.md").read_text(encoding="utf-8")
+        items += [("real", p["id"], f"s{i}", s.text(md)) for i, s in enumerate(sections(md))]
+    return {"synthetic": [p["id"] for p in syn], "real": [p["id"] for p in real], "writers": writers,
+            "items": items}
+
+
+def kinds_result(field_name: str, plan: Mapping[str, Any], counts: Mapping[str, Mapping[str, int]],
+                 stats: Mapping[str, int], complete: bool, cost: Any) -> dict[str, Any]:
+    """realism_kinds.json: per-paper tool counts on both sides, marked with the judge and, for synthetic papers
+    written by the judge model, "same model as writer"."""
+    from paperfactory.numspans import SAME_MODEL_NOTE
+    syn = []
+    for pid in plan["synthetic"]:
+        w = plan["writers"][pid]
+        row = {"paper": pid, "writer": w, "kinds": dict(sorted(counts.get(f"synthetic:{pid}", {}).items())),
+               "judge": JUDGE}
+        if w == JUDGE:
+            row["note"] = SAME_MODEL_NOTE
+        syn.append(row)
+    real = [{"paper": pid, "kinds": dict(sorted(counts.get(f"real:{pid}", {}).items())), "judge": JUDGE}
+            for pid in plan["real"]]
+    by_writer: dict[str, Any] = {}
+    for w in sorted({r["writer"] for r in syn}):
+        rows = [r for r in syn if r["writer"] == w]
+        by_writer[w] = {"papers": len(rows), "kinds": kind_counts(rows), "judge": JUDGE}
+        if w == JUDGE:
+            by_writer[w]["note"] = SAME_MODEL_NOTE
+    n_same = sum(r["writer"] == JUDGE for r in syn)
+    return {"field": field_name, "judge": JUDGE, "complete": complete, "cost": cost, "stats": dict(stats),
+            "sample": {"n": KIND_SAMPLE, "seed": KIND_SEED, "synthetic": "readback.sample_papers (stratified by "
+                       "writer)", "real": "random.sample of the downloaded real papers"},
+            "kinds_are": "valid reader tool calls (thesis_scorer.facttools) per section, readback.Reader, prompt "
+                         "readback_v1; sections from readback.sections on both sides",
+            "real": {"papers": real, "kinds": kind_counts(real), "judge": JUDGE},
+            "synthetic": {"papers": syn, "kinds": kind_counts(syn), "judge": JUDGE, "by_writer": by_writer,
+                          "note": f"{n_same} of {len(syn)} synthetic papers written by {JUDGE}: {SAME_MODEL_NOTE}"
+                          if n_same else ""}}
+
+
+def kinds_caller(field_name: str, out_dir: Path, genre: str = "argument"):
+    from paperfactory.config import Settings
+    from paperfactory.llm import Caller
+    from paperfactory.readback import JUDGE_ROLE, READER_ROLE
+    s = Settings(field=field_name, genre=genre, models={READER_ROLE: {"model": JUDGE, "max_parallel": 8},
+                                                        JUDGE_ROLE: {"model": JUDGE, "max_parallel": 8}},
+                 out=str(out_dir))
+    return Caller(s)
+
+
+def spent_total(haiku_dir: Path) -> float:
+    """USD of every Haiku call logged under haiku_dir/<domain>/calls.jsonl (the budget is for all domains)."""
+    usd = 0.0
+    for log in sorted(haiku_dir.glob("*/calls.jsonl")):
+        for line in log.read_text(encoding="utf-8").splitlines():
+            if line.strip():
+                usd += json.loads(line).get("cost_usd") or 0.0
+    return usd
+
+
+def run_kinds(field_name: str, seed_dir: Path, ds_dir: Path, realism_dir: Path, budget: float,
+              max_sections: int | None = None, cache_dir: Path | None = None) -> dict[str, Any]:
+    """Read the fact-kind sample of one domain with Haiku (readback.Reader, cached under cache_dir). max_sections:
+    cost probe, the first sections of each side only (half each)."""
+    from paperfactory.readback import READER_MODEL, Reader
+    if READER_MODEL != JUDGE:
+        raise SystemExit(f"readback.READER_MODEL is {READER_MODEL}, expected {JUDGE}; stop and report")
+    man = json.loads((seed_dir / "paperfactory.json").read_text(encoding="utf-8"))
+    caller = kinds_caller(field_name, cache_dir or realism_dir / "haiku" / seed_dir.name, man.get("genre", "argument"))
+    plan = kinds_plan(field_name, seed_dir, ds_dir, realism_dir)
+    items = plan["items"]
+    if max_sections is not None:
+        half = max_sections // 2
+        items = [x for x in items if x[0] == "synthetic"][:half] + [x for x in items if x[0] == "real"][:max_sections - half]
+    reader = Reader(caller, packs.field(field_name))
+    counts, stats, complete = read_kinds(reader, items, lambda: spent_total(realism_dir / "haiku"), budget)
+    out = kinds_result(field_name, plan, counts, stats, complete and max_sections is None, caller.cost())
+    out["spent_all_domains_usd"] = round(spent_total(realism_dir / "haiku"), 4)
+    out["sections_by_side"] = {s: sum(x[0] == s for x in plan["items"]) for s in ("real", "synthetic")}
+    out["chars_by_side"] = {s: sum(len(x[3]) for x in plan["items"] if x[0] == s) for s in ("real", "synthetic")}
+    return out
+
+
+def report_md(compares: list[dict[str, Any]], pending: Mapping[str, str]) -> str:
+    """Short Markdown report: per domain, effect size first, then means, raw p and Holm p."""
+    lines = ["# Realism check: real vs synthetic review papers", "",
+             "Made by `python -m paperfactory.realism real`. Per body paragraph; effect size first (KS D; Cramer's V "
+             "for fact kinds), then the means, raw p and Holm-corrected p. Real side: generic name masking; synthetic "
+             "side: world masking (as in realism_synth.json). Paragraph-level p-values are optimistic (paragraphs of "
+             "one paper are not independent).", ""]
+    for c in compares:
+        lines += [f"## {c['field']} ({c['domain']}): {c['real_papers']} real, {c['synth_papers']} synthetic papers"
+                  + ("" if c["status"] == "ok" else f" — {c['status']}"), "",
+                  "| property | effect | real mean | synthetic mean | p | p (Holm) | n paragraphs real / synth |",
+                  "|---|---|---|---|---|---|---|"]
+        for t in c["tests"]:
+            if t["property"] == "fact_kind_share":
+                rm = ", ".join(f"{k} {v:.2f}" for k, v in t["real_mean"].items())
+                sm = ", ".join(f"{k} {v:.2f}" for k, v in t["synth_mean"].items())
+                lines.append(f"| fact kinds (judge {t['judge']}) | V={t['effect_size']:.3f} | {rm} | {sm} | "
+                             f"{t['p']:.2g} | {t['p_holm']:.2g} | {t['n_real']} / {t['n_synth']} facts |")
+            else:
+                lines.append(f"| {t['property']} | D={t['effect_size']:.3f} | {t['real_mean']:.2f} | "
+                             f"{t['synth_mean']:.2f} | {t['p']:.2g} | {t['p_holm']:.2g} | {t['n_real']} / {t['n_synth']} |")
+        if c.get("fact_kinds") and not any(t["property"] == "fact_kind_share" for t in c["tests"]):
+            lines.append(f"\nFact kinds: incomplete read, not tested ({c['fact_kinds'].get('cost')}).")
+        if (n := c.get("fact_kinds", {}).get("synthetic_by_writer")):
+            notes = [f"{w}: {v['papers']} papers" + (f" ({v['note']})" if v.get("note") else "") for w, v in n.items()]
+            lines.append("\nFact-kind sample by writer: " + "; ".join(notes) + ".")
+        g = c.get("tests_generic_both")
+        if g:
+            lines.append("\nSame with generic masking on both sides: " + "; ".join(
+                f"{t['property']} D={t['effect_size']:.3f} (Holm p {t['p_holm']:.2g})" for t in g) + ".")
+        iv = c["invented_world_sentences"]
+        lines += [f"\nInvented-world sentences (detector hits): real {iv['real']}, synthetic {iv['synthetic']}.", ""]
+    for d, why in pending.items():
+        lines += [f"## {d}: {why}", ""]
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def run_real(data: Path, realism_dir: Path, fields: Sequence[str], max_paras: int = MAX_PARAS,
+             write: bool = True) -> list[dict[str, Any]]:
+    """`real` command: measure the real papers per field, compare with seed/bench_<field>/realism_synth.json (and
+    realism_kinds.json when present), write seed/bench_<field>/realism_real.json, realism_compare.json and
+    seed/realism_report.md."""
+    compares, pending = [], {}
+    for fld in fields:
+        seed_dir, ds_dir = data / "seed" / f"bench_{fld}", data / "dataset" / f"bench_{fld}"
+        rows, inv, n = measure_real(realism_dir, fld, max_paras)
+        if not n:
+            pending[fld] = "pending: no real papers downloaded"
+            continue
+        synth = json.loads((seed_dir / "realism_synth.json").read_text(encoding="utf-8"))
+        kf = seed_dir / "realism_kinds.json"
+        kinds = json.loads(kf.read_text(encoding="utf-8")) if kf.is_file() else None
+        cmp_ = compare_domain(fld, rows, n, synth, synth_generic_rows(seed_dir, ds_dir, max_paras), kinds, len(inv))
+        compares.append(cmp_)
+        if write:
+            real = {"domain": seed_dir.name, "field": fld, "method": METHOD, "side": "real", "masking": "generic",
+                    "papers": n, "summary": summarize(rows), "invented_world_sentences": len(inv),
+                    "invented_items": inv, "rows": rows}
+            for name, obj in (("realism_real.json", real), ("realism_compare.json", cmp_)):
+                (seed_dir / name).write_text(json.dumps(obj, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    if write:
+        (data / "seed" / "realism_report.md").write_text(report_md(compares, pending), encoding="utf-8")
+    return compares
+
+
 def main(argv: list[str] | None = None) -> None:
     ap = argparse.ArgumentParser(prog="python -m paperfactory.realism")
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -566,7 +873,38 @@ def main(argv: list[str] | None = None) -> None:
     s.add_argument("--data", type=Path, required=True)
     s.add_argument("--domains", nargs="+", required=True)
     s.add_argument("--max-paras", type=int, default=MAX_PARAS)
+    r = sub.add_parser("real", help="measure the real papers and compare them with realism_synth.json")
+    r.add_argument("--data", type=Path, required=True)
+    r.add_argument("--realism-dir", type=Path, required=True, help="data/cache/realism (manifest.jsonl, <field>/*.md)")
+    r.add_argument("--fields", nargs="+", default=["medicine", "law", "materials", "llm"])
+    r.add_argument("--max-paras", type=int, default=MAX_PARAS)
+    k = sub.add_parser("kinds", help="fact kinds of a fixed sample on both sides, read by Haiku (model calls)")
+    k.add_argument("--data", type=Path, required=True)
+    k.add_argument("--realism-dir", type=Path, required=True)
+    k.add_argument("--fields", nargs="+", required=True)
+    k.add_argument("--budget", type=float, required=True, help="USD; no new section is started past it")
+    k.add_argument("--max-sections", type=int, default=None, help="cost probe: read only this many sections")
+    k.add_argument("--plan-only", action="store_true", help="print section counts and characters, no model calls")
     a = ap.parse_args(argv)
+    if a.cmd == "real":
+        for c in run_real(a.data, a.realism_dir, a.fields, a.max_paras):
+            print(c["field"], c["status"], " ".join(f"{t['property']}:{t['effect']}={t['effect_size']}"
+                                                    f"/p_holm={t['p_holm']:.2g}" for t in c["tests"]))
+        return
+    if a.cmd == "kinds":
+        for fld in a.fields:
+            seed_dir, ds_dir = a.data / "seed" / f"bench_{fld}", a.data / "dataset" / f"bench_{fld}"
+            if a.plan_only:
+                plan = kinds_plan(fld, seed_dir, ds_dir, a.realism_dir)
+                print(fld, {s: (sum(x[0] == s for x in plan["items"]), sum(len(x[3]) for x in plan["items"]
+                                                                           if x[0] == s)) for s in ("real", "synthetic")})
+                continue
+            out = run_kinds(fld, seed_dir, ds_dir, a.realism_dir, a.budget, a.max_sections)
+            print(fld, json.dumps({"complete": out["complete"], "stats": out["stats"], "cost": out["cost"]}))
+            if a.max_sections is None:
+                (seed_dir / "realism_kinds.json").write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n",
+                                                             encoding="utf-8")
+        return
     for d in a.domains:
         out, inv = run_synth(a.data / "seed" / d, a.data / "dataset" / d, a.max_paras)
         (a.data / "seed" / d / "realism_synth.json").write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n",

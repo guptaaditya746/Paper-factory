@@ -225,3 +225,121 @@ def test_run_synth(tmp_path) -> None:
     assert {x["section"] for x in inv["items"]} == {"Abstract", "Part"}
     assert set(out["masking_check"]["properties"]) == set(realism.PROPS)
     assert not math.isnan(out["summary"]["sent_len"]["mean"])
+
+
+# ------------------------------------------------------------------ real papers (Part E): no network, no model calls
+REAL_PARA = ("Earlier work found that courts may read the consent rule narrowly (Smith et al., 2019), and the "
+             "European Court of Justice later suggested a broader test in 2014 for about 12 member states. "
+             "The question therefore remains open, and the regulators appear to disagree about how it applies.")
+
+
+def _real_dir(tmp_path, n: int, field: str = "law"):
+    rd = tmp_path / "realism"
+    (rd / field).mkdir(parents=True)
+    rows = []
+    for i in range(n):
+        pid = f"R{i}"
+        (rd / field / f"{pid}.md").write_text(f"# Real {i}\n\n## Abstract\n\nShort.\n\n## Analysis\n\n{REAL_PARA}\n\n"
+                                              f"## References\n\n{REAL_PARA}\n")
+        rows.append({"id": pid, "domain": field, "title": f"Real {i}", "words": 90})
+    rows.append({"id": "M0", "domain": "medicine", "title": "other field", "words": 1})
+    (rd / "manifest.jsonl").write_text("".join(json.dumps(r) + "\n" for r in rows))
+    return rd
+
+
+def _synth_data(tmp_path, n: int = 3):
+    seed, ds = tmp_path / "data" / "seed" / "bench_law", tmp_path / "data" / "dataset" / "bench_law"
+    seed.mkdir(parents=True)
+    papers = []
+    body = ("Laper v. Dravun Media (Tetre District Court, 2017) relies on section 1 of the Tetre Data Privacy Act. "
+            "The court read the provision broadly, and the reading matters for 12 insurers in the market. "
+            "Later decisions followed it without much comment from the parties or the lower courts.")
+    for i in range(n):
+        pid = f"X-{i}"
+        (ds / pid).mkdir(parents=True)
+        (ds / pid / "paper.md").write_text(f"# T{i}\n\n## Part\n\n{body}\n")
+        papers.append({"id": pid, "writer": "claude-haiku-5-5" if i == 0 else "qwen (orch-model)"})
+    (seed / "paperfactory.json").write_text(json.dumps({"field": "law", "papers": papers}))
+    (seed / "entities.json").write_text(json.dumps(WORLD["entities"]))
+    out, _ = realism.run_synth(seed, ds)
+    (seed / "realism_synth.json").write_text(json.dumps(out))
+    return tmp_path / "data", seed, ds
+
+
+def test_measure_real_uses_generic_masking_and_skips_references(tmp_path) -> None:
+    rd = _real_dir(tmp_path, 2)
+    rows, inv, n = realism.measure_real(rd, "law")
+    assert n == 2 and len(rows) == 2 and not inv                 # one Analysis paragraph per paper
+    assert {r["section"] for r in rows} == {"Analysis"}
+    assert rows[0]["cites"] > 0 and rows[0]["hedges"] > 0 and rows[0]["numbers"] > 0
+
+
+def test_sample_real_is_fixed_and_capped() -> None:
+    ps = [{"id": str(i)} for i in range(40)]
+    a, b = realism.sample_real(ps, 15, 7), realism.sample_real(ps, 15, 7)
+    assert a == b and len(a) == 15 and [p["id"] for p in a] == sorted([p["id"] for p in a], key=int)
+    assert realism.sample_real(ps[:5], 15) == ps[:5]
+
+
+class FakeReader:
+    def __init__(self, tools):
+        self.tools, self.n = tools, 0
+
+    def read(self, pid, sec, md):
+        self.n += 1
+        return {"read": True, "calls": [{"tool": t} for t in self.tools], "dropped": 1, "repaired": 0}
+
+
+def test_read_kinds_counts_tools_and_stops_at_budget() -> None:
+    items = [("real", "R1", "s0", "a"), ("real", "R1", "s1", "b"), ("synthetic", "X-1", "s0", "c")]
+    counts, stats, complete = realism.read_kinds(FakeReader(["add_relation", "add_effect", "add_relation"]), items,
+                                                 lambda: 0.0, 1.0, workers=1)
+    assert complete and counts["real:R1"] == {"add_relation": 4, "add_effect": 2}
+    assert stats["read"] == 3 and stats["rejected"] == 3
+    spent = iter([0.0, 2.0, 2.0])
+    counts, stats, complete = realism.read_kinds(FakeReader(["add_attr"]), items, lambda: next(spent), 1.0, workers=1)
+    assert not complete and stats["skipped_budget"] == 2 and stats["read"] == 1
+
+
+def test_kinds_result_marks_judge_and_same_model_note() -> None:
+    plan = {"synthetic": ["X-0", "X-1"], "real": ["R0"], "writers": {"X-0": "claude-haiku-5-5",
+                                                                      "X-1": "qwen (orch-model)"}}
+    counts = {"synthetic:X-0": {"add_effect": 2}, "synthetic:X-1": {"add_relation": 1}, "real:R0": {"add_attr": 3}}
+    out = realism.kinds_result("law", plan, counts, {"read": 3}, True, {"usd": 0.1})
+    syn = {p["paper"]: p for p in out["synthetic"]["papers"]}
+    assert out["judge"] == "claude-haiku-5-5" and all(p["judge"] == "claude-haiku-5-5" for p in syn.values())
+    assert syn["X-0"]["note"] == "same model as writer" and "note" not in syn["X-1"]
+    assert out["synthetic"]["by_writer"]["claude-haiku-5-5"]["note"] == "same model as writer"
+    assert "1 of 2" in out["synthetic"]["note"]
+    assert out["real"]["kinds"] == {"add_attr": 3} and out["synthetic"]["kinds"] == {"add_effect": 2, "add_relation": 1}
+
+
+def test_compare_domain_pending_and_kinds_join_holm(tmp_path) -> None:
+    rd = _real_dir(tmp_path, 3)
+    rows, _, n = realism.measure_real(rd, "law")
+    data, seed, ds = _synth_data(tmp_path)
+    synth = json.loads((seed / "realism_synth.json").read_text())
+    c = realism.compare_domain("law", rows, n, synth)
+    assert c["status"].startswith("pending") and len(c["tests"]) == 4
+    plan = {"synthetic": ["X-0"], "real": ["R0"], "writers": {"X-0": "claude-haiku-5-5"}}
+    kinds = realism.kinds_result("law", plan, {"synthetic:X-0": {"add_effect": 5, "add_relation": 1},
+                                               "real:R0": {"add_effect": 1, "add_relation": 5}}, {}, True, {})
+    c5 = realism.compare_domain("law", rows * 10, 30, synth, None, kinds)
+    assert c5["status"] == "ok" and [t["holm_over"] for t in c5["tests"]] == [5] * 5
+    fk = c5["tests"][-1]
+    assert fk["judge"] == "claude-haiku-5-5" and "same model as writer" in fk["note"]
+    kinds["complete"] = False
+    assert len(realism.compare_domain("law", rows, n, synth, None, kinds)["tests"]) == 4
+
+
+def test_run_real_writes_compare_and_report(tmp_path) -> None:
+    rd = _real_dir(tmp_path, 2)
+    data, seed, _ = _synth_data(tmp_path)
+    out = realism.run_real(data, rd, ["law", "llm"])
+    assert len(out) == 1 and (seed / "realism_compare.json").is_file() and (seed / "realism_real.json").is_file()
+    c = json.loads((seed / "realism_compare.json").read_text())
+    assert c["real_papers"] == 2 and {t["property"] for t in c["tests"]} == set(realism.PROPS)
+    assert {t["property"] for t in c["tests_generic_both"]} == set(realism.PROPS)
+    rep = (data / "seed" / "realism_report.md").read_text()
+    assert "| property | effect | real mean | synthetic mean | p | p (Holm) |" in rep
+    assert "llm: pending: no real papers downloaded" in rep and "pending: only 2 real papers" in rep
