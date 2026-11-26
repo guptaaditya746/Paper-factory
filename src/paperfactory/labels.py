@@ -16,6 +16,8 @@ label column, plus <name>.key.json (what each id is). The kind of an item is onl
 see it. Labels: yes (the sentence itself states the claim) / no; anything else counts as unlabeled.
 metrics() compares labels with the verifier's answers: precision, recall, false accept / false reject rates with
 Wilson 95% intervals, by field, relation and kind; Cohen's kappa between two labelers.
+export_invented() writes the same CSV and key layout for the blind read-back (readback.py): possible invented facts
+plus planned controls.
 """
 from __future__ import annotations
 
@@ -266,3 +268,72 @@ def metrics_files(label_csvs: list[Path], key_file: Path | None, answers_file: P
     answers = json.loads(answers_file.read_text(encoding="utf-8"))
     return metrics([read_labels(p) for p in label_csvs], key, answers,
                    read_labels(adjudicated_csv) if adjudicated_csv else None)
+
+
+# ------------------------------------------------------------------ read-back hand check (spec Part C)
+def _read_claim_text(c: dict[str, Any]) -> tuple[str, str, str]:
+    """(subject, relation, object) columns for one read claim of readback.json."""
+    unit = f" {c['unit']}" if c.get("unit") else ""
+    if c["kind"] == "relation":
+        return c.get("subject") or "", c.get("relation") or "", c.get("object") or ""
+    if c["kind"] == "attr":
+        return c.get("subject") or "", f"{c.get('attr')} = {c.get('value')}{unit}", ""
+    if c["kind"] in ("effect", "pool"):
+        what = f" ({c['measure']})" if c.get("measure") else ""
+        obj = c.get("object") or ", ".join(c.get("studies") or [])
+        return c.get("subject") or "", f"{c['kind']} {c.get('stat')} = {c.get('raw') or c.get('value')}{unit}{what}", obj
+    nums = ", ".join(f"{n.get('value')}{' ' + n['unit'] if n.get('unit') else ''}" for n in c.get("numbers") or [])
+    return ", ".join(c.get("names") or []), f"statement: {c.get('statement')}" + (f" [numbers: {nums}]" if nums
+                                                                                    else ""), ""
+
+
+def export_invented(readbacks: list[dict[str, Any]], dest: Path, n_invented: int = 40, n_planned: int = 10,
+                    seed: int = 0) -> dict[str, Any]:
+    """Hand check of the blind read-back: n_invented possible invented facts, spread round robin over (tool, writer)
+    groups, plus n_planned planned controls, from readback.json dicts. Same CSV and key layout as export(): the CSV
+    has an empty label column; the sort code gave (possible_invented / planned_control) is only in the key file.
+    Label: yes = the quoted sentence states the claim as read (then a possible invented fact is a writer addition,
+    since code found no planted fact for it); no = a reader error."""
+    rng = random.Random(seed)
+    inv: dict[tuple[str, str], list[dict[str, Any]]] = {}
+    planned: list[dict[str, Any]] = []
+    for rb in readbacks:
+        for p in rb["papers"]:
+            for c in p["claims"]:
+                it = c | {"field": rb["field"], "writer": p["writer"], "domain": rb["domain"]}
+                if c["sort"] == "possible_invented":
+                    inv.setdefault((c["tool"], p["writer"]), []).append(it)
+                elif c["sort"] == "planned":
+                    planned.append(it)
+    for k in sorted(inv):
+        rng.shuffle(inv[k])
+    picked: list[dict[str, Any]] = []
+    groups = [inv[k] for k in sorted(inv)]
+    while len(picked) < n_invented and any(groups):
+        for g in groups:
+            if g and len(picked) < n_invented:
+                picked.append(g.pop() | {"item": "possible_invented"})
+    picked += [c | {"item": "planned_control"} for c in rng.sample(planned, min(n_planned, len(planned)))]
+    rng.shuffle(picked)
+    key = {}
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    with dest.open("w", newline="", encoding="utf-8") as fh:
+        wr = csv.DictWriter(fh, fieldnames=COLUMNS)
+        wr.writeheader()
+        for i, it in enumerate(picked):
+            rid = f"rb-{i + 1:04d}"
+            s, r, o = _read_claim_text(it)
+            keep = ("domain", "field", "paper", "writer", "section", "tool", "quote", "ids", "routes", "flags", "facts",
+                    "sort")
+            key[rid] = {"kind": it["item"]} | {k: it.get(k) for k in keep} | {"claim_kind": it["kind"]} | {
+                "claim": {k: it.get(k) for k in (
+                "subject", "relation", "object", "attr", "value", "unit", "stat", "raw", "measure", "studies",
+                "statement", "names", "numbers") if it.get(k) not in (None, [], "")}}
+            wr.writerow({"id": rid, "field": it["field"], "paper": it["paper"], "sentence": it.get("quote") or "",
+                         "context": it.get("section") or "", "subject": s, "relation": r, "object": o, "label": "",
+                         "notes": ""})
+    key_path(dest).write_text(json.dumps(key, indent=1, ensure_ascii=False), encoding="utf-8")
+    counts: dict[str, int] = {}
+    for it in picked:
+        counts[it["item"]] = counts.get(it["item"], 0) + 1
+    return {"rows": len(picked), "by_kind": counts, "csv": str(dest), "key": str(key_path(dest))}
